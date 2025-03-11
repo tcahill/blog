@@ -1,0 +1,13 @@
+---
+import type { TimestampObject } from 'ox-json-types';
+
+interface Props {
+    node: TimestampObject;
+}
+
+const { node } = Astro.props;
+
+const date = new Date(node.properties.start);
+---
+
+<span>{date.toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' })}</span>

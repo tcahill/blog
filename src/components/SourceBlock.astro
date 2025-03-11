@@ -1,0 +1,123 @@
+---
+import type { LesserBlockElement } from "ox-json-types";
+
+interface Props {
+    node: LesserBlockElement;
+}
+
+const { node } = Astro.props;
+---
+
+<div class="source-block">
+    <div class="block-header">
+        <div>{node.properties.name}</div>
+        <div>{node.properties.language}</div>
+    </div>
+
+<pre>
+<Fragment set:html={node.properties.value} />
+</pre>
+</div>
+
+<style>
+    .source-block {
+        background-color: var(--secondaryBackground);
+        border: 2px solid var(--secondary);
+        border-radius: 5px;
+        margin: 0 0.5rem;
+        overflow: scroll;
+
+        .block-header {
+            background-color: #33343f;
+            display: flex;
+            justify-content: space-between;
+            padding: 0.5rem 1rem;
+        }
+
+        .web-mode-html-tag {
+            color: #df5559;
+        }
+
+        [class*="type"] {
+            color: #85dacc;
+            font-weight: 600;
+        }
+
+        [class*="keyword"],
+        [class*="attr-name"] {
+            color: #85dacc;
+            font-weight: 600;
+        }
+
+        [class*="function-name"] {
+            color: #adda78;
+            font-weight: 600;
+        }
+
+        [class*="function-call"] {
+            color: #adda78;
+        }
+
+        [class*="string"],
+        [class*="attr-value"] {
+            color: #f9cc6c;
+        }
+
+        .org-builtin {
+            color: #11b7d3;
+        }
+
+        [class*="variable-name"] {
+            color: #4a88cd;
+        }
+
+        .org-comment,
+        .org-comment-delimiter {
+            color: #7f7f6f;
+        }
+
+        .org-block-begin-line,
+        .org-block-end-line,
+        .org-meta-line {
+            color: #959595;
+        }
+
+        .org-block-begin-line {
+            display: block;
+            background-color: #332c2c;
+        }
+
+        .org-block-end-line {
+            display: block;
+            background-color: #373040;
+        }
+
+        .highlight-numbers-number,
+        [class*="builtin"],
+        .org-document-info,
+        .org-document-title {
+            color: #a8a9eb;
+        }
+
+        pre {
+            margin: 0;
+            padding: 0.5rem 1rem 0.25rem 1rem;
+        }
+
+        [class*="op"] {
+            color: #fd6883;
+        }
+
+        .web-mode-variable-name {
+            color: var(--primary);
+        }
+
+        .org-level-1 {
+            color: #4f97d7;
+        }
+
+        .org-level-2 {
+            color: #2d9574;
+        }
+    }
+</style>

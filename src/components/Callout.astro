@@ -1,0 +1,29 @@
+---
+
+const { node } = Astro.props;
+
+let icon = null;
+switch (node.properties.parameters) {
+    case 'info':
+    icon = 'ph-info';
+}
+---
+<style>
+ .callout {
+     background-color: var(--secondaryBackground);
+     border: 2px solid var(--secondary);
+     border-radius: 5px;
+     margin: 0 0.5rem;
+     padding: 1rem;
+ }
+</style>
+<div class="callout">
+    {icon && <i class=`ph-fill ${icon}` />}
+    <slot />
+</div>
+
+<style>
+    i {
+        font-size: 1.5rem;
+    }
+</style>

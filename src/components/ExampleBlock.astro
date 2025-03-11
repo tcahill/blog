@@ -1,0 +1,21 @@
+---
+import type { LesserBlockElement } from 'ox-json-types';
+import { theme } from 'src/lib/style';
+interface Props {
+    node: LesserBlockElement;
+}
+
+const { node } = Astro.props;
+---
+
+<pre>
+{node.properties.value}
+</pre>
+
+<style define:vars={theme}>
+ overflow: scroll;
+ pre {
+     background-color: var(--secondaryBackground);
+     padding: 1rem;
+ }
+</style>

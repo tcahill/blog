@@ -1,0 +1,800 @@
+#+title: My Life In Plain Text
+#+date: <2025-03-14 Fri>
+#+filetags: :Org Mode:Emacs:Meta:
+#+options: ^:nil
+
+Publishing a blog is basically a solved problem. There's no shortage of tools
+that can produce a professional-looking site out of the box and let you focus on
+actually writing. When I set about building my personal blog however, I took a
+different tack. Partially motivated by a desire to learn by doing and partially
+perhaps by madness, I set off on an exploration of how far I could go using one
+of my favorite pieces of software of all time, Org Mode, as the basis for my
+site. It's a bit of a long read for something so niche, but if you're curious to
+learn something about the capabilities and internals of Org Mode or you just
+enjoy taking something simple and making it hard for the fun of it (and dare I
+say profit? of a sort?), read on!
+
+* Why Org Mode?
+I've used Emacs as my primary editor more or less as long as I've been
+programming, and it continues to embed itself into more aspects of my life
+thanks to its extensive capabilities beyond just editing code [fn:1]. Of
+particular note is [[https://orgmode.org/][Org Mode]], an Emacs [[https://www.gnu.org/software/emacs/manual/html_node/emacs/Major-Modes.html][major mode]] aptly described by its tag
+line: "Your life in plain text". At its simplest Org is a text format useful for
+structured documents, like a Markdown alternative that happens to have good
+editing and navigation support in Emacs. Under the surface however, it hosts a
+dizzying array of features including:
+
+- runnable source code blocks that can pass data between each other even if
+  they're written in different languages
+- a task management system with time tracking, clock reports, prioritization,
+  dependency associations between tasks and more
+- a surprisingly deep plain text spreadsheet system complete with the ability to
+  reference cells across tables and files and use formulas
+- critically for our purposes here - exporters that can be used to publish
+  content from Org Mode documents into a variety of other formats including HTML
+  and LaTeX
+
+I think Org is uniquely well-suited as a text format for static site generation,
+particularly for technical content. First, the format itself is much more
+expressive than something like Markdown - you can for example attach arbitrary
+metadata to headings with [[https://orgmode.org/guide/Properties.html][properties]] or wrap content with [[https://orgmode.org/manual/Drawers.html][drawers]] or [[https://orgmode.org/worg/org-syntax.html#Greater_Blocks][blocks]] to
+signal that it should be treated specially on export. Consider for example a
+feature encountered fairly often in blogs and technical documentation: callouts.
+We can represent callouts in an org-mode document with a custom block type and
+pass in a parameter to signal the nature of the callout and inform its styling.
+Here's what that looks like in Org syntax:
+
+#+begin_src org :tangle ../../tmp/callout.org
+  ,#+begin_callout info
+  Blocks in Org Mode are defined like this:
+
+  ,#+begin_src org
+  ,#+begin_name
+  ...
+  ,#+end_name
+  ,#+end_src
+
+  where =name= is any string of nonwhitespace characters. Some types of blocks
+  have a special significance in Org mode, but "callout" isn't one of them. As
+  we'll see later though, the workflow I've set up for this blog makes it very
+  easy to attach significance to new block types when we ingest Org content into
+  Astro.
+  ,#+end_callout
+#+end_src
+
+and the result when rendered on this site:
+
+#+begin_callout info
+Blocks in Org Mode are defined like this:
+
+#+begin_src org :tangle ../../tmp/callout_src.org
+  ,#+begin_name
+  ...
+  ,#+end_name
+#+end_src
+
+where =name= is any string of nonwhitespace characters. Some types of blocks
+have a special significance in Org mode, but "callout" isn't one of them. As
+we'll see later though, the workflow I've set up for this blog makes it very
+easy to attach significance to new block types when we ingest Org content into
+Astro.
+#+end_callout
+
+Granted, you could pretty easily come up with a scheme to represent something
+like this with a custom Markdown extension. Obsidian, for instance, supports
+callouts using block quotes that start with a specially-formatted first line [[https://help.obsidian.md/callouts][as
+described here]]. As far as I know however, this isn't supported anywhere outside
+of Obsidian and there's no official open source Obsidian-flavored Markdown
+parser, so you're on your own if you want to use it anywhere else. Compare that
+to our Org Mode example. When we use Org Mode's export functionality, the block
+above is provided to the exporter as an AST node that contains all the
+information we need in a structured format:
+
+#+begin_src emacs-lisp
+  ;; You can inspect the AST representation of any element in an Org Mode document
+  ;; by moving the cursor to that element and running (org-element-at-point)
+  '(special-block (... :type "callout" :parameters "info"))
+#+end_src
+
+** Not Your Father's Source Blocks
+
+Next let's look at how Org Mode deals with source code. Org Mode comes with a
+framework for executing source code called [[https://orgmode.org/worg/org-contrib/babel/][Babel]]. It supports a variety of
+different use cases, but to highlight some of the features that feel
+particularly useful to me for writing a technical blog:
+
+- You can execute code directly within the Org document and output the results
+  in various formats. You can also control whether the code, results or both are
+  exported when converting the document to other formats. If nothing else, this
+  is really handy just to verify that the code snippet you're about to publish
+  actually /works/ but it can also be handy for programmatically generating
+  various types of rich content.
+- You can pass the results of one block into another even if the blocks are
+  written in different languages.
+- You can run multiple source blocks in the same interpreter process for
+  supported languages, allowing blocks to build on and reference constructs from
+  each other.
+
+Here's a motivating example that showcases a few of Babel's features: let's use
+source blocks to demonstrate how the Monte Carlo method can be used to estimate
+the value of \pi. I'll include both the Org Mode syntax for each code block (in
+a separate code block labeled "Org") and the result when the code block is
+rendered, explaining the nontrivial bits of syntax as we go.
+
+Monte Carlo methods refer to a broad class of algorithms that use random
+sampling to solve a mathematical problem. As a simple example, consider that we
+can estimate the value of \pi by randomly generating points in the range [(0,0),
+(1,1)] and calculating how many of them fall inside a circle with radius 1.
+
+To demonstrate this, we first generate a collection of random points:
+
+#+begin_src org :tangle ../../tmp/generate_data.org
+  ,#+name: generate_data
+  ,#+begin_src ruby :results value table :exports code :var sample_size=100
+    srand(123) # fix the random seed so we get consistent results every time we run this
+    (0..sample_size).map do |_x|
+      point = [rand(), rand()]
+      [point[0], point[1], Math.sqrt(point[0]**2 + point[1]**2) <= 1 ? 0 : 1]
+    end
+  ,#+end_src
+#+end_src
+
+We're using a few header arguments here in the source block that are worth explaining:
+- =:results value table=: the code is effectively wrapped in a function
+  definition and the return value is captured as the result, and the result is
+  interpreted as an Org table.
+- =:exports code=: only the code is included when we export this code block to
+  another format - the results are omitted. In this case, we're not all that
+  interested in cluttering our exported web page with a giant table full of
+  random numbers!
+- =:var samples=100=: indicates that the block takes a variable called samples
+  that can be passed in whenever we call this block from elsewhere, and that its
+  default value is 100. The variable is defined for us automatically before the
+  code in the source block runs.
+
+#+name: generate_data
+#+begin_src ruby :results value table :exports code :var samples=100 :tangle ../../tmp/generate_data.rb :no-expand
+  srand(123) # fix the random seed so we get consistent results every time we run this
+  (0...samples).map do |_x|
+    point = [rand(), rand()]
+    [point[0], point[1], Math.sqrt(point[0]**2 + point[1]**2) <= 1 ? 0 : 1]
+  end
+#+end_src
+
+Now we can use the random samples to estimate the value of \pi with the formula:
+$\pi \approx 4 \frac{r}{n}$ where =r= is the number of points inside the circle
+of radius 1 and =n= is the total number of points.
+
+#+begin_src org :tangle ../../tmp/monte_carlo_pi_estimate.org
+  ,#+name: monte_carlo_pi_estimate
+  ,#+headers: :results value table :exports both
+  ,#+headers: :var data_10=generate_data(samples=10)
+  ,#+headers: :var data_100=generate_data(samples=100)
+  ,#+headers: :var data_1000=generate_data(samples=1000)
+  ,#+begin_src ruby
+    [data_100, data_1000].map do |data|
+      points_inside = data.select { |point| point[2] == 0 }
+      pi_estimate = 4.0 * points_inside.length / data.length
+      [data.length, pi_estimate]
+    end
+  ,#+end_src
+#+end_src
+
+A couple novel things are happening in the header arguments here:
+- I split the headers up into mulitple lines to make it more readable - you can
+  add any number of =,#+headers:= lines above the source block to break up the
+  arguments
+- We now use =:exports both= so that both the code and results are included in
+  the exported document
+- We're using input variables again, but this time we're setting their values by
+  calling the ~generate_data~ code block with different values for its =samples=
+  argument.
+
+#+name: monte_carlo_pi_estimate
+#+headers: :results value table :exports both
+#+headers: :var data_10=generate_data(samples=10)
+#+headers: :var data_100=generate_data(samples=100)
+#+headers: :var data_1000=generate_data(samples=1000)
+#+begin_src ruby :tangle ../../tmp/monte_carlo_pi_estimate.rb :no-expand
+  estimates = [data_10, data_100, data_1000].map do |data|
+    points_inside = data.select { |point| point[2] == 0 }
+    pi_estimate = 4.0 * points_inside.length / data.length
+    [data.length, pi_estimate]
+  end
+
+  # note: the `nil` here causes Org to add a horizontal line below the previous
+  # row when it renders the table, so it's visually clear that the first row
+  # should be treated as the table header
+  [["samples", "estimate"], nil] + estimates
+#+end_src
+
+#+RESULTS: monte_carlo_pi_estimate
+| samples | estimate |
+|---------+----------|
+|      10 |      3.6 |
+|     100 |     3.36 |
+|    1000 |     3.14 |
+
+Finally, we'll plot the data with gnuplot [fn:2]:
+
+#+begin_src org :tangle ../../tmp/monte_carlo_gnuplot.org
+  ,#+name: alt_text
+  ,#+begin_src emacs-lisp :var data="" text=""
+    (format "#+attr_alt_text: %s\n%s" text data)
+  ,#+end_src
+
+  ,#+headers: :results output :file ../assets/monte_carlo.svg :exports results
+  ,#+headers: :var data_10=generate_data(samples=10)
+  ,#+headers: :var data_100=generate_data(samples=100)
+  ,#+headers: :post alt_text(data=*this*, text="2D plots of the data from the generate_data code block")
+  ,#+begin_src gnuplot
+    set terminal svg size 600,300
+    set nokey
+
+    set palette maxcolors 2
+    set palette defined (0 "green", 1 "red")
+    unset colorbox
+
+    set multiplot layout 1,2 title "Estimating Pi with Monte Carlo method"
+
+    set title "10 Samples"
+    set object 1 ellipse center 0,0 size 2,2
+    plot data_10 using 1:2:3 with points palette
+
+    set title "100 Samples"
+    set object 2 ellipse center 0,0 size 2,2
+    plot data_100 using 1:2:3 with points palette
+
+    unset multiplot
+  ,#+end_src
+#+end_src
+
+Note that we are again calling the ~generate_data~ code block to pass the data
+into gnuplot - the Ruby array from that block is magically transformed into a
+gnuplot variable! We also use =:results output :file ./images/monte_carlo.svg=
+to tell Babel to use the output of the code block as the result and to write it
+to a file. When we export this to JSON, the code itself is omitted but a link to
+the generated SVG is included (and then translated into an ~<img />~ during the
+Astro build). Finally we use the =:post= header to [[https://orgmode.org/manual/Results-of-Evaluation.html#Post_002dprocessing-1][post-process]] the outputted
+link, attaching an attribute to indicate what to set the alt text to in the
+exported HTML.
+
+#+name: alt_text
+#+begin_src emacs-lisp :var data="" text="" :exports none
+  (format "#+attr_alt_text: %s\n%s" text data)
+#+end_src
+
+
+#+headers: :results drawer :file ../assets/monte_carlo.svg :exports results
+#+headers: :var data_10=generate_data(samples=10)
+#+headers: :var data_100=generate_data(samples=100)
+#+headers: :post alt_text(data=*this*, text="2D plots of the data from the generate_data code block")
+#+begin_src gnuplot
+  set terminal svg size 600,300
+  set nokey
+
+  set palette maxcolors 2
+  set palette defined (0 "green", 1 "red")
+  unset colorbox
+
+  set multiplot layout 1,2 title "Estimating Pi with Monte Carlo method"
+
+  set title "10 Samples"
+  set object 1 ellipse center 0,0 size 2,2
+  plot data_10 using 1:2:3 with points palette
+
+  set title "100 Samples"
+  set object 2 ellipse center 0,0 size 2,2
+  plot data_100 using 1:2:3 with points palette
+
+  unset multiplot
+#+end_src
+
+#+RESULTS:
+:results:
+#+attr_alt_text: 2D plots of the data from the generate_data code block
+[[file:../assets/monte_carlo.svg]]
+:end:
+
+Pretty neat! With very little effort, we've got Ruby, Emacs Lisp and Gnuplot
+code working in harmony.
+
+* Liftoff
+Now that we've covered the motivation for writing content with Org Mode (perhaps
+you're not convinced, but I've talked myself into it in any case), let's move on
+to how we're going to publish that content on the Internet in a format your
+browser can actually comprehend. Org Mode does come with an HTML exporter so in
+theory this could be as simple as running ~org-html-export-to-html~. Out of the
+box this gives us a pretty raw but functional translation of an Org document,
+and we could slap some CSS on that to make it prettier and call it a day. We can
+even use Org Mode's [[https://orgmode.org/manual/Publishing.html][publishing]] framework to publish our entire site at once with
+some additional niceties like an automatically-generated sitemap. There's a
+deeper problem, however, in that as soon as we want to customize our site in a
+way that deviates from the assumptions of the exporter we're probably going to
+have to write a bunch of Emacs Lisp code.
+
+Consider for instance that we might want to provide pages like =/tags/[tag]=
+that list all articles with the given tag. There's no builtin feature for that,
+so we'd either need to manually maintain a separate Org document for every tag
+or programmatically generate them. Now, maybe you're thinking it's a bit odd for
+a so-called Emacs enthusiast to complain about having to write some Lisp code
+but for me it's a matter of ergonomics and using the right tool for the job.
+This is of course a matter of taste, but when I look at the Org HTML exporter
+code compared to Astro's syntax it's clear which one I personally find to be a
+more ergonomic way to generate a website. The HTML exporter largely consists of
+a collection of functions that take different types of Org elements as arugments
+and use string interpolation to craft a string that represents hopefully-valid
+HTML. In my experience, this kind of approach to generating markup tends to be
+finnicky compared to using a proper templating system where it's easier to tell
+at a glance what the output will look like and where tooling can often provide a
+better editing experience.
+
+With all that in mind, I decided to take the approach of exporting from Org to
+JSON and then ingesting the result into Astro. I chose JSON as the export format
+because just about every static site generator is able to import JSON and turn
+it into HTML, and it should be easy to translate from Org to JSON without losing
+fidelity. I've never used Astro prior to this, but it stood out to me primarily
+because of its flexibility and ergonomics. If you just need a static site (as is
+the case for this site as of writing), Astro generates plain HTML with no
+Javascript by default. When you do need to sprinkle in some interactivity, it's
+easy to do so using the framework of your choice and in a way that doesn't
+affect the load times of the static parts of your site (thanks to what Astro
+refers to as [[https://docs.astro.build/en/concepts/islands/][Islands Architecture]]).
+
+While there's no builtin Org exporter for JSON, I found a project that seemed to
+fit the bill - [[https://github.com/jlumpe/ox-json][ox-json]]. Initially, it produced JSON output that pretty
+faithfully captured the full AST of an Org document but it had a few obvious
+issues:
+
+#+begin_src org :tangle ../../will_it_json.org
+  ,#+title: Will it JSON?
+  ,#+date: <2025-03-06 Thu>
+
+  ,* Heading
+
+  ,** Nested Heading
+  Hopefully this gets exported properly. Let's test source blocks too for good measure:
+
+  ,#+begin_src emacs-lisp
+    (+ 2 2)
+  ,#+end_src
+#+end_src
+
+
+#+begin_src json
+  {
+      "$$data_type": "org-document",
+      "properties": {
+          "title": [
+              "Will it JSON?"
+          ],
+          ...,
+      },
+      "contents": [
+          {
+              "$$data_type": "org-node",
+              "type": "section",
+              "ref": "org4b27978",
+              "properties": {
+                  "standard-properties": {
+                      "$$data_type": "error",
+                      "message": "Don't know how to encode value [1 1 1 50 50 0 nil first-section nil nil nil 1 50 nil #<buffer test.org<tom><2>> ..."
+                  }
+              }
+          },
+          ...,
+          {
+              "$$data_type": "org-node",
+              "type": "src-block",
+              "ref": "org01e6955",
+              "properties": {
+                  "language": "emacs-lisp",
+                  ...,
+                  "value": {
+                      "$$data_type": "error",
+                      "message": "Expected string or symbol, got [org-element-deferred org-element--unescape-substring (23 31) t]"
+                  }
+              }
+          }
+      ]
+  }
+#+end_src
+
+That's not quite what we were looking for. First, every node in the exported
+JSON seems to have a ~standard-properties~ property that ox-json is unable to
+encode as JSON. Worse still, the error message includes a string representation
+of the full value which among other things includes the AST of the entire
+document! The second issue is that the value of the source block seems to have
+the type ~org-element-deferred~ and the actual contents of the block are missing
+from the JSON output.
+
+After a little digging, I discovered that both of these issues were related to
+the same commit to Org Mode: [[https://git.savannah.gnu.org/cgit/emacs/org-mode.git/commit/?id=1260f61830bfdee821de9233051a821f4ac4831c][1260f61]]. As the commit
+message explains, some properties that are common to most AST nodes are now
+stored in an array under ~standard-properties~. Separately, some values are now
+deferred and computed on-demand when accessed - so apparently we must be
+accessing those values in the wrong way. Fortunately the Org Mode [[https://orgmode.org/Changes.html][changelog]]
+explained both of these changes and the way to handle them clearly:
+
+#+begin_quote
+The code relying upon the previously used (TYPE PROPERTIES-PLIST CONTENTS-LIST)
+structure may no longer work. Please use org-element-create,
+org-element-property, and other Org element API functions to work with Org
+syntax trees.
+
+Some syntax node properties are no longer stored as property list elements.
+Instead, they are kept in a special vector value of a new :standard-properties
+property. This is done to improve performance. If there is a need to traverse
+all the node properties, a new API function org-element-properties-map can be
+used.
+
+Properties and their values can now be deferred to avoid overheads when parsing.
+They are calculated lazily, when the value/property is requested by
+org-element-property and other getter functions. Using plist-get to retrieve
+values of PROPERTIES-PLIST is not recommended as deferred properties will not be
+resolved in such scenario.
+#+end_quote
+
+Previously, one could rely on the fact that every node in an Org AST had the
+structure ~(type properties-plist contents-list)~ and inspect ~properties-plist~
+directly to get all the node's property values, but now some of those might be
+deferred and others have been consolidated into an array for performance
+reasons [fn:3]. Indeed, this is exactly what the code in ox-json [[https://github.com/jlumpe/ox-json/blob/57a43e3b3e400d219b80008c51373796b844c6b8/ox-json.el#L345][was relying on]]:
+
+#+begin_src emacs-lisp
+  (defun ox-json-node-properties (node)
+    "Get property plist of element/object NODE."
+     ; It's the 2nd element of the list
+    (cadr node))
+#+end_src
+
+Let's try following the recommendation in the changlog and use
+~org-element-properties-map~ to iterate over a node's properties:
+
+#+begin_src emacs-lisp
+  (defun ox-json-node-properties (node)
+    "Get property plist of element/object NODE."
+    (if (fboundp 'org-element-properties-map)
+        (let ((expanded-properties nil))
+          (org-element-properties-map
+           (lambda (name value)
+             (setq expanded-properties (plist-put expanded-properties name value)))
+           node t) ; the last argument is a flag that will cause deferred properties to be resolved
+          expanded-properties)
+      ;; for org versions < 9.7, just return the property list, which is the second
+      ;; element of the list
+      (cadr node)))
+#+end_src
+
+Et voilà!
+
+#+begin_src json
+  {
+      "$$data_type": "org-document",
+      "properties": {
+          "title": [
+              "Will it JSON?"
+          ],
+          ...,
+      },
+      "contents": [
+          {
+              "$$data_type": "org-node",
+              "type": "section",
+              "ref": "org4b27978",
+              "properties": {
+                  "post-affiliated": 1,
+                  "post-blank": 0,
+                  ...,
+              }
+          },
+          ...,
+          {
+              "$$data_type": "org-node",
+              "type": "src-block",
+              "ref": "org01e6955",
+              ...,
+              "properties": {
+                  "language": "emacs-lisp",
+                  ...,
+                  "value": "(+ 2 2)\n"
+              }
+          }
+      ]
+  }
+#+end_src
+
+This won't be the end of our modifications to ox-json, but at this point we've
+got something workable so let's move on to ingesting it into Astro.
+
+* Org Mode in Space
+
+My plan at a high level is to define an ~Article~ component to represent a full
+Org document that recursively descends through its child nodes, with a roughly
+one-to-one mapping between node types and Astro components. Since the Org AST is
+also pretty complicated and doesn't have any official formal specification, I'm
+also going to define TypeScript types as I flesh out these components to
+document that structure and hopefully make my life easier down the road.
+
+I started off by creating the index and article pages:
+
+#+name: /src/pages/index.astro
+#+begin_src web :tangle ../../tmp/index.astro
+  ---
+  import ArticlePreview from '@components/ArticlePreview.astro';
+  import type { OrgDocument } from 'ox-json-types';
+  import BaseLayout from 'src/layouts/BaseLayout.astro';
+  const articles = import.meta.glob<OrgDocument>('../articles/*.json', { eager: true });
+  ---
+
+  <BaseLayout>
+      <h1>Posts</h1>
+      {
+          Object.values(articles).map((article) => (
+              <ArticlePreview article={article} />
+          ))
+      }
+  </BaseLayout>
+#+end_src
+
+
+#+name: /src/pages/articles/[path].astro
+#+begin_src web :tangle ../../tmp/[path].astro
+  ---
+  import type { OrgDocument } from 'ox-json-types';
+  import { articlePath } from '@lib/org';
+  import Article from '@components/Article.astro';
+  import BaseLayout from 'src/layouts/BaseLayout.astro';
+
+  interface Props {
+      path: string,
+      article: OrgDocument,
+  }
+
+
+  export function getStaticPaths() {
+      const articles = import.meta.glob<OrgDocument>(
+          '../../articles/*.json',
+          { eager: true }
+      );
+
+      return Object.values(articles).map((article) => {
+          return { params: { path: articlePath(article) }, props: { article } };
+      });
+  }
+
+  const { article } = Astro.props;
+  ---
+
+  <BaseLayout>
+      <Article article={article} />
+  </BaseLayout>
+#+end_src
+
+This leverages the [[https://vite.dev/guide/features#glob-import][glob import]] feature of Vite to import every article into an
+array, and then uses Astro's [[https://docs.astro.build/en/guides/routing/#static-ssg-mode][~getStaticPaths()~]] function to generate static
+pages for each article at build time. Now to render the contents of the article:
+
+#+name: /src/components/Article.astro
+#+begin_src web :tangle ../../tmp/Article.astro
+  ---
+  import type { OrgDocument } from 'ox-json-types';
+  import Node from '@components/Node.astro';
+  interface Props {
+  article: OrgDocument,
+  }
+
+  const { article } = Astro.props;
+  ---
+
+  <h1>{article.properties.title[0]}</h1>
+
+  {article.contents.map((node) => <Node node={node} />)}
+#+end_src
+
+
+#+name: /src/components/Node.astro
+#+begin_src web :tangle ../../tmp/Node.astro
+  ---
+  import type { OrgNode } from 'ox-json-types';
+
+  import Headline from '@components/Headline.astro';
+
+  interface Props {
+      node: OrgNode,
+  }
+
+  const { node } = Astro.props;
+  ---
+
+  {
+    node.type === 'headline' ? <Headline node={node} /> :
+    <p> unhandled node {node.ref} of type {node.type}</p>
+  }
+#+end_src
+
+From here, all that's left is the tedious work of defining components for every
+type of Org Mode element and a whole bunch of fussing with CSS. This ended up
+being fairly straightfoward so I'll spare you the details, but you can see the
+final result [[https://github.com/tcahill/blog][here]] if you're curious.
+
+* Finishing Touches
+
+With all the essential Astro components I needed defined, things were looking
+pretty good but there was still one glaring issue that would require going back
+to where we began. At the time, source blocks were exported as plain strings so
+there was no syntax highlighting in the exported HTML, an embarassing state of
+affairs for a technical blog. Astro has builtin support for adding syntax
+highlighting to code blocks via the ~Code~ component so there's an easy fix, but
+I liked the idea of preserving highlighting exactly as I see it in Emacs - not
+necessarily with the exact same color scheme but rather annotated with labels
+like "keyword" and "variable name" that we can apply appropriate styles to in
+CSS. Org Mode's HTML exporter uses a package called [[https://github.com/hniksic/emacs-htmlize][htmlize]] to transform source
+blocks into HTML snippets, inspecting the font faces throughout to preserve
+syntax highlighting. We can reuse this in ox-json, but first we'll need to take
+a closer look at its structure to understand how nodes are converted to JSON.
+
+The entrypoint for ox-json (and all Org exporters) is an invocation of the
+~org-export-define-backend~ function:
+
+#+begin_src emacs-lisp
+  (org-export-define-backend 'json
+    ;; Transcoders
+    (ox-json--merge-alists
+      '(
+         (template . ox-json-transcode-template)
+         (plain-text . ox-json-transcode-plain-text)
+         (headline . ox-json-transcode-headline)
+         (link . ox-json-transcode-link)
+         (timestamp . ox-json-transcode-timestamp))
+      ; Default for all remaining element/object types
+      (cl-loop
+        for type in (append org-element-all-elements org-element-all-objects)
+        collect (cons type #'ox-json-transcode-base)))
+    ;; Filters
+    :filters-alist '()
+    ;; Options
+    :options-alist
+    '(
+       (:json-data-type-property nil "json-data-type-property" "dataType")
+       (:json-exporters nil nil nil)
+       (:json-property-types nil nil nil)
+       (:json-strict nil nil nil)
+       (:json-include-extra-properties nil nil t))
+    ;; Menu
+    :menu-entry
+    '(?j "Export to JSON" (
+  	(?J "As JSON buffer" ox-json-export-to-buffer)
+  	(?j "To JSON file" ox-json-export-to-file))))
+#+end_src
+
+The 'transcoders' argument is an alist mapping node types to functions that
+return their exported representation. Currently, source blocks use the default
+~ox-json-transcode-base~ function but we can define a new transcoder that maps
+the source block's contents to HTML:
+
+#+begin_src emacs-lisp
+  (org-export-define-backend 'json
+    ;; Transcoders
+    (ox-json--merge-alists
+     '(
+       ...
+       (src-block . ox-json-transcode-src-block))
+     ...))
+
+  (defun ox-json-transcode-src-block (src-block _contents info)
+    "Transcode a src-block object to JSON"
+    (let ((org-html-htmlize-output-type 'css))
+      (ox-json-export-node-base
+       src-block
+       info
+       :extra-properties
+       `((value .
+                ,(ox-json-encode-string (org-html-format-code src-block info)))))))
+#+end_src
+
+The source code itself is stored in the =value= property of the source block
+node, so we just override the way that property is encoded.
+~org-html-format-code~ wraps the code in ~<span>~ tags with the =class=
+attribute set to the name of the font face in that region of the code. For example:
+
+#+begin_src html
+  <span class="org-function-name">ox-json-node-properties</span>
+#+end_src
+
+This worked well for some languages but not others, through no fault of
+=htmlize=. Rather, syntax highlighting in Org Mode code blocks is not always
+totally consistent with syntax highlighting in regular source files. The way Org
+Mode highlights source blocks is by copying the code into a temporary buffer,
+invoking the block language's major mode, and then copying the code back into
+the Org document (see [[https://github.com/bzg/org-mode/blob/b6dbf8881076191e1351d7cd15e26547a2531fea/lisp/org-src.el#L664][~org-src-font-lock-fontify-block~]]). This doesn't work
+perfectly in some cases - I use =web-mode= to edit Astro code, for example.
+=web-mode= supports Astro, but it usually relies on the file extension to detect
+that you're editing an Astro file. The temporary buffer that Org Mode creates
+isn't backed by a file and so highlighting doesn't work as expected. It also
+doesn't work, funnily enough, for Org source blocks although I'm not totally
+clear on the reason for this.
+
+There may be more refined ways to work around these issues, but I opted for the
+crude but effective approach of extracting source blocks to individual files and
+htmlizing those files rather than the code blocks directly. This relies on a
+feature of Org Mode called [[https://orgmode.org/manual/Extracting-Source-Code.html][tangling]], which allows you to extract source blocks
+into files. You can provide the ~:tangle~ header argument to a source block to
+control whether the block should be extracted or not, and so we can selectively
+use this technique for blocks where syntax highlighting within Org Mode doesn't
+work the way we want and skip the overhead for blocks where it does.
+
+#+begin_src emacs-lisp
+  (defun ox-json-transcode-src-block (src-block _contents info)
+    "Transcode a src-block object to JSON"
+    (let* ((org-html-htmlize-output-type 'css)
+           (buffer-fn (buffer-file-name (buffer-base-buffer)))
+           (block-info (org-babel-get-src-block-info 'no-eval src-block))
+           (src-lang (nth 0 block-info))
+           (src-tfile (cdr (assq :tangle (nth 2 block-info))))
+           (filename (org-babel-effective-tangled-filename buffer-fn src-lang src-tfile))
+           (htmlized-src
+            (if (eq filename nil)
+                (org-html-format-code src-block info)
+              (with-current-buffer (find-file-noselect filename)
+                ;; If flycheck kicks in before the buffer is passed to htmlize-buffer,
+                ;; it can pollute the exported code with exclamation marks.
+                (flycheck-mode 0)
+                (setq htmlized-src
+                      (with-current-buffer (htmlize-buffer (current-buffer))
+                        (buffer-substring
+                         (plist-get htmlize-buffer-places 'content-start)
+                         (plist-get htmlize-buffer-places 'content-end))))
+                (kill-current-buffer)
+                htmlized-src))))
+      (ox-json-export-node-base src-block info
+                                :extra-properties `((value . ,(ox-json-encode-string htmlized-src))))))
+#+end_src
+
+There's a lot more going on here, but you can mostly ignore all the variable
+assignments in the ~let*~ form and just know that ~filename~ gets assigned to
+the name of the file the block has been extracted to if its configured to be
+tangled and =nil= otherwise. If we do have a non-nil filename, we open the file
+and pass /that/ into htmlize. The invocation of htmlize is a little more
+complicated here because ~htmlize-buffer~ produces a whole HTML document, but we
+really just want the fragment with the marked-up source code (I adapted this
+from what ox-html does [[https://github.com/bzg/org-mode/blob/main/lisp/ox-html.el#L1812][internally]]).
+
+* Closing Thoughts
+
+If you've made it this far, you may be questioning my sanity and indeed your own
+for humoring me. That said, I think this was a worthwhile pursuit which gave me
+the opportunity to learn a couple things about Org Mode and make a small
+contribution ([[https://github.com/jlumpe/ox-json/pull/9][PR pending]]) that might be useful to someone else one day. I'm also
+happy with the end result: as I was putting this article together I found the
+experience of iterating both on the content and presentation really gelled for
+me. I have a lot more to say about Org Mode and Emacs generally so stay tuned
+for more content like this in the future!
+
+* Footnotes
+
+[fn:1] It might be more accurate to view Emacs as a Lisp interpreter that just
+so happens to come bundled with a bunch of very useful facilities for editing
+text. The origin of the name "Emacs" is sort of revealign - it was short for
+"Editor Macros" back when it was simply a collection of macros for the TECO text
+editor/programming language. Although Emacs has evolved a lot since then, I feel
+the spirit of this idea has been preserved on some level.
+
+[fn:2] If you're wondering why the plot for 1000 samples is missing, I ran into
+an interesting bug where the temporary file that Org creates to store the value
+of the data_10 variable was overwritten by the data_1000 variable. There also
+seems to be a performance issue with loading large tables into gnuplot - the
+version you see here took about a second to run while it took 2 minutes to run
+when I added the 1000 sample data. This might make for an interesting followup
+post when I get around to taking a closer look!
+
+[fn:3] If you're scratching your head as to how this could yield a significant
+performance improvement, it might be helpful to take a closer look at the data
+structures we're dealing with here. ~plist~ is short for "property list" and is
+a collection of key-value pairs represented with a flat linked list where the
+first element is the first key, the second is the first value, and so on. This
+makes them poorly-suited for random access on long lists. While the property
+lists for Org nodes tend to be pretty short, squashing all common properties
+into a single entry will still substantially reduce the plist length on average,
+which I would expect to have a substantial impact in contexts where the
+properties of a large number of nodes need to be accessed.

@@ -1,0 +1,14 @@
+---
+import type { TimestampObject } from 'ox-json-types';
+
+interface Props {
+    node: TimestampObject;
+}
+
+const { node } = Astro.props;
+
+const date = Date.parse(node.properties.start);
+console.log(date);
+---
+
+<span>placeholder</span>

@@ -1,0 +1,20 @@
+---
+import Contents from "./Contents.astro";
+
+const { node } = Astro.props;
+---
+<blockquote>
+     <i class="ph-fill ph-quotes" />
+    <Contents contents={node.contents} />
+</blockquote>
+
+<style>
+ blockquote {
+     border-left: 5px solid var(--primary);
+     padding: 0 2rem;
+ }
+
+ i {
+     font-size: 1.5rem;
+ }
+</style>

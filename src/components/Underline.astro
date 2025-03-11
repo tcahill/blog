@@ -1,0 +1,11 @@
+---
+import type { UnderlineObject } from 'ox-json-types';
+import Contents from '@components/Contents.astro';
+
+interface Props {
+    node: UnderlineObject;
+}
+
+const { node } = Astro.props;
+---
+<u><Contents contents={node.contents} /></u>

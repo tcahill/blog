@@ -1,0 +1,8 @@
+---
+import Contents from "./Contents.astro";
+
+const { node } = Astro.props;
+---
+<tr>
+    {node.contents.map((column) => <td><Contents contents={column.contents} /></td>)}
+</tr>

@@ -1,0 +1,12 @@
+---
+import type { ParagraphElement } from 'ox-json-types';
+import Contents from '@components/Contents.astro';
+
+interface Props {
+    node: ParagraphElement,
+}
+
+const { node } = Astro.props;
+
+---
+<p> <Contents parent={node} contents={node.contents} /> </p>

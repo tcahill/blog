@@ -1,0 +1,6 @@
+---
+const { node } = Astro.props;
+---
+
+<Fragment set:html={node.properties.html} />
+<Fragment>{" ".repeat(node.properties.postBlank)}</Fragment>

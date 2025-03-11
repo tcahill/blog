@@ -1,0 +1,323 @@
+---
+import BaseLayout from "src/layouts/BaseLayout.astro";
+---
+
+<BaseLayout>
+    <main id="print-target">
+        <div class="heading">
+            <div>
+                <a
+                    class="download"
+                    href="/resume.pdf"
+                    download="Tom Cahill.pdf">
+                    <i class="ph-fill ph-file-pdf"/> Download PDF
+                </a>
+            </div>
+            <h1>Tom Cahill</h1>
+            <hr />
+            <div class="links">
+                <span>
+                    <a href="" class="pseudo button">
+                        <i class="ph-fill ph-envelope" />
+                        <span id="email" />
+                    </a>
+                </span>
+                <span>
+                    <a
+                        href="https://tomcahill.xyz/"
+                        class="pseudo button">
+                        <i class="ph-fill ph-globe-hemisphere-west" />
+                        https://tomcahill.xyz/
+                    </a>
+                </span>
+                <span>
+                    <a
+                        href="https://github.com/tcahill"
+                        class="pseudo button">
+                        <i class="ph-fill ph-github-logo"  />
+                        tcahill
+                    </a>
+                </span>
+            </div>
+        </div>
+
+        <section>
+            <article>
+                <div class="article-title-line">
+                    <h3>Alto Pharmacy</h3>
+                    <span class="year">Dec 2017 → Oct 2024</span>
+                </div>
+                <div>Senior Software Engineer</div>
+                <p>
+                    Over my nearly 7 years at Alto I assumed a variety of roles,
+                    starting as a generalist developer working on everything
+                    from our patient-facing web and mobile app to our billing
+                    system before becoming a founding member of our Platform
+                    team and finally joining forces with our Infrastructure and
+                    Security teams under the umbrella of DevSecOps.
+
+                    <ul>
+                        <li>
+                            Contributed to internal tools supporting the
+                            modularization of our monolithic Rails application
+                        </li>
+                        <li>
+                            Led migration of company-wide CI/CD from CircleCI to
+                            Github Actions
+                        </li>
+                        <li>
+                            Led migration of patient authentication to Auth0,
+                            introducing MFA support and greatly increasing
+                            security for our patients.
+                        </li>
+                        <li>
+                            Defined and executed on process for major version
+                            upgrades of our Postgres databases with minimal
+                            downtime (on the order of seconds)
+                        </li>
+                        <li>
+                            Led overhaul of legacy service interfacing with
+                            medication-dispensing robots
+                        </li>
+                        <li>
+                            Built a Kafka library for our Rails applications
+                            that provides
+                        </li>
+                        <li>
+                            Created an extensible API gateway built on top of
+                            the Lura framework for handling common concerns such
+                            as request retries and observability
+                        </li>
+                    </ul>
+                </p>
+                <div class="tags">
+                    <span class="tag">Ruby</span>
+                    <span class="tag">Rails</span>
+                    <span class="tag">Go</span>
+                    <span class="tag">Kubernetes</span>
+                    <span class="tag">AWS</span>
+                    <span class="tag">Terraform</span>
+                    <span class="tag">React</span>
+                    <span class="tag">LGTM Stack</span>
+                </div>
+            </article>
+
+            <article>
+                <div class="article-title-line">
+                    <h3>Apcera</h3>
+                    <span class="year">April 2014 → Dec 2017</span>
+                </div>
+                <div>Senior Software Engineer</div>
+                <p>
+                    <ul>
+                        <li>
+                            Contributed to Apcera's container runtime, scheduler
+                            and API (eg: introduced affinity and anti-affinity
+                            to scheduler)
+                        </li>
+
+                        <li>
+                            Conducted investigation into deploying a cluster
+                            across multiple cloud providers (AWS, GCE,
+                            OpenStack, vSphere) and provided a prototype
+                            implementation.
+                        </li>
+                    </ul>
+                </p>
+                <div class="tags">
+                    <span class="tag">Go</span>
+                    <span class="tag">Distributed Systems</span>
+                    <span class="tag">Terraform</span>
+                </div>
+            </article>
+
+            <article>
+                <div class="article-title-line">
+                    <h3>Fastcap Systems</h3>
+                    <span class="year">May 2013 → April 2014</span>
+                </div>
+                <div>Engineer I</div>
+                <p>
+                    As the sole software engineer at Fastcap Systems, I
+                    developed firmware for embedded dynamics sensor systems and
+                    designed a GUI to interface with an acquire data from these
+                    systems.
+                </p>
+                <div class="tags">
+                    <span class="tag">C</span>
+                    <span class="tag">Python</span>
+                    <span class="tag">Embedded Systems</span>
+                </div>
+            </article>
+        </section>
+
+        <section>
+            <header>
+                <h2>Education</h2>
+            </header>
+            <article>
+                <div class="article-title-line">
+                    <h3>Tufts University</h3>
+                    <span class="year">2009 → 2013</span>
+                </div>
+                <div>Bachelor of Science, Electrical Engineering</div>
+                <p>
+                    Capstone Project: Designed a system that utilizes optical
+                    sensors mounted beneath keys of an acoustic piano to
+                    transmit MIDI data (note number and velocity) via USB with
+                    sub-millisecond latency.
+                </p>
+            </article>
+        </section>
+
+        <script>
+            setTimeout(
+                () => {
+                    const button = document.querySelector("#email");
+                    button.setAttribute(
+                        "href",
+                        "mailto:" + "tom@" + "" + "tomwcahill.com",
+                    );
+                    button.innerHTML = button
+                        .getAttribute("href")
+                        .split(":")[1];
+                },
+                2000 * parseInt(Math.random()) + 1000,
+            );
+        </script>
+    </main>
+</BaseLayout>
+
+<style>
+    .heading {
+        h1 {
+            font-size: 1.75em;
+            font-weight: normal;
+        }
+
+        .download {
+            float: right;
+            position: relative;
+            right: -40px;
+            top: -20px;
+        }
+
+        margin: 0 0 1em 0;
+    }
+
+    hr {
+        width: 100%;
+    }
+
+    article {
+        margin: 0 0 2.5em 0;
+
+        ul {
+            padding: 0 0 0 2em;
+        }
+    }
+
+    .article-title-line {
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+
+        h3 {
+            font-size: 1.25em;
+            font-weight: normal;
+            margin: 0;
+        }
+
+        .year {
+            color: var(--secondary);
+            font-size: 0.9em;
+            float: right;
+        }
+    }
+
+    a {
+        color: inherit;
+        text-decoration: none;
+    }
+
+    h2 {
+        font-size: 1.5em;
+        font-weight: normal;
+        margin: 0;
+    }
+
+    .button {
+        align-content: center;
+        padding: 1em;
+    }
+
+    a:hover {
+        color: var(--tertiary);
+    }
+
+    main {
+        background: var(--secondaryBackground);
+        max-width: 900px;
+        margin: 60px auto 200px;
+        padding: 1em 5em 2em 5em;
+        color: var(--primary);
+        border: 2px solid var(--secondary);
+    }
+
+    .tags {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.25em;
+        font-size: 0.8em;
+        color: var(--primary);
+    }
+
+    .tag {
+        border: 1px solid #aaa;
+        border-radius: 0.3em;
+        padding: 0.1em 0.5em;
+    }
+
+    @media print {
+        @page {
+            margin-bottom: 1cm;
+        }
+
+        html body * :not(#print-target, #print-target *) {
+            visibility: hidden !important;
+            display: none;
+        }
+        #print-target,
+        #print-target * {
+            visibility: visible !important;
+        }
+
+        .year {
+            margin-right: 0.5em;
+        }
+
+        section {
+            page-break-inside: avoid;
+        }
+
+        body {
+            width: 100%;
+            padding: 0;
+            margin: 0 auto -50px;
+            box-shadow: none;
+            background: #fff;
+        }
+
+        .download {
+            display: none;
+        }
+
+        .links a {
+            padding: 0;
+        }
+
+        .year {
+            font-weight: normal;
+        }
+    }
+</style>

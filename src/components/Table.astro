@@ -1,0 +1,24 @@
+---
+import type { TableElement } from "ox-json-types";
+import TableHeaderRow from "./TableHeaderRow.astro";
+import TableRow from "./TableRow.astro";
+
+interface Props {
+    node: TableElement;
+}
+
+const { node } = Astro.props;
+const firstRuleIndex = node.contents.findIndex((row) => row.properties.type === 'rule');
+---
+<table>
+    {firstRuleIndex &&
+    <thead>
+        {node.contents.slice(0, firstRuleIndex).map((row) => <TableHeaderRow node={row} />)}
+    </thead>
+    }
+    <tbody>
+        {firstRuleIndex ? node.contents.slice(firstRuleIndex).map((row) => <TableRow node={row} />)
+        : node.contents.map((row) => <TableRow node={row} />)
+        }
+    </tbody>
+</table>

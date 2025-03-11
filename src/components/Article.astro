@@ -1,0 +1,23 @@
+---
+import type { OrgDocument } from "ox-json-types";
+import Node from "@components/Node.astro";
+import Timestamp from "./Timestamp.astro";
+import Tags from "./Tags.astro";
+interface Props {
+    article: OrgDocument;
+}
+
+const { article } = Astro.props;
+---
+
+<h1>{article.properties.title[0]}</h1>
+<div class="article-date"><Timestamp node={article.properties.date[0]} /></div>
+<Tags tags={article.properties.filetags} />
+{article.contents.map((node) => <Node node={node} />)}
+
+<style>
+    .article-date {
+        color: var(--secondary);
+        margin-bottom: 1rem;
+    }
+</style>

@@ -1,0 +1,92 @@
+---
+import { theme } from "src/lib/style";
+---
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+        <meta name="viewport" content="width=device-width" />
+        <meta name="generator" content={Astro.generator} />
+        <script
+            id="MathJax-script"
+            async
+            src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"
+        ></script>
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/fill/style.css"
+        />
+        <link
+            rel="alternate"
+            type="application/rss+xml"
+            title="Tom Cahill's Blog"
+            href={new URL("blog.xml", Astro.site)}
+        />
+    </head>
+    <body>
+        <header>
+            <nav>
+                <a href="/">Home</a>
+                <a href="/tags">Tags</a>
+                <a href="/resume">Resume</a>
+            </nav>
+        </header>
+        <slot />
+    </body>
+</html>
+
+<style define:vars={theme} is:global>
+    * {
+        box-sizing: border-box;
+    }
+
+    html {
+        background-color: var(--background);
+        color: var(--primary);
+        margin: 0 auto;
+        overflow-y: scroll;
+        height: 100%;
+        word-wrap: break-word;
+        font-family: "Helvetica Neue", sans-serif;
+        line-height: 1.5em;
+    }
+
+    pre,
+    code,
+    tt,
+    kbd,
+    samp {
+        font-family: "Fira Code", monospace;
+        font-size: 0.9rem;
+    }
+
+    @media (min-width: 768px) {
+        html {
+            max-width: 55em;
+        }
+    }
+
+    nav {
+        background-color: var(--secondaryBackground);
+        border-radius: 0.25rem;
+        display: flex;
+        font-size: 1.2rem;
+        gap: 2rem;
+        padding: 1rem 2rem;
+
+        a {
+            text-decoration-line: none;
+            color: var(--link);
+        }
+
+        a:visited {
+            color: var(--link);
+        }
+
+        a:hover {
+            color: var(--tertiary);
+        }
+    }
+</style>

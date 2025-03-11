@@ -1,0 +1,47 @@
+---
+import type { LinkObject, OrgNode } from 'ox-json-types';
+import Contents from '@components/Contents.astro';
+import Image from '@components/Image.astro';
+import { resolveAssetPath } from '@lib/org';
+
+interface Props {
+    node: LinkObject;
+    parent?: OrgNode;
+}
+
+const { node, parent } = Astro.props;
+
+let target = "";
+switch (node.properties.type) {
+    case 'https':
+    target = node.properties.rawLink;
+    break;
+    case 'file':
+    target = resolveAssetPath(node.properties.path);
+    break;
+}
+
+const altText = parent?.properties?.attrAltText;
+---
+{
+  node.properties.type === 'file' && node.properties.path.endsWith(".svg")
+    ? <Image path={target} alt={altText} />
+    : <a href={target}><Contents contents={node.contents} /></a>
+}
+
+<style>
+ a {
+     font-weight: bold;
+     color: var(--link);
+     text-decoration-style: dotted;
+ }
+
+ a:visited {
+     color: var(--link);
+ }
+
+ a:hover {
+     color: var(--hover);
+ }
+
+</style>

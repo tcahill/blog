@@ -1,0 +1,36 @@
+---
+import ArticlePreview from '@components/ArticlePreview.astro';
+import type { OrgDocument } from 'ox-json-types';
+import BaseLayout from 'src/layouts/BaseLayout.astro';
+
+interface Props {
+    tag: string,
+    articles: OrgDocument[],
+}
+
+
+export function getStaticPaths() {
+    const allArticles = import.meta.glob<OrgDocument>('../../articles/*.json', { eager: true });
+
+    const tags = new Set<string>;
+    Object.values(allArticles).forEach((article) => {
+        article.properties.filetags?.forEach(tags.add, tags);
+    });
+
+    return Array.from(tags.values().map((tag) => {
+        const tagArticles = Object.values(allArticles).filter((article) => article.properties.filetags?.includes(tag));
+        return { params: { tag }, props: { articles: tagArticles, tag } };
+    }));
+}
+
+const { articles, tag } = Astro.props;
+---
+
+<BaseLayout>
+<h1>Posts tagged with {tag}</h1>
+{
+Object.values(articles).map((article) => (
+<ArticlePreview article={article as OrgDocument} />
+))
+}
+</BaseLayout>

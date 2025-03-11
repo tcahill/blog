@@ -1,0 +1,11 @@
+---
+const spaceNodeTypes = ['entity', 'italic', 'link', 'verbatim'];
+const newlineNodeTypes = [];
+
+const { node } = Astro.props;
+
+const spaces = spaceNodeTypes.includes(node.type)
+? " ".repeat(node.properties.postBlank)
+: "<br />".repeat(Math.max(0, node.properties.postBlank - 1))
+---
+<Fragment set:html={spaces} />

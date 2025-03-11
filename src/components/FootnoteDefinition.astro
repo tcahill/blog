@@ -1,0 +1,30 @@
+---
+import type { FootnoteDefinitionElement } from 'ox-json-types';
+
+import Contents from '@components/Contents.astro';
+
+interface Props {
+    node: FootnoteDefinitionElement;
+}
+
+const { node } = Astro.props;
+---
+<div id=`footnote-${node.properties.label}` class="footnote-def">
+    <sup><a href=`#footnote-ref-${node.properties.label}`>{node.properties.label}</a></sup>
+    <Contents contents={node.contents} />
+</div>
+
+<style>
+ .footnote-def {
+     display: grid;
+     grid-template-columns: 1rem auto;
+ }
+
+ a {
+     color: var(--link);
+ }
+
+ a:visited {
+     color: var(--link);
+ }
+</style>

@@ -1,0 +1,13 @@
+---
+import type { ListElement } from 'ox-json-types';
+import Contents from '@components/Contents.astro';
+interface Props {
+    node: ListElement;
+}
+
+
+const { node } = Astro.props;
+---
+<ul>
+    {node.contents.map((child) => <li><Contents contents={child.contents} /></li>)}
+</ul>

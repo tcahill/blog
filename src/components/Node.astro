@@ -1,0 +1,56 @@
+---
+import type { OrgNode } from 'ox-json-types';
+
+import Entity from '@components/Entity.astro';
+import ExampleBlock from '@components/ExampleBlock.astro';
+import FootnoteDefinition from '@components/FootnoteDefinition.astro';
+import FootnoteReference from '@components/FootnoteReference.astro';
+import Headline from '@components/Headline.astro';
+import LatexFragment from './LatexFragment.astro';
+import Link from '@components/Link.astro';
+import Paragraph from '@components/Paragraph.astro';
+import PlainList from '@components/PlainList.astro';
+import PostBlank from '@components/PostBlank.astro';
+import Section from '@components/Section.astro';
+import SourceBlock from '@components/SourceBlock.astro';
+import SpecialBlock from './SpecialBlock.astro';
+import Table from './Table.astro';
+import Underline from './Underline.astro';
+import Verbatim from './Verbatim.astro';
+import Italic from './Italic.astro';
+import QuoteBlock from './QuoteBlock.astro';
+import Drawer from './Drawer.astro';
+
+interface Props {
+    node: OrgNode,
+    parent?: OrgNode,
+}
+
+const { node, parent } = Astro.props;
+
+const skipped_types = ['keyword'];
+
+---
+{
+node.type === 'headline' ? <Headline node={node} /> :
+node.type === 'section' ? <Section node={node} /> :
+node.type === 'paragraph' ? <Paragraph node={node} /> :
+node.type === 'footnote-reference' ? <FootnoteReference node={node} /> :
+node.type === 'footnote-definition' ? <FootnoteDefinition node={node} /> :
+node.type === 'link' ? <Link node={node} parent={parent} /> :
+node.type === 'plain-list' ? <PlainList node={node} /> :
+node.type === 'src-block' ? <SourceBlock node={node} /> :
+node.type === 'special-block' ? <SpecialBlock node={node} /> :
+node.type === 'underline' ? <Underline node={node} /> :
+node.type === 'entity' ? <Entity node={node} /> :
+(node.type === 'verbatim' || node.type === 'code') ? <Verbatim node={node} /> :
+node.type === 'latex-fragment' ? <LatexFragment node={node} /> :
+node.type === 'example-block' ? <ExampleBlock node={node} /> :
+node.type === 'table' ? <Table node={node} /> :
+node.type === 'italic' ? <Italic node={node} />  :
+node.type === 'quote-block' ? <QuoteBlock node={node} /> :
+node.type === 'drawer' ? <Drawer node={node} /> :
+skipped_types.includes(node.type) ? null :
+<p> unhandled node {node.ref} of type {node.type}</p>
+}
+<PostBlank node={node} />

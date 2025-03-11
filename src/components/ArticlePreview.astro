@@ -1,0 +1,39 @@
+---
+import type { OrgDocument } from 'ox-json-types';
+import Timestamp from './Timestamp.astro';
+
+interface Props {
+    article: OrgDocument,
+}
+
+const { article } = Astro.props;
+const name = article.properties.title[0]?.toLowerCase()?.replaceAll(" ", "_");
+
+---
+
+<div class="article-preview">
+    <a href={`/articles/${name}`}>{article.properties.title}</a>
+    <span class="article-date"> <Timestamp node={article.properties.date[0]} /> </span>
+</div>
+
+<style>
+ .article-preview {
+     display: flex;
+     gap: 2rem;
+ }
+
+ a {
+     color: var(--link);
+     text-decoration-line: none;
+     font-size: 1.2rem;
+ }
+
+ a:hover {
+     color: var(--tertiary);
+ }
+
+ .article-date {
+     color: var(--secondary);
+ }
+</style>
+

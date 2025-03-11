@@ -1,0 +1,17 @@
+---
+import type { OrgNode } from 'ox-json-types';
+import Node from '@components/Node.astro';
+
+interface Props {
+    contents: (OrgNode | string)[];
+    parent?: OrgNode;
+}
+
+const { contents, parent } = Astro.props;
+---
+{
+      contents.map(
+        (child) => typeof child === 'string' ? <Fragment>{child}</Fragment>
+                                             : <Node node={child} parent={parent} />
+      )
+}
