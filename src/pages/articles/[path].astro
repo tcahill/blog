@@ -21,6 +21,6 @@ export function getStaticPaths() {
 const { article } = Astro.props;
 ---
 
-<BaseLayout>
+<BaseLayout title={article.properties.title[0]}>
     <Article article={article} />
 </BaseLayout>
