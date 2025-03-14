@@ -9,8 +9,9 @@ import BaseLayout from "src/layouts/BaseLayout.astro";
                 <a
                     class="download"
                     href="/resume.pdf"
-                    download="Tom Cahill.pdf">
-                    <i class="ph-fill ph-file-pdf"/> Download PDF
+                    download="Tom Cahill.pdf"
+                >
+                    <i class="ph-fill ph-file-pdf"></i> Download PDF
                 </a>
             </div>
             <h1>Tom Cahill</h1>
@@ -18,30 +19,26 @@ import BaseLayout from "src/layouts/BaseLayout.astro";
             <div class="links">
                 <span>
                     <a href="" class="pseudo button">
-                        <i class="ph-fill ph-envelope" />
-                        <span id="email" />
+                        <i class="ph-fill ph-envelope"></i>
+                        <span id="email"></span>
                     </a>
                 </span>
                 <span>
-                    <a
-                        href="https://tomcahill.xyz/"
-                        class="pseudo button">
-                        <i class="ph-fill ph-globe-hemisphere-west" />
+                    <a href="https://tomcahill.xyz/" class="pseudo button">
+                        <i class="ph-fill ph-globe-hemisphere-west"></i>
                         https://tomcahill.xyz/
                     </a>
                 </span>
                 <span>
-                    <a
-                        href="https://github.com/tcahill"
-                        class="pseudo button">
-                        <i class="ph-fill ph-github-logo"  />
+                    <a href="https://github.com/tcahill" class="pseudo button">
+                        <i class="ph-fill ph-github-logo"></i>
                         tcahill
                     </a>
                 </span>
             </div>
         </div>
 
-        <section>
+        <div>
             <article>
                 <div class="article-title-line">
                     <h3>Alto Pharmacy</h3>
@@ -58,31 +55,41 @@ import BaseLayout from "src/layouts/BaseLayout.astro";
 
                     <ul>
                         <li>
-                            Contributed to internal tools supporting the
-                            modularization of our monolithic Rails application
+                            Supported the modularization of our monolithic Rails
+                            application by developing internal tools that
+                            provided a guided migration process
                         </li>
+
                         <li>
                             Led migration of company-wide CI/CD from CircleCI to
                             Github Actions
                         </li>
+
                         <li>
-                            Led migration of patient authentication to Auth0,
-                            introducing MFA support and greatly increasing
-                            security for our patients.
+                            Substantially improved security for our patients by
+                            leading a migration of authentication in our app to
+                            Auth0, introducing features like MFA and bot
+                            detection
                         </li>
+
                         <li>
-                            Defined and executed on process for major version
-                            upgrades of our Postgres databases with minimal
-                            downtime (on the order of seconds)
+                            Led major version upgrades of our Postgres databases
+                            with minimal downtime (on the order of seconds)
                         </li>
+
                         <li>
                             Led overhaul of legacy service interfacing with
                             medication-dispensing robots
                         </li>
+
                         <li>
-                            Built a Kafka library for our Rails applications
-                            that provides
+                            Introduced Kafka support to our Rails applications
+                            by building an opinionated library which included
+                            useful abstractions for producers and consumers with
+                            sane defaults, support for queue semantics,
+                            metrics/alerting, and a debugging UI
                         </li>
+
                         <li>
                             Created an extensible API gateway built on top of
                             the Lura framework for handling common concerns such
@@ -90,6 +97,7 @@ import BaseLayout from "src/layouts/BaseLayout.astro";
                         </li>
                     </ul>
                 </p>
+
                 <div class="tags">
                     <span class="tag">Ruby</span>
                     <span class="tag">Rails</span>
@@ -99,6 +107,9 @@ import BaseLayout from "src/layouts/BaseLayout.astro";
                     <span class="tag">Terraform</span>
                     <span class="tag">React</span>
                     <span class="tag">LGTM Stack</span>
+                    <span class="tag">CI/CD</span>
+                    <span class="tag">Service-oriented Architecture</span>
+                    <span class="tag">Postgres</span>
                 </div>
             </article>
 
@@ -149,9 +160,9 @@ import BaseLayout from "src/layouts/BaseLayout.astro";
                     <span class="tag">Embedded Systems</span>
                 </div>
             </article>
-        </section>
+        </div>
 
-        <section>
+        <div>
             <header>
                 <h2>Education</h2>
             </header>
@@ -168,27 +179,26 @@ import BaseLayout from "src/layouts/BaseLayout.astro";
                     sub-millisecond latency.
                 </p>
             </article>
-        </section>
+        </div>
 
         <script>
-            setTimeout(
-                () => {
-                    const button = document.querySelector("#email");
+            setTimeout(() => {
+                const button = document.querySelector("#email");
+
+                if (button) {
                     button.setAttribute(
                         "href",
                         "mailto:" + "tom@" + "" + "tomwcahill.com",
                     );
-                    button.innerHTML = button
-                        .getAttribute("href")
-                        .split(":")[1];
-                },
-                2000 * parseInt(Math.random()) + 1000,
-            );
+
+                    button.innerHTML = "tom@tomwcahill.com";
+                }
+            }, 1000);
         </script>
     </main>
 </BaseLayout>
 
-<style>
+<style is:global>
     .heading {
         h1 {
             font-size: 1.75em;
@@ -229,7 +239,7 @@ import BaseLayout from "src/layouts/BaseLayout.astro";
         }
 
         .year {
-            color: var(--secondary);
+            color: #ddd;
             font-size: 0.9em;
             float: right;
         }
@@ -280,32 +290,49 @@ import BaseLayout from "src/layouts/BaseLayout.astro";
 
     @media print {
         @page {
-            margin-bottom: 1cm;
+            margin: 1cm 0;
         }
 
-        html body * :not(#print-target, #print-target *) {
+        article {
+            page-break-inside: avoid;
+        }
+
+        main {
+            background: #fff;
+            color: #000;
+            border: none;
+            margin: 0;
+        }
+
+        .tag {
+            color: #000;
+        }
+
+        html body :not(#print-target, #print-target *) {
             visibility: hidden !important;
             display: none;
         }
+
         #print-target,
         #print-target * {
             visibility: visible !important;
         }
 
         .year {
+            color: #000 !important;
             margin-right: 0.5em;
-        }
-
-        section {
-            page-break-inside: avoid;
         }
 
         body {
             width: 100%;
             padding: 0;
-            margin: 0 auto -50px;
+            margin: 0;
             box-shadow: none;
-            background: #fff;
+        }
+
+        html {
+            background: #fff !important;
+            color: #000 !important;
         }
 
         .download {
