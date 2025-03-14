@@ -1,8 +1,11 @@
 ---
 import { theme } from "src/lib/style";
+
+const { title = "Tom Cahill" } = Astro.props;
 ---
 
 <html lang="en">
+    <title>{title}</title>
     <head>
         <meta charset="utf-8" />
         <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
