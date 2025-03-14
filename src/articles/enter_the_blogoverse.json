@@ -17,7 +17,7 @@
 {
 "dataType": "org-node",
 "type": "timestamp",
-"ref": "orgdb4e1e4",
+"ref": "org8bb9fa2",
 "properties": {
 "postAffiliated": null,
 "postBlank": 0,
@@ -39,7 +39,7 @@
 {
 "dataType": "org-node",
 "type": "section",
-"ref": "orgd13d32a",
+"ref": "orgf330aa4",
 "properties": {
 "postAffiliated": 1,
 "postBlank": 0,
@@ -49,7 +49,7 @@
 {
 "dataType": "org-node",
 "type": "keyword",
-"ref": "org3bc9e02",
+"ref": "org4a0dcf5",
 "properties": {
 "postAffiliated": 1,
 "postBlank": 0,
@@ -62,7 +62,7 @@
 {
 "dataType": "org-node",
 "type": "keyword",
-"ref": "org6cc703d",
+"ref": "org94a0423",
 "properties": {
 "postAffiliated": 32,
 "postBlank": 0,
@@ -75,7 +75,7 @@
 {
 "dataType": "org-node",
 "type": "keyword",
-"ref": "orgb15c5f1",
+"ref": "org6423bd8",
 "properties": {
 "postAffiliated": 57,
 "postBlank": 0,
@@ -88,7 +88,7 @@
 {
 "dataType": "org-node",
 "type": "keyword",
-"ref": "org27f2f85",
+"ref": "org8986e37",
 "properties": {
 "postAffiliated": 91,
 "postBlank": 1,
@@ -101,7 +101,7 @@
 {
 "dataType": "org-node",
 "type": "paragraph",
-"ref": "orgc871872",
+"ref": "org5150045",
 "properties": {
 "postAffiliated": 109,
 "postBlank": 1,
@@ -116,7 +116,7 @@
 {
 "dataType": "org-node",
 "type": "headline",
-"ref": "org3a15bb3",
+"ref": "org4ac0ec5",
 "drawer": {
 
 },
@@ -148,7 +148,7 @@
 {
 "dataType": "org-node",
 "type": "section",
-"ref": "orgd6f6e3e",
+"ref": "orgdff68b4",
 "properties": {
 "postAffiliated": 872,
 "postBlank": 0,
@@ -158,7 +158,7 @@
 {
 "dataType": "org-node",
 "type": "paragraph",
-"ref": "org45a5bd5",
+"ref": "orgb4e355d",
 "properties": {
 "postAffiliated": 872,
 "postBlank": 1,
@@ -169,7 +169,7 @@
 {
 "dataType": "org-node",
 "type": "footnote-reference",
-"ref": "orgdf916d0",
+"ref": "org016dcbc",
 "properties": {
 "postAffiliated": null,
 "postBlank": 0,
@@ -183,7 +183,7 @@
 {
 "dataType": "org-node",
 "type": "link",
-"ref": "orgcacb5c4",
+"ref": "org50d2d17",
 "properties": {
 "postAffiliated": null,
 "postBlank": 0,
@@ -207,7 +207,7 @@
 {
 "dataType": "org-node",
 "type": "link",
-"ref": "orgec205ed",
+"ref": "orgb62ffee",
 "properties": {
 "postAffiliated": null,
 "postBlank": 1,
@@ -233,7 +233,7 @@
 {
 "dataType": "org-node",
 "type": "plain-list",
-"ref": "orgd2b097c",
+"ref": "org2f16839",
 "properties": {
 "postAffiliated": 1548,
 "postBlank": 1,
@@ -282,7 +282,7 @@ null,
 {
 "dataType": "org-node",
 "type": "item",
-"ref": "org0d25cd5",
+"ref": "org277eaa9",
 "properties": {
 "postAffiliated": 1548,
 "postBlank": 0,
@@ -297,7 +297,7 @@ null,
 {
 "dataType": "org-node",
 "type": "paragraph",
-"ref": "orgdcd0621",
+"ref": "orgadaa053",
 "properties": {
 "postAffiliated": 1550,
 "postBlank": 0,
@@ -312,7 +312,7 @@ null,
 {
 "dataType": "org-node",
 "type": "item",
-"ref": "orga3ffad2",
+"ref": "orgf06936f",
 "properties": {
 "postAffiliated": 1665,
 "postBlank": 0,
@@ -327,7 +327,7 @@ null,
 {
 "dataType": "org-node",
 "type": "paragraph",
-"ref": "org95a142c",
+"ref": "org0a96683",
 "properties": {
 "postAffiliated": 1667,
 "postBlank": 0,
@@ -342,7 +342,7 @@ null,
 {
 "dataType": "org-node",
 "type": "item",
-"ref": "org3c51cfc",
+"ref": "org72d41c4",
 "properties": {
 "postAffiliated": 1792,
 "postBlank": 0,
@@ -357,7 +357,7 @@ null,
 {
 "dataType": "org-node",
 "type": "paragraph",
-"ref": "org6a04579",
+"ref": "org374d961",
 "properties": {
 "postAffiliated": 1794,
 "postBlank": 0,
@@ -372,7 +372,7 @@ null,
 {
 "dataType": "org-node",
 "type": "item",
-"ref": "orgaadf5c5",
+"ref": "org4ceca4d",
 "properties": {
 "postAffiliated": 1932,
 "postBlank": 0,
@@ -387,7 +387,7 @@ null,
 {
 "dataType": "org-node",
 "type": "paragraph",
-"ref": "org1eb53e9",
+"ref": "orge53e65a",
 "properties": {
 "postAffiliated": 1934,
 "postBlank": 0,
@@ -404,7 +404,7 @@ null,
 {
 "dataType": "org-node",
 "type": "paragraph",
-"ref": "org88610ae",
+"ref": "orge5da8b0",
 "properties": {
 "postAffiliated": 2101,
 "postBlank": 1,
@@ -415,7 +415,7 @@ null,
 {
 "dataType": "org-node",
 "type": "link",
-"ref": "org34c2875",
+"ref": "orgc6d5eea",
 "properties": {
 "postAffiliated": null,
 "postBlank": 1,
@@ -439,7 +439,7 @@ null,
 {
 "dataType": "org-node",
 "type": "link",
-"ref": "org728872a",
+"ref": "org4457b66",
 "properties": {
 "postAffiliated": null,
 "postBlank": 1,
@@ -463,7 +463,7 @@ null,
 {
 "dataType": "org-node",
 "type": "link",
-"ref": "org3fcf5c3",
+"ref": "orgfb02505",
 "properties": {
 "postAffiliated": null,
 "postBlank": 1,
@@ -489,7 +489,7 @@ null,
 {
 "dataType": "org-node",
 "type": "src-block",
-"ref": "orge68fce0",
+"ref": "org8d95db3",
 "properties": {
 "postAffiliated": 2928,
 "postBlank": 1,
@@ -509,7 +509,7 @@ null,
 {
 "dataType": "org-node",
 "type": "paragraph",
-"ref": "orgcb74d53",
+"ref": "org6724706",
 "properties": {
 "postAffiliated": 3441,
 "postBlank": 1,
@@ -522,7 +522,7 @@ null,
 {
 "dataType": "org-node",
 "type": "special-block",
-"ref": "org7221fc6",
+"ref": "org89c7ca3",
 "properties": {
 "postAffiliated": 3485,
 "postBlank": 1,
@@ -534,7 +534,7 @@ null,
 {
 "dataType": "org-node",
 "type": "paragraph",
-"ref": "orgd28d396",
+"ref": "org11503a3",
 "properties": {
 "postAffiliated": 3506,
 "postBlank": 1,
@@ -547,7 +547,7 @@ null,
 {
 "dataType": "org-node",
 "type": "src-block",
-"ref": "org682fad9",
+"ref": "org94e36bb",
 "properties": {
 "postAffiliated": 3549,
 "postBlank": 1,
@@ -567,7 +567,7 @@ null,
 {
 "dataType": "org-node",
 "type": "paragraph",
-"ref": "org71a9ba0",
+"ref": "org1df9396",
 "properties": {
 "postAffiliated": 3640,
 "postBlank": 0,
@@ -578,7 +578,7 @@ null,
 {
 "dataType": "org-node",
 "type": "verbatim",
-"ref": "orga8266fd",
+"ref": "orgc8b656a",
 "properties": {
 "postAffiliated": null,
 "postBlank": 1,
@@ -595,7 +595,7 @@ null,
 {
 "dataType": "org-node",
 "type": "paragraph",
-"ref": "orgcb6f432",
+"ref": "orga2d760f",
 "properties": {
 "postAffiliated": 3972,
 "postBlank": 1,
@@ -606,7 +606,7 @@ null,
 {
 "dataType": "org-node",
 "type": "link",
-"ref": "org32c33d4",
+"ref": "orga832a37",
 "properties": {
 "postAffiliated": null,
 "postBlank": 0,
@@ -632,7 +632,7 @@ null,
 {
 "dataType": "org-node",
 "type": "src-block",
-"ref": "org3656654",
+"ref": "orgee5239b",
 "properties": {
 "postAffiliated": 4677,
 "postBlank": 1,
@@ -654,7 +654,7 @@ null,
 {
 "dataType": "org-node",
 "type": "headline",
-"ref": "org1ea2222",
+"ref": "orgc94584c",
 "drawer": {
 
 },
@@ -686,7 +686,7 @@ null,
 {
 "dataType": "org-node",
 "type": "section",
-"ref": "orgdb07874",
+"ref": "orgae52f4b",
 "properties": {
 "postAffiliated": 4961,
 "postBlank": 0,
@@ -696,7 +696,7 @@ null,
 {
 "dataType": "org-node",
 "type": "paragraph",
-"ref": "org0303214",
+"ref": "org4428187",
 "properties": {
 "postAffiliated": 4961,
 "postBlank": 1,
@@ -707,7 +707,7 @@ null,
 {
 "dataType": "org-node",
 "type": "link",
-"ref": "org360185f",
+"ref": "org0f36664",
 "properties": {
 "postAffiliated": null,
 "postBlank": 0,
@@ -733,7 +733,7 @@ null,
 {
 "dataType": "org-node",
 "type": "plain-list",
-"ref": "orgb3fcf2e",
+"ref": "org993c5b8",
 "properties": {
 "postAffiliated": 5289,
 "postBlank": 1,
@@ -773,7 +773,7 @@ null,
 {
 "dataType": "org-node",
 "type": "item",
-"ref": "org63ba18c",
+"ref": "orge2cb670",
 "properties": {
 "postAffiliated": 5289,
 "postBlank": 0,
@@ -788,7 +788,7 @@ null,
 {
 "dataType": "org-node",
 "type": "paragraph",
-"ref": "orgbb907a2",
+"ref": "org88f19bf",
 "properties": {
 "postAffiliated": 5291,
 "postBlank": 0,
@@ -799,7 +799,7 @@ null,
 {
 "dataType": "org-node",
 "type": "italic",
-"ref": "org06d8bed",
+"ref": "org189a537",
 "properties": {
 "postAffiliated": null,
 "postBlank": 1,
@@ -817,7 +817,7 @@ null,
 {
 "dataType": "org-node",
 "type": "item",
-"ref": "orgd20ec5d",
+"ref": "org97daeec",
 "properties": {
 "postAffiliated": 5717,
 "postBlank": 0,
@@ -832,7 +832,7 @@ null,
 {
 "dataType": "org-node",
 "type": "paragraph",
-"ref": "org60bd30a",
+"ref": "org0731bd5",
 "properties": {
 "postAffiliated": 5719,
 "postBlank": 0,
@@ -847,7 +847,7 @@ null,
 {
 "dataType": "org-node",
 "type": "item",
-"ref": "orgf9e0113",
+"ref": "org7b4313a",
 "properties": {
 "postAffiliated": 5827,
 "postBlank": 0,
@@ -862,7 +862,7 @@ null,
 {
 "dataType": "org-node",
 "type": "paragraph",
-"ref": "org10720a4",
+"ref": "org87107c1",
 "properties": {
 "postAffiliated": 5829,
 "postBlank": 0,
@@ -879,7 +879,7 @@ null,
 {
 "dataType": "org-node",
 "type": "paragraph",
-"ref": "org6b0ba72",
+"ref": "org22029c7",
 "properties": {
 "postAffiliated": 5996,
 "postBlank": 1,
@@ -890,7 +890,7 @@ null,
 {
 "dataType": "org-node",
 "type": "entity",
-"ref": "org610f664",
+"ref": "org943f416",
 "properties": {
 "postAffiliated": null,
 "postBlank": 0,
@@ -912,7 +912,7 @@ null,
 {
 "dataType": "org-node",
 "type": "paragraph",
-"ref": "org5eff4fa",
+"ref": "orgcf0a83b",
 "properties": {
 "postAffiliated": 6373,
 "postBlank": 1,
@@ -923,7 +923,7 @@ null,
 {
 "dataType": "org-node",
 "type": "entity",
-"ref": "orgf98bb07",
+"ref": "org6ef9612",
 "properties": {
 "postAffiliated": null,
 "postBlank": 1,
@@ -945,7 +945,7 @@ null,
 {
 "dataType": "org-node",
 "type": "paragraph",
-"ref": "orgea8216e",
+"ref": "orgc2af7bb",
 "properties": {
 "postAffiliated": 6684,
 "postBlank": 1,
@@ -958,7 +958,7 @@ null,
 {
 "dataType": "org-node",
 "type": "src-block",
-"ref": "org546bd60",
+"ref": "orgac07429",
 "properties": {
 "postAffiliated": 6755,
 "postBlank": 1,
@@ -978,7 +978,7 @@ null,
 {
 "dataType": "org-node",
 "type": "paragraph",
-"ref": "org13ab08e",
+"ref": "org0902197",
 "properties": {
 "postAffiliated": 7155,
 "postBlank": 0,
@@ -991,7 +991,7 @@ null,
 {
 "dataType": "org-node",
 "type": "plain-list",
-"ref": "org179232e",
+"ref": "org20dc78c",
 "properties": {
 "postAffiliated": 7242,
 "postBlank": 1,
@@ -1031,7 +1031,7 @@ null,
 {
 "dataType": "org-node",
 "type": "item",
-"ref": "orgaad18ba",
+"ref": "org1ba6d72",
 "properties": {
 "postAffiliated": 7242,
 "postBlank": 0,
@@ -1046,7 +1046,7 @@ null,
 {
 "dataType": "org-node",
 "type": "paragraph",
-"ref": "orgf5b9438",
+"ref": "org55b7228",
 "properties": {
 "postAffiliated": 7244,
 "postBlank": 0,
@@ -1056,7 +1056,7 @@ null,
 {
 "dataType": "org-node",
 "type": "verbatim",
-"ref": "orga81f732",
+"ref": "org5e517a3",
 "properties": {
 "postAffiliated": null,
 "postBlank": 0,
@@ -1073,7 +1073,7 @@ null,
 {
 "dataType": "org-node",
 "type": "item",
-"ref": "org08f2a44",
+"ref": "org15d6468",
 "properties": {
 "postAffiliated": 7424,
 "postBlank": 0,
@@ -1088,7 +1088,7 @@ null,
 {
 "dataType": "org-node",
 "type": "paragraph",
-"ref": "org4a1b765",
+"ref": "orge897a74",
 "properties": {
 "postAffiliated": 7426,
 "postBlank": 0,
@@ -1098,7 +1098,7 @@ null,
 {
 "dataType": "org-node",
 "type": "verbatim",
-"ref": "org6d0c203",
+"ref": "org78b4c4c",
 "properties": {
 "postAffiliated": null,
 "postBlank": 0,
@@ -1115,7 +1115,7 @@ null,
 {
 "dataType": "org-node",
 "type": "item",
-"ref": "org9558ce9",
+"ref": "org8233c29",
 "properties": {
 "postAffiliated": 7674,
 "postBlank": 0,
@@ -1130,7 +1130,7 @@ null,
 {
 "dataType": "org-node",
 "type": "paragraph",
-"ref": "org6c6a1a3",
+"ref": "orgc6af546",
 "properties": {
 "postAffiliated": 7676,
 "postBlank": 0,
@@ -1140,7 +1140,7 @@ null,
 {
 "dataType": "org-node",
 "type": "verbatim",
-"ref": "org430aaa6",
+"ref": "orgc6234bf",
 "properties": {
 "postAffiliated": null,
 "postBlank": 0,
@@ -1159,7 +1159,7 @@ null,
 {
 "dataType": "org-node",
 "type": "src-block",
-"ref": "org7ac78a8",
+"ref": "org14b3817",
 "properties": {
 "postAffiliated": 7970,
 "postBlank": 1,
@@ -1173,14 +1173,14 @@ null,
 "useLabels": true,
 "labelFmt": null,
 "name": "generate_data",
-"value": "<pre>\n<span class=\"builtin\">srand</span><span class=\"rainbow-delimiters-depth-1\">(</span><span class=\"highlight-numbers-number\">123</span><span class=\"rainbow-delimiters-depth-1\">)</span> # fix the random seed so we get consistent results every time we run this\n<span class=\"rainbow-delimiters-depth-1\">(</span><span class=\"highlight-numbers-number\">0</span>...samples<span class=\"rainbow-delimiters-depth-1\">)</span>.map do |_x|\n  point = <span class=\"rainbow-delimiters-depth-1\">[</span><span class=\"builtin\">rand</span><span class=\"rainbow-delimiters-depth-2\">()</span>, <span class=\"builtin\">rand</span><span class=\"rainbow-delimiters-depth-2\">()</span><span class=\"rainbow-delimiters-depth-1\">]</span>\n  <span class=\"rainbow-delimiters-depth-1\">[</span>point<span class=\"rainbow-delimiters-depth-2\">[</span><span class=\"highlight-numbers-number\">0</span><span class=\"rainbow-delimiters-depth-2\">]</span>, point<span class=\"rainbow-delimiters-depth-2\">[</span><span class=\"highlight-numbers-number\">1</span><span class=\"rainbow-delimiters-depth-2\">]</span>, Math.sqrt<span class=\"rainbow-delimiters-depth-2\">(</span>point<span class=\"rainbow-delimiters-depth-3\">[</span><span class=\"highlight-numbers-number\">0</span><span class=\"rainbow-delimiters-depth-3\">]</span>**<span class=\"highlight-numbers-number\">2</span> + point<span class=\"rainbow-delimiters-depth-3\">[</span><span class=\"highlight-numbers-number\">1</span><span class=\"rainbow-delimiters-depth-3\">]</span>**<span class=\"highlight-numbers-number\">2</span><span class=\"rainbow-delimiters-depth-2\">)</span> &lt;= <span class=\"highlight-numbers-number\">1</span> ? <span class=\"highlight-numbers-number\">0</span> : <span class=\"highlight-numbers-number\">1</span><span class=\"rainbow-delimiters-depth-1\">]</span>\nend\n</pre>"
+"value": "<pre>\n<span class=\"builtin\">srand</span><span class=\"rainbow-delimiters-depth-1\">(</span><span class=\"highlight-numbers-number\">123</span><span class=\"rainbow-delimiters-depth-1\">)</span> <span class=\"comment\"># fix the random seed so we get consistent results every time we run this\n</span><span class=\"rainbow-delimiters-depth-1\">(</span><span class=\"highlight-numbers-number\">0</span><span class=\"enh-ruby-op\">...</span>samples<span class=\"rainbow-delimiters-depth-1\">)</span>.map <span class=\"keyword\">do</span> <span class=\"variable-name\">|</span>_x<span class=\"variable-name\">|</span>\n  point <span class=\"enh-ruby-op\">=</span> <span class=\"rainbow-delimiters-depth-1\">[</span><span class=\"builtin\">rand</span><span class=\"rainbow-delimiters-depth-2\">()</span>, <span class=\"builtin\">rand</span><span class=\"rainbow-delimiters-depth-2\">()</span><span class=\"rainbow-delimiters-depth-1\">]</span>\n  <span class=\"rainbow-delimiters-depth-1\">[</span>point<span class=\"rainbow-delimiters-depth-2\">[</span><span class=\"highlight-numbers-number\">0</span><span class=\"rainbow-delimiters-depth-2\">]</span>, point<span class=\"rainbow-delimiters-depth-2\">[</span><span class=\"highlight-numbers-number\">1</span><span class=\"rainbow-delimiters-depth-2\">]</span>, <span class=\"type\">Math</span>.sqrt<span class=\"rainbow-delimiters-depth-2\">(</span>point<span class=\"rainbow-delimiters-depth-3\">[</span><span class=\"highlight-numbers-number\">0</span><span class=\"rainbow-delimiters-depth-3\">]</span><span class=\"enh-ruby-op\">**</span><span class=\"highlight-numbers-number\">2</span> <span class=\"enh-ruby-op\">+</span> point<span class=\"rainbow-delimiters-depth-3\">[</span><span class=\"highlight-numbers-number\">1</span><span class=\"rainbow-delimiters-depth-3\">]</span><span class=\"enh-ruby-op\">**</span><span class=\"highlight-numbers-number\">2</span><span class=\"rainbow-delimiters-depth-2\">)</span> <span class=\"enh-ruby-op\">&lt;=</span> <span class=\"highlight-numbers-number\">1</span> <span class=\"enh-ruby-op\">?</span> <span class=\"highlight-numbers-number\">0</span> <span class=\"enh-ruby-op\">:</span> <span class=\"highlight-numbers-number\">1</span><span class=\"rainbow-delimiters-depth-1\">]</span>\n<span class=\"keyword\">end</span>\n</pre>"
 },
 "contents": []
 },
 {
 "dataType": "org-node",
 "type": "paragraph",
-"ref": "org3301f8d",
+"ref": "org9dafee8",
 "properties": {
 "postAffiliated": 8312,
 "postBlank": 1,
@@ -1191,7 +1191,7 @@ null,
 {
 "dataType": "org-node",
 "type": "entity",
-"ref": "org7acf6ee",
+"ref": "org5e3bf2f",
 "properties": {
 "postAffiliated": null,
 "postBlank": 1,
@@ -1211,12 +1211,12 @@ null,
 {
 "dataType": "org-node",
 "type": "latex-fragment",
-"ref": "orgbbcd2c8",
+"ref": "org0ac971b",
 "properties": {
 "postAffiliated": null,
 "postBlank": 1,
 "trueLevel": null,
-"value": "\\(\\pi \\approx 4 \\frac{r}{n}\\)"
+"value": "\\pi \\approx 4 \\frac{r}{n}"
 },
 "contents": []
 },
@@ -1224,7 +1224,7 @@ null,
 {
 "dataType": "org-node",
 "type": "verbatim",
-"ref": "org6a0f609",
+"ref": "org695615b",
 "properties": {
 "postAffiliated": null,
 "postBlank": 1,
@@ -1237,7 +1237,7 @@ null,
 {
 "dataType": "org-node",
 "type": "verbatim",
-"ref": "org69427b3",
+"ref": "org68e64e1",
 "properties": {
 "postAffiliated": null,
 "postBlank": 1,
@@ -1252,7 +1252,7 @@ null,
 {
 "dataType": "org-node",
 "type": "src-block",
-"ref": "org858d77f",
+"ref": "org31549aa",
 "properties": {
 "postAffiliated": 8525,
 "postBlank": 1,
@@ -1272,7 +1272,7 @@ null,
 {
 "dataType": "org-node",
 "type": "paragraph",
-"ref": "org055c0f9",
+"ref": "orgf43bc0a",
 "properties": {
 "postAffiliated": 9058,
 "postBlank": 0,
@@ -1285,7 +1285,7 @@ null,
 {
 "dataType": "org-node",
 "type": "plain-list",
-"ref": "org9c36da7",
+"ref": "org4e3653f",
 "properties": {
 "postAffiliated": 9124,
 "postBlank": 1,
@@ -1325,7 +1325,7 @@ null,
 {
 "dataType": "org-node",
 "type": "item",
-"ref": "orgbcd6098",
+"ref": "org92863e4",
 "properties": {
 "postAffiliated": 9124,
 "postBlank": 0,
@@ -1340,7 +1340,7 @@ null,
 {
 "dataType": "org-node",
 "type": "paragraph",
-"ref": "org1d7b5fe",
+"ref": "org06f88cf",
 "properties": {
 "postAffiliated": 9126,
 "postBlank": 0,
@@ -1351,7 +1351,7 @@ null,
 {
 "dataType": "org-node",
 "type": "verbatim",
-"ref": "org1b4c5a1",
+"ref": "org4233c9a",
 "properties": {
 "postAffiliated": null,
 "postBlank": 1,
@@ -1368,7 +1368,7 @@ null,
 {
 "dataType": "org-node",
 "type": "item",
-"ref": "org9724fd2",
+"ref": "org84c9f3a",
 "properties": {
 "postAffiliated": 9295,
 "postBlank": 0,
@@ -1383,7 +1383,7 @@ null,
 {
 "dataType": "org-node",
 "type": "paragraph",
-"ref": "orgc57e102",
+"ref": "org39ca004",
 "properties": {
 "postAffiliated": 9297,
 "postBlank": 0,
@@ -1394,7 +1394,7 @@ null,
 {
 "dataType": "org-node",
 "type": "verbatim",
-"ref": "orgaac4bcf",
+"ref": "org945d1be",
 "properties": {
 "postAffiliated": null,
 "postBlank": 1,
@@ -1411,7 +1411,7 @@ null,
 {
 "dataType": "org-node",
 "type": "item",
-"ref": "orgb39bff7",
+"ref": "org28117d4",
 "properties": {
 "postAffiliated": 9398,
 "postBlank": 0,
@@ -1426,7 +1426,7 @@ null,
 {
 "dataType": "org-node",
 "type": "paragraph",
-"ref": "org6cc1cb9",
+"ref": "org6e08aff",
 "properties": {
 "postAffiliated": 9400,
 "postBlank": 0,
@@ -1437,7 +1437,7 @@ null,
 {
 "dataType": "org-node",
 "type": "code",
-"ref": "org92b4fae",
+"ref": "orgf5e4515",
 "properties": {
 "postAffiliated": null,
 "postBlank": 1,
@@ -1450,7 +1450,7 @@ null,
 {
 "dataType": "org-node",
 "type": "verbatim",
-"ref": "orgceeb1e3",
+"ref": "org796f19e",
 "properties": {
 "postAffiliated": null,
 "postBlank": 0,
@@ -1469,7 +1469,7 @@ null,
 {
 "dataType": "org-node",
 "type": "src-block",
-"ref": "org3cd1f59",
+"ref": "org88fecf6",
 "properties": {
 "postAffiliated": 9807,
 "postBlank": 1,
@@ -1489,14 +1489,14 @@ null,
 ":var data_100=generate_data(samples=100)",
 ":var data_1000=generate_data(samples=1000)"
 ],
-"value": "<pre>\nestimates = <span class=\"rainbow-delimiters-depth-1\">[</span>data_10, data_100, data_1000<span class=\"rainbow-delimiters-depth-1\">]</span>.map do |data|\n  points_inside = data.select <span class=\"rainbow-delimiters-depth-1\">{</span> |point| point<span class=\"rainbow-delimiters-depth-2\">[</span><span class=\"highlight-numbers-number\">2</span><span class=\"rainbow-delimiters-depth-2\">]</span> == <span class=\"highlight-numbers-number\">0</span> <span class=\"rainbow-delimiters-depth-1\">}</span>\n  pi_estimate = <span class=\"highlight-numbers-number\">4</span>.<span class=\"highlight-numbers-number\">0</span> * points_inside.length / data.length\n  <span class=\"rainbow-delimiters-depth-1\">[</span>data.length, pi_estimate<span class=\"rainbow-delimiters-depth-1\">]</span>\nend\n\n# note: the `nil` here causes Org to add a horizontal line below the previous\n# row when it renders the table, so it's visually clear that the first row\n# should be treated as the table header\n<span class=\"rainbow-delimiters-depth-1\">[</span><span class=\"rainbow-delimiters-depth-2\">[</span>\"samples\", \"estimate\"<span class=\"rainbow-delimiters-depth-2\">]</span>, nil<span class=\"rainbow-delimiters-depth-1\">]</span> + estimates\n</pre>"
+"value": "<pre>\nestimates <span class=\"enh-ruby-op\">=</span> <span class=\"rainbow-delimiters-depth-1\">[</span>data_10, data_100, data_1000<span class=\"rainbow-delimiters-depth-1\">]</span>.map <span class=\"keyword\">do</span> <span class=\"variable-name\">|</span>data<span class=\"variable-name\">|</span>\n  points_inside <span class=\"enh-ruby-op\">=</span> data.select <span class=\"keyword\"><span class=\"rainbow-delimiters-depth-1\">{</span></span> <span class=\"variable-name\">|</span>point<span class=\"variable-name\">|</span> point<span class=\"rainbow-delimiters-depth-2\">[</span><span class=\"highlight-numbers-number\">2</span><span class=\"rainbow-delimiters-depth-2\">]</span> <span class=\"enh-ruby-op\">==</span> <span class=\"highlight-numbers-number\">0</span> <span class=\"keyword\"><span class=\"rainbow-delimiters-depth-1\">}</span></span>\n  pi_estimate <span class=\"enh-ruby-op\">=</span> <span class=\"highlight-numbers-number\">4</span>.<span class=\"highlight-numbers-number\">0</span> <span class=\"enh-ruby-op\">*</span> points_inside.length <span class=\"enh-ruby-op\">/</span> data.length\n  <span class=\"rainbow-delimiters-depth-1\">[</span>data.length, pi_estimate<span class=\"rainbow-delimiters-depth-1\">]</span>\n<span class=\"keyword\">end</span>\n\n<span class=\"comment\"># note: the `nil` here causes Org to add a horizontal line below the previous\n# row when it renders the table, so it's visually clear that the first row\n# should be treated as the table header\n</span><span class=\"rainbow-delimiters-depth-1\">[</span><span class=\"rainbow-delimiters-depth-2\">[</span><span class=\"enh-ruby-string-delimiter\">\"</span><span class=\"string\">samples</span><span class=\"enh-ruby-string-delimiter\">\"</span>, <span class=\"enh-ruby-string-delimiter\">\"</span><span class=\"string\">estimate</span><span class=\"enh-ruby-string-delimiter\">\"</span><span class=\"rainbow-delimiters-depth-2\">]</span>, <span class=\"keyword\">nil</span><span class=\"rainbow-delimiters-depth-1\">]</span> <span class=\"enh-ruby-op\">+</span> estimates\n</pre>"
 },
 "contents": []
 },
 {
 "dataType": "org-node",
 "type": "table",
-"ref": "org81d258b",
+"ref": "orgea84143",
 "properties": {
 "postAffiliated": 10366,
 "postBlank": 1,
@@ -1512,7 +1512,7 @@ null,
 {
 "dataType": "org-node",
 "type": "table-row",
-"ref": "orgbfca038",
+"ref": "orgd3d695e",
 "properties": {
 "postAffiliated": 10366,
 "postBlank": 0,
@@ -1523,7 +1523,7 @@ null,
 {
 "dataType": "org-node",
 "type": "table-cell",
-"ref": "org7b01b45",
+"ref": "org60977d6",
 "properties": {
 "postAffiliated": null,
 "postBlank": 0,
@@ -1536,7 +1536,7 @@ null,
 {
 "dataType": "org-node",
 "type": "table-cell",
-"ref": "org46b210f",
+"ref": "orgc1b2037",
 "properties": {
 "postAffiliated": null,
 "postBlank": 0,
@@ -1551,7 +1551,7 @@ null,
 {
 "dataType": "org-node",
 "type": "table-row",
-"ref": "org8baaf80",
+"ref": "org88ae055",
 "properties": {
 "postAffiliated": 10389,
 "postBlank": 0,
@@ -1563,7 +1563,7 @@ null,
 {
 "dataType": "org-node",
 "type": "table-row",
-"ref": "orgd9a1110",
+"ref": "orga0735ae",
 "properties": {
 "postAffiliated": 10412,
 "postBlank": 0,
@@ -1574,7 +1574,7 @@ null,
 {
 "dataType": "org-node",
 "type": "table-cell",
-"ref": "orgff3a4e6",
+"ref": "orga17e43f",
 "properties": {
 "postAffiliated": null,
 "postBlank": 0,
@@ -1587,7 +1587,7 @@ null,
 {
 "dataType": "org-node",
 "type": "table-cell",
-"ref": "org91bb9b9",
+"ref": "orgb5579a7",
 "properties": {
 "postAffiliated": null,
 "postBlank": 0,
@@ -1602,7 +1602,7 @@ null,
 {
 "dataType": "org-node",
 "type": "table-row",
-"ref": "org674712d",
+"ref": "org5054994",
 "properties": {
 "postAffiliated": 10435,
 "postBlank": 0,
@@ -1613,7 +1613,7 @@ null,
 {
 "dataType": "org-node",
 "type": "table-cell",
-"ref": "org35c17a5",
+"ref": "org0231484",
 "properties": {
 "postAffiliated": null,
 "postBlank": 0,
@@ -1626,7 +1626,7 @@ null,
 {
 "dataType": "org-node",
 "type": "table-cell",
-"ref": "orgd08af8e",
+"ref": "org3ac8e7d",
 "properties": {
 "postAffiliated": null,
 "postBlank": 0,
@@ -1641,7 +1641,7 @@ null,
 {
 "dataType": "org-node",
 "type": "table-row",
-"ref": "org857c453",
+"ref": "org313d0ff",
 "properties": {
 "postAffiliated": 10458,
 "postBlank": 0,
@@ -1652,7 +1652,7 @@ null,
 {
 "dataType": "org-node",
 "type": "table-cell",
-"ref": "org5c29b23",
+"ref": "org19f40df",
 "properties": {
 "postAffiliated": null,
 "postBlank": 0,
@@ -1665,7 +1665,7 @@ null,
 {
 "dataType": "org-node",
 "type": "table-cell",
-"ref": "orgc4acb1b",
+"ref": "org645e4eb",
 "properties": {
 "postAffiliated": null,
 "postBlank": 0,
@@ -1682,7 +1682,7 @@ null,
 {
 "dataType": "org-node",
 "type": "paragraph",
-"ref": "org4c60e6e",
+"ref": "orgc5b4992",
 "properties": {
 "postAffiliated": 10482,
 "postBlank": 1,
@@ -1693,7 +1693,7 @@ null,
 {
 "dataType": "org-node",
 "type": "footnote-reference",
-"ref": "orgdcd3990",
+"ref": "org0d25fc8",
 "properties": {
 "postAffiliated": null,
 "postBlank": 0,
@@ -1709,7 +1709,7 @@ null,
 {
 "dataType": "org-node",
 "type": "src-block",
-"ref": "orgcb75aff",
+"ref": "orga32df96",
 "properties": {
 "postAffiliated": 10533,
 "postBlank": 1,
@@ -1729,7 +1729,7 @@ null,
 {
 "dataType": "org-node",
 "type": "paragraph",
-"ref": "org17d0321",
+"ref": "org7e7db42",
 "properties": {
 "postAffiliated": 11498,
 "postBlank": 1,
@@ -1740,7 +1740,7 @@ null,
 {
 "dataType": "org-node",
 "type": "code",
-"ref": "orgff5c66d",
+"ref": "org4deba92",
 "properties": {
 "postAffiliated": null,
 "postBlank": 1,
@@ -1753,7 +1753,7 @@ null,
 {
 "dataType": "org-node",
 "type": "verbatim",
-"ref": "org7f1bcac",
+"ref": "orgdbfe520",
 "properties": {
 "postAffiliated": null,
 "postBlank": 0,
@@ -1766,7 +1766,7 @@ null,
 {
 "dataType": "org-node",
 "type": "code",
-"ref": "org8ec5429",
+"ref": "org806bf89",
 "properties": {
 "postAffiliated": null,
 "postBlank": 1,
@@ -1779,7 +1779,7 @@ null,
 {
 "dataType": "org-node",
 "type": "verbatim",
-"ref": "orgc54ed72",
+"ref": "orgda4c665",
 "properties": {
 "postAffiliated": null,
 "postBlank": 1,
@@ -1792,7 +1792,7 @@ null,
 {
 "dataType": "org-node",
 "type": "link",
-"ref": "orgc0f9779",
+"ref": "org6e48852",
 "properties": {
 "postAffiliated": null,
 "postBlank": 1,
@@ -1818,7 +1818,7 @@ null,
 {
 "dataType": "org-node",
 "type": "drawer",
-"ref": "orge3d04e0",
+"ref": "orgf99bb5b",
 "properties": {
 "postAffiliated": 12237,
 "postBlank": 1,
@@ -1832,7 +1832,7 @@ null,
 {
 "dataType": "org-node",
 "type": "paragraph",
-"ref": "org0d146e7",
+"ref": "org6fb79e3",
 "properties": {
 "postAffiliated": 12319,
 "postBlank": 0,
@@ -1845,7 +1845,7 @@ null,
 {
 "dataType": "org-node",
 "type": "link",
-"ref": "org2db38f3",
+"ref": "org9e68fbd",
 "properties": {
 "postAffiliated": null,
 "postBlank": 0,
@@ -1871,7 +1871,7 @@ null,
 {
 "dataType": "org-node",
 "type": "paragraph",
-"ref": "org83d666a",
+"ref": "org3e28107",
 "properties": {
 "postAffiliated": 12361,
 "postBlank": 1,
@@ -1890,7 +1890,7 @@ null,
 {
 "dataType": "org-node",
 "type": "headline",
-"ref": "org2e50bcc",
+"ref": "org1d73980",
 "drawer": {
 
 },
@@ -1922,7 +1922,7 @@ null,
 {
 "dataType": "org-node",
 "type": "section",
-"ref": "org0a1fa6b",
+"ref": "org1d15f7e",
 "properties": {
 "postAffiliated": 12474,
 "postBlank": 0,
@@ -1932,7 +1932,7 @@ null,
 {
 "dataType": "org-node",
 "type": "paragraph",
-"ref": "org708b407",
+"ref": "org07b9bb1",
 "properties": {
 "postAffiliated": 12474,
 "postBlank": 1,
@@ -1943,7 +1943,7 @@ null,
 {
 "dataType": "org-node",
 "type": "code",
-"ref": "org9d1ac29",
+"ref": "orgaf91d2d",
 "properties": {
 "postAffiliated": null,
 "postBlank": 0,
@@ -1956,7 +1956,7 @@ null,
 {
 "dataType": "org-node",
 "type": "link",
-"ref": "org9d41d9e",
+"ref": "org2f39515",
 "properties": {
 "postAffiliated": null,
 "postBlank": 1,
@@ -1982,7 +1982,7 @@ null,
 {
 "dataType": "org-node",
 "type": "paragraph",
-"ref": "org47a1fa4",
+"ref": "org5d1e602",
 "properties": {
 "postAffiliated": 13437,
 "postBlank": 1,
@@ -1993,7 +1993,7 @@ null,
 {
 "dataType": "org-node",
 "type": "verbatim",
-"ref": "org719b372",
+"ref": "org12650fc",
 "properties": {
 "postAffiliated": null,
 "postBlank": 0,
@@ -2008,7 +2008,7 @@ null,
 {
 "dataType": "org-node",
 "type": "paragraph",
-"ref": "org15eae5b",
+"ref": "orgac6a328",
 "properties": {
 "postAffiliated": 14574,
 "postBlank": 1,
@@ -2019,7 +2019,7 @@ null,
 {
 "dataType": "org-node",
 "type": "link",
-"ref": "org71f1913",
+"ref": "orgc93ac3a",
 "properties": {
 "postAffiliated": null,
 "postBlank": 0,
@@ -2045,7 +2045,7 @@ null,
 {
 "dataType": "org-node",
 "type": "paragraph",
-"ref": "orgc586281",
+"ref": "org90dd00f",
 "properties": {
 "postAffiliated": 15449,
 "postBlank": 1,
@@ -2056,7 +2056,7 @@ null,
 {
 "dataType": "org-node",
 "type": "link",
-"ref": "orgb3d99b1",
+"ref": "org087a939",
 "properties": {
 "postAffiliated": null,
 "postBlank": 0,
@@ -2082,7 +2082,7 @@ null,
 {
 "dataType": "org-node",
 "type": "src-block",
-"ref": "org414018c",
+"ref": "org121d420",
 "properties": {
 "postAffiliated": 15726,
 "postBlank": 2,
@@ -2102,7 +2102,7 @@ null,
 {
 "dataType": "org-node",
 "type": "src-block",
-"ref": "org8a1eb5c",
+"ref": "orgf582d72",
 "properties": {
 "postAffiliated": 15999,
 "postBlank": 1,
@@ -2122,7 +2122,7 @@ null,
 {
 "dataType": "org-node",
 "type": "paragraph",
-"ref": "org39de9f6",
+"ref": "orgf1869f9",
 "properties": {
 "postAffiliated": 17067,
 "postBlank": 1,
@@ -2133,7 +2133,7 @@ null,
 {
 "dataType": "org-node",
 "type": "code",
-"ref": "org3b5810b",
+"ref": "org0e86e18",
 "properties": {
 "postAffiliated": null,
 "postBlank": 1,
@@ -2146,7 +2146,7 @@ null,
 {
 "dataType": "org-node",
 "type": "code",
-"ref": "orgd66bb3c",
+"ref": "org5c3bef4",
 "properties": {
 "postAffiliated": null,
 "postBlank": 1,
@@ -2161,7 +2161,7 @@ null,
 {
 "dataType": "org-node",
 "type": "paragraph",
-"ref": "org0623585",
+"ref": "org24b6885",
 "properties": {
 "postAffiliated": 17559,
 "postBlank": 1,
@@ -2172,7 +2172,7 @@ null,
 {
 "dataType": "org-node",
 "type": "link",
-"ref": "orgfc7fc7e",
+"ref": "org33c7fec",
 "properties": {
 "postAffiliated": null,
 "postBlank": 0,
@@ -2196,7 +2196,7 @@ null,
 {
 "dataType": "org-node",
 "type": "code",
-"ref": "org4ff13da",
+"ref": "org69a6e37",
 "properties": {
 "postAffiliated": null,
 "postBlank": 0,
@@ -2209,7 +2209,7 @@ null,
 {
 "dataType": "org-node",
 "type": "link",
-"ref": "org548f149",
+"ref": "org37bf44a",
 "properties": {
 "postAffiliated": null,
 "postBlank": 0,
@@ -2235,7 +2235,7 @@ null,
 {
 "dataType": "org-node",
 "type": "quote-block",
-"ref": "org7ddcd92",
+"ref": "orgeed09f8",
 "properties": {
 "postAffiliated": 18212,
 "postBlank": 1,
@@ -2245,7 +2245,7 @@ null,
 {
 "dataType": "org-node",
 "type": "paragraph",
-"ref": "orgfad4fcb",
+"ref": "org3d997da",
 "properties": {
 "postAffiliated": 18226,
 "postBlank": 1,
@@ -2258,7 +2258,7 @@ null,
 {
 "dataType": "org-node",
 "type": "paragraph",
-"ref": "org5a7578b",
+"ref": "org94167e8",
 "properties": {
 "postAffiliated": 18457,
 "postBlank": 1,
@@ -2271,7 +2271,7 @@ null,
 {
 "dataType": "org-node",
 "type": "paragraph",
-"ref": "org32009f3",
+"ref": "org9f3deb8",
 "properties": {
 "postAffiliated": 18775,
 "postBlank": 0,
@@ -2286,7 +2286,7 @@ null,
 {
 "dataType": "org-node",
 "type": "paragraph",
-"ref": "org3cb1124",
+"ref": "orge6ae387",
 "properties": {
 "postAffiliated": 19122,
 "postBlank": 1,
@@ -2297,7 +2297,7 @@ null,
 {
 "dataType": "org-node",
 "type": "code",
-"ref": "org9ac591e",
+"ref": "org09bd3d7",
 "properties": {
 "postAffiliated": null,
 "postBlank": 1,
@@ -2310,7 +2310,7 @@ null,
 {
 "dataType": "org-node",
 "type": "code",
-"ref": "org6829d39",
+"ref": "org277abc0",
 "properties": {
 "postAffiliated": null,
 "postBlank": 0,
@@ -2323,7 +2323,7 @@ null,
 {
 "dataType": "org-node",
 "type": "footnote-reference",
-"ref": "org032bf52",
+"ref": "orge95fc5a",
 "properties": {
 "postAffiliated": null,
 "postBlank": 0,
@@ -2337,7 +2337,7 @@ null,
 {
 "dataType": "org-node",
 "type": "link",
-"ref": "org2733f82",
+"ref": "org41f1177",
 "properties": {
 "postAffiliated": null,
 "postBlank": 0,
@@ -2363,7 +2363,7 @@ null,
 {
 "dataType": "org-node",
 "type": "src-block",
-"ref": "org45171d0",
+"ref": "orge908e8f",
 "properties": {
 "postAffiliated": 19615,
 "postBlank": 1,
@@ -2383,7 +2383,7 @@ null,
 {
 "dataType": "org-node",
 "type": "paragraph",
-"ref": "orgf754623",
+"ref": "org7b1fe8a",
 "properties": {
 "postAffiliated": 19787,
 "postBlank": 1,
@@ -2394,7 +2394,7 @@ null,
 {
 "dataType": "org-node",
 "type": "code",
-"ref": "org5b8c0c0",
+"ref": "orgcc11332",
 "properties": {
 "postAffiliated": null,
 "postBlank": 1,
@@ -2409,7 +2409,7 @@ null,
 {
 "dataType": "org-node",
 "type": "src-block",
-"ref": "org4c9ea2b",
+"ref": "org2ef47ff",
 "properties": {
 "postAffiliated": 19917,
 "postBlank": 1,
@@ -2429,7 +2429,7 @@ null,
 {
 "dataType": "org-node",
 "type": "paragraph",
-"ref": "org5dddc41",
+"ref": "org0187e3b",
 "properties": {
 "postAffiliated": 20521,
 "postBlank": 1,
@@ -2442,7 +2442,7 @@ null,
 {
 "dataType": "org-node",
 "type": "src-block",
-"ref": "orgaa3820d",
+"ref": "org310d19d",
 "properties": {
 "postAffiliated": 20532,
 "postBlank": 1,
@@ -2462,7 +2462,7 @@ null,
 {
 "dataType": "org-node",
 "type": "paragraph",
-"ref": "org60aa4a1",
+"ref": "org9747710",
 "properties": {
 "postAffiliated": 21276,
 "postBlank": 1,
@@ -2479,7 +2479,7 @@ null,
 {
 "dataType": "org-node",
 "type": "headline",
-"ref": "org100544b",
+"ref": "org2541a71",
 "drawer": {
 
 },
@@ -2511,7 +2511,7 @@ null,
 {
 "dataType": "org-node",
 "type": "section",
-"ref": "org1b6f075",
+"ref": "org08d7f01",
 "properties": {
 "postAffiliated": 21445,
 "postBlank": 0,
@@ -2521,7 +2521,7 @@ null,
 {
 "dataType": "org-node",
 "type": "paragraph",
-"ref": "org7d9f94c",
+"ref": "orgc19620e",
 "properties": {
 "postAffiliated": 21445,
 "postBlank": 1,
@@ -2532,7 +2532,7 @@ null,
 {
 "dataType": "org-node",
 "type": "code",
-"ref": "org89a4be7",
+"ref": "orgffe67ce",
 "properties": {
 "postAffiliated": null,
 "postBlank": 1,
@@ -2547,7 +2547,7 @@ null,
 {
 "dataType": "org-node",
 "type": "paragraph",
-"ref": "orgdf58cd1",
+"ref": "orga88622b",
 "properties": {
 "postAffiliated": 21912,
 "postBlank": 1,
@@ -2560,7 +2560,7 @@ null,
 {
 "dataType": "org-node",
 "type": "src-block",
-"ref": "orgd9c2fa3",
+"ref": "orga6e98b4",
 "properties": {
 "postAffiliated": 21999,
 "postBlank": 2,
@@ -2581,7 +2581,7 @@ null,
 {
 "dataType": "org-node",
 "type": "src-block",
-"ref": "org224de12",
+"ref": "org3b4216c",
 "properties": {
 "postAffiliated": 22531,
 "postBlank": 1,
@@ -2602,7 +2602,7 @@ null,
 {
 "dataType": "org-node",
 "type": "paragraph",
-"ref": "orgea5d1f1",
+"ref": "org523765b",
 "properties": {
 "postAffiliated": 23249,
 "postBlank": 1,
@@ -2613,7 +2613,7 @@ null,
 {
 "dataType": "org-node",
 "type": "link",
-"ref": "org39fbc1d",
+"ref": "org2802ee6",
 "properties": {
 "postAffiliated": null,
 "postBlank": 1,
@@ -2637,7 +2637,7 @@ null,
 {
 "dataType": "org-node",
 "type": "link",
-"ref": "org102a6d9",
+"ref": "org28a6544",
 "properties": {
 "postAffiliated": null,
 "postBlank": 1,
@@ -2657,7 +2657,7 @@ null,
 {
 "dataType": "org-node",
 "type": "code",
-"ref": "orge16eff6",
+"ref": "org1c32f77",
 "properties": {
 "postAffiliated": null,
 "postBlank": 0,
@@ -2674,7 +2674,7 @@ null,
 {
 "dataType": "org-node",
 "type": "src-block",
-"ref": "org1a400d9",
+"ref": "orgdd80936",
 "properties": {
 "postAffiliated": 23638,
 "postBlank": 2,
@@ -2695,7 +2695,7 @@ null,
 {
 "dataType": "org-node",
 "type": "src-block",
-"ref": "org4bb4624",
+"ref": "org7c065cf",
 "properties": {
 "postAffiliated": 24006,
 "postBlank": 1,
@@ -2716,7 +2716,7 @@ null,
 {
 "dataType": "org-node",
 "type": "paragraph",
-"ref": "orgfb14527",
+"ref": "orgf78e477",
 "properties": {
 "postAffiliated": 24356,
 "postBlank": 1,
@@ -2727,7 +2727,7 @@ null,
 {
 "dataType": "org-node",
 "type": "link",
-"ref": "org1bdb123",
+"ref": "org8afda41",
 "properties": {
 "postAffiliated": null,
 "postBlank": 1,
@@ -2757,7 +2757,7 @@ null,
 {
 "dataType": "org-node",
 "type": "headline",
-"ref": "org8d1c28a",
+"ref": "org0f69fc8",
 "drawer": {
 
 },
@@ -2789,7 +2789,7 @@ null,
 {
 "dataType": "org-node",
 "type": "section",
-"ref": "org28f5508",
+"ref": "orgf83d1e4",
 "properties": {
 "postAffiliated": 24689,
 "postBlank": 0,
@@ -2799,7 +2799,7 @@ null,
 {
 "dataType": "org-node",
 "type": "paragraph",
-"ref": "orgd398817",
+"ref": "org3f0945b",
 "properties": {
 "postAffiliated": 24689,
 "postBlank": 1,
@@ -2810,7 +2810,7 @@ null,
 {
 "dataType": "org-node",
 "type": "code",
-"ref": "org82e83eb",
+"ref": "org86a69e8",
 "properties": {
 "postAffiliated": null,
 "postBlank": 1,
@@ -2823,7 +2823,7 @@ null,
 {
 "dataType": "org-node",
 "type": "link",
-"ref": "org1c4841d",
+"ref": "org422973e",
 "properties": {
 "postAffiliated": null,
 "postBlank": 1,
@@ -2849,7 +2849,7 @@ null,
 {
 "dataType": "org-node",
 "type": "paragraph",
-"ref": "org8d60ac0",
+"ref": "orge65d020",
 "properties": {
 "postAffiliated": 25757,
 "postBlank": 1,
@@ -2860,7 +2860,7 @@ null,
 {
 "dataType": "org-node",
 "type": "code",
-"ref": "org16aeee9",
+"ref": "org6b3121a",
 "properties": {
 "postAffiliated": null,
 "postBlank": 1,
@@ -2875,7 +2875,7 @@ null,
 {
 "dataType": "org-node",
 "type": "src-block",
-"ref": "org56a3e76",
+"ref": "org5b6358b",
 "properties": {
 "postAffiliated": 25871,
 "postBlank": 1,
@@ -2895,7 +2895,7 @@ null,
 {
 "dataType": "org-node",
 "type": "paragraph",
-"ref": "orgdac6fdc",
+"ref": "org30d5aa5",
 "properties": {
 "postAffiliated": 26861,
 "postBlank": 1,
@@ -2906,7 +2906,7 @@ null,
 {
 "dataType": "org-node",
 "type": "code",
-"ref": "org61868db",
+"ref": "orge4e16c9",
 "properties": {
 "postAffiliated": null,
 "postBlank": 1,
@@ -2921,7 +2921,7 @@ null,
 {
 "dataType": "org-node",
 "type": "src-block",
-"ref": "org1fcd995",
+"ref": "org92c5487",
 "properties": {
 "postAffiliated": 27133,
 "postBlank": 1,
@@ -2941,7 +2941,7 @@ null,
 {
 "dataType": "org-node",
 "type": "paragraph",
-"ref": "org5d982c1",
+"ref": "org59976a4",
 "properties": {
 "postAffiliated": 27639,
 "postBlank": 1,
@@ -2952,7 +2952,7 @@ null,
 {
 "dataType": "org-node",
 "type": "verbatim",
-"ref": "org8547864",
+"ref": "orgdbe4bf6",
 "properties": {
 "postAffiliated": null,
 "postBlank": 1,
@@ -2965,7 +2965,7 @@ null,
 {
 "dataType": "org-node",
 "type": "code",
-"ref": "org836b242",
+"ref": "org2ab86a7",
 "properties": {
 "postAffiliated": null,
 "postBlank": 1,
@@ -2978,7 +2978,7 @@ null,
 {
 "dataType": "org-node",
 "type": "code",
-"ref": "orgc794ce0",
+"ref": "org781a15f",
 "properties": {
 "postAffiliated": null,
 "postBlank": 1,
@@ -2991,7 +2991,7 @@ null,
 {
 "dataType": "org-node",
 "type": "verbatim",
-"ref": "org0183c82",
+"ref": "orgc1147ae",
 "properties": {
 "postAffiliated": null,
 "postBlank": 0,
@@ -3006,7 +3006,7 @@ null,
 {
 "dataType": "org-node",
 "type": "src-block",
-"ref": "orge114c2c",
+"ref": "orged81f05",
 "properties": {
 "postAffiliated": 27933,
 "postBlank": 1,
@@ -3026,7 +3026,7 @@ null,
 {
 "dataType": "org-node",
 "type": "paragraph",
-"ref": "orgdd666e7",
+"ref": "orgd90edaa",
 "properties": {
 "postAffiliated": 28024,
 "postBlank": 1,
@@ -3037,7 +3037,7 @@ null,
 {
 "dataType": "org-node",
 "type": "verbatim",
-"ref": "org17cdc91",
+"ref": "orga076c02",
 "properties": {
 "postAffiliated": null,
 "postBlank": 0,
@@ -3050,7 +3050,7 @@ null,
 {
 "dataType": "org-node",
 "type": "link",
-"ref": "org279f869",
+"ref": "org8305f76",
 "properties": {
 "postAffiliated": null,
 "postBlank": 0,
@@ -3070,7 +3070,7 @@ null,
 {
 "dataType": "org-node",
 "type": "code",
-"ref": "org3ac83a8",
+"ref": "org67172b8",
 "properties": {
 "postAffiliated": null,
 "postBlank": 0,
@@ -3085,7 +3085,7 @@ null,
 {
 "dataType": "org-node",
 "type": "verbatim",
-"ref": "orga05b765",
+"ref": "orga0d022d",
 "properties": {
 "postAffiliated": null,
 "postBlank": 1,
@@ -3098,7 +3098,7 @@ null,
 {
 "dataType": "org-node",
 "type": "verbatim",
-"ref": "orgb23f4e2",
+"ref": "org39d914c",
 "properties": {
 "postAffiliated": null,
 "postBlank": 1,
@@ -3113,7 +3113,7 @@ null,
 {
 "dataType": "org-node",
 "type": "paragraph",
-"ref": "orgf4f5b8d",
+"ref": "orgebf5d16",
 "properties": {
 "postAffiliated": 29010,
 "postBlank": 1,
@@ -3124,7 +3124,7 @@ null,
 {
 "dataType": "org-node",
 "type": "link",
-"ref": "org787b9a5",
+"ref": "orgca4f04c",
 "properties": {
 "postAffiliated": null,
 "postBlank": 0,
@@ -3148,7 +3148,7 @@ null,
 {
 "dataType": "org-node",
 "type": "code",
-"ref": "org66b4008",
+"ref": "orge945b68",
 "properties": {
 "postAffiliated": null,
 "postBlank": 1,
@@ -3163,7 +3163,7 @@ null,
 {
 "dataType": "org-node",
 "type": "src-block",
-"ref": "orgf6e97ca",
+"ref": "org4165273",
 "properties": {
 "postAffiliated": 29696,
 "postBlank": 1,
@@ -3183,7 +3183,7 @@ null,
 {
 "dataType": "org-node",
 "type": "paragraph",
-"ref": "org0dd0e75",
+"ref": "org33144fa",
 "properties": {
 "postAffiliated": 31067,
 "postBlank": 1,
@@ -3194,7 +3194,7 @@ null,
 {
 "dataType": "org-node",
 "type": "code",
-"ref": "org56eb675",
+"ref": "orgc416fbd",
 "properties": {
 "postAffiliated": null,
 "postBlank": 1,
@@ -3207,7 +3207,7 @@ null,
 {
 "dataType": "org-node",
 "type": "code",
-"ref": "orgfc647ad",
+"ref": "orgce56ce3",
 "properties": {
 "postAffiliated": null,
 "postBlank": 1,
@@ -3220,7 +3220,7 @@ null,
 {
 "dataType": "org-node",
 "type": "verbatim",
-"ref": "org96847aa",
+"ref": "org5b45234",
 "properties": {
 "postAffiliated": null,
 "postBlank": 1,
@@ -3233,7 +3233,7 @@ null,
 {
 "dataType": "org-node",
 "type": "italic",
-"ref": "org82a6429",
+"ref": "orgbeb4098",
 "properties": {
 "postAffiliated": null,
 "postBlank": 1,
@@ -3247,7 +3247,7 @@ null,
 {
 "dataType": "org-node",
 "type": "code",
-"ref": "org67d30f3",
+"ref": "orgdfb3f25",
 "properties": {
 "postAffiliated": null,
 "postBlank": 1,
@@ -3260,7 +3260,7 @@ null,
 {
 "dataType": "org-node",
 "type": "link",
-"ref": "org28929d5",
+"ref": "orgab0a30f",
 "properties": {
 "postAffiliated": null,
 "postBlank": 0,
@@ -3290,7 +3290,7 @@ null,
 {
 "dataType": "org-node",
 "type": "headline",
-"ref": "orgf025411",
+"ref": "orgd09b8d8",
 "drawer": {
 
 },
@@ -3322,7 +3322,7 @@ null,
 {
 "dataType": "org-node",
 "type": "section",
-"ref": "orgbfa8927",
+"ref": "orgfdc60cb",
 "properties": {
 "postAffiliated": 31736,
 "postBlank": 0,
@@ -3332,7 +3332,7 @@ null,
 {
 "dataType": "org-node",
 "type": "paragraph",
-"ref": "org733fac1",
+"ref": "orgfb3a3b5",
 "properties": {
 "postAffiliated": 31736,
 "postBlank": 1,
@@ -3343,7 +3343,7 @@ null,
 {
 "dataType": "org-node",
 "type": "link",
-"ref": "orgcaa573d",
+"ref": "org1dc74ff",
 "properties": {
 "postAffiliated": null,
 "postBlank": 0,
@@ -3373,7 +3373,7 @@ null,
 {
 "dataType": "org-node",
 "type": "headline",
-"ref": "orgdfaa80b",
+"ref": "org4736318",
 "drawer": {
 
 },
@@ -3405,7 +3405,7 @@ null,
 {
 "dataType": "org-node",
 "type": "section",
-"ref": "org5e3c43f",
+"ref": "org6f76a7c",
 "properties": {
 "postAffiliated": 32388,
 "postBlank": 0,
@@ -3415,7 +3415,7 @@ null,
 {
 "dataType": "org-node",
 "type": "footnote-definition",
-"ref": "org39f0c4d",
+"ref": "org1cb61cf",
 "properties": {
 "postAffiliated": 32388,
 "postBlank": 1,
@@ -3427,7 +3427,7 @@ null,
 {
 "dataType": "org-node",
 "type": "paragraph",
-"ref": "orgebba6a1",
+"ref": "org4ddc571",
 "properties": {
 "postAffiliated": 32395,
 "postBlank": 0,
@@ -3442,7 +3442,7 @@ null,
 {
 "dataType": "org-node",
 "type": "footnote-definition",
-"ref": "org6bd451e",
+"ref": "org4f6c4d7",
 "properties": {
 "postAffiliated": 32843,
 "postBlank": 1,
@@ -3454,7 +3454,7 @@ null,
 {
 "dataType": "org-node",
 "type": "paragraph",
-"ref": "org15dd1ae",
+"ref": "org6f4e5d9",
 "properties": {
 "postAffiliated": 32850,
 "postBlank": 0,
@@ -3477,7 +3477,7 @@ null,
 {
 "dataType": "org-node",
 "type": "footnote-definition",
-"ref": "org7e94c99",
+"ref": "orgcef56f0",
 "properties": {
 "postAffiliated": 33365,
 "postBlank": 0,
@@ -3489,7 +3489,7 @@ null,
 {
 "dataType": "org-node",
 "type": "paragraph",
-"ref": "orgaef790d",
+"ref": "org0961389",
 "properties": {
 "postAffiliated": 33372,
 "postBlank": 0,
@@ -3500,7 +3500,7 @@ null,
 {
 "dataType": "org-node",
 "type": "code",
-"ref": "org2c49581",
+"ref": "orge10f456",
 "properties": {
 "postAffiliated": null,
 "postBlank": 1,
