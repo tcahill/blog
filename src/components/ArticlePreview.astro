@@ -1,6 +1,7 @@
 ---
 import type { OrgDocument } from 'ox-json-types';
 import Timestamp from './Timestamp.astro';
+import Paragraph from './Paragraph.astro';
 
 interface Props {
     article: OrgDocument,
@@ -9,22 +10,22 @@ interface Props {
 const { article } = Astro.props;
 const name = article.properties.title[0]?.toLowerCase()?.replaceAll(" ", "_");
 
+
+const intro = article.contents[0].contents.find((node) => node.type === 'paragraph');
 ---
 
 <div class="article-preview">
     <a href={`/articles/${name}`}>{article.properties.title}</a>
     <span class="article-date"> <Timestamp node={article.properties.date[0]} /> </span>
+    {intro && <div class="intro"><Paragraph node={intro} /></div>}
 </div>
 
 <style>
  .article-preview {
-     display: flex;
-     gap: 2rem;
  }
 
  a {
      color: var(--link);
-     text-decoration-line: none;
      font-size: 1.2rem;
  }
 
@@ -34,6 +35,11 @@ const name = article.properties.title[0]?.toLowerCase()?.replaceAll(" ", "_");
 
  .article-date {
      color: var(--secondary);
+     margin-left: 2rem;
+ }
+
+ p {
+     margin-top: 0;
  }
 </style>
 

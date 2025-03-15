@@ -2,7 +2,9 @@
 import katex from 'katex';
 
 const { node } = Astro.props;
-const html = katex.renderToString(node.properties.value, { output: 'html' });
+const match = node.properties.value.match(/^\$(.*)\$$/);
+const value = match[1] || node.properties.value;
+const html = katex.renderToString(value, { output: 'html' });
 ---
 
 <Fragment set:html={html} />

@@ -8,15 +8,26 @@ interface Props {
 }
 
 const { article } = Astro.props;
+
+const subtitle = article.contents[0].contents.find((node) => node.type === 'keyword' && node.properties.key === 'SUBTITLE');
 ---
-<h1>{article.properties.title[0]}</h1>
+<h1 class="title">{article.properties.title[0]}</h1>
+{subtitle && <div class="subtitle">{subtitle.properties.value}</div>}
 <div class="article-date"><Timestamp node={article.properties.date[0]} /></div>
 <Tags tags={article.properties.filetags} />
 {article.contents.map((node) => <Node node={node} />)}
 
 <style>
-    .article-date {
-        color: var(--secondary);
-        margin-bottom: 1rem;
-    }
+ .article-date {
+     color: var(--secondary);
+     margin-bottom: 1rem;
+ }
+
+ .title {
+     margin: 1rem 0 0.5rem 0;
+ }
+
+ .subtitle {
+     font-size: 1.25rem;
+ }
 </style>
