@@ -1,5 +1,5 @@
 ---
-import type { OrgDocument } from "ox-json-types";
+import type { KeywordElement, OrgDocument } from "ox-json-types";
 import Node from "@components/Node.astro";
 import Timestamp from "./Timestamp.astro";
 import Tags from "./Tags.astro";
@@ -9,12 +9,16 @@ interface Props {
 
 const { article } = Astro.props;
 
-const subtitle = article.contents[0].contents.find((node) => node.type === 'keyword' && node.properties.key === 'SUBTITLE');
+const subtitle = article.contents[0].contents.find(
+    (node) => typeof(node) !== 'string' && node.type === 'keyword' && node.properties.key === 'SUBTITLE',
+) as KeywordElement;
 ---
 <h1 class="title">{article.properties.title[0]}</h1>
 {subtitle && <div class="subtitle">{subtitle.properties.value}</div>}
 <div class="article-date"><Timestamp node={article.properties.date[0]} /></div>
+
 <Tags tags={article.properties.filetags} />
+
 {article.contents.map((node) => <Node node={node} />)}
 
 <style>

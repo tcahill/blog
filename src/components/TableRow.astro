@@ -1,5 +1,10 @@
 ---
+import type { TableRowElement } from "ox-json-types";
 import Contents from "./Contents.astro";
+
+interface Props {
+    node: TableRowElement
+}
 
 const { node } = Astro.props;
 ---
