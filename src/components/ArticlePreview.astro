@@ -1,45 +1,57 @@
 ---
-import type { OrgDocument } from 'ox-json-types';
-import Timestamp from './Timestamp.astro';
-import Paragraph from './Paragraph.astro';
+import type { OrgDocument } from "ox-json-types";
+import Timestamp from "./Timestamp.astro";
+import Paragraph from "./Paragraph.astro";
 
 interface Props {
-    article: OrgDocument,
+    article: OrgDocument;
 }
 
 const { article } = Astro.props;
 const name = article.properties.title[0]?.toLowerCase()?.replaceAll(" ", "_");
 
+const subtitle = article.contents[0].contents.find(
+    (node) => node.type === "keyword" && node.properties.key === "SUBTITLE",
+);
 
-const intro = article.contents[0].contents.find((node) => node.type === 'paragraph');
+const intro = article.contents[0].contents.find(
+    (node) => node.type === "paragraph",
+);
 ---
 
 <div class="article-preview">
-    <a href={`/articles/${name}`}>{article.properties.title}</a>
-    <span class="article-date"> <Timestamp node={article.properties.date[0]} /> </span>
-    {intro && <div class="intro"><Paragraph node={intro} /></div>}
+    <a href={`/articles/${name}`}>{article.properties.title}{subtitle && ` (${subtitle.properties.value})`}</a>
+    <span class="article-date">
+        <Timestamp node={article.properties.date[0]} />
+    </span>
+    {
+        intro && (
+            <div class="intro">
+                <Paragraph node={intro} />
+            </div>
+        )
+    }
 </div>
 
 <style>
- .article-preview {
- }
+    .article-preview {
+    }
 
- a {
-     color: var(--link);
-     font-size: 1.2rem;
- }
+    a {
+        color: var(--link);
+        font-size: 1.2rem;
+    }
 
- a:hover {
-     color: var(--tertiary);
- }
+    a:hover {
+        color: var(--tertiary);
+    }
 
- .article-date {
-     color: var(--secondary);
-     margin-left: 2rem;
- }
+    .article-date {
+        color: var(--secondary);
+        margin-left: 2rem;
+    }
 
- p {
-     margin-top: 0;
- }
+    p {
+        margin-top: 0;
+    }
 </style>
-
