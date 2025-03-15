@@ -246,12 +246,12 @@ Finally, we'll plot the data with gnuplot [fn:2]:
   ,#+end_src
 #+end_src
 
-Note that we are again calling the ~generate_data~ code block to pass the data
-into gnuplot - the Ruby array from that block is magically transformed into a
-gnuplot variable! We also use =:results output :file ./images/monte_carlo.svg=
-to tell Babel to use the output of the code block as the result and to write it
-to a file. When we export this to JSON, the code itself is omitted but a link to
-the generated SVG is included (and then translated into an ~<img />~ during the
+Again we're invoking the ~generate_data~ code block to pass the data into
+gnuplot - the Ruby array from that block is magically transformed into a gnuplot
+variable! We also use =:results output :file ./images/monte_carlo.svg= to tell
+Babel to use the output of the code block as the result and to write it to a
+file. When we export this to JSON, the code itself is omitted but a link to the
+generated SVG is included (and then translated into an ~<img />~ during the
 Astro build). Finally we use the =:post= header to [[https://orgmode.org/manual/Results-of-Evaluation.html#Post_002dprocessing-1][post-process]] the outputted
 link, attaching an attribute to indicate what to set the alt text to in the
 exported HTML.
@@ -406,12 +406,12 @@ the type ~org-element-deferred~ and the actual contents of the block are missing
 from the JSON output.
 
 After a little digging, I discovered that both of these issues were related to
-the same commit to Org Mode: [[https://git.savannah.gnu.org/cgit/emacs/org-mode.git/commit/?id=1260f61830bfdee821de9233051a821f4ac4831c][1260f61]]. As the commit
-message explains, some properties that are common to most AST nodes are now
-stored in an array under ~standard-properties~. Separately, some values are now
-deferred and computed on-demand when accessed - so apparently we must be
-accessing those values in the wrong way. Fortunately the Org Mode [[https://orgmode.org/Changes.html][changelog]]
-explained both of these changes and the way to handle them clearly:
+[[https://git.savannah.gnu.org/cgit/emacs/org-mode.git/commit/?id=1260f61830bfdee821de9233051a821f4ac4831c][the same Org Mode commit]]. As the commit message explains, some properties that
+are common to most AST nodes are now stored in an array under
+~standard-properties~. Separately, some values are now deferred and computed
+on-demand when accessed - so apparently we must be accessing those values in the
+wrong way. Fortunately the Org Mode [[https://orgmode.org/Changes.html][changelog]] explained both of these changes
+and the way to handle them clearly:
 
 #+begin_quote
 The code relying upon the previously used (TYPE PROPERTIES-PLIST CONTENTS-LIST)
@@ -759,14 +759,25 @@ from what ox-html does [[https://github.com/bzg/org-mode/blob/main/lisp/ox-html.
 
 * Closing Thoughts
 
-If you've made it this far, you may be questioning my sanity and indeed your own
-for humoring me. That said, I think this was a worthwhile pursuit which gave me
-the opportunity to learn a couple things about Org Mode and make a small
-contribution ([[https://github.com/jlumpe/ox-json/pull/9][PR pending]]) that might be useful to someone else one day. I'm also
-happy with the end result: as I was putting this article together I found the
-experience of iterating both on the content and presentation really gelled for
-me. I have a lot more to say about Org Mode and Emacs generally so stay tuned
-for more content like this in the future!
+If you've made it this far you may be questioning my sanity and indeed your own
+for humoring me, but hopefully you've walked away with a good impression of the
+power and flexibility of Org Mode. I think this was a worthwhile pursuit which
+gave me the opportunity to peak under the hood and make a small contribution ([[https://github.com/jlumpe/ox-json/pull/9][PR
+pending]]) that might be useful to someone else one day.
+
+I'm also happy with where this ended up: as I was putting this article together
+I found the experience of iterating both on the content and presentation really
+gelled for me. As an example, at first I was relying on MathJax to render
+mathematicaly formulas since Org Mode has good support for converting LaTeX to
+MathJax, but it felt kind of gratuitous to ship 2 MB of JavaScript just to
+render the occasional formula. With a couple minutes of work I brought in [[https://katex.org/][katex]]
+as a replacement, which I could use at build time from Astro to transform a
+LaTeX formula into HTML that just needed a stylesheet and font totalling tens of
+kilobytes to render properly ([[https://github.com/tcahill/blog/commit/7b1912ae214fee679da73bf3bef238fec351ac42][diff]]).
+
+I intend to mix things up for the next few post, but I have a lot more to say
+about Org Mode and Emacs generally so stay tuned for more content like this in
+the future!
 
 * Footnotes
 

@@ -17,7 +17,7 @@
 {
 "dataType": "org-node",
 "type": "timestamp",
-"ref": "org3517a58",
+"ref": "org3f0f96d",
 "properties": {
 "postAffiliated": null,
 "postBlank": 0,
@@ -39,7 +39,7 @@
 {
 "dataType": "org-node",
 "type": "section",
-"ref": "org974f01e",
+"ref": "org917589d",
 "properties": {
 "postAffiliated": 1,
 "postBlank": 0,
@@ -49,7 +49,7 @@
 {
 "dataType": "org-node",
 "type": "keyword",
-"ref": "orgfa032ea",
+"ref": "org5cd5834",
 "properties": {
 "postAffiliated": 1,
 "postBlank": 0,
@@ -62,7 +62,7 @@
 {
 "dataType": "org-node",
 "type": "keyword",
-"ref": "orga18955c",
+"ref": "org3ed62f1",
 "properties": {
 "postAffiliated": 32,
 "postBlank": 0,
@@ -75,7 +75,7 @@
 {
 "dataType": "org-node",
 "type": "keyword",
-"ref": "orgd6a868b",
+"ref": "org60b7f05",
 "properties": {
 "postAffiliated": 73,
 "postBlank": 0,
@@ -88,7 +88,7 @@
 {
 "dataType": "org-node",
 "type": "keyword",
-"ref": "org55e5aea",
+"ref": "orgc38cfbd",
 "properties": {
 "postAffiliated": 98,
 "postBlank": 0,
@@ -101,7 +101,7 @@
 {
 "dataType": "org-node",
 "type": "keyword",
-"ref": "org54211a2",
+"ref": "org48a1044",
 "properties": {
 "postAffiliated": 132,
 "postBlank": 1,
@@ -114,7 +114,7 @@
 {
 "dataType": "org-node",
 "type": "paragraph",
-"ref": "orgbfe84e0",
+"ref": "org372b2d2",
 "properties": {
 "postAffiliated": 150,
 "postBlank": 1,
@@ -125,7 +125,7 @@
 {
 "dataType": "org-node",
 "type": "link",
-"ref": "org4d98f8b",
+"ref": "orgc37e4dc",
 "properties": {
 "postAffiliated": null,
 "postBlank": 1,
@@ -153,7 +153,7 @@
 {
 "dataType": "org-node",
 "type": "headline",
-"ref": "org4693a23",
+"ref": "org844c41d",
 "drawer": {
 
 },
@@ -185,7 +185,7 @@
 {
 "dataType": "org-node",
 "type": "section",
-"ref": "org4fc331a",
+"ref": "org37755bb",
 "properties": {
 "postAffiliated": 632,
 "postBlank": 0,
@@ -195,7 +195,7 @@
 {
 "dataType": "org-node",
 "type": "paragraph",
-"ref": "org38c0a32",
+"ref": "orgcb1ae09",
 "properties": {
 "postAffiliated": 632,
 "postBlank": 1,
@@ -206,7 +206,7 @@
 {
 "dataType": "org-node",
 "type": "footnote-reference",
-"ref": "org2b99224",
+"ref": "org16c4496",
 "properties": {
 "postAffiliated": null,
 "postBlank": 0,
@@ -220,7 +220,7 @@
 {
 "dataType": "org-node",
 "type": "link",
-"ref": "org1d33fdb",
+"ref": "org861a4eb",
 "properties": {
 "postAffiliated": null,
 "postBlank": 0,
@@ -244,7 +244,7 @@
 {
 "dataType": "org-node",
 "type": "link",
-"ref": "orgfae4861",
+"ref": "org75ae1a7",
 "properties": {
 "postAffiliated": null,
 "postBlank": 1,
@@ -270,7 +270,7 @@
 {
 "dataType": "org-node",
 "type": "plain-list",
-"ref": "org21dc3a0",
+"ref": "orgeaa16f7",
 "properties": {
 "postAffiliated": 1308,
 "postBlank": 1,
@@ -319,7 +319,7 @@ null,
 {
 "dataType": "org-node",
 "type": "item",
-"ref": "org82f98d2",
+"ref": "org7fe693e",
 "properties": {
 "postAffiliated": 1308,
 "postBlank": 0,
@@ -334,7 +334,7 @@ null,
 {
 "dataType": "org-node",
 "type": "paragraph",
-"ref": "orgbb0780e",
+"ref": "org0bbc1ff",
 "properties": {
 "postAffiliated": 1310,
 "postBlank": 0,
@@ -349,7 +349,7 @@ null,
 {
 "dataType": "org-node",
 "type": "item",
-"ref": "orge351b52",
+"ref": "org0396223",
 "properties": {
 "postAffiliated": 1425,
 "postBlank": 0,
@@ -364,7 +364,7 @@ null,
 {
 "dataType": "org-node",
 "type": "paragraph",
-"ref": "org396695e",
+"ref": "orgfa2c55b",
 "properties": {
 "postAffiliated": 1427,
 "postBlank": 0,
@@ -379,7 +379,7 @@ null,
 {
 "dataType": "org-node",
 "type": "item",
-"ref": "orgd8f5c4f",
+"ref": "org8de8209",
 "properties": {
 "postAffiliated": 1552,
 "postBlank": 0,
@@ -394,7 +394,7 @@ null,
 {
 "dataType": "org-node",
 "type": "paragraph",
-"ref": "org1549c96",
+"ref": "orgfd9fe3f",
 "properties": {
 "postAffiliated": 1554,
 "postBlank": 0,
@@ -409,7 +409,7 @@ null,
 {
 "dataType": "org-node",
 "type": "item",
-"ref": "org213f8d4",
+"ref": "orge21cf8d",
 "properties": {
 "postAffiliated": 1692,
 "postBlank": 0,
@@ -424,7 +424,7 @@ null,
 {
 "dataType": "org-node",
 "type": "paragraph",
-"ref": "org7a3af75",
+"ref": "org95abc1e",
 "properties": {
 "postAffiliated": 1694,
 "postBlank": 0,
@@ -441,7 +441,7 @@ null,
 {
 "dataType": "org-node",
 "type": "paragraph",
-"ref": "org0d8cec2",
+"ref": "org9133e0c",
 "properties": {
 "postAffiliated": 1861,
 "postBlank": 1,
@@ -452,7 +452,7 @@ null,
 {
 "dataType": "org-node",
 "type": "link",
-"ref": "org597c437",
+"ref": "org04d4461",
 "properties": {
 "postAffiliated": null,
 "postBlank": 1,
@@ -476,7 +476,7 @@ null,
 {
 "dataType": "org-node",
 "type": "link",
-"ref": "org838138d",
+"ref": "org5fc0f90",
 "properties": {
 "postAffiliated": null,
 "postBlank": 1,
@@ -500,7 +500,7 @@ null,
 {
 "dataType": "org-node",
 "type": "link",
-"ref": "org594146a",
+"ref": "org3cfa78e",
 "properties": {
 "postAffiliated": null,
 "postBlank": 1,
@@ -526,7 +526,7 @@ null,
 {
 "dataType": "org-node",
 "type": "src-block",
-"ref": "org38df761",
+"ref": "orga5f9759",
 "properties": {
 "postAffiliated": 2688,
 "postBlank": 1,
@@ -546,7 +546,7 @@ null,
 {
 "dataType": "org-node",
 "type": "paragraph",
-"ref": "orgccf3f73",
+"ref": "org3e9682f",
 "properties": {
 "postAffiliated": 3201,
 "postBlank": 1,
@@ -559,7 +559,7 @@ null,
 {
 "dataType": "org-node",
 "type": "special-block",
-"ref": "org7607078",
+"ref": "org0990359",
 "properties": {
 "postAffiliated": 3245,
 "postBlank": 1,
@@ -571,7 +571,7 @@ null,
 {
 "dataType": "org-node",
 "type": "paragraph",
-"ref": "org521befe",
+"ref": "org6abb69a",
 "properties": {
 "postAffiliated": 3266,
 "postBlank": 1,
@@ -584,7 +584,7 @@ null,
 {
 "dataType": "org-node",
 "type": "src-block",
-"ref": "orgda4955a",
+"ref": "org788a111",
 "properties": {
 "postAffiliated": 3309,
 "postBlank": 1,
@@ -604,7 +604,7 @@ null,
 {
 "dataType": "org-node",
 "type": "paragraph",
-"ref": "orge8834e0",
+"ref": "org41d485e",
 "properties": {
 "postAffiliated": 3400,
 "postBlank": 0,
@@ -615,7 +615,7 @@ null,
 {
 "dataType": "org-node",
 "type": "verbatim",
-"ref": "org35120d7",
+"ref": "orgd533b56",
 "properties": {
 "postAffiliated": null,
 "postBlank": 1,
@@ -632,7 +632,7 @@ null,
 {
 "dataType": "org-node",
 "type": "paragraph",
-"ref": "orgc0be5dd",
+"ref": "org1a48985",
 "properties": {
 "postAffiliated": 3732,
 "postBlank": 1,
@@ -643,7 +643,7 @@ null,
 {
 "dataType": "org-node",
 "type": "link",
-"ref": "org8838242",
+"ref": "org3e43df8",
 "properties": {
 "postAffiliated": null,
 "postBlank": 0,
@@ -669,7 +669,7 @@ null,
 {
 "dataType": "org-node",
 "type": "src-block",
-"ref": "orgccd8ac2",
+"ref": "org359f40c",
 "properties": {
 "postAffiliated": 4437,
 "postBlank": 1,
@@ -691,7 +691,7 @@ null,
 {
 "dataType": "org-node",
 "type": "headline",
-"ref": "org689bea6",
+"ref": "org4bbe325",
 "drawer": {
 
 },
@@ -723,7 +723,7 @@ null,
 {
 "dataType": "org-node",
 "type": "section",
-"ref": "org4bf2fdc",
+"ref": "org52278f0",
 "properties": {
 "postAffiliated": 4721,
 "postBlank": 0,
@@ -733,7 +733,7 @@ null,
 {
 "dataType": "org-node",
 "type": "paragraph",
-"ref": "org9f69e5d",
+"ref": "orgaa09ebf",
 "properties": {
 "postAffiliated": 4721,
 "postBlank": 1,
@@ -744,7 +744,7 @@ null,
 {
 "dataType": "org-node",
 "type": "link",
-"ref": "org23febfe",
+"ref": "org1957874",
 "properties": {
 "postAffiliated": null,
 "postBlank": 0,
@@ -770,7 +770,7 @@ null,
 {
 "dataType": "org-node",
 "type": "plain-list",
-"ref": "org67babea",
+"ref": "org5f65a6d",
 "properties": {
 "postAffiliated": 5049,
 "postBlank": 1,
@@ -810,7 +810,7 @@ null,
 {
 "dataType": "org-node",
 "type": "item",
-"ref": "org7c45c61",
+"ref": "orgdac891d",
 "properties": {
 "postAffiliated": 5049,
 "postBlank": 0,
@@ -825,7 +825,7 @@ null,
 {
 "dataType": "org-node",
 "type": "paragraph",
-"ref": "orga6f82b8",
+"ref": "org9cc507a",
 "properties": {
 "postAffiliated": 5051,
 "postBlank": 0,
@@ -836,7 +836,7 @@ null,
 {
 "dataType": "org-node",
 "type": "italic",
-"ref": "org6971b54",
+"ref": "orge0be145",
 "properties": {
 "postAffiliated": null,
 "postBlank": 1,
@@ -854,7 +854,7 @@ null,
 {
 "dataType": "org-node",
 "type": "item",
-"ref": "org45d916e",
+"ref": "org519b1fe",
 "properties": {
 "postAffiliated": 5477,
 "postBlank": 0,
@@ -869,7 +869,7 @@ null,
 {
 "dataType": "org-node",
 "type": "paragraph",
-"ref": "orgfd2fb7b",
+"ref": "org748e323",
 "properties": {
 "postAffiliated": 5479,
 "postBlank": 0,
@@ -884,7 +884,7 @@ null,
 {
 "dataType": "org-node",
 "type": "item",
-"ref": "orgb963880",
+"ref": "orgb777da2",
 "properties": {
 "postAffiliated": 5587,
 "postBlank": 0,
@@ -899,7 +899,7 @@ null,
 {
 "dataType": "org-node",
 "type": "paragraph",
-"ref": "org2ccfd3d",
+"ref": "orgc4e85a0",
 "properties": {
 "postAffiliated": 5589,
 "postBlank": 0,
@@ -916,7 +916,7 @@ null,
 {
 "dataType": "org-node",
 "type": "paragraph",
-"ref": "org3923dc2",
+"ref": "org08b1d2a",
 "properties": {
 "postAffiliated": 5756,
 "postBlank": 1,
@@ -927,7 +927,7 @@ null,
 {
 "dataType": "org-node",
 "type": "entity",
-"ref": "orgdd706a7",
+"ref": "org2f4ad63",
 "properties": {
 "postAffiliated": null,
 "postBlank": 0,
@@ -949,7 +949,7 @@ null,
 {
 "dataType": "org-node",
 "type": "paragraph",
-"ref": "org2f2d9fb",
+"ref": "org74b62c6",
 "properties": {
 "postAffiliated": 6133,
 "postBlank": 1,
@@ -960,7 +960,7 @@ null,
 {
 "dataType": "org-node",
 "type": "entity",
-"ref": "org7c3c142",
+"ref": "org9646872",
 "properties": {
 "postAffiliated": null,
 "postBlank": 1,
@@ -982,7 +982,7 @@ null,
 {
 "dataType": "org-node",
 "type": "paragraph",
-"ref": "org2bf95d2",
+"ref": "orgb86ee5f",
 "properties": {
 "postAffiliated": 6444,
 "postBlank": 1,
@@ -995,7 +995,7 @@ null,
 {
 "dataType": "org-node",
 "type": "src-block",
-"ref": "org8bbbff9",
+"ref": "org3b1e234",
 "properties": {
 "postAffiliated": 6515,
 "postBlank": 1,
@@ -1015,7 +1015,7 @@ null,
 {
 "dataType": "org-node",
 "type": "paragraph",
-"ref": "org8127ea0",
+"ref": "org68f2ff0",
 "properties": {
 "postAffiliated": 6915,
 "postBlank": 0,
@@ -1028,7 +1028,7 @@ null,
 {
 "dataType": "org-node",
 "type": "plain-list",
-"ref": "orgf459e9f",
+"ref": "org62ea362",
 "properties": {
 "postAffiliated": 7002,
 "postBlank": 1,
@@ -1068,7 +1068,7 @@ null,
 {
 "dataType": "org-node",
 "type": "item",
-"ref": "orgbca4a46",
+"ref": "orgc1b46bc",
 "properties": {
 "postAffiliated": 7002,
 "postBlank": 0,
@@ -1083,7 +1083,7 @@ null,
 {
 "dataType": "org-node",
 "type": "paragraph",
-"ref": "org796bd26",
+"ref": "org26ec7fa",
 "properties": {
 "postAffiliated": 7004,
 "postBlank": 0,
@@ -1093,7 +1093,7 @@ null,
 {
 "dataType": "org-node",
 "type": "verbatim",
-"ref": "org8cdc5a2",
+"ref": "orgbf116a4",
 "properties": {
 "postAffiliated": null,
 "postBlank": 0,
@@ -1110,7 +1110,7 @@ null,
 {
 "dataType": "org-node",
 "type": "item",
-"ref": "org357d3b0",
+"ref": "org69c5f87",
 "properties": {
 "postAffiliated": 7184,
 "postBlank": 0,
@@ -1125,7 +1125,7 @@ null,
 {
 "dataType": "org-node",
 "type": "paragraph",
-"ref": "org8fc179e",
+"ref": "orgdcc3d16",
 "properties": {
 "postAffiliated": 7186,
 "postBlank": 0,
@@ -1135,7 +1135,7 @@ null,
 {
 "dataType": "org-node",
 "type": "verbatim",
-"ref": "org32cca69",
+"ref": "orgfb04c82",
 "properties": {
 "postAffiliated": null,
 "postBlank": 0,
@@ -1152,7 +1152,7 @@ null,
 {
 "dataType": "org-node",
 "type": "item",
-"ref": "orgad80317",
+"ref": "org2a2184d",
 "properties": {
 "postAffiliated": 7434,
 "postBlank": 0,
@@ -1167,7 +1167,7 @@ null,
 {
 "dataType": "org-node",
 "type": "paragraph",
-"ref": "org6d3694f",
+"ref": "org9850a83",
 "properties": {
 "postAffiliated": 7436,
 "postBlank": 0,
@@ -1177,7 +1177,7 @@ null,
 {
 "dataType": "org-node",
 "type": "verbatim",
-"ref": "orgf8c59ec",
+"ref": "org0e4ec2c",
 "properties": {
 "postAffiliated": null,
 "postBlank": 0,
@@ -1196,7 +1196,7 @@ null,
 {
 "dataType": "org-node",
 "type": "src-block",
-"ref": "org7d75f0d",
+"ref": "org2417f21",
 "properties": {
 "postAffiliated": 7730,
 "postBlank": 1,
@@ -1210,14 +1210,14 @@ null,
 "useLabels": true,
 "labelFmt": null,
 "name": "generate_data",
-"value": "<pre>\n<span class=\"builtin\">srand</span><span class=\"rainbow-delimiters-depth-1\">(</span><span class=\"highlight-numbers-number\">123</span><span class=\"rainbow-delimiters-depth-1\">)</span> <span class=\"comment\"># fix the random seed so we get consistent results every time we run this\n</span><span class=\"rainbow-delimiters-depth-1\">(</span><span class=\"highlight-numbers-number\">0</span><span class=\"enh-ruby-op\">...</span>samples<span class=\"rainbow-delimiters-depth-1\">)</span>.map <span class=\"keyword\">do</span> <span class=\"variable-name\">|</span>_x<span class=\"variable-name\">|</span>\n  point <span class=\"enh-ruby-op\">=</span> <span class=\"rainbow-delimiters-depth-1\">[</span><span class=\"builtin\">rand</span><span class=\"rainbow-delimiters-depth-2\">()</span>, <span class=\"builtin\">rand</span><span class=\"rainbow-delimiters-depth-2\">()</span><span class=\"rainbow-delimiters-depth-1\">]</span>\n  <span class=\"rainbow-delimiters-depth-1\">[</span>point<span class=\"rainbow-delimiters-depth-2\">[</span><span class=\"highlight-numbers-number\">0</span><span class=\"rainbow-delimiters-depth-2\">]</span>, point<span class=\"rainbow-delimiters-depth-2\">[</span><span class=\"highlight-numbers-number\">1</span><span class=\"rainbow-delimiters-depth-2\">]</span>, <span class=\"type\">Math</span>.sqrt<span class=\"rainbow-delimiters-depth-2\">(</span>point<span class=\"rainbow-delimiters-depth-3\">[</span><span class=\"highlight-numbers-number\">0</span><span class=\"rainbow-delimiters-depth-3\">]</span><span class=\"enh-ruby-op\">**</span><span class=\"highlight-numbers-number\">2</span> <span class=\"enh-ruby-op\">+</span> point<span class=\"rainbow-delimiters-depth-3\">[</span><span class=\"highlight-numbers-number\">1</span><span class=\"rainbow-delimiters-depth-3\">]</span><span class=\"enh-ruby-op\">**</span><span class=\"highlight-numbers-number\">2</span><span class=\"rainbow-delimiters-depth-2\">)</span> <span class=\"enh-ruby-op\">&lt;=</span> <span class=\"highlight-numbers-number\">1</span> <span class=\"enh-ruby-op\">?</span> <span class=\"highlight-numbers-number\">0</span> <span class=\"enh-ruby-op\">:</span> <span class=\"highlight-numbers-number\">1</span><span class=\"rainbow-delimiters-depth-1\">]</span>\n<span class=\"keyword\">end</span>\n</pre>"
+"value": "<pre>\n<span class=\"builtin\">srand</span><span class=\"rainbow-delimiters-depth-1\">(</span><span class=\"highlight-numbers-number\">123</span><span class=\"rainbow-delimiters-depth-1\">)</span> # fix the random seed so we get consistent results every time we run this\n<span class=\"rainbow-delimiters-depth-1\">(</span><span class=\"highlight-numbers-number\">0</span>...samples<span class=\"rainbow-delimiters-depth-1\">)</span>.map do |_x|\n  point = <span class=\"rainbow-delimiters-depth-1\">[</span><span class=\"builtin\">rand</span><span class=\"rainbow-delimiters-depth-2\">()</span>, <span class=\"builtin\">rand</span><span class=\"rainbow-delimiters-depth-2\">()</span><span class=\"rainbow-delimiters-depth-1\">]</span>\n  <span class=\"rainbow-delimiters-depth-1\">[</span>point<span class=\"rainbow-delimiters-depth-2\">[</span><span class=\"highlight-numbers-number\">0</span><span class=\"rainbow-delimiters-depth-2\">]</span>, point<span class=\"rainbow-delimiters-depth-2\">[</span><span class=\"highlight-numbers-number\">1</span><span class=\"rainbow-delimiters-depth-2\">]</span>, Math.sqrt<span class=\"rainbow-delimiters-depth-2\">(</span>point<span class=\"rainbow-delimiters-depth-3\">[</span><span class=\"highlight-numbers-number\">0</span><span class=\"rainbow-delimiters-depth-3\">]</span>**<span class=\"highlight-numbers-number\">2</span> + point<span class=\"rainbow-delimiters-depth-3\">[</span><span class=\"highlight-numbers-number\">1</span><span class=\"rainbow-delimiters-depth-3\">]</span>**<span class=\"highlight-numbers-number\">2</span><span class=\"rainbow-delimiters-depth-2\">)</span> &lt;= <span class=\"highlight-numbers-number\">1</span> ? <span class=\"highlight-numbers-number\">0</span> : <span class=\"highlight-numbers-number\">1</span><span class=\"rainbow-delimiters-depth-1\">]</span>\nend\n</pre>"
 },
 "contents": []
 },
 {
 "dataType": "org-node",
 "type": "paragraph",
-"ref": "org17860d6",
+"ref": "org790a6c5",
 "properties": {
 "postAffiliated": 8072,
 "postBlank": 1,
@@ -1228,7 +1228,7 @@ null,
 {
 "dataType": "org-node",
 "type": "entity",
-"ref": "org2c347ea",
+"ref": "orge6953cb",
 "properties": {
 "postAffiliated": null,
 "postBlank": 1,
@@ -1248,7 +1248,7 @@ null,
 {
 "dataType": "org-node",
 "type": "latex-fragment",
-"ref": "org90ca679",
+"ref": "orga326bc5",
 "properties": {
 "postAffiliated": null,
 "postBlank": 1,
@@ -1261,7 +1261,7 @@ null,
 {
 "dataType": "org-node",
 "type": "verbatim",
-"ref": "org6d5de9d",
+"ref": "org6e163d5",
 "properties": {
 "postAffiliated": null,
 "postBlank": 1,
@@ -1274,7 +1274,7 @@ null,
 {
 "dataType": "org-node",
 "type": "verbatim",
-"ref": "org47007b0",
+"ref": "orgdfa2419",
 "properties": {
 "postAffiliated": null,
 "postBlank": 1,
@@ -1289,7 +1289,7 @@ null,
 {
 "dataType": "org-node",
 "type": "src-block",
-"ref": "org9e63909",
+"ref": "org874dd6e",
 "properties": {
 "postAffiliated": 8285,
 "postBlank": 1,
@@ -1309,7 +1309,7 @@ null,
 {
 "dataType": "org-node",
 "type": "paragraph",
-"ref": "orgf911f3c",
+"ref": "org014210e",
 "properties": {
 "postAffiliated": 8818,
 "postBlank": 0,
@@ -1322,7 +1322,7 @@ null,
 {
 "dataType": "org-node",
 "type": "plain-list",
-"ref": "org3a6cec1",
+"ref": "org49a0da1",
 "properties": {
 "postAffiliated": 8884,
 "postBlank": 1,
@@ -1362,7 +1362,7 @@ null,
 {
 "dataType": "org-node",
 "type": "item",
-"ref": "orgc2439d2",
+"ref": "orga0eab4a",
 "properties": {
 "postAffiliated": 8884,
 "postBlank": 0,
@@ -1377,7 +1377,7 @@ null,
 {
 "dataType": "org-node",
 "type": "paragraph",
-"ref": "orga6060cb",
+"ref": "orgd5e6ad7",
 "properties": {
 "postAffiliated": 8886,
 "postBlank": 0,
@@ -1388,7 +1388,7 @@ null,
 {
 "dataType": "org-node",
 "type": "verbatim",
-"ref": "org92f4be9",
+"ref": "org080f702",
 "properties": {
 "postAffiliated": null,
 "postBlank": 1,
@@ -1405,7 +1405,7 @@ null,
 {
 "dataType": "org-node",
 "type": "item",
-"ref": "org72c5537",
+"ref": "org37d0d66",
 "properties": {
 "postAffiliated": 9055,
 "postBlank": 0,
@@ -1420,7 +1420,7 @@ null,
 {
 "dataType": "org-node",
 "type": "paragraph",
-"ref": "orgdb7cda9",
+"ref": "org39d2be9",
 "properties": {
 "postAffiliated": 9057,
 "postBlank": 0,
@@ -1431,7 +1431,7 @@ null,
 {
 "dataType": "org-node",
 "type": "verbatim",
-"ref": "org8e54296",
+"ref": "orgd67e6d6",
 "properties": {
 "postAffiliated": null,
 "postBlank": 1,
@@ -1448,7 +1448,7 @@ null,
 {
 "dataType": "org-node",
 "type": "item",
-"ref": "org18c6a90",
+"ref": "org2c1f8da",
 "properties": {
 "postAffiliated": 9158,
 "postBlank": 0,
@@ -1463,7 +1463,7 @@ null,
 {
 "dataType": "org-node",
 "type": "paragraph",
-"ref": "orgf255322",
+"ref": "org9669ebd",
 "properties": {
 "postAffiliated": 9160,
 "postBlank": 0,
@@ -1474,7 +1474,7 @@ null,
 {
 "dataType": "org-node",
 "type": "code",
-"ref": "org9788eb2",
+"ref": "orge181c3b",
 "properties": {
 "postAffiliated": null,
 "postBlank": 1,
@@ -1487,7 +1487,7 @@ null,
 {
 "dataType": "org-node",
 "type": "verbatim",
-"ref": "orgc9cb4c6",
+"ref": "orgfba3603",
 "properties": {
 "postAffiliated": null,
 "postBlank": 0,
@@ -1506,7 +1506,7 @@ null,
 {
 "dataType": "org-node",
 "type": "src-block",
-"ref": "org576413c",
+"ref": "org8b38353",
 "properties": {
 "postAffiliated": 9567,
 "postBlank": 1,
@@ -1526,14 +1526,14 @@ null,
 ":var data_100=generate_data(samples=100)",
 ":var data_1000=generate_data(samples=1000)"
 ],
-"value": "<pre>\nestimates <span class=\"enh-ruby-op\">=</span> <span class=\"rainbow-delimiters-depth-1\">[</span>data_10, data_100, data_1000<span class=\"rainbow-delimiters-depth-1\">]</span>.map <span class=\"keyword\">do</span> <span class=\"variable-name\">|</span>data<span class=\"variable-name\">|</span>\n  points_inside <span class=\"enh-ruby-op\">=</span> data.select <span class=\"keyword\"><span class=\"rainbow-delimiters-depth-1\">{</span></span> <span class=\"variable-name\">|</span>point<span class=\"variable-name\">|</span> point<span class=\"rainbow-delimiters-depth-2\">[</span><span class=\"highlight-numbers-number\">2</span><span class=\"rainbow-delimiters-depth-2\">]</span> <span class=\"enh-ruby-op\">==</span> <span class=\"highlight-numbers-number\">0</span> <span class=\"keyword\"><span class=\"rainbow-delimiters-depth-1\">}</span></span>\n  pi_estimate <span class=\"enh-ruby-op\">=</span> <span class=\"highlight-numbers-number\">4</span>.<span class=\"highlight-numbers-number\">0</span> <span class=\"enh-ruby-op\">*</span> points_inside.length <span class=\"enh-ruby-op\">/</span> data.length\n  <span class=\"rainbow-delimiters-depth-1\">[</span>data.length, pi_estimate<span class=\"rainbow-delimiters-depth-1\">]</span>\n<span class=\"keyword\">end</span>\n\n<span class=\"comment\"># note: the `nil` here causes Org to add a horizontal line below the previous\n# row when it renders the table, so it's visually clear that the first row\n# should be treated as the table header\n</span><span class=\"rainbow-delimiters-depth-1\">[</span><span class=\"rainbow-delimiters-depth-2\">[</span><span class=\"enh-ruby-string-delimiter\">\"</span><span class=\"string\">samples</span><span class=\"enh-ruby-string-delimiter\">\"</span>, <span class=\"enh-ruby-string-delimiter\">\"</span><span class=\"string\">estimate</span><span class=\"enh-ruby-string-delimiter\">\"</span><span class=\"rainbow-delimiters-depth-2\">]</span>, <span class=\"keyword\">nil</span><span class=\"rainbow-delimiters-depth-1\">]</span> <span class=\"enh-ruby-op\">+</span> estimates\n</pre>"
+"value": "<pre>\nestimates = <span class=\"rainbow-delimiters-depth-1\">[</span>data_10, data_100, data_1000<span class=\"rainbow-delimiters-depth-1\">]</span>.map do |data|\n  points_inside = data.select <span class=\"rainbow-delimiters-depth-1\">{</span> |point| point<span class=\"rainbow-delimiters-depth-2\">[</span><span class=\"highlight-numbers-number\">2</span><span class=\"rainbow-delimiters-depth-2\">]</span> == <span class=\"highlight-numbers-number\">0</span> <span class=\"rainbow-delimiters-depth-1\">}</span>\n  pi_estimate = <span class=\"highlight-numbers-number\">4</span>.<span class=\"highlight-numbers-number\">0</span> * points_inside.length / data.length\n  <span class=\"rainbow-delimiters-depth-1\">[</span>data.length, pi_estimate<span class=\"rainbow-delimiters-depth-1\">]</span>\nend\n\n# note: the `nil` here causes Org to add a horizontal line below the previous\n# row when it renders the table, so it's visually clear that the first row\n# should be treated as the table header\n<span class=\"rainbow-delimiters-depth-1\">[</span><span class=\"rainbow-delimiters-depth-2\">[</span>\"samples\", \"estimate\"<span class=\"rainbow-delimiters-depth-2\">]</span>, nil<span class=\"rainbow-delimiters-depth-1\">]</span> + estimates\n</pre>"
 },
 "contents": []
 },
 {
 "dataType": "org-node",
 "type": "table",
-"ref": "org28af7eb",
+"ref": "orgb39e962",
 "properties": {
 "postAffiliated": 10126,
 "postBlank": 1,
@@ -1549,7 +1549,7 @@ null,
 {
 "dataType": "org-node",
 "type": "table-row",
-"ref": "orgc9914aa",
+"ref": "org46b3dc3",
 "properties": {
 "postAffiliated": 10126,
 "postBlank": 0,
@@ -1560,7 +1560,7 @@ null,
 {
 "dataType": "org-node",
 "type": "table-cell",
-"ref": "org4035447",
+"ref": "org4050f37",
 "properties": {
 "postAffiliated": null,
 "postBlank": 0,
@@ -1573,7 +1573,7 @@ null,
 {
 "dataType": "org-node",
 "type": "table-cell",
-"ref": "org7c13ac0",
+"ref": "org0ffd833",
 "properties": {
 "postAffiliated": null,
 "postBlank": 0,
@@ -1588,7 +1588,7 @@ null,
 {
 "dataType": "org-node",
 "type": "table-row",
-"ref": "org308bdfb",
+"ref": "org9756ba3",
 "properties": {
 "postAffiliated": 10149,
 "postBlank": 0,
@@ -1600,7 +1600,7 @@ null,
 {
 "dataType": "org-node",
 "type": "table-row",
-"ref": "org49e1fbd",
+"ref": "org5a5dd8b",
 "properties": {
 "postAffiliated": 10172,
 "postBlank": 0,
@@ -1611,7 +1611,7 @@ null,
 {
 "dataType": "org-node",
 "type": "table-cell",
-"ref": "org417c3e7",
+"ref": "orgadd5da6",
 "properties": {
 "postAffiliated": null,
 "postBlank": 0,
@@ -1624,7 +1624,7 @@ null,
 {
 "dataType": "org-node",
 "type": "table-cell",
-"ref": "orgeb197e2",
+"ref": "orgb324ffa",
 "properties": {
 "postAffiliated": null,
 "postBlank": 0,
@@ -1639,7 +1639,7 @@ null,
 {
 "dataType": "org-node",
 "type": "table-row",
-"ref": "org32ba6d5",
+"ref": "orge5d9183",
 "properties": {
 "postAffiliated": 10195,
 "postBlank": 0,
@@ -1650,7 +1650,7 @@ null,
 {
 "dataType": "org-node",
 "type": "table-cell",
-"ref": "org9c6a86e",
+"ref": "org686c753",
 "properties": {
 "postAffiliated": null,
 "postBlank": 0,
@@ -1663,7 +1663,7 @@ null,
 {
 "dataType": "org-node",
 "type": "table-cell",
-"ref": "org60ffd80",
+"ref": "org45612d7",
 "properties": {
 "postAffiliated": null,
 "postBlank": 0,
@@ -1678,7 +1678,7 @@ null,
 {
 "dataType": "org-node",
 "type": "table-row",
-"ref": "org94e1d6e",
+"ref": "orgf73d57c",
 "properties": {
 "postAffiliated": 10218,
 "postBlank": 0,
@@ -1689,7 +1689,7 @@ null,
 {
 "dataType": "org-node",
 "type": "table-cell",
-"ref": "org0ccf7ff",
+"ref": "org3fa17ff",
 "properties": {
 "postAffiliated": null,
 "postBlank": 0,
@@ -1702,7 +1702,7 @@ null,
 {
 "dataType": "org-node",
 "type": "table-cell",
-"ref": "org48c8259",
+"ref": "orga875a4f",
 "properties": {
 "postAffiliated": null,
 "postBlank": 0,
@@ -1719,7 +1719,7 @@ null,
 {
 "dataType": "org-node",
 "type": "paragraph",
-"ref": "org271a750",
+"ref": "orgc328627",
 "properties": {
 "postAffiliated": 10242,
 "postBlank": 1,
@@ -1730,7 +1730,7 @@ null,
 {
 "dataType": "org-node",
 "type": "footnote-reference",
-"ref": "org7c88850",
+"ref": "org4650362",
 "properties": {
 "postAffiliated": null,
 "postBlank": 0,
@@ -1746,7 +1746,7 @@ null,
 {
 "dataType": "org-node",
 "type": "src-block",
-"ref": "orgf120f68",
+"ref": "org9c9c244",
 "properties": {
 "postAffiliated": 10293,
 "postBlank": 1,
@@ -1766,18 +1766,18 @@ null,
 {
 "dataType": "org-node",
 "type": "paragraph",
-"ref": "orgc3d30ac",
+"ref": "org9e76c00",
 "properties": {
 "postAffiliated": 11258,
 "postBlank": 1,
 "trueLevel": null
 },
 "contents": [
-"Note that we are again calling the ",
+"Again we're invoking the ",
 {
 "dataType": "org-node",
 "type": "code",
-"ref": "orgdf72940",
+"ref": "org4da407e",
 "properties": {
 "postAffiliated": null,
 "postBlank": 1,
@@ -1786,24 +1786,24 @@ null,
 },
 "contents": []
 },
-"code block to pass the data\ninto gnuplot - the Ruby array from that block is magically transformed into a\ngnuplot variable! We also use ",
+"code block to pass the data into\ngnuplot - the Ruby array from that block is magically transformed into a gnuplot\nvariable! We also use ",
 {
 "dataType": "org-node",
 "type": "verbatim",
-"ref": "org1c46b8d",
+"ref": "org45c1719",
 "properties": {
 "postAffiliated": null,
-"postBlank": 0,
+"postBlank": 1,
 "trueLevel": null,
 "value": ":results output :file ./images/monte_carlo.svg"
 },
 "contents": []
 },
-"\nto tell Babel to use the output of the code block as the result and to write it\nto a file. When we export this to JSON, the code itself is omitted but a link to\nthe generated SVG is included (and then translated into an ",
+"to tell\nBabel to use the output of the code block as the result and to write it to a\nfile. When we export this to JSON, the code itself is omitted but a link to the\ngenerated SVG is included (and then translated into an ",
 {
 "dataType": "org-node",
 "type": "code",
-"ref": "org9bb484c",
+"ref": "org01a47db",
 "properties": {
 "postAffiliated": null,
 "postBlank": 1,
@@ -1816,7 +1816,7 @@ null,
 {
 "dataType": "org-node",
 "type": "verbatim",
-"ref": "org4c4a157",
+"ref": "orgb57fca0",
 "properties": {
 "postAffiliated": null,
 "postBlank": 1,
@@ -1829,7 +1829,7 @@ null,
 {
 "dataType": "org-node",
 "type": "link",
-"ref": "org684252e",
+"ref": "org4800c8a",
 "properties": {
 "postAffiliated": null,
 "postBlank": 1,
@@ -1855,9 +1855,9 @@ null,
 {
 "dataType": "org-node",
 "type": "drawer",
-"ref": "org91eb078",
+"ref": "org6cac7c1",
 "properties": {
-"postAffiliated": 11997,
+"postAffiliated": 11987,
 "postBlank": 1,
 "trueLevel": null,
 "drawerName": "results",
@@ -1869,9 +1869,9 @@ null,
 {
 "dataType": "org-node",
 "type": "paragraph",
-"ref": "orga3fc0c1",
+"ref": "orga51f13b",
 "properties": {
-"postAffiliated": 12079,
+"postAffiliated": 12069,
 "postBlank": 0,
 "trueLevel": null,
 "attrAltText": [
@@ -1882,7 +1882,7 @@ null,
 {
 "dataType": "org-node",
 "type": "link",
-"ref": "org34e088b",
+"ref": "org236e30c",
 "properties": {
 "postAffiliated": null,
 "postBlank": 0,
@@ -1908,9 +1908,9 @@ null,
 {
 "dataType": "org-node",
 "type": "paragraph",
-"ref": "org8588e25",
+"ref": "orge382804",
 "properties": {
-"postAffiliated": 12121,
+"postAffiliated": 12111,
 "postBlank": 1,
 "trueLevel": null
 },
@@ -1927,7 +1927,7 @@ null,
 {
 "dataType": "org-node",
 "type": "headline",
-"ref": "orgaa025c2",
+"ref": "org90e6eb0",
 "drawer": {
 
 },
@@ -1938,7 +1938,7 @@ null,
 "Emacs",
 "Meta"
 ],
-"postAffiliated": 12224,
+"postAffiliated": 12214,
 "postBlank": 0,
 "trueLevel": 1,
 "preBlank": 0,
@@ -1959,9 +1959,9 @@ null,
 {
 "dataType": "org-node",
 "type": "section",
-"ref": "org6debad4",
+"ref": "org8812460",
 "properties": {
-"postAffiliated": 12234,
+"postAffiliated": 12224,
 "postBlank": 0,
 "trueLevel": null
 },
@@ -1969,9 +1969,9 @@ null,
 {
 "dataType": "org-node",
 "type": "paragraph",
-"ref": "org7bd1b83",
+"ref": "org0351032",
 "properties": {
-"postAffiliated": 12234,
+"postAffiliated": 12224,
 "postBlank": 1,
 "trueLevel": null
 },
@@ -1980,7 +1980,7 @@ null,
 {
 "dataType": "org-node",
 "type": "code",
-"ref": "orgdd8198b",
+"ref": "org340dae9",
 "properties": {
 "postAffiliated": null,
 "postBlank": 0,
@@ -1993,7 +1993,7 @@ null,
 {
 "dataType": "org-node",
 "type": "link",
-"ref": "org57e998d",
+"ref": "org9f4f396",
 "properties": {
 "postAffiliated": null,
 "postBlank": 1,
@@ -2019,9 +2019,9 @@ null,
 {
 "dataType": "org-node",
 "type": "paragraph",
-"ref": "org5193ca6",
+"ref": "orgd5e1c8b",
 "properties": {
-"postAffiliated": 13197,
+"postAffiliated": 13187,
 "postBlank": 1,
 "trueLevel": null
 },
@@ -2030,7 +2030,7 @@ null,
 {
 "dataType": "org-node",
 "type": "verbatim",
-"ref": "org0bf00ad",
+"ref": "org1886a95",
 "properties": {
 "postAffiliated": null,
 "postBlank": 0,
@@ -2045,9 +2045,9 @@ null,
 {
 "dataType": "org-node",
 "type": "paragraph",
-"ref": "org1731eb5",
+"ref": "org6f76047",
 "properties": {
-"postAffiliated": 14334,
+"postAffiliated": 14324,
 "postBlank": 1,
 "trueLevel": null
 },
@@ -2056,7 +2056,7 @@ null,
 {
 "dataType": "org-node",
 "type": "link",
-"ref": "orgf63bf57",
+"ref": "org11afd8c",
 "properties": {
 "postAffiliated": null,
 "postBlank": 0,
@@ -2082,9 +2082,9 @@ null,
 {
 "dataType": "org-node",
 "type": "paragraph",
-"ref": "org0f4dd47",
+"ref": "org1a8855c",
 "properties": {
-"postAffiliated": 15209,
+"postAffiliated": 15199,
 "postBlank": 1,
 "trueLevel": null
 },
@@ -2093,7 +2093,7 @@ null,
 {
 "dataType": "org-node",
 "type": "link",
-"ref": "org52a6c80",
+"ref": "org6338845",
 "properties": {
 "postAffiliated": null,
 "postBlank": 0,
@@ -2119,9 +2119,9 @@ null,
 {
 "dataType": "org-node",
 "type": "src-block",
-"ref": "org390810e",
+"ref": "orgc8ff98b",
 "properties": {
-"postAffiliated": 15486,
+"postAffiliated": 15476,
 "postBlank": 2,
 "trueLevel": null,
 "language": "org",
@@ -2139,9 +2139,9 @@ null,
 {
 "dataType": "org-node",
 "type": "src-block",
-"ref": "orgf3ec8a1",
+"ref": "org57e9569",
 "properties": {
-"postAffiliated": 15759,
+"postAffiliated": 15749,
 "postBlank": 1,
 "trueLevel": null,
 "language": "json",
@@ -2159,9 +2159,9 @@ null,
 {
 "dataType": "org-node",
 "type": "paragraph",
-"ref": "orgb644207",
+"ref": "orga1ad8dd",
 "properties": {
-"postAffiliated": 16827,
+"postAffiliated": 16817,
 "postBlank": 1,
 "trueLevel": null
 },
@@ -2170,7 +2170,7 @@ null,
 {
 "dataType": "org-node",
 "type": "code",
-"ref": "orgce80bf3",
+"ref": "org0c54919",
 "properties": {
 "postAffiliated": null,
 "postBlank": 1,
@@ -2183,7 +2183,7 @@ null,
 {
 "dataType": "org-node",
 "type": "code",
-"ref": "org314f0be",
+"ref": "org2996e68",
 "properties": {
 "postAffiliated": null,
 "postBlank": 1,
@@ -2198,18 +2198,18 @@ null,
 {
 "dataType": "org-node",
 "type": "paragraph",
-"ref": "orgb066f4d",
+"ref": "org7d6a62b",
 "properties": {
-"postAffiliated": 17319,
+"postAffiliated": 17309,
 "postBlank": 1,
 "trueLevel": null
 },
 "contents": [
-"After a little digging, I discovered that both of these issues were related to\nthe same commit to Org Mode: ",
+"After a little digging, I discovered that both of these issues were related to\n",
 {
 "dataType": "org-node",
 "type": "link",
-"ref": "org79831c5",
+"ref": "org1c0f68b",
 "properties": {
 "postAffiliated": null,
 "postBlank": 0,
@@ -2226,14 +2226,14 @@ null,
 "isInlineImage": false
 },
 "contents": [
-"1260f61"
+"the same Org Mode commit"
 ]
 },
-". As the commit\nmessage explains, some properties that are common to most AST nodes are now\nstored in an array under ",
+". As the commit message explains, some properties that\nare common to most AST nodes are now stored in an array under\n",
 {
 "dataType": "org-node",
 "type": "code",
-"ref": "org5d20f57",
+"ref": "orge19f91c",
 "properties": {
 "postAffiliated": null,
 "postBlank": 0,
@@ -2242,14 +2242,14 @@ null,
 },
 "contents": []
 },
-". Separately, some values are now\ndeferred and computed on-demand when accessed - so apparently we must be\naccessing those values in the wrong way. Fortunately the Org Mode ",
+". Separately, some values are now deferred and computed\non-demand when accessed - so apparently we must be accessing those values in the\nwrong way. Fortunately the Org Mode ",
 {
 "dataType": "org-node",
 "type": "link",
-"ref": "org0ab1f05",
+"ref": "orgf2c401a",
 "properties": {
 "postAffiliated": null,
-"postBlank": 0,
+"postBlank": 1,
 "trueLevel": null,
 "type": "https",
 "typeExplicitP": true,
@@ -2266,15 +2266,15 @@ null,
 "changelog"
 ]
 },
-"\nexplained both of these changes and the way to handle them clearly:\n"
+"explained both of these changes\nand the way to handle them clearly:\n"
 ]
 },
 {
 "dataType": "org-node",
 "type": "quote-block",
-"ref": "orgec1e31f",
+"ref": "orgfae5238",
 "properties": {
-"postAffiliated": 17972,
+"postAffiliated": 17950,
 "postBlank": 1,
 "trueLevel": null
 },
@@ -2282,9 +2282,9 @@ null,
 {
 "dataType": "org-node",
 "type": "paragraph",
-"ref": "orgf1794d7",
+"ref": "org0aea4b4",
 "properties": {
-"postAffiliated": 17986,
+"postAffiliated": 17964,
 "postBlank": 1,
 "trueLevel": null
 },
@@ -2295,9 +2295,9 @@ null,
 {
 "dataType": "org-node",
 "type": "paragraph",
-"ref": "orgfee05de",
+"ref": "orgb213ca1",
 "properties": {
-"postAffiliated": 18217,
+"postAffiliated": 18195,
 "postBlank": 1,
 "trueLevel": null
 },
@@ -2308,9 +2308,9 @@ null,
 {
 "dataType": "org-node",
 "type": "paragraph",
-"ref": "org409cdc1",
+"ref": "orgd8632a9",
 "properties": {
-"postAffiliated": 18535,
+"postAffiliated": 18513,
 "postBlank": 0,
 "trueLevel": null
 },
@@ -2323,9 +2323,9 @@ null,
 {
 "dataType": "org-node",
 "type": "paragraph",
-"ref": "org30afa77",
+"ref": "org95dee05",
 "properties": {
-"postAffiliated": 18882,
+"postAffiliated": 18860,
 "postBlank": 1,
 "trueLevel": null
 },
@@ -2334,7 +2334,7 @@ null,
 {
 "dataType": "org-node",
 "type": "code",
-"ref": "org94fd4a6",
+"ref": "org5a1ee53",
 "properties": {
 "postAffiliated": null,
 "postBlank": 1,
@@ -2347,7 +2347,7 @@ null,
 {
 "dataType": "org-node",
 "type": "code",
-"ref": "orgbdf9355",
+"ref": "orga016b7f",
 "properties": {
 "postAffiliated": null,
 "postBlank": 0,
@@ -2360,7 +2360,7 @@ null,
 {
 "dataType": "org-node",
 "type": "footnote-reference",
-"ref": "org1eb5271",
+"ref": "orgbb3ce66",
 "properties": {
 "postAffiliated": null,
 "postBlank": 0,
@@ -2374,7 +2374,7 @@ null,
 {
 "dataType": "org-node",
 "type": "link",
-"ref": "org2dc0b2c",
+"ref": "org2068daa",
 "properties": {
 "postAffiliated": null,
 "postBlank": 0,
@@ -2400,9 +2400,9 @@ null,
 {
 "dataType": "org-node",
 "type": "src-block",
-"ref": "orgc3f43b2",
+"ref": "orgf11ec88",
 "properties": {
-"postAffiliated": 19375,
+"postAffiliated": 19353,
 "postBlank": 1,
 "trueLevel": null,
 "language": "emacs-lisp",
@@ -2420,9 +2420,9 @@ null,
 {
 "dataType": "org-node",
 "type": "paragraph",
-"ref": "orgffab988",
+"ref": "org9026d3e",
 "properties": {
-"postAffiliated": 19547,
+"postAffiliated": 19525,
 "postBlank": 1,
 "trueLevel": null
 },
@@ -2431,7 +2431,7 @@ null,
 {
 "dataType": "org-node",
 "type": "code",
-"ref": "org328f999",
+"ref": "org0d20ff6",
 "properties": {
 "postAffiliated": null,
 "postBlank": 1,
@@ -2446,9 +2446,9 @@ null,
 {
 "dataType": "org-node",
 "type": "src-block",
-"ref": "org013efa0",
+"ref": "org687832e",
 "properties": {
-"postAffiliated": 19677,
+"postAffiliated": 19655,
 "postBlank": 1,
 "trueLevel": null,
 "language": "emacs-lisp",
@@ -2466,9 +2466,9 @@ null,
 {
 "dataType": "org-node",
 "type": "paragraph",
-"ref": "orgbd984f8",
+"ref": "orgb4546fc",
 "properties": {
-"postAffiliated": 20281,
+"postAffiliated": 20259,
 "postBlank": 1,
 "trueLevel": null
 },
@@ -2479,9 +2479,9 @@ null,
 {
 "dataType": "org-node",
 "type": "src-block",
-"ref": "orgefd5c6a",
+"ref": "orgf37a925",
 "properties": {
-"postAffiliated": 20292,
+"postAffiliated": 20270,
 "postBlank": 1,
 "trueLevel": null,
 "language": "json",
@@ -2499,9 +2499,9 @@ null,
 {
 "dataType": "org-node",
 "type": "paragraph",
-"ref": "org6246c64",
+"ref": "org7d21341",
 "properties": {
-"postAffiliated": 21036,
+"postAffiliated": 21014,
 "postBlank": 1,
 "trueLevel": null
 },
@@ -2516,7 +2516,7 @@ null,
 {
 "dataType": "org-node",
 "type": "headline",
-"ref": "org54d337c",
+"ref": "orga43044f",
 "drawer": {
 
 },
@@ -2527,7 +2527,7 @@ null,
 "Emacs",
 "Meta"
 ],
-"postAffiliated": 21184,
+"postAffiliated": 21162,
 "postBlank": 0,
 "trueLevel": 1,
 "preBlank": 1,
@@ -2548,9 +2548,9 @@ null,
 {
 "dataType": "org-node",
 "type": "section",
-"ref": "org07ccfb9",
+"ref": "org38d7cf5",
 "properties": {
-"postAffiliated": 21205,
+"postAffiliated": 21183,
 "postBlank": 0,
 "trueLevel": null
 },
@@ -2558,9 +2558,9 @@ null,
 {
 "dataType": "org-node",
 "type": "paragraph",
-"ref": "org74b2352",
+"ref": "org283f76b",
 "properties": {
-"postAffiliated": 21205,
+"postAffiliated": 21183,
 "postBlank": 1,
 "trueLevel": null
 },
@@ -2569,7 +2569,7 @@ null,
 {
 "dataType": "org-node",
 "type": "code",
-"ref": "orgaa5815a",
+"ref": "org2e5975e",
 "properties": {
 "postAffiliated": null,
 "postBlank": 1,
@@ -2584,9 +2584,9 @@ null,
 {
 "dataType": "org-node",
 "type": "paragraph",
-"ref": "org757ad1d",
+"ref": "orga79d762",
 "properties": {
-"postAffiliated": 21672,
+"postAffiliated": 21650,
 "postBlank": 1,
 "trueLevel": null
 },
@@ -2597,9 +2597,9 @@ null,
 {
 "dataType": "org-node",
 "type": "src-block",
-"ref": "orga36659b",
+"ref": "org70d6c8e",
 "properties": {
-"postAffiliated": 21759,
+"postAffiliated": 21737,
 "postBlank": 2,
 "trueLevel": null,
 "language": "web",
@@ -2618,9 +2618,9 @@ null,
 {
 "dataType": "org-node",
 "type": "src-block",
-"ref": "orga4bb615",
+"ref": "orgd28aff5",
 "properties": {
-"postAffiliated": 22291,
+"postAffiliated": 22269,
 "postBlank": 1,
 "trueLevel": null,
 "language": "web",
@@ -2639,9 +2639,9 @@ null,
 {
 "dataType": "org-node",
 "type": "paragraph",
-"ref": "orgeb6aba9",
+"ref": "orga63e364",
 "properties": {
-"postAffiliated": 23009,
+"postAffiliated": 22987,
 "postBlank": 1,
 "trueLevel": null
 },
@@ -2650,7 +2650,7 @@ null,
 {
 "dataType": "org-node",
 "type": "link",
-"ref": "org571053b",
+"ref": "orgfa738da",
 "properties": {
 "postAffiliated": null,
 "postBlank": 1,
@@ -2674,7 +2674,7 @@ null,
 {
 "dataType": "org-node",
 "type": "link",
-"ref": "org6bc00b6",
+"ref": "org5b396a3",
 "properties": {
 "postAffiliated": null,
 "postBlank": 1,
@@ -2694,7 +2694,7 @@ null,
 {
 "dataType": "org-node",
 "type": "code",
-"ref": "orgf3669f4",
+"ref": "orgf33cf9f",
 "properties": {
 "postAffiliated": null,
 "postBlank": 0,
@@ -2711,9 +2711,9 @@ null,
 {
 "dataType": "org-node",
 "type": "src-block",
-"ref": "orgeb0299a",
+"ref": "org5d9942f",
 "properties": {
-"postAffiliated": 23398,
+"postAffiliated": 23376,
 "postBlank": 2,
 "trueLevel": null,
 "language": "web",
@@ -2732,9 +2732,9 @@ null,
 {
 "dataType": "org-node",
 "type": "src-block",
-"ref": "orgdbaba8d",
+"ref": "org506b107",
 "properties": {
-"postAffiliated": 23766,
+"postAffiliated": 23744,
 "postBlank": 1,
 "trueLevel": null,
 "language": "web",
@@ -2753,9 +2753,9 @@ null,
 {
 "dataType": "org-node",
 "type": "paragraph",
-"ref": "org47a4b8c",
+"ref": "orgba7dcba",
 "properties": {
-"postAffiliated": 24116,
+"postAffiliated": 24094,
 "postBlank": 1,
 "trueLevel": null
 },
@@ -2764,7 +2764,7 @@ null,
 {
 "dataType": "org-node",
 "type": "link",
-"ref": "orgc9f6267",
+"ref": "org571ac4d",
 "properties": {
 "postAffiliated": null,
 "postBlank": 1,
@@ -2794,7 +2794,7 @@ null,
 {
 "dataType": "org-node",
 "type": "headline",
-"ref": "org17df169",
+"ref": "orgde49005",
 "drawer": {
 
 },
@@ -2805,7 +2805,7 @@ null,
 "Emacs",
 "Meta"
 ],
-"postAffiliated": 24428,
+"postAffiliated": 24406,
 "postBlank": 0,
 "trueLevel": 1,
 "preBlank": 1,
@@ -2826,9 +2826,9 @@ null,
 {
 "dataType": "org-node",
 "type": "section",
-"ref": "org7138df8",
+"ref": "orgb9a42ba",
 "properties": {
-"postAffiliated": 24449,
+"postAffiliated": 24427,
 "postBlank": 0,
 "trueLevel": null
 },
@@ -2836,9 +2836,9 @@ null,
 {
 "dataType": "org-node",
 "type": "paragraph",
-"ref": "orgffaeff0",
+"ref": "org08ab730",
 "properties": {
-"postAffiliated": 24449,
+"postAffiliated": 24427,
 "postBlank": 1,
 "trueLevel": null
 },
@@ -2847,7 +2847,7 @@ null,
 {
 "dataType": "org-node",
 "type": "code",
-"ref": "org783cd95",
+"ref": "org1be3f32",
 "properties": {
 "postAffiliated": null,
 "postBlank": 1,
@@ -2860,7 +2860,7 @@ null,
 {
 "dataType": "org-node",
 "type": "link",
-"ref": "org0453982",
+"ref": "org74a8b88",
 "properties": {
 "postAffiliated": null,
 "postBlank": 1,
@@ -2886,9 +2886,9 @@ null,
 {
 "dataType": "org-node",
 "type": "paragraph",
-"ref": "org21dcd44",
+"ref": "org165e533",
 "properties": {
-"postAffiliated": 25517,
+"postAffiliated": 25495,
 "postBlank": 1,
 "trueLevel": null
 },
@@ -2897,7 +2897,7 @@ null,
 {
 "dataType": "org-node",
 "type": "code",
-"ref": "orge46d2c7",
+"ref": "org74a0061",
 "properties": {
 "postAffiliated": null,
 "postBlank": 1,
@@ -2912,9 +2912,9 @@ null,
 {
 "dataType": "org-node",
 "type": "src-block",
-"ref": "org11f1380",
+"ref": "orgfdfcf51",
 "properties": {
-"postAffiliated": 25631,
+"postAffiliated": 25609,
 "postBlank": 1,
 "trueLevel": null,
 "language": "emacs-lisp",
@@ -2932,9 +2932,9 @@ null,
 {
 "dataType": "org-node",
 "type": "paragraph",
-"ref": "org0008285",
+"ref": "org334c7b6",
 "properties": {
-"postAffiliated": 26621,
+"postAffiliated": 26599,
 "postBlank": 1,
 "trueLevel": null
 },
@@ -2943,7 +2943,7 @@ null,
 {
 "dataType": "org-node",
 "type": "code",
-"ref": "orgbd00be7",
+"ref": "org0afd3e2",
 "properties": {
 "postAffiliated": null,
 "postBlank": 1,
@@ -2958,9 +2958,9 @@ null,
 {
 "dataType": "org-node",
 "type": "src-block",
-"ref": "orgf0578ce",
+"ref": "orgf50cb7c",
 "properties": {
-"postAffiliated": 26893,
+"postAffiliated": 26871,
 "postBlank": 1,
 "trueLevel": null,
 "language": "emacs-lisp",
@@ -2978,9 +2978,9 @@ null,
 {
 "dataType": "org-node",
 "type": "paragraph",
-"ref": "orgaac9d94",
+"ref": "orgec8d8fb",
 "properties": {
-"postAffiliated": 27399,
+"postAffiliated": 27377,
 "postBlank": 1,
 "trueLevel": null
 },
@@ -2989,7 +2989,7 @@ null,
 {
 "dataType": "org-node",
 "type": "verbatim",
-"ref": "orgba19958",
+"ref": "org7ff83ff",
 "properties": {
 "postAffiliated": null,
 "postBlank": 1,
@@ -3002,7 +3002,7 @@ null,
 {
 "dataType": "org-node",
 "type": "code",
-"ref": "orgaef842e",
+"ref": "org0c603d4",
 "properties": {
 "postAffiliated": null,
 "postBlank": 1,
@@ -3015,7 +3015,7 @@ null,
 {
 "dataType": "org-node",
 "type": "code",
-"ref": "org749faae",
+"ref": "org94e03af",
 "properties": {
 "postAffiliated": null,
 "postBlank": 1,
@@ -3028,7 +3028,7 @@ null,
 {
 "dataType": "org-node",
 "type": "verbatim",
-"ref": "orgce920c1",
+"ref": "org196427b",
 "properties": {
 "postAffiliated": null,
 "postBlank": 0,
@@ -3043,9 +3043,9 @@ null,
 {
 "dataType": "org-node",
 "type": "src-block",
-"ref": "orgcb3abb0",
+"ref": "orgab380d6",
 "properties": {
-"postAffiliated": 27693,
+"postAffiliated": 27671,
 "postBlank": 1,
 "trueLevel": null,
 "language": "html",
@@ -3063,9 +3063,9 @@ null,
 {
 "dataType": "org-node",
 "type": "paragraph",
-"ref": "orgad098ec",
+"ref": "org1da12d1",
 "properties": {
-"postAffiliated": 27784,
+"postAffiliated": 27762,
 "postBlank": 1,
 "trueLevel": null
 },
@@ -3074,7 +3074,7 @@ null,
 {
 "dataType": "org-node",
 "type": "verbatim",
-"ref": "orgdddf415",
+"ref": "orgbdc9654",
 "properties": {
 "postAffiliated": null,
 "postBlank": 0,
@@ -3087,7 +3087,7 @@ null,
 {
 "dataType": "org-node",
 "type": "link",
-"ref": "org52dc41f",
+"ref": "orgafd5ab6",
 "properties": {
 "postAffiliated": null,
 "postBlank": 0,
@@ -3107,7 +3107,7 @@ null,
 {
 "dataType": "org-node",
 "type": "code",
-"ref": "org3feb677",
+"ref": "orge44a86b",
 "properties": {
 "postAffiliated": null,
 "postBlank": 0,
@@ -3122,7 +3122,7 @@ null,
 {
 "dataType": "org-node",
 "type": "verbatim",
-"ref": "org5515e64",
+"ref": "org9f48889",
 "properties": {
 "postAffiliated": null,
 "postBlank": 1,
@@ -3135,7 +3135,7 @@ null,
 {
 "dataType": "org-node",
 "type": "verbatim",
-"ref": "org9dbda49",
+"ref": "org003beb5",
 "properties": {
 "postAffiliated": null,
 "postBlank": 1,
@@ -3150,9 +3150,9 @@ null,
 {
 "dataType": "org-node",
 "type": "paragraph",
-"ref": "org59f3bd1",
+"ref": "orgb540699",
 "properties": {
-"postAffiliated": 28770,
+"postAffiliated": 28748,
 "postBlank": 1,
 "trueLevel": null
 },
@@ -3161,7 +3161,7 @@ null,
 {
 "dataType": "org-node",
 "type": "link",
-"ref": "org167c1fd",
+"ref": "orgd622b0c",
 "properties": {
 "postAffiliated": null,
 "postBlank": 0,
@@ -3185,7 +3185,7 @@ null,
 {
 "dataType": "org-node",
 "type": "code",
-"ref": "org2944371",
+"ref": "orgc0adc5b",
 "properties": {
 "postAffiliated": null,
 "postBlank": 1,
@@ -3200,9 +3200,9 @@ null,
 {
 "dataType": "org-node",
 "type": "src-block",
-"ref": "org13b0af6",
+"ref": "org177f2bb",
 "properties": {
-"postAffiliated": 29456,
+"postAffiliated": 29434,
 "postBlank": 1,
 "trueLevel": null,
 "language": "emacs-lisp",
@@ -3220,9 +3220,9 @@ null,
 {
 "dataType": "org-node",
 "type": "paragraph",
-"ref": "orgc4e7294",
+"ref": "orgd280e8d",
 "properties": {
-"postAffiliated": 30827,
+"postAffiliated": 30805,
 "postBlank": 1,
 "trueLevel": null
 },
@@ -3231,7 +3231,7 @@ null,
 {
 "dataType": "org-node",
 "type": "code",
-"ref": "org15da1c6",
+"ref": "org729e044",
 "properties": {
 "postAffiliated": null,
 "postBlank": 1,
@@ -3244,7 +3244,7 @@ null,
 {
 "dataType": "org-node",
 "type": "code",
-"ref": "org53cdcba",
+"ref": "orga087714",
 "properties": {
 "postAffiliated": null,
 "postBlank": 1,
@@ -3257,7 +3257,7 @@ null,
 {
 "dataType": "org-node",
 "type": "verbatim",
-"ref": "org50ef254",
+"ref": "org84bdbf3",
 "properties": {
 "postAffiliated": null,
 "postBlank": 1,
@@ -3270,7 +3270,7 @@ null,
 {
 "dataType": "org-node",
 "type": "italic",
-"ref": "org6166803",
+"ref": "org0a7fee8",
 "properties": {
 "postAffiliated": null,
 "postBlank": 1,
@@ -3284,7 +3284,7 @@ null,
 {
 "dataType": "org-node",
 "type": "code",
-"ref": "org9decac7",
+"ref": "org1ec4495",
 "properties": {
 "postAffiliated": null,
 "postBlank": 1,
@@ -3297,7 +3297,7 @@ null,
 {
 "dataType": "org-node",
 "type": "link",
-"ref": "org97e4f52",
+"ref": "orgf6258be",
 "properties": {
 "postAffiliated": null,
 "postBlank": 0,
@@ -3327,7 +3327,7 @@ null,
 {
 "dataType": "org-node",
 "type": "headline",
-"ref": "orge01d66a",
+"ref": "org92c1547",
 "drawer": {
 
 },
@@ -3338,7 +3338,7 @@ null,
 "Emacs",
 "Meta"
 ],
-"postAffiliated": 31476,
+"postAffiliated": 31454,
 "postBlank": 0,
 "trueLevel": 1,
 "preBlank": 1,
@@ -3359,9 +3359,9 @@ null,
 {
 "dataType": "org-node",
 "type": "section",
-"ref": "orgff7dee7",
+"ref": "orge540ecb",
 "properties": {
-"postAffiliated": 31496,
+"postAffiliated": 31474,
 "postBlank": 0,
 "trueLevel": null
 },
@@ -3369,18 +3369,18 @@ null,
 {
 "dataType": "org-node",
 "type": "paragraph",
-"ref": "org47ecac9",
+"ref": "orge7747dc",
 "properties": {
-"postAffiliated": 31496,
+"postAffiliated": 31474,
 "postBlank": 1,
 "trueLevel": null
 },
 "contents": [
-"If you've made it this far, you may be questioning my sanity and indeed your own\nfor humoring me. That said, I think this was a worthwhile pursuit which gave me\nthe opportunity to learn a couple things about Org Mode and make a small\ncontribution (",
+"If you've made it this far you may be questioning my sanity and indeed your own\nfor humoring me, but hopefully you've walked away with a good impression of the\npower and flexibility of Org Mode. I think this was a worthwhile pursuit which\ngave me the opportunity to peak under the hood and make a small contribution (",
 {
 "dataType": "org-node",
 "type": "link",
-"ref": "org76424f7",
+"ref": "org7d2976e",
 "properties": {
 "postAffiliated": null,
 "postBlank": 0,
@@ -3397,10 +3397,84 @@ null,
 "isInlineImage": false
 },
 "contents": [
-"PR pending"
+"PR\npending"
 ]
 },
-") that might be useful to someone else one day. I'm also\nhappy with the end result: as I was putting this article together I found the\nexperience of iterating both on the content and presentation really gelled for\nme. I have a lot more to say about Org Mode and Emacs generally so stay tuned\nfor more content like this in the future!\n"
+") that might be useful to someone else one day.\n"
+]
+},
+{
+"dataType": "org-node",
+"type": "paragraph",
+"ref": "org73bea59",
+"properties": {
+"postAffiliated": 31896,
+"postBlank": 1,
+"trueLevel": null
+},
+"contents": [
+"I'm also happy with where this ended up: as I was putting this article together\nI found the experience of iterating both on the content and presentation really\ngelled for me. As an example, at first I was relying on MathJax to render\nmathematicaly formulas since Org Mode has good support for converting LaTeX to\nMathJax, but it felt kind of gratuitous to ship 2 MB of JavaScript just to\nrender the occasional formula. With a couple minutes of work I brought in ",
+{
+"dataType": "org-node",
+"type": "link",
+"ref": "org865ba3d",
+"properties": {
+"postAffiliated": null,
+"postBlank": 0,
+"trueLevel": null,
+"type": "https",
+"typeExplicitP": true,
+"path": "//katex.org/",
+"format": "bracket",
+"rawLink": "https://katex.org/",
+"application": null,
+"searchOption": null,
+"isInternal": false,
+"targetRef": null,
+"isInlineImage": false
+},
+"contents": [
+"katex"
+]
+},
+"\nas a replacement, which I could use at build time from Astro to transform a\nLaTeX formula into HTML that just needed a stylesheet and font totalling tens of\nkilobytes to render properly (",
+{
+"dataType": "org-node",
+"type": "link",
+"ref": "orgfe0819e",
+"properties": {
+"postAffiliated": null,
+"postBlank": 0,
+"trueLevel": null,
+"type": "https",
+"typeExplicitP": true,
+"path": "//github.com/tcahill/blog/commit/7b1912ae214fee679da73bf3bef238fec351ac42",
+"format": "bracket",
+"rawLink": "https://github.com/tcahill/blog/commit/7b1912ae214fee679da73bf3bef238fec351ac42",
+"application": null,
+"searchOption": null,
+"isInternal": false,
+"targetRef": null,
+"isInlineImage": false
+},
+"contents": [
+"diff"
+]
+},
+").\n"
+]
+},
+{
+"dataType": "org-node",
+"type": "paragraph",
+"ref": "org880c2de",
+"properties": {
+"postAffiliated": 32668,
+"postBlank": 1,
+"trueLevel": null
+},
+"contents": [
+"I intend to mix things up for the next few post, but I have a lot more to say\nabout Org Mode and Emacs generally so stay tuned for more content like this in\nthe future!\n"
 ]
 }
 ]
@@ -3410,7 +3484,7 @@ null,
 {
 "dataType": "org-node",
 "type": "headline",
-"ref": "orgd61dc07",
+"ref": "orgdde11e3",
 "drawer": {
 
 },
@@ -3421,7 +3495,7 @@ null,
 "Emacs",
 "Meta"
 ],
-"postAffiliated": 32135,
+"postAffiliated": 32838,
 "postBlank": 0,
 "trueLevel": 1,
 "preBlank": 1,
@@ -3442,9 +3516,9 @@ null,
 {
 "dataType": "org-node",
 "type": "section",
-"ref": "org134a32a",
+"ref": "org27dc912",
 "properties": {
-"postAffiliated": 32148,
+"postAffiliated": 32851,
 "postBlank": 0,
 "trueLevel": null
 },
@@ -3452,9 +3526,9 @@ null,
 {
 "dataType": "org-node",
 "type": "footnote-definition",
-"ref": "orgd35add9",
+"ref": "org900a5af",
 "properties": {
-"postAffiliated": 32148,
+"postAffiliated": 32851,
 "postBlank": 1,
 "trueLevel": null,
 "label": "1",
@@ -3464,9 +3538,9 @@ null,
 {
 "dataType": "org-node",
 "type": "paragraph",
-"ref": "org74e737a",
+"ref": "orgfc6823c",
 "properties": {
-"postAffiliated": 32155,
+"postAffiliated": 32858,
 "postBlank": 0,
 "trueLevel": null
 },
@@ -3479,9 +3553,9 @@ null,
 {
 "dataType": "org-node",
 "type": "footnote-definition",
-"ref": "org317cdb3",
+"ref": "orgbb3df35",
 "properties": {
-"postAffiliated": 32603,
+"postAffiliated": 33306,
 "postBlank": 1,
 "trueLevel": null,
 "label": "2",
@@ -3491,9 +3565,9 @@ null,
 {
 "dataType": "org-node",
 "type": "paragraph",
-"ref": "org89020be",
+"ref": "orgddc4e43",
 "properties": {
-"postAffiliated": 32610,
+"postAffiliated": 33313,
 "postBlank": 0,
 "trueLevel": null
 },
@@ -3514,9 +3588,9 @@ null,
 {
 "dataType": "org-node",
 "type": "footnote-definition",
-"ref": "orgc263245",
+"ref": "org039d188",
 "properties": {
-"postAffiliated": 33125,
+"postAffiliated": 33828,
 "postBlank": 0,
 "trueLevel": null,
 "label": "3",
@@ -3526,9 +3600,9 @@ null,
 {
 "dataType": "org-node",
 "type": "paragraph",
-"ref": "org8f4d45f",
+"ref": "orge35557c",
 "properties": {
-"postAffiliated": 33132,
+"postAffiliated": 33835,
 "postBlank": 0,
 "trueLevel": null
 },
@@ -3537,7 +3611,7 @@ null,
 {
 "dataType": "org-node",
 "type": "code",
-"ref": "org1c439e3",
+"ref": "org6437313",
 "properties": {
 "postAffiliated": null,
 "postBlank": 1,
