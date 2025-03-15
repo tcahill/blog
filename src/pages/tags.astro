@@ -1,10 +1,10 @@
 ---
 import type { OrgDocument } from 'ox-json-types';
 import BaseLayout from 'src/layouts/BaseLayout.astro';
-import Tags from '@components/Tags.astro';
+import { default as TagsContainer } from '@components/Tags.astro';
 const articles = import.meta.glob('../articles/*.json', { eager: true });
 
-const tags = new Set;
+const tags = new Set<string>;
 Object.values(articles).forEach((article) => {
     (article as OrgDocument).properties.filetags?.forEach(tags.add, tags);
 });
@@ -12,5 +12,5 @@ Object.values(articles).forEach((article) => {
 
 <BaseLayout>
     <h1>Tags</h1>
-    <Tags tags={Array.from(tags)} />
+    <TagsContainer tags={Array.from(tags)} />
 </BaseLayout>

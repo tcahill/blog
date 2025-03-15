@@ -1,5 +1,5 @@
 ---
-import type { OrgDocument } from "ox-json-types";
+import type { KeywordElement, OrgDocument, ParagraphElement } from "ox-json-types";
 import Timestamp from "./Timestamp.astro";
 import Paragraph from "./Paragraph.astro";
 
@@ -11,12 +11,12 @@ const { article } = Astro.props;
 const name = article.properties.title[0]?.toLowerCase()?.replaceAll(" ", "_");
 
 const subtitle = article.contents[0].contents.find(
-    (node) => node.type === "keyword" && node.properties.key === "SUBTITLE",
-);
+    (node) => typeof(node) !== 'string' && node.type === "keyword" && node.properties.key === "SUBTITLE",
+) as KeywordElement;
 
 const intro = article.contents[0].contents.find(
-    (node) => node.type === "paragraph",
-);
+    (node) => typeof(node) !== 'string' && node.type === "paragraph",
+) as ParagraphElement;
 ---
 
 <div class="article-preview">
