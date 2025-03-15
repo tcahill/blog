@@ -1,18 +1,15 @@
 #+title: My Life In Plain Text
+#+subtitle: Part 1: Enter The Blogoverse
 #+date: <2025-03-14 Fri>
 #+filetags: :Org Mode:Emacs:Meta:
 #+options: ^:nil
 
-Publishing a blog is basically a solved problem. There's no shortage of tools
-that can produce a professional-looking site out of the box and let you focus on
-actually writing. When I set about building my personal blog however, I took a
-different tack. Partially motivated by a desire to learn by doing and partially
-perhaps by madness, I set off on an exploration of how far I could go using one
-of my favorite pieces of software of all time, Org Mode, as the basis for my
-site. It's a bit of a long read for something so niche, but if you're curious to
-learn something about the capabilities and internals of Org Mode or you just
-enjoy taking something simple and making it hard for the fun of it (and dare I
-say profit? of a sort?), read on!
+This is the first in what I intend to be a series of articles about the various
+ways I use [[https://orgmode.org/][Org Mode]] in my life, naturally starting out with how it serves as the
+basis for this website. It's a bit of a long read for something so niche, but if
+you're curious to learn something about the capabilities and internals of Org
+Mode or you just enjoy taking something simple and making it hard for the fun of
+it (and dare I say profit?), read on!
 
 * Why Org Mode?
 I've used Emacs as my primary editor more or less as long as I've been

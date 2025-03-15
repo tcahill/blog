@@ -12,9 +12,9 @@ const { node } = Astro.props;
 const title = node.properties.title[0];
 ---
 {
-node.properties.level === 1 ? <h2>{title}</h2>
+(node.properties.level === 1 ? <h2>{title}</h2>
 : node.properties.level === 2 ? <h3>{title}</h3>
-: <h4>{title}</h4>
+: <h4>{title}</h4>)
 }
 
 {
