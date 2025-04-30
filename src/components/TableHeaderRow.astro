@@ -1,0 +1,14 @@
+---
+import Contents from "./Contents.astro";
+
+const { node } = Astro.props;
+---
+<tr>
+    {node.contents.map((column) => <th><Contents contents={column.contents} /></th>)}
+</tr>
+<style>
+ th {
+     border-bottom: 3px solid var(--primary);
+     padding: 0 0.5rem;
+ }
+</style>

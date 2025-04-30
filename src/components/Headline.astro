@@ -1,0 +1,25 @@
+---
+import type { HeadlineElement } from 'ox-json-types';
+
+import Node from '@components/Node.astro';
+
+interface Props {
+    node: HeadlineElement,
+}
+
+const { node } = Astro.props;
+
+const title = node.properties.title[0];
+---
+{
+node.properties.level === 1 ? <h2>{title}</h2>
+: node.properties.level === 2 ? <h3>{title}</h3>
+: <h4>{title}</h4>
+}
+
+{
+node.contents.map(
+(child) => typeof child === 'string' ? <Fragment>{child}</Fragment>
+: <Node node={child} />
+)
+}

@@ -1,0 +1,3522 @@
+{
+"dataType": "org-document",
+"properties": {
+"title": [
+"My Life In Plain Text"
+],
+"filetags": [
+"Org Mode",
+"Emacs",
+"Meta"
+],
+"author": [
+"Tom Cahill"
+],
+"creator": "Emacs 31.0.50 (Org mode 9.7.11)",
+"date": [
+{
+"dataType": "org-node",
+"type": "timestamp",
+"ref": "orgdb4e1e4",
+"properties": {
+"postAffiliated": null,
+"postBlank": 0,
+"trueLevel": null,
+"type": "active",
+"rangeType": null,
+"rawValue": "<2025-03-14 Fri>",
+"start": "2025-03-14",
+"end": "2025-03-14"
+},
+"contents": []
+}
+],
+"description": [],
+"email": "tom@MacBook-Pro-3.local",
+"language": "en"
+},
+"contents": [
+{
+"dataType": "org-node",
+"type": "section",
+"ref": "orgd13d32a",
+"properties": {
+"postAffiliated": 1,
+"postBlank": 0,
+"trueLevel": null
+},
+"contents": [
+{
+"dataType": "org-node",
+"type": "keyword",
+"ref": "org3bc9e02",
+"properties": {
+"postAffiliated": 1,
+"postBlank": 0,
+"trueLevel": null,
+"key": "TITLE",
+"value": "My Life In Plain Text"
+},
+"contents": []
+},
+{
+"dataType": "org-node",
+"type": "keyword",
+"ref": "org6cc703d",
+"properties": {
+"postAffiliated": 32,
+"postBlank": 0,
+"trueLevel": null,
+"key": "DATE",
+"value": "<2025-03-14 Fri>"
+},
+"contents": []
+},
+{
+"dataType": "org-node",
+"type": "keyword",
+"ref": "orgb15c5f1",
+"properties": {
+"postAffiliated": 57,
+"postBlank": 0,
+"trueLevel": null,
+"key": "FILETAGS",
+"value": ":Org Mode:Emacs:Meta:"
+},
+"contents": []
+},
+{
+"dataType": "org-node",
+"type": "keyword",
+"ref": "org27f2f85",
+"properties": {
+"postAffiliated": 91,
+"postBlank": 1,
+"trueLevel": null,
+"key": "OPTIONS",
+"value": "^:nil"
+},
+"contents": []
+},
+{
+"dataType": "org-node",
+"type": "paragraph",
+"ref": "orgc871872",
+"properties": {
+"postAffiliated": 109,
+"postBlank": 1,
+"trueLevel": null
+},
+"contents": [
+"Publishing a blog is basically a solved problem. There's no shortage of tools\nthat can produce a professional-looking site out of the box and let you focus on\nactually writing. When I set about building my personal blog however, I took a\ndifferent tack. Partially motivated by a desire to learn by doing and partially\nperhaps by madness, I set off on an exploration of how far I could go using one\nof my favorite pieces of software of all time, Org Mode, as the basis for my\nsite. It's a bit of a long read for something so niche, but if you're curious to\nlearn something about the capabilities and internals of Org Mode or you just\nenjoy taking something simple and making it hard for the fun of it (and dare I\nsay profit? of a sort?), read on!\n"
+]
+}
+]
+},
+{
+"dataType": "org-node",
+"type": "headline",
+"ref": "org3a15bb3",
+"drawer": {
+
+},
+"properties": {
+"tagsAll": [
+"Org",
+"Mode",
+"Emacs",
+"Meta"
+],
+"postAffiliated": 856,
+"postBlank": 0,
+"trueLevel": 1,
+"preBlank": 0,
+"rawValue": "Why Org Mode?",
+"title": [
+"Why Org Mode?"
+],
+"level": 1,
+"priority": null,
+"tags": [],
+"todoKeyword": null,
+"todoType": null,
+"footnoteSectionP": true,
+"archivedp": true,
+"commentedp": false
+},
+"contents": [
+{
+"dataType": "org-node",
+"type": "section",
+"ref": "orgd6f6e3e",
+"properties": {
+"postAffiliated": 872,
+"postBlank": 0,
+"trueLevel": null
+},
+"contents": [
+{
+"dataType": "org-node",
+"type": "paragraph",
+"ref": "org45a5bd5",
+"properties": {
+"postAffiliated": 872,
+"postBlank": 1,
+"trueLevel": null
+},
+"contents": [
+"I've used Emacs as my primary editor more or less as long as I've been\nprogramming, and it continues to embed itself into more aspects of my life\nthanks to its extensive capabilities beyond just editing code ",
+{
+"dataType": "org-node",
+"type": "footnote-reference",
+"ref": "orgdf916d0",
+"properties": {
+"postAffiliated": null,
+"postBlank": 0,
+"trueLevel": null,
+"label": "1",
+"type": "standard"
+},
+"contents": []
+},
+". Of\nparticular note is ",
+{
+"dataType": "org-node",
+"type": "link",
+"ref": "orgcacb5c4",
+"properties": {
+"postAffiliated": null,
+"postBlank": 0,
+"trueLevel": null,
+"type": "https",
+"typeExplicitP": true,
+"path": "//orgmode.org/",
+"format": "bracket",
+"rawLink": "https://orgmode.org/",
+"application": null,
+"searchOption": null,
+"isInternal": false,
+"targetRef": null,
+"isInlineImage": false
+},
+"contents": [
+"Org Mode"
+]
+},
+", an Emacs ",
+{
+"dataType": "org-node",
+"type": "link",
+"ref": "orgec205ed",
+"properties": {
+"postAffiliated": null,
+"postBlank": 1,
+"trueLevel": null,
+"type": "https",
+"typeExplicitP": true,
+"path": "//www.gnu.org/software/emacs/manual/html_node/emacs/Major-Modes.html",
+"format": "bracket",
+"rawLink": "https://www.gnu.org/software/emacs/manual/html_node/emacs/Major-Modes.html",
+"application": null,
+"searchOption": null,
+"isInternal": false,
+"targetRef": null,
+"isInlineImage": false
+},
+"contents": [
+"major mode"
+]
+},
+"aptly described by its tag\nline: \"Your life in plain text\". At its simplest Org is a text format useful for\nstructured documents, like a Markdown alternative that happens to have good\nediting and navigation support in Emacs. Under the surface however, it hosts a\ndizzying array of features including:\n"
+]
+},
+{
+"dataType": "org-node",
+"type": "plain-list",
+"ref": "orgd2b097c",
+"properties": {
+"postAffiliated": 1548,
+"postBlank": 1,
+"trueLevel": null,
+"structure": [
+[
+1548,
+0,
+"- ",
+null,
+null,
+null,
+1665
+],
+[
+1665,
+0,
+"- ",
+null,
+null,
+null,
+1792
+],
+[
+1792,
+0,
+"- ",
+null,
+null,
+null,
+1932
+],
+[
+1932,
+0,
+"- ",
+null,
+null,
+null,
+2100
+]
+],
+"type": "unordered"
+},
+"contents": [
+{
+"dataType": "org-node",
+"type": "item",
+"ref": "org0d25cd5",
+"properties": {
+"postAffiliated": 1548,
+"postBlank": 0,
+"trueLevel": null,
+"bullet": "- ",
+"checkbox": null,
+"counter": null,
+"preBlank": 0,
+"tag": []
+},
+"contents": [
+{
+"dataType": "org-node",
+"type": "paragraph",
+"ref": "orgdcd0621",
+"properties": {
+"postAffiliated": 1550,
+"postBlank": 0,
+"trueLevel": null
+},
+"contents": [
+"runnable source code blocks that can pass data between each other even if\nthey're written in different languages\n"
+]
+}
+]
+},
+{
+"dataType": "org-node",
+"type": "item",
+"ref": "orga3ffad2",
+"properties": {
+"postAffiliated": 1665,
+"postBlank": 0,
+"trueLevel": null,
+"bullet": "- ",
+"checkbox": null,
+"counter": null,
+"preBlank": 0,
+"tag": []
+},
+"contents": [
+{
+"dataType": "org-node",
+"type": "paragraph",
+"ref": "org95a142c",
+"properties": {
+"postAffiliated": 1667,
+"postBlank": 0,
+"trueLevel": null
+},
+"contents": [
+"a task management system with time tracking, clock reports, prioritization,\ndependency associations between tasks and more\n"
+]
+}
+]
+},
+{
+"dataType": "org-node",
+"type": "item",
+"ref": "org3c51cfc",
+"properties": {
+"postAffiliated": 1792,
+"postBlank": 0,
+"trueLevel": null,
+"bullet": "- ",
+"checkbox": null,
+"counter": null,
+"preBlank": 0,
+"tag": []
+},
+"contents": [
+{
+"dataType": "org-node",
+"type": "paragraph",
+"ref": "org6a04579",
+"properties": {
+"postAffiliated": 1794,
+"postBlank": 0,
+"trueLevel": null
+},
+"contents": [
+"a surprisingly deep plain text spreadsheet system complete with the ability to\nreference cells across tables and files and use formulas\n"
+]
+}
+]
+},
+{
+"dataType": "org-node",
+"type": "item",
+"ref": "orgaadf5c5",
+"properties": {
+"postAffiliated": 1932,
+"postBlank": 0,
+"trueLevel": null,
+"bullet": "- ",
+"checkbox": null,
+"counter": null,
+"preBlank": 0,
+"tag": []
+},
+"contents": [
+{
+"dataType": "org-node",
+"type": "paragraph",
+"ref": "org1eb53e9",
+"properties": {
+"postAffiliated": 1934,
+"postBlank": 0,
+"trueLevel": null
+},
+"contents": [
+"critically for our purposes here - exporters that can be used to publish\ncontent from Org Mode documents into a variety of other formats including HTML\nand LaTeX\n"
+]
+}
+]
+}
+]
+},
+{
+"dataType": "org-node",
+"type": "paragraph",
+"ref": "org88610ae",
+"properties": {
+"postAffiliated": 2101,
+"postBlank": 1,
+"trueLevel": null
+},
+"contents": [
+"I think Org is uniquely well-suited as a text format for static site generation,\nparticularly for technical content. First, the format itself is much more\nexpressive than something like Markdown - you can for example attach arbitrary\nmetadata to headings with ",
+{
+"dataType": "org-node",
+"type": "link",
+"ref": "org34c2875",
+"properties": {
+"postAffiliated": null,
+"postBlank": 1,
+"trueLevel": null,
+"type": "https",
+"typeExplicitP": true,
+"path": "//orgmode.org/guide/Properties.html",
+"format": "bracket",
+"rawLink": "https://orgmode.org/guide/Properties.html",
+"application": null,
+"searchOption": null,
+"isInternal": false,
+"targetRef": null,
+"isInlineImage": false
+},
+"contents": [
+"properties"
+]
+},
+"or wrap content with ",
+{
+"dataType": "org-node",
+"type": "link",
+"ref": "org728872a",
+"properties": {
+"postAffiliated": null,
+"postBlank": 1,
+"trueLevel": null,
+"type": "https",
+"typeExplicitP": true,
+"path": "//orgmode.org/manual/Drawers.html",
+"format": "bracket",
+"rawLink": "https://orgmode.org/manual/Drawers.html",
+"application": null,
+"searchOption": null,
+"isInternal": false,
+"targetRef": null,
+"isInlineImage": false
+},
+"contents": [
+"drawers"
+]
+},
+"or ",
+{
+"dataType": "org-node",
+"type": "link",
+"ref": "org3fcf5c3",
+"properties": {
+"postAffiliated": null,
+"postBlank": 1,
+"trueLevel": null,
+"type": "https",
+"typeExplicitP": true,
+"path": "//orgmode.org/worg/org-syntax.html#Greater_Blocks",
+"format": "bracket",
+"rawLink": "https://orgmode.org/worg/org-syntax.html#Greater_Blocks",
+"application": null,
+"searchOption": null,
+"isInternal": false,
+"targetRef": null,
+"isInlineImage": false
+},
+"contents": [
+"blocks"
+]
+},
+"to\nsignal that it should be treated specially on export. Consider for example a\nfeature encountered fairly often in blogs and technical documentation: callouts.\nWe can represent callouts in an org-mode document with a custom block type and\npass in a parameter to signal the nature of the callout and inform its styling.\nHere's what that looks like in Org syntax:\n"
+]
+},
+{
+"dataType": "org-node",
+"type": "src-block",
+"ref": "orge68fce0",
+"properties": {
+"postAffiliated": 2928,
+"postBlank": 1,
+"trueLevel": null,
+"language": "org",
+"switches": null,
+"parameters": ":tangle ../../tmp/callout.org",
+"numberLines": null,
+"preserveIndent": false,
+"retainLabels": true,
+"useLabels": true,
+"labelFmt": null,
+"value": "<pre>\n<span class=\"org-block-begin-line\">#+begin_callout info\n</span>Blocks in Org Mode are defined like this:\n\n#+begin_src org\n#+begin_name\n...\n#+end_name\n#+end_src\n\nwhere <span class=\"org-verbatim\">=name=</span> is any string of nonwhitespace characters. Some types of blocks\nhave a special significance in Org mode, but \"callout\" isn't one of them. As\nwe'll see later though, the workflow I've set up for this blog makes it very\neasy to attach significance to new block types when we ingest Org content into\nAstro.\n<span class=\"org-block-end-line\">#+end_callout\n</span></pre>"
+},
+"contents": []
+},
+{
+"dataType": "org-node",
+"type": "paragraph",
+"ref": "orgcb74d53",
+"properties": {
+"postAffiliated": 3441,
+"postBlank": 1,
+"trueLevel": null
+},
+"contents": [
+"and the result when rendered on this site:\n"
+]
+},
+{
+"dataType": "org-node",
+"type": "special-block",
+"ref": "org7221fc6",
+"properties": {
+"postAffiliated": 3485,
+"postBlank": 1,
+"trueLevel": null,
+"type": "callout",
+"parameters": "info"
+},
+"contents": [
+{
+"dataType": "org-node",
+"type": "paragraph",
+"ref": "orgd28d396",
+"properties": {
+"postAffiliated": 3506,
+"postBlank": 1,
+"trueLevel": null
+},
+"contents": [
+"Blocks in Org Mode are defined like this:\n"
+]
+},
+{
+"dataType": "org-node",
+"type": "src-block",
+"ref": "org682fad9",
+"properties": {
+"postAffiliated": 3549,
+"postBlank": 1,
+"trueLevel": null,
+"language": "org",
+"switches": null,
+"parameters": ":tangle ../../tmp/callout_src.org",
+"numberLines": null,
+"preserveIndent": false,
+"retainLabels": true,
+"useLabels": true,
+"labelFmt": null,
+"value": "<pre>\n<span class=\"org-block-begin-line\">#+begin_name\n</span>...\n<span class=\"org-block-end-line\">#+end_name\n</span></pre>"
+},
+"contents": []
+},
+{
+"dataType": "org-node",
+"type": "paragraph",
+"ref": "org71a9ba0",
+"properties": {
+"postAffiliated": 3640,
+"postBlank": 0,
+"trueLevel": null
+},
+"contents": [
+"where ",
+{
+"dataType": "org-node",
+"type": "verbatim",
+"ref": "orga8266fd",
+"properties": {
+"postAffiliated": null,
+"postBlank": 1,
+"trueLevel": null,
+"value": "name"
+},
+"contents": []
+},
+"is any string of nonwhitespace characters. Some types of blocks\nhave a special significance in Org mode, but \"callout\" isn't one of them. As\nwe'll see later though, the workflow I've set up for this blog makes it very\neasy to attach significance to new block types when we ingest Org content into\nAstro.\n"
+]
+}
+]
+},
+{
+"dataType": "org-node",
+"type": "paragraph",
+"ref": "orgcb6f432",
+"properties": {
+"postAffiliated": 3972,
+"postBlank": 1,
+"trueLevel": null
+},
+"contents": [
+"Granted, you could pretty easily come up with a scheme to represent something\nlike this with a custom Markdown extension. Obsidian, for instance, supports\ncallouts using block quotes that start with a specially-formatted first line ",
+{
+"dataType": "org-node",
+"type": "link",
+"ref": "org32c33d4",
+"properties": {
+"postAffiliated": null,
+"postBlank": 0,
+"trueLevel": null,
+"type": "https",
+"typeExplicitP": true,
+"path": "//help.obsidian.md/callouts",
+"format": "bracket",
+"rawLink": "https://help.obsidian.md/callouts",
+"application": null,
+"searchOption": null,
+"isInternal": false,
+"targetRef": null,
+"isInlineImage": false
+},
+"contents": [
+"as\ndescribed here"
+]
+},
+". As far as I know however, this isn't supported anywhere outside\nof Obsidian and there's no official open source Obsidian-flavored Markdown\nparser, so you're on your own if you want to use it anywhere else. Compare that\nto our Org Mode example. When we use Org Mode's export functionality, the block\nabove is provided to the exporter as an AST node that contains all the\ninformation we need in a structured format:\n"
+]
+},
+{
+"dataType": "org-node",
+"type": "src-block",
+"ref": "org3656654",
+"properties": {
+"postAffiliated": 4677,
+"postBlank": 1,
+"trueLevel": null,
+"language": "emacs-lisp",
+"switches": null,
+"parameters": null,
+"numberLines": null,
+"preserveIndent": false,
+"retainLabels": true,
+"useLabels": true,
+"labelFmt": null,
+"value": "<span class=\"org-comment-delimiter\">;; </span><span class=\"org-comment\">You can inspect the AST representation of any element in an Org Mode document</span>\n<span class=\"org-comment-delimiter\">;; </span><span class=\"org-comment\">by moving the cursor to that element and running (org-element-at-point)</span>\n'<span class=\"org-rainbow-delimiters-depth-1\">(</span>special-block <span class=\"org-rainbow-delimiters-depth-2\">(</span>... <span class=\"org-builtin\">:type</span> <span class=\"org-string\">\"callout\"</span> <span class=\"org-builtin\">:parameters</span> <span class=\"org-string\">\"info\"</span><span class=\"org-rainbow-delimiters-depth-2\">)</span><span class=\"org-rainbow-delimiters-depth-1\">)</span>\n"
+},
+"contents": []
+}
+]
+},
+{
+"dataType": "org-node",
+"type": "headline",
+"ref": "org1ea2222",
+"drawer": {
+
+},
+"properties": {
+"tagsAll": [
+"Org",
+"Mode",
+"Emacs",
+"Meta"
+],
+"postAffiliated": 4925,
+"postBlank": 0,
+"trueLevel": 2,
+"preBlank": 1,
+"rawValue": "Not Your Father's Source Blocks",
+"title": [
+"Not Your Father's Source Blocks"
+],
+"level": 2,
+"priority": null,
+"tags": [],
+"todoKeyword": null,
+"todoType": null,
+"footnoteSectionP": true,
+"archivedp": true,
+"commentedp": false
+},
+"contents": [
+{
+"dataType": "org-node",
+"type": "section",
+"ref": "orgdb07874",
+"properties": {
+"postAffiliated": 4961,
+"postBlank": 0,
+"trueLevel": null
+},
+"contents": [
+{
+"dataType": "org-node",
+"type": "paragraph",
+"ref": "org0303214",
+"properties": {
+"postAffiliated": 4961,
+"postBlank": 1,
+"trueLevel": null
+},
+"contents": [
+"Next let's look at how Org Mode deals with source code. Org Mode comes with a\nframework for executing source code called ",
+{
+"dataType": "org-node",
+"type": "link",
+"ref": "org360185f",
+"properties": {
+"postAffiliated": null,
+"postBlank": 0,
+"trueLevel": null,
+"type": "https",
+"typeExplicitP": true,
+"path": "//orgmode.org/worg/org-contrib/babel/",
+"format": "bracket",
+"rawLink": "https://orgmode.org/worg/org-contrib/babel/",
+"application": null,
+"searchOption": null,
+"isInternal": false,
+"targetRef": null,
+"isInlineImage": false
+},
+"contents": [
+"Babel"
+]
+},
+". It supports a variety of\ndifferent use cases, but to highlight some of the features that feel\nparticularly useful to me for writing a technical blog:\n"
+]
+},
+{
+"dataType": "org-node",
+"type": "plain-list",
+"ref": "orgb3fcf2e",
+"properties": {
+"postAffiliated": 5289,
+"postBlank": 1,
+"trueLevel": null,
+"structure": [
+[
+5289,
+0,
+"- ",
+null,
+null,
+null,
+5717
+],
+[
+5717,
+0,
+"- ",
+null,
+null,
+null,
+5827
+],
+[
+5827,
+0,
+"- ",
+null,
+null,
+null,
+5995
+]
+],
+"type": "unordered"
+},
+"contents": [
+{
+"dataType": "org-node",
+"type": "item",
+"ref": "org63ba18c",
+"properties": {
+"postAffiliated": 5289,
+"postBlank": 0,
+"trueLevel": null,
+"bullet": "- ",
+"checkbox": null,
+"counter": null,
+"preBlank": 0,
+"tag": []
+},
+"contents": [
+{
+"dataType": "org-node",
+"type": "paragraph",
+"ref": "orgbb907a2",
+"properties": {
+"postAffiliated": 5291,
+"postBlank": 0,
+"trueLevel": null
+},
+"contents": [
+"You can execute code directly within the Org document and output the results\nin various formats. You can also control whether the code, results or both are\nexported when converting the document to other formats. If nothing else, this\nis really handy just to verify that the code snippet you're about to publish\nactually ",
+{
+"dataType": "org-node",
+"type": "italic",
+"ref": "org06d8bed",
+"properties": {
+"postAffiliated": null,
+"postBlank": 1,
+"trueLevel": null
+},
+"contents": [
+"works"
+]
+},
+"but it can also be handy for programmatically generating\nvarious types of rich content.\n"
+]
+}
+]
+},
+{
+"dataType": "org-node",
+"type": "item",
+"ref": "orgd20ec5d",
+"properties": {
+"postAffiliated": 5717,
+"postBlank": 0,
+"trueLevel": null,
+"bullet": "- ",
+"checkbox": null,
+"counter": null,
+"preBlank": 0,
+"tag": []
+},
+"contents": [
+{
+"dataType": "org-node",
+"type": "paragraph",
+"ref": "org60bd30a",
+"properties": {
+"postAffiliated": 5719,
+"postBlank": 0,
+"trueLevel": null
+},
+"contents": [
+"You can pass the results of one block into another even if the blocks are\nwritten in different languages.\n"
+]
+}
+]
+},
+{
+"dataType": "org-node",
+"type": "item",
+"ref": "orgf9e0113",
+"properties": {
+"postAffiliated": 5827,
+"postBlank": 0,
+"trueLevel": null,
+"bullet": "- ",
+"checkbox": null,
+"counter": null,
+"preBlank": 0,
+"tag": []
+},
+"contents": [
+{
+"dataType": "org-node",
+"type": "paragraph",
+"ref": "org10720a4",
+"properties": {
+"postAffiliated": 5829,
+"postBlank": 0,
+"trueLevel": null
+},
+"contents": [
+"You can run multiple source blocks in the same interpreter process for\nsupported languages, allowing blocks to build on and reference constructs from\neach other.\n"
+]
+}
+]
+}
+]
+},
+{
+"dataType": "org-node",
+"type": "paragraph",
+"ref": "org6b0ba72",
+"properties": {
+"postAffiliated": 5996,
+"postBlank": 1,
+"trueLevel": null
+},
+"contents": [
+"Here's a motivating example that showcases a few of Babel's features: let's use\nsource blocks to demonstrate how the Monte Carlo method can be used to estimate\nthe value of ",
+{
+"dataType": "org-node",
+"type": "entity",
+"ref": "org610f664",
+"properties": {
+"postAffiliated": null,
+"postBlank": 0,
+"trueLevel": null,
+"name": "pi",
+"latex": "\\pi",
+"latexMathP": true,
+"html": "&pi;",
+"ascii": "pi",
+"latin1": "pi",
+"utf8": "π",
+"useBracketsP": false
+},
+"contents": []
+},
+". I'll include both the Org Mode syntax for each code block (in\na separate code block labeled \"Org\") and the result when the code block is\nrendered, explaining the nontrivial bits of syntax as we go.\n"
+]
+},
+{
+"dataType": "org-node",
+"type": "paragraph",
+"ref": "org5eff4fa",
+"properties": {
+"postAffiliated": 6373,
+"postBlank": 1,
+"trueLevel": null
+},
+"contents": [
+"Monte Carlo methods refer to a broad class of algorithms that use random\nsampling to solve a mathematical problem. As a simple example, consider that we\ncan estimate the value of ",
+{
+"dataType": "org-node",
+"type": "entity",
+"ref": "orgf98bb07",
+"properties": {
+"postAffiliated": null,
+"postBlank": 1,
+"trueLevel": null,
+"name": "pi",
+"latex": "\\pi",
+"latexMathP": true,
+"html": "&pi;",
+"ascii": "pi",
+"latin1": "pi",
+"utf8": "π",
+"useBracketsP": false
+},
+"contents": []
+},
+"by randomly generating points in the range [(0,0),\n(1,1)] and calculating how many of them fall inside a circle with radius 1.\n"
+]
+},
+{
+"dataType": "org-node",
+"type": "paragraph",
+"ref": "orgea8216e",
+"properties": {
+"postAffiliated": 6684,
+"postBlank": 1,
+"trueLevel": null
+},
+"contents": [
+"To demonstrate this, we first generate a collection of random points:\n"
+]
+},
+{
+"dataType": "org-node",
+"type": "src-block",
+"ref": "org546bd60",
+"properties": {
+"postAffiliated": 6755,
+"postBlank": 1,
+"trueLevel": null,
+"language": "org",
+"switches": null,
+"parameters": ":tangle ../../tmp/generate_data.org",
+"numberLines": null,
+"preserveIndent": false,
+"retainLabels": true,
+"useLabels": true,
+"labelFmt": null,
+"value": "<pre>\n<span class=\"org-meta-line\">#+name: generate_data</span>\n<span class=\"org-block-begin-line\">#+begin_src ruby :results value table :exports code :var sample_size=100\n</span><span class=\"org-block\">  </span><span class=\"org-block\"><span class=\"builtin\">srand</span></span><span class=\"org-block\"><span class=\"rainbow-delimiters-depth-1\">(</span></span><span class=\"org-block\"><span class=\"highlight-numbers-number\">123</span></span><span class=\"org-block\"><span class=\"rainbow-delimiters-depth-1\">)</span></span><span class=\"org-block\"> </span><span class=\"org-block\"><span class=\"comment-delimiter\"># </span></span><span class=\"org-block\"><span class=\"comment\">fix the random seed so we get consistent results every time we run this\n</span></span><span class=\"org-block\">  </span><span class=\"org-block\"><span class=\"rainbow-delimiters-depth-1\">(</span></span><span class=\"org-block\"><span class=\"highlight-numbers-number\">0</span></span><span class=\"org-block\">..sample_size</span><span class=\"org-block\"><span class=\"rainbow-delimiters-depth-1\">)</span></span><span class=\"org-block\">.map </span><span class=\"org-block\"><span class=\"keyword\">do</span></span><span class=\"org-block\"> |_x|\n    point = </span><span class=\"org-block\"><span class=\"rainbow-delimiters-depth-1\">[</span></span><span class=\"org-block\"><span class=\"builtin\">rand</span></span><span class=\"org-block\"><span class=\"rainbow-delimiters-depth-2\">()</span></span><span class=\"org-block\">, </span><span class=\"org-block\"><span class=\"builtin\">rand</span></span><span class=\"org-block\"><span class=\"rainbow-delimiters-depth-2\">()</span></span><span class=\"org-block\"><span class=\"rainbow-delimiters-depth-1\">]</span></span><span class=\"org-block\">\n    </span><span class=\"org-block\"><span class=\"rainbow-delimiters-depth-1\">[</span></span><span class=\"org-block\">point</span><span class=\"org-block\"><span class=\"rainbow-delimiters-depth-2\">[</span></span><span class=\"org-block\"><span class=\"highlight-numbers-number\">0</span></span><span class=\"org-block\"><span class=\"rainbow-delimiters-depth-2\">]</span></span><span class=\"org-block\">, point</span><span class=\"org-block\"><span class=\"rainbow-delimiters-depth-2\">[</span></span><span class=\"org-block\"><span class=\"highlight-numbers-number\">1</span></span><span class=\"org-block\"><span class=\"rainbow-delimiters-depth-2\">]</span></span><span class=\"org-block\">, </span><span class=\"org-block\"><span class=\"type\">Math</span></span><span class=\"org-block\">.sqrt</span><span class=\"org-block\"><span class=\"rainbow-delimiters-depth-2\">(</span></span><span class=\"org-block\">point</span><span class=\"org-block\"><span class=\"rainbow-delimiters-depth-3\">[</span></span><span class=\"org-block\"><span class=\"highlight-numbers-number\">0</span></span><span class=\"org-block\"><span class=\"rainbow-delimiters-depth-3\">]</span></span><span class=\"org-block\">**</span><span class=\"org-block\"><span class=\"highlight-numbers-number\">2</span></span><span class=\"org-block\"> + point</span><span class=\"org-block\"><span class=\"rainbow-delimiters-depth-3\">[</span></span><span class=\"org-block\"><span class=\"highlight-numbers-number\">1</span></span><span class=\"org-block\"><span class=\"rainbow-delimiters-depth-3\">]</span></span><span class=\"org-block\">**</span><span class=\"org-block\"><span class=\"highlight-numbers-number\">2</span></span><span class=\"org-block\"><span class=\"rainbow-delimiters-depth-2\">)</span></span><span class=\"org-block\"> &lt;= </span><span class=\"org-block\"><span class=\"highlight-numbers-number\">1</span></span><span class=\"org-block\"> ? </span><span class=\"org-block\"><span class=\"highlight-numbers-number\">0</span></span><span class=\"org-block\"> : </span><span class=\"org-block\"><span class=\"highlight-numbers-number\">1</span></span><span class=\"org-block\"><span class=\"rainbow-delimiters-depth-1\">]</span></span><span class=\"org-block\">\n  </span><span class=\"org-block\"><span class=\"keyword\">end</span></span><span class=\"org-block\">\n</span><span class=\"org-block-end-line\">#+end_src\n</span></pre>"
+},
+"contents": []
+},
+{
+"dataType": "org-node",
+"type": "paragraph",
+"ref": "org13ab08e",
+"properties": {
+"postAffiliated": 7155,
+"postBlank": 0,
+"trueLevel": null
+},
+"contents": [
+"We're using a few header arguments here in the source block that are worth explaining:\n"
+]
+},
+{
+"dataType": "org-node",
+"type": "plain-list",
+"ref": "org179232e",
+"properties": {
+"postAffiliated": 7242,
+"postBlank": 1,
+"trueLevel": null,
+"structure": [
+[
+7242,
+0,
+"- ",
+null,
+null,
+null,
+7424
+],
+[
+7424,
+0,
+"- ",
+null,
+null,
+null,
+7674
+],
+[
+7674,
+0,
+"- ",
+null,
+null,
+null,
+7947
+]
+],
+"type": "unordered"
+},
+"contents": [
+{
+"dataType": "org-node",
+"type": "item",
+"ref": "orgaad18ba",
+"properties": {
+"postAffiliated": 7242,
+"postBlank": 0,
+"trueLevel": null,
+"bullet": "- ",
+"checkbox": null,
+"counter": null,
+"preBlank": 0,
+"tag": []
+},
+"contents": [
+{
+"dataType": "org-node",
+"type": "paragraph",
+"ref": "orgf5b9438",
+"properties": {
+"postAffiliated": 7244,
+"postBlank": 0,
+"trueLevel": null
+},
+"contents": [
+{
+"dataType": "org-node",
+"type": "verbatim",
+"ref": "orga81f732",
+"properties": {
+"postAffiliated": null,
+"postBlank": 0,
+"trueLevel": null,
+"value": ":results value table"
+},
+"contents": []
+},
+": the code is effectively wrapped in a function\ndefinition and the return value is captured as the result, and the result is\ninterpreted as an Org table.\n"
+]
+}
+]
+},
+{
+"dataType": "org-node",
+"type": "item",
+"ref": "org08f2a44",
+"properties": {
+"postAffiliated": 7424,
+"postBlank": 0,
+"trueLevel": null,
+"bullet": "- ",
+"checkbox": null,
+"counter": null,
+"preBlank": 0,
+"tag": []
+},
+"contents": [
+{
+"dataType": "org-node",
+"type": "paragraph",
+"ref": "org4a1b765",
+"properties": {
+"postAffiliated": 7426,
+"postBlank": 0,
+"trueLevel": null
+},
+"contents": [
+{
+"dataType": "org-node",
+"type": "verbatim",
+"ref": "org6d0c203",
+"properties": {
+"postAffiliated": null,
+"postBlank": 0,
+"trueLevel": null,
+"value": ":exports code"
+},
+"contents": []
+},
+": only the code is included when we export this code block to\nanother format - the results are omitted. In this case, we're not all that\ninterested in cluttering our exported web page with a giant table full of\nrandom numbers!\n"
+]
+}
+]
+},
+{
+"dataType": "org-node",
+"type": "item",
+"ref": "org9558ce9",
+"properties": {
+"postAffiliated": 7674,
+"postBlank": 0,
+"trueLevel": null,
+"bullet": "- ",
+"checkbox": null,
+"counter": null,
+"preBlank": 0,
+"tag": []
+},
+"contents": [
+{
+"dataType": "org-node",
+"type": "paragraph",
+"ref": "org6c6a1a3",
+"properties": {
+"postAffiliated": 7676,
+"postBlank": 0,
+"trueLevel": null
+},
+"contents": [
+{
+"dataType": "org-node",
+"type": "verbatim",
+"ref": "org430aaa6",
+"properties": {
+"postAffiliated": null,
+"postBlank": 0,
+"trueLevel": null,
+"value": ":var samples=100"
+},
+"contents": []
+},
+": indicates that the block takes a variable called samples\nthat can be passed in whenever we call this block from elsewhere, and that its\ndefault value is 100. The variable is defined for us automatically before the\ncode in the source block runs.\n"
+]
+}
+]
+}
+]
+},
+{
+"dataType": "org-node",
+"type": "src-block",
+"ref": "org7ac78a8",
+"properties": {
+"postAffiliated": 7970,
+"postBlank": 1,
+"trueLevel": null,
+"language": "ruby",
+"switches": null,
+"parameters": ":results value table :exports code :var samples=100 :tangle ../../tmp/generate_data.rb :no-expand",
+"numberLines": null,
+"preserveIndent": false,
+"retainLabels": true,
+"useLabels": true,
+"labelFmt": null,
+"name": "generate_data",
+"value": "<pre>\n<span class=\"builtin\">srand</span><span class=\"rainbow-delimiters-depth-1\">(</span><span class=\"highlight-numbers-number\">123</span><span class=\"rainbow-delimiters-depth-1\">)</span> # fix the random seed so we get consistent results every time we run this\n<span class=\"rainbow-delimiters-depth-1\">(</span><span class=\"highlight-numbers-number\">0</span>...samples<span class=\"rainbow-delimiters-depth-1\">)</span>.map do |_x|\n  point = <span class=\"rainbow-delimiters-depth-1\">[</span><span class=\"builtin\">rand</span><span class=\"rainbow-delimiters-depth-2\">()</span>, <span class=\"builtin\">rand</span><span class=\"rainbow-delimiters-depth-2\">()</span><span class=\"rainbow-delimiters-depth-1\">]</span>\n  <span class=\"rainbow-delimiters-depth-1\">[</span>point<span class=\"rainbow-delimiters-depth-2\">[</span><span class=\"highlight-numbers-number\">0</span><span class=\"rainbow-delimiters-depth-2\">]</span>, point<span class=\"rainbow-delimiters-depth-2\">[</span><span class=\"highlight-numbers-number\">1</span><span class=\"rainbow-delimiters-depth-2\">]</span>, Math.sqrt<span class=\"rainbow-delimiters-depth-2\">(</span>point<span class=\"rainbow-delimiters-depth-3\">[</span><span class=\"highlight-numbers-number\">0</span><span class=\"rainbow-delimiters-depth-3\">]</span>**<span class=\"highlight-numbers-number\">2</span> + point<span class=\"rainbow-delimiters-depth-3\">[</span><span class=\"highlight-numbers-number\">1</span><span class=\"rainbow-delimiters-depth-3\">]</span>**<span class=\"highlight-numbers-number\">2</span><span class=\"rainbow-delimiters-depth-2\">)</span> &lt;= <span class=\"highlight-numbers-number\">1</span> ? <span class=\"highlight-numbers-number\">0</span> : <span class=\"highlight-numbers-number\">1</span><span class=\"rainbow-delimiters-depth-1\">]</span>\nend\n</pre>"
+},
+"contents": []
+},
+{
+"dataType": "org-node",
+"type": "paragraph",
+"ref": "org3301f8d",
+"properties": {
+"postAffiliated": 8312,
+"postBlank": 1,
+"trueLevel": null
+},
+"contents": [
+"Now we can use the random samples to estimate the value of ",
+{
+"dataType": "org-node",
+"type": "entity",
+"ref": "org7acf6ee",
+"properties": {
+"postAffiliated": null,
+"postBlank": 1,
+"trueLevel": null,
+"name": "pi",
+"latex": "\\pi",
+"latexMathP": true,
+"html": "&pi;",
+"ascii": "pi",
+"latin1": "pi",
+"utf8": "π",
+"useBracketsP": false
+},
+"contents": []
+},
+"with the formula:\n",
+{
+"dataType": "org-node",
+"type": "latex-fragment",
+"ref": "orgbbcd2c8",
+"properties": {
+"postAffiliated": null,
+"postBlank": 1,
+"trueLevel": null,
+"value": "\\(\\pi \\approx 4 \\frac{r}{n}\\)"
+},
+"contents": []
+},
+"where ",
+{
+"dataType": "org-node",
+"type": "verbatim",
+"ref": "org6a0f609",
+"properties": {
+"postAffiliated": null,
+"postBlank": 1,
+"trueLevel": null,
+"value": "r"
+},
+"contents": []
+},
+"is the number of points inside the circle\nof radius 1 and ",
+{
+"dataType": "org-node",
+"type": "verbatim",
+"ref": "org69427b3",
+"properties": {
+"postAffiliated": null,
+"postBlank": 1,
+"trueLevel": null,
+"value": "n"
+},
+"contents": []
+},
+"is the total number of points.\n"
+]
+},
+{
+"dataType": "org-node",
+"type": "src-block",
+"ref": "org858d77f",
+"properties": {
+"postAffiliated": 8525,
+"postBlank": 1,
+"trueLevel": null,
+"language": "org",
+"switches": null,
+"parameters": ":tangle ../../tmp/monte_carlo_pi_estimate.org",
+"numberLines": null,
+"preserveIndent": false,
+"retainLabels": true,
+"useLabels": true,
+"labelFmt": null,
+"value": "<pre>\n<span class=\"org-meta-line\">#+name: monte_carlo_pi_estimate</span>\n<span class=\"org-meta-line\">#+headers: :results value table :exports both</span>\n<span class=\"org-meta-line\">#+headers: :var data_10=generate_data(samples=10)</span>\n<span class=\"org-meta-line\">#+headers: :var data_100=generate_data(samples=100)</span>\n<span class=\"org-meta-line\">#+headers: :var data_1000=generate_data(samples=1000)</span>\n<span class=\"org-block-begin-line\">#+begin_src ruby\n</span><span class=\"org-block\">  </span><span class=\"org-block\"><span class=\"rainbow-delimiters-depth-1\">[</span></span><span class=\"org-block\">data_100, data_1000</span><span class=\"org-block\"><span class=\"rainbow-delimiters-depth-1\">]</span></span><span class=\"org-block\">.map </span><span class=\"org-block\"><span class=\"keyword\">do</span></span><span class=\"org-block\"> |data|\n    points_inside = data.select </span><span class=\"org-block\"><span class=\"rainbow-delimiters-depth-1\">{</span></span><span class=\"org-block\"> |point| point</span><span class=\"org-block\"><span class=\"rainbow-delimiters-depth-2\">[</span></span><span class=\"org-block\"><span class=\"highlight-numbers-number\">2</span></span><span class=\"org-block\"><span class=\"rainbow-delimiters-depth-2\">]</span></span><span class=\"org-block\"> == </span><span class=\"org-block\"><span class=\"highlight-numbers-number\">0</span></span><span class=\"org-block\"> </span><span class=\"org-block\"><span class=\"rainbow-delimiters-depth-1\">}</span></span><span class=\"org-block\">\n    pi_estimate = </span><span class=\"org-block\"><span class=\"highlight-numbers-number\">4</span></span><span class=\"org-block\">.</span><span class=\"org-block\"><span class=\"highlight-numbers-number\">0</span></span><span class=\"org-block\"> * points_inside.length / data.length\n    </span><span class=\"org-block\"><span class=\"rainbow-delimiters-depth-1\">[</span></span><span class=\"org-block\">data.length, pi_estimate</span><span class=\"org-block\"><span class=\"rainbow-delimiters-depth-1\">]</span></span><span class=\"org-block\">\n  </span><span class=\"org-block\"><span class=\"keyword\">end</span></span><span class=\"org-block\">\n</span><span class=\"org-block-end-line\">#+end_src\n</span></pre>"
+},
+"contents": []
+},
+{
+"dataType": "org-node",
+"type": "paragraph",
+"ref": "org055c0f9",
+"properties": {
+"postAffiliated": 9058,
+"postBlank": 0,
+"trueLevel": null
+},
+"contents": [
+"A couple novel things are happening in the header arguments here:\n"
+]
+},
+{
+"dataType": "org-node",
+"type": "plain-list",
+"ref": "org9c36da7",
+"properties": {
+"postAffiliated": 9124,
+"postBlank": 1,
+"trueLevel": null,
+"structure": [
+[
+9124,
+0,
+"- ",
+null,
+null,
+null,
+9295
+],
+[
+9295,
+0,
+"- ",
+null,
+null,
+null,
+9398
+],
+[
+9398,
+0,
+"- ",
+null,
+null,
+null,
+9572
+]
+],
+"type": "unordered"
+},
+"contents": [
+{
+"dataType": "org-node",
+"type": "item",
+"ref": "orgbcd6098",
+"properties": {
+"postAffiliated": 9124,
+"postBlank": 0,
+"trueLevel": null,
+"bullet": "- ",
+"checkbox": null,
+"counter": null,
+"preBlank": 0,
+"tag": []
+},
+"contents": [
+{
+"dataType": "org-node",
+"type": "paragraph",
+"ref": "org1d7b5fe",
+"properties": {
+"postAffiliated": 9126,
+"postBlank": 0,
+"trueLevel": null
+},
+"contents": [
+"I split the headers up into mulitple lines to make it more readable - you can\nadd any number of ",
+{
+"dataType": "org-node",
+"type": "verbatim",
+"ref": "org1b4c5a1",
+"properties": {
+"postAffiliated": null,
+"postBlank": 1,
+"trueLevel": null,
+"value": ",#+headers:"
+},
+"contents": []
+},
+"lines above the source block to break up the\narguments\n"
+]
+}
+]
+},
+{
+"dataType": "org-node",
+"type": "item",
+"ref": "org9724fd2",
+"properties": {
+"postAffiliated": 9295,
+"postBlank": 0,
+"trueLevel": null,
+"bullet": "- ",
+"checkbox": null,
+"counter": null,
+"preBlank": 0,
+"tag": []
+},
+"contents": [
+{
+"dataType": "org-node",
+"type": "paragraph",
+"ref": "orgc57e102",
+"properties": {
+"postAffiliated": 9297,
+"postBlank": 0,
+"trueLevel": null
+},
+"contents": [
+"We now use ",
+{
+"dataType": "org-node",
+"type": "verbatim",
+"ref": "orgaac4bcf",
+"properties": {
+"postAffiliated": null,
+"postBlank": 1,
+"trueLevel": null,
+"value": ":exports both"
+},
+"contents": []
+},
+"so that both the code and results are included in\nthe exported document\n"
+]
+}
+]
+},
+{
+"dataType": "org-node",
+"type": "item",
+"ref": "orgb39bff7",
+"properties": {
+"postAffiliated": 9398,
+"postBlank": 0,
+"trueLevel": null,
+"bullet": "- ",
+"checkbox": null,
+"counter": null,
+"preBlank": 0,
+"tag": []
+},
+"contents": [
+{
+"dataType": "org-node",
+"type": "paragraph",
+"ref": "org6cc1cb9",
+"properties": {
+"postAffiliated": 9400,
+"postBlank": 0,
+"trueLevel": null
+},
+"contents": [
+"We're using input variables again, but this time we're setting their values by\ncalling the ",
+{
+"dataType": "org-node",
+"type": "code",
+"ref": "org92b4fae",
+"properties": {
+"postAffiliated": null,
+"postBlank": 1,
+"trueLevel": null,
+"value": "generate_data"
+},
+"contents": []
+},
+"code block with different values for its ",
+{
+"dataType": "org-node",
+"type": "verbatim",
+"ref": "orgceeb1e3",
+"properties": {
+"postAffiliated": null,
+"postBlank": 0,
+"trueLevel": null,
+"value": "samples"
+},
+"contents": []
+},
+"\nargument.\n"
+]
+}
+]
+}
+]
+},
+{
+"dataType": "org-node",
+"type": "src-block",
+"ref": "org3cd1f59",
+"properties": {
+"postAffiliated": 9807,
+"postBlank": 1,
+"trueLevel": null,
+"language": "ruby",
+"switches": null,
+"parameters": ":tangle ../../tmp/monte_carlo_pi_estimate.rb :no-expand",
+"numberLines": null,
+"preserveIndent": false,
+"retainLabels": true,
+"useLabels": true,
+"labelFmt": null,
+"name": "monte_carlo_pi_estimate",
+"header": [
+":results value table :exports both",
+":var data_10=generate_data(samples=10)",
+":var data_100=generate_data(samples=100)",
+":var data_1000=generate_data(samples=1000)"
+],
+"value": "<pre>\nestimates = <span class=\"rainbow-delimiters-depth-1\">[</span>data_10, data_100, data_1000<span class=\"rainbow-delimiters-depth-1\">]</span>.map do |data|\n  points_inside = data.select <span class=\"rainbow-delimiters-depth-1\">{</span> |point| point<span class=\"rainbow-delimiters-depth-2\">[</span><span class=\"highlight-numbers-number\">2</span><span class=\"rainbow-delimiters-depth-2\">]</span> == <span class=\"highlight-numbers-number\">0</span> <span class=\"rainbow-delimiters-depth-1\">}</span>\n  pi_estimate = <span class=\"highlight-numbers-number\">4</span>.<span class=\"highlight-numbers-number\">0</span> * points_inside.length / data.length\n  <span class=\"rainbow-delimiters-depth-1\">[</span>data.length, pi_estimate<span class=\"rainbow-delimiters-depth-1\">]</span>\nend\n\n# note: the `nil` here causes Org to add a horizontal line below the previous\n# row when it renders the table, so it's visually clear that the first row\n# should be treated as the table header\n<span class=\"rainbow-delimiters-depth-1\">[</span><span class=\"rainbow-delimiters-depth-2\">[</span>\"samples\", \"estimate\"<span class=\"rainbow-delimiters-depth-2\">]</span>, nil<span class=\"rainbow-delimiters-depth-1\">]</span> + estimates\n</pre>"
+},
+"contents": []
+},
+{
+"dataType": "org-node",
+"type": "table",
+"ref": "org81d258b",
+"properties": {
+"postAffiliated": 10366,
+"postBlank": 1,
+"trueLevel": null,
+"type": "org",
+"tblfm": null,
+"value": null,
+"results": [
+"monte_carlo_pi_estimate"
+]
+},
+"contents": [
+{
+"dataType": "org-node",
+"type": "table-row",
+"ref": "orgbfca038",
+"properties": {
+"postAffiliated": 10366,
+"postBlank": 0,
+"trueLevel": null,
+"type": "standard"
+},
+"contents": [
+{
+"dataType": "org-node",
+"type": "table-cell",
+"ref": "org7b01b45",
+"properties": {
+"postAffiliated": null,
+"postBlank": 0,
+"trueLevel": null
+},
+"contents": [
+"samples"
+]
+},
+{
+"dataType": "org-node",
+"type": "table-cell",
+"ref": "org46b210f",
+"properties": {
+"postAffiliated": null,
+"postBlank": 0,
+"trueLevel": null
+},
+"contents": [
+"estimate"
+]
+}
+]
+},
+{
+"dataType": "org-node",
+"type": "table-row",
+"ref": "org8baaf80",
+"properties": {
+"postAffiliated": 10389,
+"postBlank": 0,
+"trueLevel": null,
+"type": "rule"
+},
+"contents": []
+},
+{
+"dataType": "org-node",
+"type": "table-row",
+"ref": "orgd9a1110",
+"properties": {
+"postAffiliated": 10412,
+"postBlank": 0,
+"trueLevel": null,
+"type": "standard"
+},
+"contents": [
+{
+"dataType": "org-node",
+"type": "table-cell",
+"ref": "orgff3a4e6",
+"properties": {
+"postAffiliated": null,
+"postBlank": 0,
+"trueLevel": null
+},
+"contents": [
+"10"
+]
+},
+{
+"dataType": "org-node",
+"type": "table-cell",
+"ref": "org91bb9b9",
+"properties": {
+"postAffiliated": null,
+"postBlank": 0,
+"trueLevel": null
+},
+"contents": [
+"3.6"
+]
+}
+]
+},
+{
+"dataType": "org-node",
+"type": "table-row",
+"ref": "org674712d",
+"properties": {
+"postAffiliated": 10435,
+"postBlank": 0,
+"trueLevel": null,
+"type": "standard"
+},
+"contents": [
+{
+"dataType": "org-node",
+"type": "table-cell",
+"ref": "org35c17a5",
+"properties": {
+"postAffiliated": null,
+"postBlank": 0,
+"trueLevel": null
+},
+"contents": [
+"100"
+]
+},
+{
+"dataType": "org-node",
+"type": "table-cell",
+"ref": "orgd08af8e",
+"properties": {
+"postAffiliated": null,
+"postBlank": 0,
+"trueLevel": null
+},
+"contents": [
+"3.36"
+]
+}
+]
+},
+{
+"dataType": "org-node",
+"type": "table-row",
+"ref": "org857c453",
+"properties": {
+"postAffiliated": 10458,
+"postBlank": 0,
+"trueLevel": null,
+"type": "standard"
+},
+"contents": [
+{
+"dataType": "org-node",
+"type": "table-cell",
+"ref": "org5c29b23",
+"properties": {
+"postAffiliated": null,
+"postBlank": 0,
+"trueLevel": null
+},
+"contents": [
+"1000"
+]
+},
+{
+"dataType": "org-node",
+"type": "table-cell",
+"ref": "orgc4acb1b",
+"properties": {
+"postAffiliated": null,
+"postBlank": 0,
+"trueLevel": null
+},
+"contents": [
+"3.14"
+]
+}
+]
+}
+]
+},
+{
+"dataType": "org-node",
+"type": "paragraph",
+"ref": "org4c60e6e",
+"properties": {
+"postAffiliated": 10482,
+"postBlank": 1,
+"trueLevel": null
+},
+"contents": [
+"Finally, we'll plot the data with gnuplot ",
+{
+"dataType": "org-node",
+"type": "footnote-reference",
+"ref": "orgdcd3990",
+"properties": {
+"postAffiliated": null,
+"postBlank": 0,
+"trueLevel": null,
+"label": "2",
+"type": "standard"
+},
+"contents": []
+},
+":\n"
+]
+},
+{
+"dataType": "org-node",
+"type": "src-block",
+"ref": "orgcb75aff",
+"properties": {
+"postAffiliated": 10533,
+"postBlank": 1,
+"trueLevel": null,
+"language": "org",
+"switches": null,
+"parameters": ":tangle ../../tmp/monte_carlo_gnuplot.org",
+"numberLines": null,
+"preserveIndent": false,
+"retainLabels": true,
+"useLabels": true,
+"labelFmt": null,
+"value": "<pre>\n<span class=\"org-meta-line\">#+name: alt_text</span>\n<span class=\"org-block-begin-line\">#+begin_src emacs-lisp :var data=\"\" text=\"\"\n</span><span class=\"org-block\">  </span><span class=\"org-block\"><span class=\"rainbow-delimiters-depth-1\">(</span></span><span class=\"org-block\">format </span><span class=\"org-block\"><span class=\"string\">\"#+attr_alt_text: %s\\n%s\"</span></span><span class=\"org-block\"> text data</span><span class=\"org-block\"><span class=\"rainbow-delimiters-depth-1\">)</span></span><span class=\"org-block\">\n</span><span class=\"org-block-end-line\">#+end_src\n</span>\n<span class=\"org-meta-line\">#+headers: :results output :file ../assets/monte_carlo.svg :exports results</span>\n<span class=\"org-meta-line\">#+headers: :var data_10=generate_data(samples=10)</span>\n<span class=\"org-meta-line\">#+headers: :var data_100=generate_data(samples=100)</span>\n<span class=\"org-meta-line\">#+headers: :post alt_text(data=*this*, text=\"2D plots of the data from the generate_data code block\")</span>\n<span class=\"org-block-begin-line\">#+begin_src gnuplot\n</span><span class=\"org-block\">  </span><span class=\"org-block\"><span class=\"constant\">set</span></span><span class=\"org-block\"> terminal svg size 600,300\n  </span><span class=\"org-block\"><span class=\"constant\">set</span></span><span class=\"org-block\"> nokey\n\n  </span><span class=\"org-block\"><span class=\"constant\">set</span></span><span class=\"org-block\"> palette maxcolors 2\n  </span><span class=\"org-block\"><span class=\"constant\">set</span></span><span class=\"org-block\"> palette </span><span class=\"org-block\"><span class=\"function-name\">defined</span></span><span class=\"org-block\"> (0 </span><span class=\"org-block\"><span class=\"string\">\"green\"</span></span><span class=\"org-block\">, 1 </span><span class=\"org-block\"><span class=\"string\">\"red\"</span></span><span class=\"org-block\">)\n  </span><span class=\"org-block\"><span class=\"constant\">unset</span></span><span class=\"org-block\"> colorbox\n\n  </span><span class=\"org-block\"><span class=\"constant\">set</span></span><span class=\"org-block\"> multiplot layout 1,2 </span><span class=\"org-block\"><span class=\"type\">title</span></span><span class=\"org-block\"> </span><span class=\"org-block\"><span class=\"string\">\"Estimating Pi with Monte Carlo method\"</span></span><span class=\"org-block\">\n\n  </span><span class=\"org-block\"><span class=\"constant\">set</span></span><span class=\"org-block\"> </span><span class=\"org-block\"><span class=\"type\">title</span></span><span class=\"org-block\"> </span><span class=\"org-block\"><span class=\"string\">\"10 Samples\"</span></span><span class=\"org-block\">\n  </span><span class=\"org-block\"><span class=\"constant\">set</span></span><span class=\"org-block\"> object 1 ellipse center 0,0 size 2,2\n  </span><span class=\"org-block\"><span class=\"keyword\">plot</span></span><span class=\"org-block\"> data_10 </span><span class=\"org-block\"><span class=\"type\">using</span></span><span class=\"org-block\"> 1:2:3 </span><span class=\"org-block\"><span class=\"type\">with</span></span><span class=\"org-block\"> </span><span class=\"org-block\"><span class=\"function-name\">points</span></span><span class=\"org-block\"> palette\n\n  </span><span class=\"org-block\"><span class=\"constant\">set</span></span><span class=\"org-block\"> </span><span class=\"org-block\"><span class=\"type\">title</span></span><span class=\"org-block\"> </span><span class=\"org-block\"><span class=\"string\">\"100 Samples\"</span></span><span class=\"org-block\">\n  </span><span class=\"org-block\"><span class=\"constant\">set</span></span><span class=\"org-block\"> object 2 ellipse center 0,0 size 2,2\n  </span><span class=\"org-block\"><span class=\"keyword\">plot</span></span><span class=\"org-block\"> data_100 </span><span class=\"org-block\"><span class=\"type\">using</span></span><span class=\"org-block\"> 1:2:3 </span><span class=\"org-block\"><span class=\"type\">with</span></span><span class=\"org-block\"> </span><span class=\"org-block\"><span class=\"function-name\">points</span></span><span class=\"org-block\"> palette\n\n  </span><span class=\"org-block\"><span class=\"constant\">unset</span></span><span class=\"org-block\"> multiplot\n</span><span class=\"org-block-end-line\">#+end_src\n</span></pre>"
+},
+"contents": []
+},
+{
+"dataType": "org-node",
+"type": "paragraph",
+"ref": "org17d0321",
+"properties": {
+"postAffiliated": 11498,
+"postBlank": 1,
+"trueLevel": null
+},
+"contents": [
+"Note that we are again calling the ",
+{
+"dataType": "org-node",
+"type": "code",
+"ref": "orgff5c66d",
+"properties": {
+"postAffiliated": null,
+"postBlank": 1,
+"trueLevel": null,
+"value": "generate_data"
+},
+"contents": []
+},
+"code block to pass the data\ninto gnuplot - the Ruby array from that block is magically transformed into a\ngnuplot variable! We also use ",
+{
+"dataType": "org-node",
+"type": "verbatim",
+"ref": "org7f1bcac",
+"properties": {
+"postAffiliated": null,
+"postBlank": 0,
+"trueLevel": null,
+"value": ":results output :file ./images/monte_carlo.svg"
+},
+"contents": []
+},
+"\nto tell Babel to use the output of the code block as the result and to write it\nto a file. When we export this to JSON, the code itself is omitted but a link to\nthe generated SVG is included (and then translated into an ",
+{
+"dataType": "org-node",
+"type": "code",
+"ref": "org8ec5429",
+"properties": {
+"postAffiliated": null,
+"postBlank": 1,
+"trueLevel": null,
+"value": "<img />"
+},
+"contents": []
+},
+"during the\nAstro build). Finally we use the ",
+{
+"dataType": "org-node",
+"type": "verbatim",
+"ref": "orgc54ed72",
+"properties": {
+"postAffiliated": null,
+"postBlank": 1,
+"trueLevel": null,
+"value": ":post"
+},
+"contents": []
+},
+"header to ",
+{
+"dataType": "org-node",
+"type": "link",
+"ref": "orgc0f9779",
+"properties": {
+"postAffiliated": null,
+"postBlank": 1,
+"trueLevel": null,
+"type": "https",
+"typeExplicitP": true,
+"path": "//orgmode.org/manual/Results-of-Evaluation.html#Post_002dprocessing-1",
+"format": "bracket",
+"rawLink": "https://orgmode.org/manual/Results-of-Evaluation.html#Post_002dprocessing-1",
+"application": null,
+"searchOption": null,
+"isInternal": false,
+"targetRef": null,
+"isInlineImage": false
+},
+"contents": [
+"post-process"
+]
+},
+"the outputted\nlink, attaching an attribute to indicate what to set the alt text to in the\nexported HTML.\n"
+]
+},
+{
+"dataType": "org-node",
+"type": "drawer",
+"ref": "orge3d04e0",
+"properties": {
+"postAffiliated": 12237,
+"postBlank": 1,
+"trueLevel": null,
+"drawerName": "results",
+"results": [
+""
+]
+},
+"contents": [
+{
+"dataType": "org-node",
+"type": "paragraph",
+"ref": "org0d146e7",
+"properties": {
+"postAffiliated": 12319,
+"postBlank": 0,
+"trueLevel": null,
+"attrAltText": [
+"2D plots of the data from the generate_data code block"
+]
+},
+"contents": [
+{
+"dataType": "org-node",
+"type": "link",
+"ref": "org2db38f3",
+"properties": {
+"postAffiliated": null,
+"postBlank": 0,
+"trueLevel": null,
+"type": "file",
+"typeExplicitP": true,
+"path": "../assets/monte_carlo.svg",
+"format": "bracket",
+"rawLink": "file:../assets/monte_carlo.svg",
+"application": null,
+"searchOption": null,
+"isInternal": false,
+"targetRef": null,
+"isInlineImage": false
+},
+"contents": []
+},
+"\n"
+]
+}
+]
+},
+{
+"dataType": "org-node",
+"type": "paragraph",
+"ref": "org83d666a",
+"properties": {
+"postAffiliated": 12361,
+"postBlank": 1,
+"trueLevel": null
+},
+"contents": [
+"Pretty neat! With very little effort, we've got Ruby, Emacs Lisp and Gnuplot\ncode working in harmony.\n"
+]
+}
+]
+}
+]
+}
+]
+},
+{
+"dataType": "org-node",
+"type": "headline",
+"ref": "org2e50bcc",
+"drawer": {
+
+},
+"properties": {
+"tagsAll": [
+"Org",
+"Mode",
+"Emacs",
+"Meta"
+],
+"postAffiliated": 12464,
+"postBlank": 0,
+"trueLevel": 1,
+"preBlank": 0,
+"rawValue": "Liftoff",
+"title": [
+"Liftoff"
+],
+"level": 1,
+"priority": null,
+"tags": [],
+"todoKeyword": null,
+"todoType": null,
+"footnoteSectionP": true,
+"archivedp": true,
+"commentedp": false
+},
+"contents": [
+{
+"dataType": "org-node",
+"type": "section",
+"ref": "org0a1fa6b",
+"properties": {
+"postAffiliated": 12474,
+"postBlank": 0,
+"trueLevel": null
+},
+"contents": [
+{
+"dataType": "org-node",
+"type": "paragraph",
+"ref": "org708b407",
+"properties": {
+"postAffiliated": 12474,
+"postBlank": 1,
+"trueLevel": null
+},
+"contents": [
+"Now that we've covered the motivation for writing content with Org Mode (perhaps\nyou're not convinced, but I've talked myself into it in any case), let's move on\nto how we're going to publish that content on the Internet in a format your\nbrowser can actually comprehend. Org Mode does come with an HTML exporter so in\ntheory this could be as simple as running ",
+{
+"dataType": "org-node",
+"type": "code",
+"ref": "org9d1ac29",
+"properties": {
+"postAffiliated": null,
+"postBlank": 0,
+"trueLevel": null,
+"value": "org-html-export-to-html"
+},
+"contents": []
+},
+". Out of the\nbox this gives us a pretty raw but functional translation of an Org document,\nand we could slap some CSS on that to make it prettier and call it a day. We can\neven use Org Mode's ",
+{
+"dataType": "org-node",
+"type": "link",
+"ref": "org9d41d9e",
+"properties": {
+"postAffiliated": null,
+"postBlank": 1,
+"trueLevel": null,
+"type": "https",
+"typeExplicitP": true,
+"path": "//orgmode.org/manual/Publishing.html",
+"format": "bracket",
+"rawLink": "https://orgmode.org/manual/Publishing.html",
+"application": null,
+"searchOption": null,
+"isInternal": false,
+"targetRef": null,
+"isInlineImage": false
+},
+"contents": [
+"publishing"
+]
+},
+"framework to publish our entire site at once with\nsome additional niceties like an automatically-generated sitemap. There's a\ndeeper problem, however, in that as soon as we want to customize our site in a\nway that deviates from the assumptions of the exporter we're probably going to\nhave to write a bunch of Emacs Lisp code.\n"
+]
+},
+{
+"dataType": "org-node",
+"type": "paragraph",
+"ref": "org47a1fa4",
+"properties": {
+"postAffiliated": 13437,
+"postBlank": 1,
+"trueLevel": null
+},
+"contents": [
+"Consider for instance that we might want to provide pages like ",
+{
+"dataType": "org-node",
+"type": "verbatim",
+"ref": "org719b372",
+"properties": {
+"postAffiliated": null,
+"postBlank": 0,
+"trueLevel": null,
+"value": "/tags/[tag]"
+},
+"contents": []
+},
+"\nthat list all articles with the given tag. There's no builtin feature for that,\nso we'd either need to manually maintain a separate Org document for every tag\nor programmatically generate them. Now, maybe you're thinking it's a bit odd for\na so-called Emacs enthusiast to complain about having to write some Lisp code\nbut for me it's a matter of ergonomics and using the right tool for the job.\nThis is of course a matter of taste, but when I look at the Org HTML exporter\ncode compared to Astro's syntax it's clear which one I personally find to be a\nmore ergonomic way to generate a website. The HTML exporter largely consists of\na collection of functions that take different types of Org elements as arugments\nand use string interpolation to craft a string that represents hopefully-valid\nHTML. In my experience, this kind of approach to generating markup tends to be\nfinnicky compared to using a proper templating system where it's easier to tell\nat a glance what the output will look like and where tooling can often provide a\nbetter editing experience.\n"
+]
+},
+{
+"dataType": "org-node",
+"type": "paragraph",
+"ref": "org15eae5b",
+"properties": {
+"postAffiliated": 14574,
+"postBlank": 1,
+"trueLevel": null
+},
+"contents": [
+"With all that in mind, I decided to take the approach of exporting from Org to\nJSON and then ingesting the result into Astro. I chose JSON as the export format\nbecause just about every static site generator is able to import JSON and turn\nit into HTML, and it should be easy to translate from Org to JSON without losing\nfidelity. I've never used Astro prior to this, but it stood out to me primarily\nbecause of its flexibility and ergonomics. If you just need a static site (as is\nthe case for this site as of writing), Astro generates plain HTML with no\nJavascript by default. When you do need to sprinkle in some interactivity, it's\neasy to do so using the framework of your choice and in a way that doesn't\naffect the load times of the static parts of your site (thanks to what Astro\nrefers to as ",
+{
+"dataType": "org-node",
+"type": "link",
+"ref": "org71f1913",
+"properties": {
+"postAffiliated": null,
+"postBlank": 0,
+"trueLevel": null,
+"type": "https",
+"typeExplicitP": true,
+"path": "//docs.astro.build/en/concepts/islands/",
+"format": "bracket",
+"rawLink": "https://docs.astro.build/en/concepts/islands/",
+"application": null,
+"searchOption": null,
+"isInternal": false,
+"targetRef": null,
+"isInlineImage": false
+},
+"contents": [
+"Islands Architecture"
+]
+},
+").\n"
+]
+},
+{
+"dataType": "org-node",
+"type": "paragraph",
+"ref": "orgc586281",
+"properties": {
+"postAffiliated": 15449,
+"postBlank": 1,
+"trueLevel": null
+},
+"contents": [
+"While there's no builtin Org exporter for JSON, I found a project that seemed to\nfit the bill - ",
+{
+"dataType": "org-node",
+"type": "link",
+"ref": "orgb3d99b1",
+"properties": {
+"postAffiliated": null,
+"postBlank": 0,
+"trueLevel": null,
+"type": "https",
+"typeExplicitP": true,
+"path": "//github.com/jlumpe/ox-json",
+"format": "bracket",
+"rawLink": "https://github.com/jlumpe/ox-json",
+"application": null,
+"searchOption": null,
+"isInternal": false,
+"targetRef": null,
+"isInlineImage": false
+},
+"contents": [
+"ox-json"
+]
+},
+". Initially, it produced JSON output that pretty\nfaithfully captured the full AST of an Org document but it had a few obvious\nissues:\n"
+]
+},
+{
+"dataType": "org-node",
+"type": "src-block",
+"ref": "org414018c",
+"properties": {
+"postAffiliated": 15726,
+"postBlank": 2,
+"trueLevel": null,
+"language": "org",
+"switches": null,
+"parameters": ":tangle ../../will_it_json.org",
+"numberLines": null,
+"preserveIndent": false,
+"retainLabels": true,
+"useLabels": true,
+"labelFmt": null,
+"value": "<pre>\n<span class=\"org-document-info-keyword\">#+title:</span> <span class=\"org-document-title\">Will it JSON?\n</span><span class=\"org-document-info-keyword\">#+date:</span> <span class=\"org-document-info\">&lt;2025-03-06 Thu&gt;\n</span>\n<span class=\"org-level-1\"><span class=\"org-superstar-header-bullet\">*</span></span><span class=\"org-level-1\"> Heading</span>\n\n<span class=\"org-superstar-leading\">*</span><span class=\"org-level-2\"><span class=\"org-superstar-header-bullet\">*</span></span><span class=\"org-level-2\"> Nested Heading</span>\nHopefully this gets exported properly. Let's test source blocks too for good measure:\n\n<span class=\"org-block-begin-line\">#+begin_src emacs-lisp\n</span><span class=\"org-block\">  </span><span class=\"org-block\"><span class=\"rainbow-delimiters-depth-1\">(</span></span><span class=\"org-block\">+ </span><span class=\"org-block\"><span class=\"highlight-numbers-number\">2</span></span><span class=\"org-block\"> </span><span class=\"org-block\"><span class=\"highlight-numbers-number\">2</span></span><span class=\"org-block\"><span class=\"rainbow-delimiters-depth-1\">)</span></span><span class=\"org-block\">\n</span><span class=\"org-block-end-line\">#+end_src\n</span></pre>"
+},
+"contents": []
+},
+{
+"dataType": "org-node",
+"type": "src-block",
+"ref": "org8a1eb5c",
+"properties": {
+"postAffiliated": 15999,
+"postBlank": 1,
+"trueLevel": null,
+"language": "json",
+"switches": null,
+"parameters": null,
+"numberLines": null,
+"preserveIndent": false,
+"retainLabels": true,
+"useLabels": true,
+"labelFmt": null,
+"value": "<span class=\"org-rainbow-delimiters-depth-1\">{</span>\n    <span class=\"org-keyword\">\"$$data_type\"</span>: <span class=\"org-string\">\"org-document\"</span>,\n    <span class=\"org-keyword\">\"properties\"</span>: <span class=\"org-rainbow-delimiters-depth-2\">{</span>\n        <span class=\"org-keyword\">\"title\"</span>: <span class=\"org-rainbow-delimiters-depth-3\">[</span>\n            <span class=\"org-string\">\"Will it JSON?\"</span>\n        <span class=\"org-rainbow-delimiters-depth-3\">]</span>,\n        ...,\n    <span class=\"org-rainbow-delimiters-depth-2\">}</span>,\n    <span class=\"org-keyword\">\"contents\"</span>: <span class=\"org-rainbow-delimiters-depth-2\">[</span>\n        <span class=\"org-rainbow-delimiters-depth-3\">{</span>\n            <span class=\"org-keyword\">\"$$data_type\"</span>: <span class=\"org-string\">\"org-node\"</span>,\n            <span class=\"org-keyword\">\"type\"</span>: <span class=\"org-string\">\"section\"</span>,\n            <span class=\"org-keyword\">\"ref\"</span>: <span class=\"org-string\">\"org4b27978\"</span>,\n            <span class=\"org-keyword\">\"properties\"</span>: <span class=\"org-rainbow-delimiters-depth-4\">{</span>\n                <span class=\"org-keyword\">\"standard-properties\"</span>: <span class=\"org-rainbow-delimiters-depth-5\">{</span>\n                    <span class=\"org-keyword\">\"$$data_type\"</span>: <span class=\"org-string\">\"error\"</span>,\n                    <span class=\"org-keyword\">\"message\"</span>: <span class=\"org-string\">\"Don't know how to encode value [1 1 1 50 50 0 nil first-section nil nil nil 1 50 nil #&lt;buffer test.org&lt;tom&gt;&lt;2&gt;&gt; ...\"</span>\n                <span class=\"org-rainbow-delimiters-depth-5\">}</span>\n            <span class=\"org-rainbow-delimiters-depth-4\">}</span>\n        <span class=\"org-rainbow-delimiters-depth-3\">}</span>,\n        ...,\n        <span class=\"org-rainbow-delimiters-depth-3\">{</span>\n            <span class=\"org-keyword\">\"$$data_type\"</span>: <span class=\"org-string\">\"org-node\"</span>,\n            <span class=\"org-keyword\">\"type\"</span>: <span class=\"org-string\">\"src-block\"</span>,\n            <span class=\"org-keyword\">\"ref\"</span>: <span class=\"org-string\">\"org01e6955\"</span>,\n            <span class=\"org-keyword\">\"properties\"</span>: <span class=\"org-rainbow-delimiters-depth-4\">{</span>\n                <span class=\"org-keyword\">\"language\"</span>: <span class=\"org-string\">\"emacs-lisp\"</span>,\n                ...,\n                <span class=\"org-keyword\">\"value\"</span>: <span class=\"org-rainbow-delimiters-depth-5\">{</span>\n                    <span class=\"org-keyword\">\"$$data_type\"</span>: <span class=\"org-string\">\"error\"</span>,\n                    <span class=\"org-keyword\">\"message\"</span>: <span class=\"org-string\">\"Expected string or symbol, got [org-element-deferred org-element--unescape-substring (23 31) t]\"</span>\n                <span class=\"org-rainbow-delimiters-depth-5\">}</span>\n            <span class=\"org-rainbow-delimiters-depth-4\">}</span>\n        <span class=\"org-rainbow-delimiters-depth-3\">}</span>\n    <span class=\"org-rainbow-delimiters-depth-2\">]</span>\n<span class=\"org-rainbow-delimiters-depth-1\">}</span>\n"
+},
+"contents": []
+},
+{
+"dataType": "org-node",
+"type": "paragraph",
+"ref": "org39de9f6",
+"properties": {
+"postAffiliated": 17067,
+"postBlank": 1,
+"trueLevel": null
+},
+"contents": [
+"That's not quite what we were looking for. First, every node in the exported\nJSON seems to have a ",
+{
+"dataType": "org-node",
+"type": "code",
+"ref": "org3b5810b",
+"properties": {
+"postAffiliated": null,
+"postBlank": 1,
+"trueLevel": null,
+"value": "standard-properties"
+},
+"contents": []
+},
+"property that ox-json is unable to\nencode as JSON. Worse still, the error message includes a string representation\nof the full value which among other things includes the AST of the entire\ndocument! The second issue is that the value of the source block seems to have\nthe type ",
+{
+"dataType": "org-node",
+"type": "code",
+"ref": "orgd66bb3c",
+"properties": {
+"postAffiliated": null,
+"postBlank": 1,
+"trueLevel": null,
+"value": "org-element-deferred"
+},
+"contents": []
+},
+"and the actual contents of the block are missing\nfrom the JSON output.\n"
+]
+},
+{
+"dataType": "org-node",
+"type": "paragraph",
+"ref": "org0623585",
+"properties": {
+"postAffiliated": 17559,
+"postBlank": 1,
+"trueLevel": null
+},
+"contents": [
+"After a little digging, I discovered that both of these issues were related to\nthe same commit to Org Mode: ",
+{
+"dataType": "org-node",
+"type": "link",
+"ref": "orgfc7fc7e",
+"properties": {
+"postAffiliated": null,
+"postBlank": 0,
+"trueLevel": null,
+"type": "https",
+"typeExplicitP": true,
+"path": "//git.savannah.gnu.org/cgit/emacs/org-mode.git/commit/?id=1260f61830bfdee821de9233051a821f4ac4831c",
+"format": "bracket",
+"rawLink": "https://git.savannah.gnu.org/cgit/emacs/org-mode.git/commit/?id=1260f61830bfdee821de9233051a821f4ac4831c",
+"application": null,
+"searchOption": null,
+"isInternal": false,
+"targetRef": null,
+"isInlineImage": false
+},
+"contents": [
+"1260f61"
+]
+},
+". As the commit\nmessage explains, some properties that are common to most AST nodes are now\nstored in an array under ",
+{
+"dataType": "org-node",
+"type": "code",
+"ref": "org4ff13da",
+"properties": {
+"postAffiliated": null,
+"postBlank": 0,
+"trueLevel": null,
+"value": "standard-properties"
+},
+"contents": []
+},
+". Separately, some values are now\ndeferred and computed on-demand when accessed - so apparently we must be\naccessing those values in the wrong way. Fortunately the Org Mode ",
+{
+"dataType": "org-node",
+"type": "link",
+"ref": "org548f149",
+"properties": {
+"postAffiliated": null,
+"postBlank": 0,
+"trueLevel": null,
+"type": "https",
+"typeExplicitP": true,
+"path": "//orgmode.org/Changes.html",
+"format": "bracket",
+"rawLink": "https://orgmode.org/Changes.html",
+"application": null,
+"searchOption": null,
+"isInternal": false,
+"targetRef": null,
+"isInlineImage": false
+},
+"contents": [
+"changelog"
+]
+},
+"\nexplained both of these changes and the way to handle them clearly:\n"
+]
+},
+{
+"dataType": "org-node",
+"type": "quote-block",
+"ref": "org7ddcd92",
+"properties": {
+"postAffiliated": 18212,
+"postBlank": 1,
+"trueLevel": null
+},
+"contents": [
+{
+"dataType": "org-node",
+"type": "paragraph",
+"ref": "orgfad4fcb",
+"properties": {
+"postAffiliated": 18226,
+"postBlank": 1,
+"trueLevel": null
+},
+"contents": [
+"The code relying upon the previously used (TYPE PROPERTIES-PLIST CONTENTS-LIST)\nstructure may no longer work. Please use org-element-create,\norg-element-property, and other Org element API functions to work with Org\nsyntax trees.\n"
+]
+},
+{
+"dataType": "org-node",
+"type": "paragraph",
+"ref": "org5a7578b",
+"properties": {
+"postAffiliated": 18457,
+"postBlank": 1,
+"trueLevel": null
+},
+"contents": [
+"Some syntax node properties are no longer stored as property list elements.\nInstead, they are kept in a special vector value of a new :standard-properties\nproperty. This is done to improve performance. If there is a need to traverse\nall the node properties, a new API function org-element-properties-map can be\nused.\n"
+]
+},
+{
+"dataType": "org-node",
+"type": "paragraph",
+"ref": "org32009f3",
+"properties": {
+"postAffiliated": 18775,
+"postBlank": 0,
+"trueLevel": null
+},
+"contents": [
+"Properties and their values can now be deferred to avoid overheads when parsing.\nThey are calculated lazily, when the value/property is requested by\norg-element-property and other getter functions. Using plist-get to retrieve\nvalues of PROPERTIES-PLIST is not recommended as deferred properties will not be\nresolved in such scenario.\n"
+]
+}
+]
+},
+{
+"dataType": "org-node",
+"type": "paragraph",
+"ref": "org3cb1124",
+"properties": {
+"postAffiliated": 19122,
+"postBlank": 1,
+"trueLevel": null
+},
+"contents": [
+"Previously, one could rely on the fact that every node in an Org AST had the\nstructure ",
+{
+"dataType": "org-node",
+"type": "code",
+"ref": "org9ac591e",
+"properties": {
+"postAffiliated": null,
+"postBlank": 1,
+"trueLevel": null,
+"value": "(type properties-plist contents-list)"
+},
+"contents": []
+},
+"and inspect ",
+{
+"dataType": "org-node",
+"type": "code",
+"ref": "org6829d39",
+"properties": {
+"postAffiliated": null,
+"postBlank": 0,
+"trueLevel": null,
+"value": "properties-plist"
+},
+"contents": []
+},
+"\ndirectly to get all the node's property values, but now some of those might be\ndeferred and others have been consolidated into an array for performance\nreasons ",
+{
+"dataType": "org-node",
+"type": "footnote-reference",
+"ref": "org032bf52",
+"properties": {
+"postAffiliated": null,
+"postBlank": 0,
+"trueLevel": null,
+"label": "3",
+"type": "standard"
+},
+"contents": []
+},
+". Indeed, this is exactly what the code in ox-json ",
+{
+"dataType": "org-node",
+"type": "link",
+"ref": "org2733f82",
+"properties": {
+"postAffiliated": null,
+"postBlank": 0,
+"trueLevel": null,
+"type": "https",
+"typeExplicitP": true,
+"path": "//github.com/jlumpe/ox-json/blob/57a43e3b3e400d219b80008c51373796b844c6b8/ox-json.el#L345",
+"format": "bracket",
+"rawLink": "https://github.com/jlumpe/ox-json/blob/57a43e3b3e400d219b80008c51373796b844c6b8/ox-json.el#L345",
+"application": null,
+"searchOption": null,
+"isInternal": false,
+"targetRef": null,
+"isInlineImage": false
+},
+"contents": [
+"was relying on"
+]
+},
+":\n"
+]
+},
+{
+"dataType": "org-node",
+"type": "src-block",
+"ref": "org45171d0",
+"properties": {
+"postAffiliated": 19615,
+"postBlank": 1,
+"trueLevel": null,
+"language": "emacs-lisp",
+"switches": null,
+"parameters": null,
+"numberLines": null,
+"preserveIndent": false,
+"retainLabels": true,
+"useLabels": true,
+"labelFmt": null,
+"value": "<span class=\"org-rainbow-delimiters-depth-1\">(</span><span class=\"org-keyword\">defun</span> <span class=\"org-function-name\">ox-json-node-properties</span> <span class=\"org-rainbow-delimiters-depth-2\">(</span>node<span class=\"org-rainbow-delimiters-depth-2\">)</span>\n  <span class=\"org-doc\">\"Get property plist of element/object NODE.\"</span>\n   <span class=\"org-comment-delimiter\">; </span><span class=\"org-comment\">It's the 2nd element of the list</span>\n  <span class=\"org-rainbow-delimiters-depth-2\">(</span>cadr node<span class=\"org-rainbow-delimiters-depth-2\">)</span><span class=\"org-rainbow-delimiters-depth-1\">)</span>\n"
+},
+"contents": []
+},
+{
+"dataType": "org-node",
+"type": "paragraph",
+"ref": "orgf754623",
+"properties": {
+"postAffiliated": 19787,
+"postBlank": 1,
+"trueLevel": null
+},
+"contents": [
+"Let's try following the recommendation in the changlog and use\n",
+{
+"dataType": "org-node",
+"type": "code",
+"ref": "org5b8c0c0",
+"properties": {
+"postAffiliated": null,
+"postBlank": 1,
+"trueLevel": null,
+"value": "org-element-properties-map"
+},
+"contents": []
+},
+"to iterate over a node's properties:\n"
+]
+},
+{
+"dataType": "org-node",
+"type": "src-block",
+"ref": "org4c9ea2b",
+"properties": {
+"postAffiliated": 19917,
+"postBlank": 1,
+"trueLevel": null,
+"language": "emacs-lisp",
+"switches": null,
+"parameters": null,
+"numberLines": null,
+"preserveIndent": false,
+"retainLabels": true,
+"useLabels": true,
+"labelFmt": null,
+"value": "<span class=\"org-rainbow-delimiters-depth-1\">(</span><span class=\"org-keyword\">defun</span> <span class=\"org-function-name\">ox-json-node-properties</span> <span class=\"org-rainbow-delimiters-depth-2\">(</span>node<span class=\"org-rainbow-delimiters-depth-2\">)</span>\n  <span class=\"org-doc\">\"Get property plist of element/object NODE.\"</span>\n  <span class=\"org-rainbow-delimiters-depth-2\">(</span><span class=\"org-keyword\">if</span> <span class=\"org-rainbow-delimiters-depth-3\">(</span>fboundp 'org-element-properties-map<span class=\"org-rainbow-delimiters-depth-3\">)</span>\n      <span class=\"org-rainbow-delimiters-depth-3\">(</span><span class=\"org-keyword\">let</span> <span class=\"org-rainbow-delimiters-depth-4\">(</span><span class=\"org-rainbow-delimiters-depth-5\">(</span>expanded-properties nil<span class=\"org-rainbow-delimiters-depth-5\">)</span><span class=\"org-rainbow-delimiters-depth-4\">)</span>\n        <span class=\"org-rainbow-delimiters-depth-4\">(</span>org-element-properties-map\n         <span class=\"org-rainbow-delimiters-depth-5\">(</span><span class=\"org-keyword\">lambda</span> <span class=\"org-rainbow-delimiters-depth-6\">(</span>name value<span class=\"org-rainbow-delimiters-depth-6\">)</span>\n           <span class=\"org-rainbow-delimiters-depth-6\">(</span><span class=\"org-keyword\">setq</span> expanded-properties <span class=\"org-rainbow-delimiters-depth-7\">(</span>plist-put expanded-properties name value<span class=\"org-rainbow-delimiters-depth-7\">)</span><span class=\"org-rainbow-delimiters-depth-6\">)</span><span class=\"org-rainbow-delimiters-depth-5\">)</span>\n         node t<span class=\"org-rainbow-delimiters-depth-4\">)</span> <span class=\"org-comment-delimiter\">; </span><span class=\"org-comment\">the last argument is a flag that will cause deferred properties to be resolved</span>\n        expanded-properties<span class=\"org-rainbow-delimiters-depth-3\">)</span>\n    <span class=\"org-comment-delimiter\">;; </span><span class=\"org-comment\">for org versions &lt; 9.7, just return the property list, which is the second</span>\n    <span class=\"org-comment-delimiter\">;; </span><span class=\"org-comment\">element of the list</span>\n    <span class=\"org-rainbow-delimiters-depth-3\">(</span>cadr node<span class=\"org-rainbow-delimiters-depth-3\">)</span><span class=\"org-rainbow-delimiters-depth-2\">)</span><span class=\"org-rainbow-delimiters-depth-1\">)</span>\n"
+},
+"contents": []
+},
+{
+"dataType": "org-node",
+"type": "paragraph",
+"ref": "org5dddc41",
+"properties": {
+"postAffiliated": 20521,
+"postBlank": 1,
+"trueLevel": null
+},
+"contents": [
+"Et voilà!\n"
+]
+},
+{
+"dataType": "org-node",
+"type": "src-block",
+"ref": "orgaa3820d",
+"properties": {
+"postAffiliated": 20532,
+"postBlank": 1,
+"trueLevel": null,
+"language": "json",
+"switches": null,
+"parameters": null,
+"numberLines": null,
+"preserveIndent": false,
+"retainLabels": true,
+"useLabels": true,
+"labelFmt": null,
+"value": "<span class=\"org-rainbow-delimiters-depth-1\">{</span>\n    <span class=\"org-keyword\">\"$$data_type\"</span>: <span class=\"org-string\">\"org-document\"</span>,\n    <span class=\"org-keyword\">\"properties\"</span>: <span class=\"org-rainbow-delimiters-depth-2\">{</span>\n        <span class=\"org-keyword\">\"title\"</span>: <span class=\"org-rainbow-delimiters-depth-3\">[</span>\n            <span class=\"org-string\">\"Will it JSON?\"</span>\n        <span class=\"org-rainbow-delimiters-depth-3\">]</span>,\n        ...,\n    <span class=\"org-rainbow-delimiters-depth-2\">}</span>,\n    <span class=\"org-keyword\">\"contents\"</span>: <span class=\"org-rainbow-delimiters-depth-2\">[</span>\n        <span class=\"org-rainbow-delimiters-depth-3\">{</span>\n            <span class=\"org-keyword\">\"$$data_type\"</span>: <span class=\"org-string\">\"org-node\"</span>,\n            <span class=\"org-keyword\">\"type\"</span>: <span class=\"org-string\">\"section\"</span>,\n            <span class=\"org-keyword\">\"ref\"</span>: <span class=\"org-string\">\"org4b27978\"</span>,\n            <span class=\"org-keyword\">\"properties\"</span>: <span class=\"org-rainbow-delimiters-depth-4\">{</span>\n                <span class=\"org-keyword\">\"post-affiliated\"</span>: <span class=\"org-highlight-numbers-number\">1</span>,\n                <span class=\"org-keyword\">\"post-blank\"</span>: <span class=\"org-highlight-numbers-number\">0</span>,\n                ...,\n            <span class=\"org-rainbow-delimiters-depth-4\">}</span>\n        <span class=\"org-rainbow-delimiters-depth-3\">}</span>,\n        ...,\n        <span class=\"org-rainbow-delimiters-depth-3\">{</span>\n            <span class=\"org-keyword\">\"$$data_type\"</span>: <span class=\"org-string\">\"org-node\"</span>,\n            <span class=\"org-keyword\">\"type\"</span>: <span class=\"org-string\">\"src-block\"</span>,\n            <span class=\"org-keyword\">\"ref\"</span>: <span class=\"org-string\">\"org01e6955\"</span>,\n            ...,\n            <span class=\"org-keyword\">\"properties\"</span>: <span class=\"org-rainbow-delimiters-depth-4\">{</span>\n                <span class=\"org-keyword\">\"language\"</span>: <span class=\"org-string\">\"emacs-lisp\"</span>,\n                ...,\n                <span class=\"org-keyword\">\"value\"</span>: <span class=\"org-string\">\"(+ 2 2)\\n\"</span>\n            <span class=\"org-rainbow-delimiters-depth-4\">}</span>\n        <span class=\"org-rainbow-delimiters-depth-3\">}</span>\n    <span class=\"org-rainbow-delimiters-depth-2\">]</span>\n<span class=\"org-rainbow-delimiters-depth-1\">}</span>\n"
+},
+"contents": []
+},
+{
+"dataType": "org-node",
+"type": "paragraph",
+"ref": "org60aa4a1",
+"properties": {
+"postAffiliated": 21276,
+"postBlank": 1,
+"trueLevel": null
+},
+"contents": [
+"This won't be the end of our modifications to ox-json, but at this point we've\ngot something workable so let's move on to ingesting it into Astro.\n"
+]
+}
+]
+}
+]
+},
+{
+"dataType": "org-node",
+"type": "headline",
+"ref": "org100544b",
+"drawer": {
+
+},
+"properties": {
+"tagsAll": [
+"Org",
+"Mode",
+"Emacs",
+"Meta"
+],
+"postAffiliated": 21424,
+"postBlank": 0,
+"trueLevel": 1,
+"preBlank": 1,
+"rawValue": "Org Mode in Space",
+"title": [
+"Org Mode in Space"
+],
+"level": 1,
+"priority": null,
+"tags": [],
+"todoKeyword": null,
+"todoType": null,
+"footnoteSectionP": true,
+"archivedp": true,
+"commentedp": false
+},
+"contents": [
+{
+"dataType": "org-node",
+"type": "section",
+"ref": "org1b6f075",
+"properties": {
+"postAffiliated": 21445,
+"postBlank": 0,
+"trueLevel": null
+},
+"contents": [
+{
+"dataType": "org-node",
+"type": "paragraph",
+"ref": "org7d9f94c",
+"properties": {
+"postAffiliated": 21445,
+"postBlank": 1,
+"trueLevel": null
+},
+"contents": [
+"My plan at a high level is to define an ",
+{
+"dataType": "org-node",
+"type": "code",
+"ref": "org89a4be7",
+"properties": {
+"postAffiliated": null,
+"postBlank": 1,
+"trueLevel": null,
+"value": "Article"
+},
+"contents": []
+},
+"component to represent a full\nOrg document that recursively descends through its child nodes, with a roughly\none-to-one mapping between node types and Astro components. Since the Org AST is\nalso pretty complicated and doesn't have any official formal specification, I'm\nalso going to define TypeScript types as I flesh out these components to\ndocument that structure and hopefully make my life easier down the road.\n"
+]
+},
+{
+"dataType": "org-node",
+"type": "paragraph",
+"ref": "orgdf58cd1",
+"properties": {
+"postAffiliated": 21912,
+"postBlank": 1,
+"trueLevel": null
+},
+"contents": [
+"I started off by creating the index and article pages:\n"
+]
+},
+{
+"dataType": "org-node",
+"type": "src-block",
+"ref": "orgd9c2fa3",
+"properties": {
+"postAffiliated": 21999,
+"postBlank": 2,
+"trueLevel": null,
+"language": "web",
+"switches": null,
+"parameters": ":tangle ../../tmp/index.astro",
+"numberLines": null,
+"preserveIndent": false,
+"retainLabels": true,
+"useLabels": true,
+"labelFmt": null,
+"name": "/src/pages/index.astro",
+"value": "<pre>\n<span class=\"web-mode-block-delimiter\">---</span>\n<span class=\"web-mode-keyword\">import</span> <span class=\"web-mode-type\">ArticlePreview</span> <span class=\"web-mode-keyword\">from</span> <span class=\"web-mode-block-string\">'@components/ArticlePreview.astro'</span>;\n<span class=\"web-mode-keyword\">import</span> <span class=\"web-mode-keyword\">type</span> <span class=\"rainbow-delimiters-depth-1\">{</span> OrgDocument <span class=\"rainbow-delimiters-depth-1\">}</span> <span class=\"web-mode-keyword\">from</span> <span class=\"web-mode-block-string\">'ox-json-types'</span>;\n<span class=\"web-mode-keyword\">import</span> <span class=\"web-mode-type\">BaseLayout</span> <span class=\"web-mode-keyword\">from</span> <span class=\"web-mode-block-string\">'src/layouts/BaseLayout.astro'</span>;\n<span class=\"web-mode-keyword\">const</span> <span class=\"web-mode-variable-name\">articles</span> = <span class=\"web-mode-keyword\">import</span>.meta.glob&lt;<span class=\"web-mode-type\">OrgDocument</span>&gt;<span class=\"rainbow-delimiters-depth-1\">(</span><span class=\"web-mode-block-string\">'../articles/*.json'</span>, <span class=\"rainbow-delimiters-depth-2\">{</span> <span class=\"web-mode-variable-name\">eager</span>: <span class=\"web-mode-constant\">true</span> <span class=\"rainbow-delimiters-depth-2\">}</span><span class=\"rainbow-delimiters-depth-1\">)</span>;\n<span class=\"web-mode-block-delimiter\">---</span>\n\n<span class=\"web-mode-html-tag-bracket\">&lt;</span><span class=\"web-mode-html-tag\">BaseLayout</span><span class=\"web-mode-html-tag-bracket\">&gt;</span>\n    <span class=\"web-mode-html-tag-bracket\">&lt;</span><span class=\"web-mode-html-tag\">h1</span><span class=\"web-mode-html-tag-bracket\">&gt;</span>Posts<span class=\"web-mode-html-tag-bracket\">&lt;/</span><span class=\"web-mode-html-tag\">h1</span><span class=\"web-mode-html-tag-bracket\">&gt;</span>\n    <span class=\"rainbow-delimiters-depth-1\">{</span>\n        Object.values<span class=\"rainbow-delimiters-depth-2\">(</span>articles<span class=\"rainbow-delimiters-depth-2\">)</span>.map<span class=\"rainbow-delimiters-depth-2\">(</span><span class=\"rainbow-delimiters-depth-3\">(</span>article<span class=\"rainbow-delimiters-depth-3\">)</span> =&gt; <span class=\"rainbow-delimiters-depth-3\">(</span>\n            <span class=\"web-mode-html-tag-bracket\">&lt;</span><span class=\"web-mode-html-tag\">ArticlePreview</span> <span class=\"web-mode-html-attr-name\">article</span><span class=\"web-mode-html-attr-equal\">=</span><span class=\"web-mode-html-attr-value\"><span class=\"rainbow-delimiters-depth-4\">{</span></span><span class=\"web-mode-html-attr-value\">article</span><span class=\"web-mode-html-attr-value\"><span class=\"rainbow-delimiters-depth-4\">}</span></span> <span class=\"web-mode-html-tag-bracket\">/&gt;</span>\n        <span class=\"rainbow-delimiters-depth-3\">)</span><span class=\"rainbow-delimiters-depth-2\">)</span>\n    <span class=\"rainbow-delimiters-depth-1\">}</span>\n<span class=\"web-mode-html-tag-bracket\">&lt;/</span><span class=\"web-mode-html-tag\">BaseLayout</span><span class=\"web-mode-html-tag-bracket\">&gt;</span>\n</pre>"
+},
+"contents": []
+},
+{
+"dataType": "org-node",
+"type": "src-block",
+"ref": "org224de12",
+"properties": {
+"postAffiliated": 22531,
+"postBlank": 1,
+"trueLevel": null,
+"language": "web",
+"switches": null,
+"parameters": ":tangle ../../tmp/[path].astro",
+"numberLines": null,
+"preserveIndent": false,
+"retainLabels": true,
+"useLabels": true,
+"labelFmt": null,
+"name": "/src/pages/articles/[path].astro",
+"value": "<pre>\n<span class=\"web-mode-block-delimiter\">---</span>\n<span class=\"web-mode-keyword\">import</span> <span class=\"web-mode-keyword\">type</span> <span class=\"rainbow-delimiters-depth-1\">{</span> OrgDocument <span class=\"rainbow-delimiters-depth-1\">}</span> <span class=\"web-mode-keyword\">from</span> <span class=\"web-mode-block-string\">'ox-json-types'</span>;\n<span class=\"web-mode-keyword\">import</span> <span class=\"rainbow-delimiters-depth-1\">{</span> articlePath <span class=\"rainbow-delimiters-depth-1\">}</span> <span class=\"web-mode-keyword\">from</span> <span class=\"web-mode-block-string\">'@lib/org'</span>;\n<span class=\"web-mode-keyword\">import</span> <span class=\"web-mode-type\">Article</span> <span class=\"web-mode-keyword\">from</span> <span class=\"web-mode-block-string\">'@components/Article.astro'</span>;\n<span class=\"web-mode-keyword\">import</span> <span class=\"web-mode-type\">BaseLayout</span> <span class=\"web-mode-keyword\">from</span> <span class=\"web-mode-block-string\">'src/layouts/BaseLayout.astro'</span>;\n\n<span class=\"web-mode-keyword\">interface</span> Props <span class=\"rainbow-delimiters-depth-1\">{</span>\n    <span class=\"web-mode-variable-name\">path</span>: string,\n    <span class=\"web-mode-variable-name\">article</span>: OrgDocument,\n<span class=\"rainbow-delimiters-depth-1\">}</span>\n\n\n<span class=\"web-mode-keyword\">export</span> <span class=\"web-mode-keyword\">function</span> <span class=\"web-mode-function-name\">getStaticPaths</span><span class=\"rainbow-delimiters-depth-1\">()</span> <span class=\"rainbow-delimiters-depth-1\">{</span>\n    <span class=\"web-mode-keyword\">const</span> <span class=\"web-mode-variable-name\">articles</span> = <span class=\"web-mode-keyword\">import</span>.meta.glob&lt;<span class=\"web-mode-type\">OrgDocument</span>&gt;<span class=\"rainbow-delimiters-depth-2\">(</span>\n        <span class=\"web-mode-block-string\">'../../articles/*.json'</span>,\n        <span class=\"rainbow-delimiters-depth-3\">{</span> <span class=\"web-mode-variable-name\">eager</span>: <span class=\"web-mode-constant\">true</span> <span class=\"rainbow-delimiters-depth-3\">}</span>\n    <span class=\"rainbow-delimiters-depth-2\">)</span>;\n\n    <span class=\"web-mode-keyword\">return</span> Object.<span class=\"web-mode-function-call\">values</span><span class=\"rainbow-delimiters-depth-2\">(</span>articles<span class=\"rainbow-delimiters-depth-2\">)</span>.<span class=\"web-mode-function-call\">map</span><span class=\"rainbow-delimiters-depth-2\">(</span><span class=\"rainbow-delimiters-depth-3\">(</span>article<span class=\"rainbow-delimiters-depth-3\">)</span> =&gt; <span class=\"rainbow-delimiters-depth-3\">{</span>\n        <span class=\"web-mode-keyword\">return</span> <span class=\"rainbow-delimiters-depth-4\">{</span> <span class=\"web-mode-variable-name\">params</span>: <span class=\"rainbow-delimiters-depth-5\">{</span> <span class=\"web-mode-variable-name\">path</span>: <span class=\"web-mode-function-call\">articlePath</span><span class=\"rainbow-delimiters-depth-6\">(</span>article<span class=\"rainbow-delimiters-depth-6\">)</span> <span class=\"rainbow-delimiters-depth-5\">}</span>, <span class=\"web-mode-variable-name\">props</span>: <span class=\"rainbow-delimiters-depth-5\">{</span> article <span class=\"rainbow-delimiters-depth-5\">}</span> <span class=\"rainbow-delimiters-depth-4\">}</span>;\n    <span class=\"rainbow-delimiters-depth-3\">}</span><span class=\"rainbow-delimiters-depth-2\">)</span>;\n<span class=\"rainbow-delimiters-depth-1\">}</span>\n\n<span class=\"web-mode-keyword\">const</span> <span class=\"rainbow-delimiters-depth-1\">{</span> article <span class=\"rainbow-delimiters-depth-1\">}</span> = Astro.props;\n<span class=\"web-mode-block-delimiter\">---</span>\n\n<span class=\"web-mode-html-tag-bracket\">&lt;</span><span class=\"web-mode-html-tag\">BaseLayout</span><span class=\"web-mode-html-tag-bracket\">&gt;</span>\n    <span class=\"web-mode-html-tag-bracket\">&lt;</span><span class=\"web-mode-html-tag\">Article</span> <span class=\"web-mode-html-attr-name\">article</span><span class=\"web-mode-html-attr-equal\">=</span><span class=\"web-mode-html-attr-value\"><span class=\"rainbow-delimiters-depth-1\">{</span></span><span class=\"web-mode-html-attr-value\">article</span><span class=\"web-mode-html-attr-value\"><span class=\"rainbow-delimiters-depth-1\">}</span></span> <span class=\"web-mode-html-tag-bracket\">/&gt;</span>\n<span class=\"web-mode-html-tag-bracket\">&lt;/</span><span class=\"web-mode-html-tag\">BaseLayout</span><span class=\"web-mode-html-tag-bracket\">&gt;</span>\n</pre>"
+},
+"contents": []
+},
+{
+"dataType": "org-node",
+"type": "paragraph",
+"ref": "orgea5d1f1",
+"properties": {
+"postAffiliated": 23249,
+"postBlank": 1,
+"trueLevel": null
+},
+"contents": [
+"This leverages the ",
+{
+"dataType": "org-node",
+"type": "link",
+"ref": "org39fbc1d",
+"properties": {
+"postAffiliated": null,
+"postBlank": 1,
+"trueLevel": null,
+"type": "https",
+"typeExplicitP": true,
+"path": "//vite.dev/guide/features#glob-import",
+"format": "bracket",
+"rawLink": "https://vite.dev/guide/features#glob-import",
+"application": null,
+"searchOption": null,
+"isInternal": false,
+"targetRef": null,
+"isInlineImage": false
+},
+"contents": [
+"glob import"
+]
+},
+"feature of Vite to import every article into an\narray, and then uses Astro's ",
+{
+"dataType": "org-node",
+"type": "link",
+"ref": "org102a6d9",
+"properties": {
+"postAffiliated": null,
+"postBlank": 1,
+"trueLevel": null,
+"type": "https",
+"typeExplicitP": true,
+"path": "//docs.astro.build/en/guides/routing/#static-ssg-mode",
+"format": "bracket",
+"rawLink": "https://docs.astro.build/en/guides/routing/#static-ssg-mode",
+"application": null,
+"searchOption": null,
+"isInternal": false,
+"targetRef": null,
+"isInlineImage": false
+},
+"contents": [
+{
+"dataType": "org-node",
+"type": "code",
+"ref": "orge16eff6",
+"properties": {
+"postAffiliated": null,
+"postBlank": 0,
+"trueLevel": null,
+"value": "getStaticPaths()"
+},
+"contents": []
+}
+]
+},
+"function to generate static\npages for each article at build time. Now to render the contents of the article:\n"
+]
+},
+{
+"dataType": "org-node",
+"type": "src-block",
+"ref": "org1a400d9",
+"properties": {
+"postAffiliated": 23638,
+"postBlank": 2,
+"trueLevel": null,
+"language": "web",
+"switches": null,
+"parameters": ":tangle ../../tmp/Article.astro",
+"numberLines": null,
+"preserveIndent": false,
+"retainLabels": true,
+"useLabels": true,
+"labelFmt": null,
+"name": "/src/components/Article.astro",
+"value": "<pre>\n<span class=\"web-mode-block-delimiter\">---</span>\n<span class=\"web-mode-keyword\">import</span> <span class=\"web-mode-keyword\">type</span> <span class=\"rainbow-delimiters-depth-1\">{</span> OrgDocument <span class=\"rainbow-delimiters-depth-1\">}</span> <span class=\"web-mode-keyword\">from</span> <span class=\"web-mode-block-string\">'ox-json-types'</span>;\n<span class=\"web-mode-keyword\">import</span> <span class=\"web-mode-type\">Node</span> <span class=\"web-mode-keyword\">from</span> <span class=\"web-mode-block-string\">'@components/Node.astro'</span>;\n<span class=\"web-mode-keyword\">interface</span> Props <span class=\"rainbow-delimiters-depth-1\">{</span>\n<span class=\"web-mode-variable-name\">article</span>: OrgDocument,\n<span class=\"rainbow-delimiters-depth-1\">}</span>\n\n<span class=\"web-mode-keyword\">const</span> <span class=\"rainbow-delimiters-depth-1\">{</span> article <span class=\"rainbow-delimiters-depth-1\">}</span> = Astro.props;\n<span class=\"web-mode-block-delimiter\">---</span>\n\n<span class=\"web-mode-html-tag-bracket\">&lt;</span><span class=\"web-mode-html-tag\">h1</span><span class=\"web-mode-html-tag-bracket\">&gt;</span><span class=\"rainbow-delimiters-depth-1\">{</span>article.properties.title<span class=\"rainbow-delimiters-depth-2\">[</span>0<span class=\"rainbow-delimiters-depth-2\">]</span><span class=\"rainbow-delimiters-depth-1\">}</span><span class=\"web-mode-html-tag-bracket\">&lt;/</span><span class=\"web-mode-html-tag\">h1</span><span class=\"web-mode-html-tag-bracket\">&gt;</span>\n\n<span class=\"rainbow-delimiters-depth-1\">{</span>article.contents.map<span class=\"rainbow-delimiters-depth-2\">(</span><span class=\"rainbow-delimiters-depth-3\">(</span>node<span class=\"rainbow-delimiters-depth-3\">)</span> =&gt; <span class=\"web-mode-html-tag-bracket\">&lt;</span><span class=\"web-mode-html-tag\">Node</span> <span class=\"web-mode-html-attr-name\">node</span><span class=\"web-mode-html-attr-equal\">=</span><span class=\"web-mode-html-attr-value\"><span class=\"rainbow-delimiters-depth-3\">{</span></span><span class=\"web-mode-html-attr-value\">node</span><span class=\"web-mode-html-attr-value\"><span class=\"rainbow-delimiters-depth-3\">}</span></span> <span class=\"web-mode-html-tag-bracket\">/&gt;</span><span class=\"rainbow-delimiters-depth-2\">)</span><span class=\"rainbow-delimiters-depth-1\">}</span>\n</pre>"
+},
+"contents": []
+},
+{
+"dataType": "org-node",
+"type": "src-block",
+"ref": "org4bb4624",
+"properties": {
+"postAffiliated": 24006,
+"postBlank": 1,
+"trueLevel": null,
+"language": "web",
+"switches": null,
+"parameters": ":tangle ../../tmp/Node.astro",
+"numberLines": null,
+"preserveIndent": false,
+"retainLabels": true,
+"useLabels": true,
+"labelFmt": null,
+"name": "/src/components/Node.astro",
+"value": "<pre>\n<span class=\"web-mode-block-delimiter\">---</span>\n<span class=\"web-mode-keyword\">import</span> <span class=\"web-mode-keyword\">type</span> <span class=\"rainbow-delimiters-depth-1\">{</span> OrgNode <span class=\"rainbow-delimiters-depth-1\">}</span> <span class=\"web-mode-keyword\">from</span> <span class=\"web-mode-block-string\">'ox-json-types'</span>;\n\n<span class=\"web-mode-keyword\">import</span> <span class=\"web-mode-type\">Headline</span> <span class=\"web-mode-keyword\">from</span> <span class=\"web-mode-block-string\">'@components/Headline.astro'</span>;\n\n<span class=\"web-mode-keyword\">interface</span> Props <span class=\"rainbow-delimiters-depth-1\">{</span>\n    <span class=\"web-mode-variable-name\">node</span>: OrgNode,\n<span class=\"rainbow-delimiters-depth-1\">}</span>\n\n<span class=\"web-mode-keyword\">const</span> <span class=\"rainbow-delimiters-depth-1\">{</span> node <span class=\"rainbow-delimiters-depth-1\">}</span> = Astro.props;\n<span class=\"web-mode-block-delimiter\">---</span>\n\n<span class=\"rainbow-delimiters-depth-1\">{</span>\n  node.type === 'headline' ? <span class=\"web-mode-html-tag-bracket\">&lt;</span><span class=\"web-mode-html-tag\">Headline</span> <span class=\"web-mode-html-attr-name\">node</span><span class=\"web-mode-html-attr-equal\">=</span><span class=\"web-mode-html-attr-value\"><span class=\"rainbow-delimiters-depth-2\">{</span></span><span class=\"web-mode-html-attr-value\">node</span><span class=\"web-mode-html-attr-value\"><span class=\"rainbow-delimiters-depth-2\">}</span></span> <span class=\"web-mode-html-tag-bracket\">/&gt;</span> :\n  <span class=\"web-mode-html-tag-bracket\">&lt;</span><span class=\"web-mode-html-tag\">p</span><span class=\"web-mode-html-tag-bracket\">&gt;</span> unhandled node <span class=\"rainbow-delimiters-depth-2\">{</span>node.ref<span class=\"rainbow-delimiters-depth-2\">}</span> of type <span class=\"rainbow-delimiters-depth-2\">{</span>node.type<span class=\"rainbow-delimiters-depth-2\">}</span><span class=\"web-mode-html-tag-bracket\">&lt;/</span><span class=\"web-mode-html-tag\">p</span><span class=\"web-mode-html-tag-bracket\">&gt;</span>\n<span class=\"rainbow-delimiters-depth-1\">}</span>\n</pre>"
+},
+"contents": []
+},
+{
+"dataType": "org-node",
+"type": "paragraph",
+"ref": "orgfb14527",
+"properties": {
+"postAffiliated": 24356,
+"postBlank": 1,
+"trueLevel": null
+},
+"contents": [
+"From here, all that's left is the tedious work of defining components for every\ntype of Org Mode element and a whole bunch of fussing with CSS. This ended up\nbeing fairly straightfoward so I'll spare you the details, but you can see the\nfinal result ",
+{
+"dataType": "org-node",
+"type": "link",
+"ref": "org1bdb123",
+"properties": {
+"postAffiliated": null,
+"postBlank": 1,
+"trueLevel": null,
+"type": "https",
+"typeExplicitP": true,
+"path": "//github.com/tcahill/blog",
+"format": "bracket",
+"rawLink": "https://github.com/tcahill/blog",
+"application": null,
+"searchOption": null,
+"isInternal": false,
+"targetRef": null,
+"isInlineImage": false
+},
+"contents": [
+"here"
+]
+},
+"if you're curious.\n"
+]
+}
+]
+}
+]
+},
+{
+"dataType": "org-node",
+"type": "headline",
+"ref": "org8d1c28a",
+"drawer": {
+
+},
+"properties": {
+"tagsAll": [
+"Org",
+"Mode",
+"Emacs",
+"Meta"
+],
+"postAffiliated": 24668,
+"postBlank": 0,
+"trueLevel": 1,
+"preBlank": 1,
+"rawValue": "Finishing Touches",
+"title": [
+"Finishing Touches"
+],
+"level": 1,
+"priority": null,
+"tags": [],
+"todoKeyword": null,
+"todoType": null,
+"footnoteSectionP": true,
+"archivedp": true,
+"commentedp": false
+},
+"contents": [
+{
+"dataType": "org-node",
+"type": "section",
+"ref": "org28f5508",
+"properties": {
+"postAffiliated": 24689,
+"postBlank": 0,
+"trueLevel": null
+},
+"contents": [
+{
+"dataType": "org-node",
+"type": "paragraph",
+"ref": "orgd398817",
+"properties": {
+"postAffiliated": 24689,
+"postBlank": 1,
+"trueLevel": null
+},
+"contents": [
+"With all the essential Astro components I needed defined, things were looking\npretty good but there was still one glaring issue that would require going back\nto where we began. At the time, source blocks were exported as plain strings so\nthere was no syntax highlighting in the exported HTML, an embarassing state of\naffairs for a technical blog. Astro has builtin support for adding syntax\nhighlighting to code blocks via the ",
+{
+"dataType": "org-node",
+"type": "code",
+"ref": "org82e83eb",
+"properties": {
+"postAffiliated": null,
+"postBlank": 1,
+"trueLevel": null,
+"value": "Code"
+},
+"contents": []
+},
+"component so there's an easy fix, but\nI liked the idea of preserving highlighting exactly as I see it in Emacs - not\nnecessarily with the exact same color scheme but rather annotated with labels\nlike \"keyword\" and \"variable name\" that we can apply appropriate styles to in\nCSS. Org Mode's HTML exporter uses a package called ",
+{
+"dataType": "org-node",
+"type": "link",
+"ref": "org1c4841d",
+"properties": {
+"postAffiliated": null,
+"postBlank": 1,
+"trueLevel": null,
+"type": "https",
+"typeExplicitP": true,
+"path": "//github.com/hniksic/emacs-htmlize",
+"format": "bracket",
+"rawLink": "https://github.com/hniksic/emacs-htmlize",
+"application": null,
+"searchOption": null,
+"isInternal": false,
+"targetRef": null,
+"isInlineImage": false
+},
+"contents": [
+"htmlize"
+]
+},
+"to transform source\nblocks into HTML snippets, inspecting the font faces throughout to preserve\nsyntax highlighting. We can reuse this in ox-json, but first we'll need to take\na closer look at its structure to understand how nodes are converted to JSON.\n"
+]
+},
+{
+"dataType": "org-node",
+"type": "paragraph",
+"ref": "org8d60ac0",
+"properties": {
+"postAffiliated": 25757,
+"postBlank": 1,
+"trueLevel": null
+},
+"contents": [
+"The entrypoint for ox-json (and all Org exporters) is an invocation of the\n",
+{
+"dataType": "org-node",
+"type": "code",
+"ref": "org16aeee9",
+"properties": {
+"postAffiliated": null,
+"postBlank": 1,
+"trueLevel": null,
+"value": "org-export-define-backend"
+},
+"contents": []
+},
+"function:\n"
+]
+},
+{
+"dataType": "org-node",
+"type": "src-block",
+"ref": "org56a3e76",
+"properties": {
+"postAffiliated": 25871,
+"postBlank": 1,
+"trueLevel": null,
+"language": "emacs-lisp",
+"switches": null,
+"parameters": null,
+"numberLines": null,
+"preserveIndent": false,
+"retainLabels": true,
+"useLabels": true,
+"labelFmt": null,
+"value": "<span class=\"org-rainbow-delimiters-depth-1\">(</span>org-export-define-backend 'json\n  <span class=\"org-comment-delimiter\">;; </span><span class=\"org-comment\">Transcoders</span>\n  <span class=\"org-rainbow-delimiters-depth-2\">(</span>ox-json--merge-alists\n    '<span class=\"org-rainbow-delimiters-depth-3\">(</span>\n       <span class=\"org-rainbow-delimiters-depth-4\">(</span>template . ox-json-transcode-template<span class=\"org-rainbow-delimiters-depth-4\">)</span>\n       <span class=\"org-rainbow-delimiters-depth-4\">(</span>plain-text . ox-json-transcode-plain-text<span class=\"org-rainbow-delimiters-depth-4\">)</span>\n       <span class=\"org-rainbow-delimiters-depth-4\">(</span>headline . ox-json-transcode-headline<span class=\"org-rainbow-delimiters-depth-4\">)</span>\n       <span class=\"org-rainbow-delimiters-depth-4\">(</span>link . ox-json-transcode-link<span class=\"org-rainbow-delimiters-depth-4\">)</span>\n       <span class=\"org-rainbow-delimiters-depth-4\">(</span>timestamp . ox-json-transcode-timestamp<span class=\"org-rainbow-delimiters-depth-4\">)</span><span class=\"org-rainbow-delimiters-depth-3\">)</span>\n    <span class=\"org-comment-delimiter\">; </span><span class=\"org-comment\">Default for all remaining element/object types</span>\n    <span class=\"org-rainbow-delimiters-depth-3\">(</span><span class=\"org-keyword\">cl-loop</span>\n      for type in <span class=\"org-rainbow-delimiters-depth-4\">(</span>append org-element-all-elements org-element-all-objects<span class=\"org-rainbow-delimiters-depth-4\">)</span>\n      collect <span class=\"org-rainbow-delimiters-depth-4\">(</span>cons type #'ox-json-transcode-base<span class=\"org-rainbow-delimiters-depth-4\">)</span><span class=\"org-rainbow-delimiters-depth-3\">)</span><span class=\"org-rainbow-delimiters-depth-2\">)</span>\n  <span class=\"org-comment-delimiter\">;; </span><span class=\"org-comment\">Filters</span>\n  <span class=\"org-builtin\">:filters-alist</span> '<span class=\"org-rainbow-delimiters-depth-2\">()</span>\n  <span class=\"org-comment-delimiter\">;; </span><span class=\"org-comment\">Options</span>\n  <span class=\"org-builtin\">:options-alist</span>\n  '<span class=\"org-rainbow-delimiters-depth-2\">(</span>\n     <span class=\"org-rainbow-delimiters-depth-3\">(</span><span class=\"org-builtin\">:json-data-type-property</span> nil <span class=\"org-string\">\"json-data-type-property\"</span> <span class=\"org-string\">\"dataType\"</span><span class=\"org-rainbow-delimiters-depth-3\">)</span>\n     <span class=\"org-rainbow-delimiters-depth-3\">(</span><span class=\"org-builtin\">:json-exporters</span> nil nil nil<span class=\"org-rainbow-delimiters-depth-3\">)</span>\n     <span class=\"org-rainbow-delimiters-depth-3\">(</span><span class=\"org-builtin\">:json-property-types</span> nil nil nil<span class=\"org-rainbow-delimiters-depth-3\">)</span>\n     <span class=\"org-rainbow-delimiters-depth-3\">(</span><span class=\"org-builtin\">:json-strict</span> nil nil nil<span class=\"org-rainbow-delimiters-depth-3\">)</span>\n     <span class=\"org-rainbow-delimiters-depth-3\">(</span><span class=\"org-builtin\">:json-include-extra-properties</span> nil nil t<span class=\"org-rainbow-delimiters-depth-3\">)</span><span class=\"org-rainbow-delimiters-depth-2\">)</span>\n  <span class=\"org-comment-delimiter\">;; </span><span class=\"org-comment\">Menu</span>\n  <span class=\"org-builtin\">:menu-entry</span>\n  '<span class=\"org-rainbow-delimiters-depth-2\">(</span>?j <span class=\"org-string\">\"Export to JSON\"</span> <span class=\"org-rainbow-delimiters-depth-3\">(</span>\n  <span class=\"org-rainbow-delimiters-depth-4\">(</span>?J <span class=\"org-string\">\"As JSON buffer\"</span> ox-json-export-to-buffer<span class=\"org-rainbow-delimiters-depth-4\">)</span>\n  <span class=\"org-rainbow-delimiters-depth-4\">(</span>?j <span class=\"org-string\">\"To JSON file\"</span> ox-json-export-to-file<span class=\"org-rainbow-delimiters-depth-4\">)</span><span class=\"org-rainbow-delimiters-depth-3\">)</span><span class=\"org-rainbow-delimiters-depth-2\">)</span><span class=\"org-rainbow-delimiters-depth-1\">)</span>\n"
+},
+"contents": []
+},
+{
+"dataType": "org-node",
+"type": "paragraph",
+"ref": "orgdac6fdc",
+"properties": {
+"postAffiliated": 26861,
+"postBlank": 1,
+"trueLevel": null
+},
+"contents": [
+"The 'transcoders' argument is an alist mapping node types to functions that\nreturn their exported representation. Currently, source blocks use the default\n",
+{
+"dataType": "org-node",
+"type": "code",
+"ref": "org61868db",
+"properties": {
+"postAffiliated": null,
+"postBlank": 1,
+"trueLevel": null,
+"value": "ox-json-transcode-base"
+},
+"contents": []
+},
+"function but we can define a new transcoder that maps\nthe source block's contents to HTML:\n"
+]
+},
+{
+"dataType": "org-node",
+"type": "src-block",
+"ref": "org1fcd995",
+"properties": {
+"postAffiliated": 27133,
+"postBlank": 1,
+"trueLevel": null,
+"language": "emacs-lisp",
+"switches": null,
+"parameters": null,
+"numberLines": null,
+"preserveIndent": false,
+"retainLabels": true,
+"useLabels": true,
+"labelFmt": null,
+"value": "<span class=\"org-rainbow-delimiters-depth-1\">(</span>org-export-define-backend 'json\n  <span class=\"org-comment-delimiter\">;; </span><span class=\"org-comment\">Transcoders</span>\n  <span class=\"org-rainbow-delimiters-depth-2\">(</span>ox-json--merge-alists\n   '<span class=\"org-rainbow-delimiters-depth-3\">(</span>\n     ...\n     <span class=\"org-rainbow-delimiters-depth-4\">(</span>src-block . ox-json-transcode-src-block<span class=\"org-rainbow-delimiters-depth-4\">)</span><span class=\"org-rainbow-delimiters-depth-3\">)</span>\n   ...<span class=\"org-rainbow-delimiters-depth-2\">)</span><span class=\"org-rainbow-delimiters-depth-1\">)</span>\n\n<span class=\"org-rainbow-delimiters-depth-1\">(</span><span class=\"org-keyword\">defun</span> <span class=\"org-function-name\">ox-json-transcode-src-block</span> <span class=\"org-rainbow-delimiters-depth-2\">(</span>src-block _contents info<span class=\"org-rainbow-delimiters-depth-2\">)</span>\n  <span class=\"org-doc\">\"Transcode a src-block object to JSON\"</span>\n  <span class=\"org-rainbow-delimiters-depth-2\">(</span><span class=\"org-keyword\">let</span> <span class=\"org-rainbow-delimiters-depth-3\">(</span><span class=\"org-rainbow-delimiters-depth-4\">(</span>org-html-htmlize-output-type 'css<span class=\"org-rainbow-delimiters-depth-4\">)</span><span class=\"org-rainbow-delimiters-depth-3\">)</span>\n    <span class=\"org-rainbow-delimiters-depth-3\">(</span>ox-json-export-node-base\n     src-block\n     info\n     <span class=\"org-builtin\">:extra-properties</span>\n     `<span class=\"org-rainbow-delimiters-depth-4\">(</span><span class=\"org-rainbow-delimiters-depth-5\">(</span>value .\n              ,<span class=\"org-rainbow-delimiters-depth-6\">(</span>ox-json-encode-string <span class=\"org-rainbow-delimiters-depth-7\">(</span>org-html-format-code src-block info<span class=\"org-rainbow-delimiters-depth-7\">)</span><span class=\"org-rainbow-delimiters-depth-6\">)</span><span class=\"org-rainbow-delimiters-depth-5\">)</span><span class=\"org-rainbow-delimiters-depth-4\">)</span><span class=\"org-rainbow-delimiters-depth-3\">)</span><span class=\"org-rainbow-delimiters-depth-2\">)</span><span class=\"org-rainbow-delimiters-depth-1\">)</span>\n"
+},
+"contents": []
+},
+{
+"dataType": "org-node",
+"type": "paragraph",
+"ref": "org5d982c1",
+"properties": {
+"postAffiliated": 27639,
+"postBlank": 1,
+"trueLevel": null
+},
+"contents": [
+"The source code itself is stored in the ",
+{
+"dataType": "org-node",
+"type": "verbatim",
+"ref": "org8547864",
+"properties": {
+"postAffiliated": null,
+"postBlank": 1,
+"trueLevel": null,
+"value": "value"
+},
+"contents": []
+},
+"property of the source block\nnode, so we just override the way that property is encoded.\n",
+{
+"dataType": "org-node",
+"type": "code",
+"ref": "org836b242",
+"properties": {
+"postAffiliated": null,
+"postBlank": 1,
+"trueLevel": null,
+"value": "org-html-format-code"
+},
+"contents": []
+},
+"wraps the code in ",
+{
+"dataType": "org-node",
+"type": "code",
+"ref": "orgc794ce0",
+"properties": {
+"postAffiliated": null,
+"postBlank": 1,
+"trueLevel": null,
+"value": "<span>"
+},
+"contents": []
+},
+"tags with the ",
+{
+"dataType": "org-node",
+"type": "verbatim",
+"ref": "org0183c82",
+"properties": {
+"postAffiliated": null,
+"postBlank": 0,
+"trueLevel": null,
+"value": "class"
+},
+"contents": []
+},
+"\nattribute set to the name of the font face in that region of the code. For example:\n"
+]
+},
+{
+"dataType": "org-node",
+"type": "src-block",
+"ref": "orge114c2c",
+"properties": {
+"postAffiliated": 27933,
+"postBlank": 1,
+"trueLevel": null,
+"language": "html",
+"switches": null,
+"parameters": null,
+"numberLines": null,
+"preserveIndent": false,
+"retainLabels": true,
+"useLabels": true,
+"labelFmt": null,
+"value": "&lt;<span class=\"org-function-name\">span</span> <span class=\"org-variable-name\">class</span>=<span class=\"org-string\">\"org-function-name\"</span>&gt;ox-json-node-properties&lt;/<span class=\"org-function-name\">span</span>&gt;\n"
+},
+"contents": []
+},
+{
+"dataType": "org-node",
+"type": "paragraph",
+"ref": "orgdd666e7",
+"properties": {
+"postAffiliated": 28024,
+"postBlank": 1,
+"trueLevel": null
+},
+"contents": [
+"This worked well for some languages but not others, through no fault of\n",
+{
+"dataType": "org-node",
+"type": "verbatim",
+"ref": "org17cdc91",
+"properties": {
+"postAffiliated": null,
+"postBlank": 0,
+"trueLevel": null,
+"value": "htmlize"
+},
+"contents": []
+},
+". Rather, syntax highlighting in Org Mode code blocks is not always\ntotally consistent with syntax highlighting in regular source files. The way Org\nMode highlights source blocks is by copying the code into a temporary buffer,\ninvoking the block language's major mode, and then copying the code back into\nthe Org document (see ",
+{
+"dataType": "org-node",
+"type": "link",
+"ref": "org279f869",
+"properties": {
+"postAffiliated": null,
+"postBlank": 0,
+"trueLevel": null,
+"type": "https",
+"typeExplicitP": true,
+"path": "//github.com/bzg/org-mode/blob/b6dbf8881076191e1351d7cd15e26547a2531fea/lisp/org-src.el#L664",
+"format": "bracket",
+"rawLink": "https://github.com/bzg/org-mode/blob/b6dbf8881076191e1351d7cd15e26547a2531fea/lisp/org-src.el#L664",
+"application": null,
+"searchOption": null,
+"isInternal": false,
+"targetRef": null,
+"isInlineImage": false
+},
+"contents": [
+{
+"dataType": "org-node",
+"type": "code",
+"ref": "org3ac83a8",
+"properties": {
+"postAffiliated": null,
+"postBlank": 0,
+"trueLevel": null,
+"value": "org-src-font-lock-fontify-block"
+},
+"contents": []
+}
+]
+},
+"). This doesn't work\nperfectly in some cases - I use ",
+{
+"dataType": "org-node",
+"type": "verbatim",
+"ref": "orga05b765",
+"properties": {
+"postAffiliated": null,
+"postBlank": 1,
+"trueLevel": null,
+"value": "web-mode"
+},
+"contents": []
+},
+"to edit Astro code, for example.\n",
+{
+"dataType": "org-node",
+"type": "verbatim",
+"ref": "orgb23f4e2",
+"properties": {
+"postAffiliated": null,
+"postBlank": 1,
+"trueLevel": null,
+"value": "web-mode"
+},
+"contents": []
+},
+"supports Astro, but it usually relies on the file extension to detect\nthat you're editing an Astro file. The temporary buffer that Org Mode creates\nisn't backed by a file and so highlighting doesn't work as expected. It also\ndoesn't work, funnily enough, for Org source blocks although I'm not totally\nclear on the reason for this.\n"
+]
+},
+{
+"dataType": "org-node",
+"type": "paragraph",
+"ref": "orgf4f5b8d",
+"properties": {
+"postAffiliated": 29010,
+"postBlank": 1,
+"trueLevel": null
+},
+"contents": [
+"There may be more refined ways to work around these issues, but I opted for the\ncrude but effective approach of extracting source blocks to individual files and\nhtmlizing those files rather than the code blocks directly. This relies on a\nfeature of Org Mode called ",
+{
+"dataType": "org-node",
+"type": "link",
+"ref": "org787b9a5",
+"properties": {
+"postAffiliated": null,
+"postBlank": 0,
+"trueLevel": null,
+"type": "https",
+"typeExplicitP": true,
+"path": "//orgmode.org/manual/Extracting-Source-Code.html",
+"format": "bracket",
+"rawLink": "https://orgmode.org/manual/Extracting-Source-Code.html",
+"application": null,
+"searchOption": null,
+"isInternal": false,
+"targetRef": null,
+"isInlineImage": false
+},
+"contents": [
+"tangling"
+]
+},
+", which allows you to extract source blocks\ninto files. You can provide the ",
+{
+"dataType": "org-node",
+"type": "code",
+"ref": "org66b4008",
+"properties": {
+"postAffiliated": null,
+"postBlank": 1,
+"trueLevel": null,
+"value": ":tangle"
+},
+"contents": []
+},
+"header argument to a source block to\ncontrol whether the block should be extracted or not, and so we can selectively\nuse this technique for blocks where syntax highlighting within Org Mode doesn't\nwork the way we want and skip the overhead for blocks where it does.\n"
+]
+},
+{
+"dataType": "org-node",
+"type": "src-block",
+"ref": "orgf6e97ca",
+"properties": {
+"postAffiliated": 29696,
+"postBlank": 1,
+"trueLevel": null,
+"language": "emacs-lisp",
+"switches": null,
+"parameters": null,
+"numberLines": null,
+"preserveIndent": false,
+"retainLabels": true,
+"useLabels": true,
+"labelFmt": null,
+"value": "<span class=\"org-rainbow-delimiters-depth-1\">(</span><span class=\"org-keyword\">defun</span> <span class=\"org-function-name\">ox-json-transcode-src-block</span> <span class=\"org-rainbow-delimiters-depth-2\">(</span>src-block _contents info<span class=\"org-rainbow-delimiters-depth-2\">)</span>\n  <span class=\"org-doc\">\"Transcode a src-block object to JSON\"</span>\n  <span class=\"org-rainbow-delimiters-depth-2\">(</span><span class=\"org-keyword\">let*</span> <span class=\"org-rainbow-delimiters-depth-3\">(</span><span class=\"org-rainbow-delimiters-depth-4\">(</span>org-html-htmlize-output-type 'css<span class=\"org-rainbow-delimiters-depth-4\">)</span>\n         <span class=\"org-rainbow-delimiters-depth-4\">(</span>buffer-fn <span class=\"org-rainbow-delimiters-depth-5\">(</span>buffer-file-name <span class=\"org-rainbow-delimiters-depth-6\">(</span>buffer-base-buffer<span class=\"org-rainbow-delimiters-depth-6\">)</span><span class=\"org-rainbow-delimiters-depth-5\">)</span><span class=\"org-rainbow-delimiters-depth-4\">)</span>\n         <span class=\"org-rainbow-delimiters-depth-4\">(</span>block-info <span class=\"org-rainbow-delimiters-depth-5\">(</span>org-babel-get-src-block-info 'no-eval src-block<span class=\"org-rainbow-delimiters-depth-5\">)</span><span class=\"org-rainbow-delimiters-depth-4\">)</span>\n         <span class=\"org-rainbow-delimiters-depth-4\">(</span>src-lang <span class=\"org-rainbow-delimiters-depth-5\">(</span>nth <span class=\"org-highlight-numbers-number\">0</span> block-info<span class=\"org-rainbow-delimiters-depth-5\">)</span><span class=\"org-rainbow-delimiters-depth-4\">)</span>\n         <span class=\"org-rainbow-delimiters-depth-4\">(</span>src-tfile <span class=\"org-rainbow-delimiters-depth-5\">(</span>cdr <span class=\"org-rainbow-delimiters-depth-6\">(</span>assq <span class=\"org-builtin\">:tangle</span> <span class=\"org-rainbow-delimiters-depth-7\">(</span>nth <span class=\"org-highlight-numbers-number\">2</span> block-info<span class=\"org-rainbow-delimiters-depth-7\">)</span><span class=\"org-rainbow-delimiters-depth-6\">)</span><span class=\"org-rainbow-delimiters-depth-5\">)</span><span class=\"org-rainbow-delimiters-depth-4\">)</span>\n         <span class=\"org-rainbow-delimiters-depth-4\">(</span>filename <span class=\"org-rainbow-delimiters-depth-5\">(</span>org-babel-effective-tangled-filename buffer-fn src-lang src-tfile<span class=\"org-rainbow-delimiters-depth-5\">)</span><span class=\"org-rainbow-delimiters-depth-4\">)</span>\n         <span class=\"org-rainbow-delimiters-depth-4\">(</span>htmlized-src\n          <span class=\"org-rainbow-delimiters-depth-5\">(</span><span class=\"org-keyword\">if</span> <span class=\"org-rainbow-delimiters-depth-6\">(</span>eq filename nil<span class=\"org-rainbow-delimiters-depth-6\">)</span>\n              <span class=\"org-rainbow-delimiters-depth-6\">(</span>org-html-format-code src-block info<span class=\"org-rainbow-delimiters-depth-6\">)</span>\n            <span class=\"org-rainbow-delimiters-depth-6\">(</span><span class=\"org-keyword\">with-current-buffer</span> <span class=\"org-rainbow-delimiters-depth-7\">(</span>find-file-noselect filename<span class=\"org-rainbow-delimiters-depth-7\">)</span>\n              <span class=\"org-comment-delimiter\">;; </span><span class=\"org-comment\">If flycheck kicks in before the buffer is passed to htmlize-buffer,</span>\n              <span class=\"org-comment-delimiter\">;; </span><span class=\"org-comment\">it can pollute the exported code with exclamation marks.</span>\n              <span class=\"org-rainbow-delimiters-depth-7\">(</span>flycheck-mode <span class=\"org-highlight-numbers-number\">0</span><span class=\"org-rainbow-delimiters-depth-7\">)</span>\n              <span class=\"org-rainbow-delimiters-depth-7\">(</span><span class=\"org-keyword\">setq</span> htmlized-src\n                    <span class=\"org-rainbow-delimiters-depth-8\">(</span><span class=\"org-keyword\">with-current-buffer</span> <span class=\"org-rainbow-delimiters-depth-9\">(</span>htmlize-buffer <span class=\"org-rainbow-delimiters-depth-1\">(</span>current-buffer<span class=\"org-rainbow-delimiters-depth-1\">)</span><span class=\"org-rainbow-delimiters-depth-9\">)</span>\n                      <span class=\"org-rainbow-delimiters-depth-9\">(</span>buffer-substring\n                       <span class=\"org-rainbow-delimiters-depth-1\">(</span>plist-get htmlize-buffer-places 'content-start<span class=\"org-rainbow-delimiters-depth-1\">)</span>\n                       <span class=\"org-rainbow-delimiters-depth-1\">(</span>plist-get htmlize-buffer-places 'content-end<span class=\"org-rainbow-delimiters-depth-1\">)</span><span class=\"org-rainbow-delimiters-depth-9\">)</span><span class=\"org-rainbow-delimiters-depth-8\">)</span><span class=\"org-rainbow-delimiters-depth-7\">)</span>\n              <span class=\"org-rainbow-delimiters-depth-7\">(</span>kill-current-buffer<span class=\"org-rainbow-delimiters-depth-7\">)</span>\n              htmlized-src<span class=\"org-rainbow-delimiters-depth-6\">)</span><span class=\"org-rainbow-delimiters-depth-5\">)</span><span class=\"org-rainbow-delimiters-depth-4\">)</span><span class=\"org-rainbow-delimiters-depth-3\">)</span>\n    <span class=\"org-rainbow-delimiters-depth-3\">(</span>ox-json-export-node-base src-block info\n                              <span class=\"org-builtin\">:extra-properties</span> `<span class=\"org-rainbow-delimiters-depth-4\">(</span><span class=\"org-rainbow-delimiters-depth-5\">(</span>value . ,<span class=\"org-rainbow-delimiters-depth-6\">(</span>ox-json-encode-string htmlized-src<span class=\"org-rainbow-delimiters-depth-6\">)</span><span class=\"org-rainbow-delimiters-depth-5\">)</span><span class=\"org-rainbow-delimiters-depth-4\">)</span><span class=\"org-rainbow-delimiters-depth-3\">)</span><span class=\"org-rainbow-delimiters-depth-2\">)</span><span class=\"org-rainbow-delimiters-depth-1\">)</span>\n"
+},
+"contents": []
+},
+{
+"dataType": "org-node",
+"type": "paragraph",
+"ref": "org0dd0e75",
+"properties": {
+"postAffiliated": 31067,
+"postBlank": 1,
+"trueLevel": null
+},
+"contents": [
+"There's a lot more going on here, but you can mostly ignore all the variable\nassignments in the ",
+{
+"dataType": "org-node",
+"type": "code",
+"ref": "org56eb675",
+"properties": {
+"postAffiliated": null,
+"postBlank": 1,
+"trueLevel": null,
+"value": "let*"
+},
+"contents": []
+},
+"form and just know that ",
+{
+"dataType": "org-node",
+"type": "code",
+"ref": "orgfc647ad",
+"properties": {
+"postAffiliated": null,
+"postBlank": 1,
+"trueLevel": null,
+"value": "filename"
+},
+"contents": []
+},
+"gets assigned to\nthe name of the file the block has been extracted to if its configured to be\ntangled and ",
+{
+"dataType": "org-node",
+"type": "verbatim",
+"ref": "org96847aa",
+"properties": {
+"postAffiliated": null,
+"postBlank": 1,
+"trueLevel": null,
+"value": "nil"
+},
+"contents": []
+},
+"otherwise. If we do have a non-nil filename, we open the file\nand pass ",
+{
+"dataType": "org-node",
+"type": "italic",
+"ref": "org82a6429",
+"properties": {
+"postAffiliated": null,
+"postBlank": 1,
+"trueLevel": null
+},
+"contents": [
+"that"
+]
+},
+"into htmlize. The invocation of htmlize is a little more\ncomplicated here because ",
+{
+"dataType": "org-node",
+"type": "code",
+"ref": "org67d30f3",
+"properties": {
+"postAffiliated": null,
+"postBlank": 1,
+"trueLevel": null,
+"value": "htmlize-buffer"
+},
+"contents": []
+},
+"produces a whole HTML document, but we\nreally just want the fragment with the marked-up source code (I adapted this\nfrom what ox-html does ",
+{
+"dataType": "org-node",
+"type": "link",
+"ref": "org28929d5",
+"properties": {
+"postAffiliated": null,
+"postBlank": 0,
+"trueLevel": null,
+"type": "https",
+"typeExplicitP": true,
+"path": "//github.com/bzg/org-mode/blob/main/lisp/ox-html.el#L1812",
+"format": "bracket",
+"rawLink": "https://github.com/bzg/org-mode/blob/main/lisp/ox-html.el#L1812",
+"application": null,
+"searchOption": null,
+"isInternal": false,
+"targetRef": null,
+"isInlineImage": false
+},
+"contents": [
+"internally"
+]
+},
+").\n"
+]
+}
+]
+}
+]
+},
+{
+"dataType": "org-node",
+"type": "headline",
+"ref": "orgf025411",
+"drawer": {
+
+},
+"properties": {
+"tagsAll": [
+"Org",
+"Mode",
+"Emacs",
+"Meta"
+],
+"postAffiliated": 31716,
+"postBlank": 0,
+"trueLevel": 1,
+"preBlank": 1,
+"rawValue": "Closing Thoughts",
+"title": [
+"Closing Thoughts"
+],
+"level": 1,
+"priority": null,
+"tags": [],
+"todoKeyword": null,
+"todoType": null,
+"footnoteSectionP": true,
+"archivedp": true,
+"commentedp": false
+},
+"contents": [
+{
+"dataType": "org-node",
+"type": "section",
+"ref": "orgbfa8927",
+"properties": {
+"postAffiliated": 31736,
+"postBlank": 0,
+"trueLevel": null
+},
+"contents": [
+{
+"dataType": "org-node",
+"type": "paragraph",
+"ref": "org733fac1",
+"properties": {
+"postAffiliated": 31736,
+"postBlank": 1,
+"trueLevel": null
+},
+"contents": [
+"If you've made it this far, you may be questioning my sanity and indeed your own\nfor humoring me. That said, I think this was a worthwhile pursuit which gave me\nthe opportunity to learn a couple things about Org Mode and make a small\ncontribution (",
+{
+"dataType": "org-node",
+"type": "link",
+"ref": "orgcaa573d",
+"properties": {
+"postAffiliated": null,
+"postBlank": 0,
+"trueLevel": null,
+"type": "https",
+"typeExplicitP": true,
+"path": "//github.com/jlumpe/ox-json/pull/9",
+"format": "bracket",
+"rawLink": "https://github.com/jlumpe/ox-json/pull/9",
+"application": null,
+"searchOption": null,
+"isInternal": false,
+"targetRef": null,
+"isInlineImage": false
+},
+"contents": [
+"PR pending"
+]
+},
+") that might be useful to someone else one day. I'm also\nhappy with the end result: as I was putting this article together I found the\nexperience of iterating both on the content and presentation really gelled for\nme. I have a lot more to say about Org Mode and Emacs generally so stay tuned\nfor more content like this in the future!\n"
+]
+}
+]
+}
+]
+},
+{
+"dataType": "org-node",
+"type": "headline",
+"ref": "orgdfaa80b",
+"drawer": {
+
+},
+"properties": {
+"tagsAll": [
+"Org",
+"Mode",
+"Emacs",
+"Meta"
+],
+"postAffiliated": 32375,
+"postBlank": 0,
+"trueLevel": 1,
+"preBlank": 1,
+"rawValue": "Footnotes",
+"title": [
+"Footnotes"
+],
+"level": 1,
+"priority": null,
+"tags": [],
+"todoKeyword": null,
+"todoType": null,
+"footnoteSectionP": true,
+"archivedp": true,
+"commentedp": false
+},
+"contents": [
+{
+"dataType": "org-node",
+"type": "section",
+"ref": "org5e3c43f",
+"properties": {
+"postAffiliated": 32388,
+"postBlank": 0,
+"trueLevel": null
+},
+"contents": [
+{
+"dataType": "org-node",
+"type": "footnote-definition",
+"ref": "org39f0c4d",
+"properties": {
+"postAffiliated": 32388,
+"postBlank": 1,
+"trueLevel": null,
+"label": "1",
+"preBlank": 0
+},
+"contents": [
+{
+"dataType": "org-node",
+"type": "paragraph",
+"ref": "orgebba6a1",
+"properties": {
+"postAffiliated": 32395,
+"postBlank": 0,
+"trueLevel": null
+},
+"contents": [
+"It might be more accurate to view Emacs as a Lisp interpreter that just\nso happens to come bundled with a bunch of very useful facilities for editing\ntext. The origin of the name \"Emacs\" is sort of revealign - it was short for\n\"Editor Macros\" back when it was simply a collection of macros for the TECO text\neditor/programming language. Although Emacs has evolved a lot since then, I feel\nthe spirit of this idea has been preserved on some level.\n"
+]
+}
+]
+},
+{
+"dataType": "org-node",
+"type": "footnote-definition",
+"ref": "org6bd451e",
+"properties": {
+"postAffiliated": 32843,
+"postBlank": 1,
+"trueLevel": null,
+"label": "2",
+"preBlank": 0
+},
+"contents": [
+{
+"dataType": "org-node",
+"type": "paragraph",
+"ref": "org15dd1ae",
+"properties": {
+"postAffiliated": 32850,
+"postBlank": 0,
+"trueLevel": null
+},
+"contents": [
+"If you're wondering why the plot for 1000 samples is missing, I ran into\nan interesting bug where the temporary file that Org creates to store the value\nof the data",
+"_",
+"10",
+" ",
+"variable was overwritten by the data",
+"_",
+"1000",
+" ",
+"variable. There also\nseems to be a performance issue with loading large tables into gnuplot - the\nversion you see here took about a second to run while it took 2 minutes to run\nwhen I added the 1000 sample data. This might make for an interesting followup\npost when I get around to taking a closer look!\n"
+]
+}
+]
+},
+{
+"dataType": "org-node",
+"type": "footnote-definition",
+"ref": "org7e94c99",
+"properties": {
+"postAffiliated": 33365,
+"postBlank": 0,
+"trueLevel": null,
+"label": "3",
+"preBlank": 0
+},
+"contents": [
+{
+"dataType": "org-node",
+"type": "paragraph",
+"ref": "orgaef790d",
+"properties": {
+"postAffiliated": 33372,
+"postBlank": 0,
+"trueLevel": null
+},
+"contents": [
+"If you're scratching your head as to how this could yield a significant\nperformance improvement, it might be helpful to take a closer look at the data\nstructures we're dealing with here. ",
+{
+"dataType": "org-node",
+"type": "code",
+"ref": "org2c49581",
+"properties": {
+"postAffiliated": null,
+"postBlank": 1,
+"trueLevel": null,
+"value": "plist"
+},
+"contents": []
+},
+"is short for \"property list\" and is\na collection of key-value pairs represented with a flat linked list where the\nfirst element is the first key, the second is the first value, and so on. This\nmakes them poorly-suited for random access on long lists. While the property\nlists for Org nodes tend to be pretty short, squashing all common properties\ninto a single entry will still substantially reduce the plist length on average,\nwhich I would expect to have a substantial impact in contexts where the\nproperties of a large number of nodes need to be accessed.\n"
+]
+}
+]
+}
+]
+}
+]
+}
+]
+}

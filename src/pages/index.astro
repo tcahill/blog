@@ -1,16 +1,40 @@
 ---
-
+import ArticlePreview from "@components/ArticlePreview.astro";
+import type { OrgDocument } from "ox-json-types";
+import BaseLayout from "src/layouts/BaseLayout.astro";
+const articles = import.meta.glob<OrgDocument>("../articles/*.json", {
+    eager: true,
+});
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<BaseLayout>
+    <h1>Tom Cahill</h1>
+    <div class="about-me">
+        Hi! I'm Tom and this is my funny little home on the web. Here you can
+        expect to find my opinions and learnings about technology, annoying
+        Emacs evangelism, and occasional detours into various other aspects of
+        life.
+    </div>
+
+    <h2>Posts <a class="feed-link" href="/blog.xml"><i class="ph-fill ph-rss" /></a></h2>
+    {
+        Object.values(articles).map((article) => (
+            <ArticlePreview article={article} />
+        ))
+    }
+</BaseLayout>
+
+<style>
+    .feed-link {
+        color: var(--primary);
+        text-decoration-line: none;
+    }
+
+    .feed-link:hover {
+        color: var(--tertiary);
+    }
+
+    .about-me {
+        margin: 1rem 0;
+    }
+</style>

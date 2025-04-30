@@ -1,0 +1,26 @@
+---
+import type { OrgDocument } from 'ox-json-types';
+import { articlePath } from '@lib/org';
+import Article from '@components/Article.astro';
+import BaseLayout from 'src/layouts/BaseLayout.astro';
+
+interface Props {
+    path: string,
+    article: OrgDocument,
+}
+
+
+export function getStaticPaths() {
+    const articles = import.meta.glob<OrgDocument>('../../articles/*.json', { eager: true });
+
+    return Object.values(articles).map((article) => {
+        return { params: { path: articlePath(article) }, props: { article } };
+    });
+}
+
+const { article } = Astro.props;
+---
+
+<BaseLayout>
+    <Article article={article} />
+</BaseLayout>

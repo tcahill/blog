@@ -1,0 +1,12 @@
+---
+import type { SectionElement } from 'ox-json-types';
+import Node from '@components/Node.astro';
+
+interface Props {
+    node: SectionElement,
+}
+
+const { node } = Astro.props;
+
+---
+{node.contents.map((child) => typeof child === 'string' ? <div>{child}</div> : <Node node={child} />)}

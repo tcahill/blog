@@ -1,0 +1,25 @@
+---
+import type { FootnoteReferenceObject } from 'ox-json-types';
+
+interface Props {
+    node: FootnoteReferenceObject,
+}
+
+const { node } = Astro.props;
+---
+<!-- TODO: this doesn't handle inline footnotes -->
+<sup>
+    <a id=`footnote-ref-${node.properties.label}` href=`#footnote-${node.properties.label}`>
+        {node.properties.label}
+    </a>
+</sup>
+
+<style>
+ a {
+     color: var(--link);
+ }
+
+ a:visited {
+     color: var(--link);
+ }
+</style>

@@ -1,0 +1,27 @@
+---
+import type { GreaterBlockElement } from 'ox-json-types';
+import Callout from '@components/Callout.astro';
+import Contents from '@components/Contents.astro';
+import UnknownBlock from '@components/UnknownBlock.astro';
+
+interface Props {
+    node: GreaterBlockElement;
+}
+
+const { node } = Astro.props;
+
+let BlockComponent;
+switch (node.properties.type) {
+    case 'callout':
+    BlockComponent = Callout;
+    break;
+    case 'summary':
+    BlockComponent = null;
+    break;
+    default:
+    BlockComponent = UnknownBlock;
+}
+---
+{BlockComponent && <BlockComponent node={node}>
+    <Contents contents={node.contents} />
+</BlockComponent>}

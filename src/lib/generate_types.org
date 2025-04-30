@@ -1,0 +1,2187 @@
+* Generate Typescript library for parsing org-mode document
+
+The following is an example ouptut of ox-json, a library for Emacs that exports
+org-mode documents as JSON objects:
+
+{
+"$$data_type": "org-document",
+"properties": {
+"title": [
+"Test"
+],
+"filetags": [],
+"author": [
+"Tom Cahill"
+],
+"creator": "Emacs 31.0.50 (Org mode 9.7.11)",
+"date": [],
+"description": [],
+"email": "tom@MacBook-Pro-3.local",
+"language": "en"
+},
+"contents": [
+{
+"$$data_type": "org-node",
+"type": "section",
+"ref": "org40d6f4e",
+"properties": {
+"post-affiliated": 1,
+"post-blank": 0,
+"secondary": null,
+"mode": "first-section",
+"granularity": null,
+"cached": null,
+"org-element--cache-sync-key": null,
+"true-level": null,
+"deferred": null,
+"structure": null
+},
+"contents": [
+{
+"$$data_type": "org-node",
+"type": "keyword",
+"ref": "orgcff1d27",
+"properties": {
+"post-affiliated": 1,
+"post-blank": 2,
+"secondary": null,
+"mode": "top-comment",
+"granularity": null,
+"cached": null,
+"org-element--cache-sync-key": null,
+"true-level": null,
+"deferred": null,
+"structure": null,
+"key": "TITLE",
+"value": "Test"
+},
+"contents": []
+},
+{
+"$$data_type": "org-node",
+"type": "paragraph",
+"ref": "orgf8954b0",
+"properties": {
+"post-affiliated": 17,
+"post-blank": 2,
+"secondary": null,
+"mode": null,
+"granularity": null,
+"cached": null,
+"org-element--cache-sync-key": null,
+"true-level": null,
+"deferred": null,
+"structure": null
+},
+"contents": [
+"File with lots of types of elements.\n"
+]
+}
+]
+},
+{
+"$$data_type": "org-node",
+"type": "headline",
+"ref": "org99f2e83",
+"drawer": {
+
+},
+"properties": {
+"tags-all": [],
+"post-affiliated": 56,
+"post-blank": 0,
+"secondary": [
+":title"
+],
+"mode": null,
+"granularity": null,
+"cached": null,
+"org-element--cache-sync-key": null,
+"true-level": 1,
+"deferred": null,
+"structure": null,
+"pre-blank": 0,
+"raw-value": "Markup",
+"title": [
+"Markup"
+],
+"level": 1,
+"priority": null,
+"tags": [],
+"todo-keyword": null,
+"todo-type": null,
+"footnote-section-p": true,
+"archivedp": true,
+"commentedp": false
+},
+"contents": [
+{
+"$$data_type": "org-node",
+"type": "section",
+"ref": "org87e081b",
+"properties": {
+"post-affiliated": 65,
+"post-blank": 0,
+"secondary": null,
+"mode": "section",
+"granularity": null,
+"cached": null,
+"org-element--cache-sync-key": null,
+"true-level": null,
+"deferred": null,
+"structure": null
+},
+"contents": [
+{
+"$$data_type": "org-node",
+"type": "paragraph",
+"ref": "orgac5b341",
+"properties": {
+"post-affiliated": 65,
+"post-blank": 1,
+"secondary": null,
+"mode": "planning",
+"granularity": null,
+"cached": null,
+"org-element--cache-sync-key": null,
+"true-level": null,
+"deferred": null,
+"structure": null
+},
+"contents": [
+{
+"$$data_type": "org-node",
+"type": "bold",
+"ref": "org043b4eb",
+"properties": {
+"post-affiliated": null,
+"post-blank": 1,
+"secondary": null,
+"mode": null,
+"granularity": null,
+"cached": null,
+"org-element--cache-sync-key": null,
+"true-level": null,
+"deferred": null,
+"structure": null
+},
+"contents": [
+"bold"
+]
+},
+{
+"$$data_type": "org-node",
+"type": "italic",
+"ref": "org4bfa7be",
+"properties": {
+"post-affiliated": null,
+"post-blank": 1,
+"secondary": null,
+"mode": null,
+"granularity": null,
+"cached": null,
+"org-element--cache-sync-key": null,
+"true-level": null,
+"deferred": null,
+"structure": null
+},
+"contents": [
+"italics"
+]
+},
+{
+"$$data_type": "org-node",
+"type": "underline",
+"ref": "org26d367a",
+"properties": {
+"post-affiliated": null,
+"post-blank": 1,
+"secondary": null,
+"mode": null,
+"granularity": null,
+"cached": null,
+"org-element--cache-sync-key": null,
+"true-level": null,
+"deferred": null,
+"structure": null
+},
+"contents": [
+"underline"
+]
+},
+{
+"$$data_type": "org-node",
+"type": "strike-through",
+"ref": "org9360c95",
+"properties": {
+"post-affiliated": null,
+"post-blank": 1,
+"secondary": null,
+"mode": null,
+"granularity": null,
+"cached": null,
+"org-element--cache-sync-key": null,
+"true-level": null,
+"deferred": null,
+"structure": null
+},
+"contents": [
+"strike"
+]
+},
+{
+"$$data_type": "org-node",
+"type": "verbatim",
+"ref": "orga75b3b4",
+"properties": {
+"post-affiliated": null,
+"post-blank": 1,
+"secondary": null,
+"mode": null,
+"granularity": null,
+"cached": null,
+"org-element--cache-sync-key": null,
+"true-level": null,
+"deferred": null,
+"structure": null,
+"value": "verbatim"
+},
+"contents": []
+},
+{
+"$$data_type": "org-node",
+"type": "code",
+"ref": "org1125e35",
+"properties": {
+"post-affiliated": null,
+"post-blank": 0,
+"secondary": null,
+"mode": null,
+"granularity": null,
+"cached": null,
+"org-element--cache-sync-key": null,
+"true-level": null,
+"deferred": null,
+"structure": null,
+"value": "code"
+},
+"contents": []
+},
+"\n"
+]
+},
+{
+"$$data_type": "org-node",
+"type": "horizontal-rule",
+"ref": "org8404949",
+"properties": {
+"post-affiliated": 133,
+"post-blank": 0,
+"secondary": null,
+"mode": null,
+"granularity": null,
+"cached": null,
+"org-element--cache-sync-key": null,
+"true-level": null,
+"deferred": null,
+"structure": null
+},
+"contents": []
+},
+{
+"$$data_type": "org-node",
+"type": "paragraph",
+"ref": "org840c2cf",
+"properties": {
+"post-affiliated": 143,
+"post-blank": 1,
+"secondary": null,
+"mode": null,
+"granularity": null,
+"cached": null,
+"org-element--cache-sync-key": null,
+"true-level": null,
+"deferred": null,
+"structure": null
+},
+"contents": [
+"horizontal rule\n"
+]
+}
+]
+}
+]
+},
+{
+"$$data_type": "org-node",
+"type": "headline",
+"ref": "org3c59814",
+"drawer": {
+
+},
+"properties": {
+"tags-all": [],
+"post-affiliated": 160,
+"post-blank": 0,
+"secondary": [
+":title"
+],
+"mode": null,
+"granularity": null,
+"cached": null,
+"org-element--cache-sync-key": null,
+"true-level": 1,
+"deferred": null,
+"structure": null,
+"pre-blank": 0,
+"raw-value": "Links",
+"title": [
+"Links"
+],
+"level": 1,
+"priority": null,
+"tags": [],
+"todo-keyword": null,
+"todo-type": null,
+"footnote-section-p": true,
+"archivedp": true,
+"commentedp": false
+},
+"contents": [
+{
+"$$data_type": "org-node",
+"type": "section",
+"ref": "org6ce9b9f",
+"properties": {
+"post-affiliated": 168,
+"post-blank": 0,
+"secondary": null,
+"mode": "section",
+"granularity": null,
+"cached": null,
+"org-element--cache-sync-key": null,
+"true-level": null,
+"deferred": null,
+"structure": null
+},
+"contents": [
+{
+"$$data_type": "org-node",
+"type": "paragraph",
+"ref": "orgaa4a187",
+"properties": {
+"post-affiliated": 168,
+"post-blank": 1,
+"secondary": null,
+"mode": "planning",
+"granularity": null,
+"cached": null,
+"org-element--cache-sync-key": null,
+"true-level": null,
+"deferred": null,
+"structure": null
+},
+"contents": [
+{
+"$$data_type": "org-node",
+"type": "link",
+"ref": "orgfa8e2a3",
+"properties": {
+"post-affiliated": null,
+"post-blank": 0,
+"secondary": null,
+"mode": null,
+"granularity": null,
+"cached": null,
+"org-element--cache-sync-key": null,
+"true-level": null,
+"deferred": null,
+"structure": null,
+"type": "https",
+"type-explicit-p": true,
+"path": "//google.com",
+"format": "bracket",
+"raw-link": "https://google.com",
+"application": null,
+"search-option": null,
+"is-internal": false,
+"target-ref": null,
+"is-inline-image": false
+},
+"contents": [
+"With description"
+]
+},
+"\n"
+]
+},
+{
+"$$data_type": "org-node",
+"type": "paragraph",
+"ref": "orgaff2464",
+"properties": {
+"post-affiliated": 210,
+"post-blank": 1,
+"secondary": null,
+"mode": null,
+"granularity": null,
+"cached": null,
+"org-element--cache-sync-key": null,
+"true-level": null,
+"deferred": null,
+"structure": null
+},
+"contents": [
+"Raw: ",
+{
+"$$data_type": "org-node",
+"type": "link",
+"ref": "orgbf431f1",
+"properties": {
+"post-affiliated": null,
+"post-blank": 0,
+"secondary": null,
+"mode": null,
+"granularity": null,
+"cached": null,
+"org-element--cache-sync-key": null,
+"true-level": null,
+"deferred": null,
+"structure": null,
+"type": "https",
+"type-explicit-p": true,
+"path": "//google.com",
+"format": "bracket",
+"raw-link": "https://google.com",
+"application": null,
+"search-option": null,
+"is-internal": false,
+"target-ref": null,
+"is-inline-image": false
+},
+"contents": []
+},
+"\n"
+]
+},
+{
+"$$data_type": "org-node",
+"type": "paragraph",
+"ref": "org81ec536",
+"properties": {
+"post-affiliated": 239,
+"post-blank": 1,
+"secondary": null,
+"mode": null,
+"granularity": null,
+"cached": null,
+"org-element--cache-sync-key": null,
+"true-level": null,
+"deferred": null,
+"structure": null
+},
+"contents": [
+{
+"$$data_type": "org-node",
+"type": "radio-target",
+"ref": "org09d3d75",
+"properties": {
+"post-affiliated": null,
+"post-blank": 0,
+"secondary": null,
+"mode": null,
+"granularity": null,
+"cached": null,
+"org-element--cache-sync-key": null,
+"true-level": null,
+"deferred": null,
+"structure": null,
+"value": "radio target"
+},
+"contents": [
+"radio target"
+]
+},
+"\n"
+]
+},
+{
+"$$data_type": "org-node",
+"type": "paragraph",
+"ref": "org351cd2d",
+"properties": {
+"post-affiliated": 259,
+"post-blank": 1,
+"secondary": null,
+"mode": null,
+"granularity": null,
+"cached": null,
+"org-element--cache-sync-key": null,
+"true-level": null,
+"deferred": null,
+"structure": null
+},
+"contents": [
+"link to ",
+{
+"$$data_type": "org-node",
+"type": "link",
+"ref": "org6689ef0",
+"properties": {
+"post-affiliated": null,
+"post-blank": 0,
+"secondary": null,
+"mode": null,
+"granularity": null,
+"cached": null,
+"org-element--cache-sync-key": null,
+"true-level": null,
+"deferred": null,
+"structure": null,
+"type": "radio",
+"type-explicit-p": true,
+"path": "radio target",
+"format": "plain",
+"raw-link": "radio target",
+"application": null,
+"search-option": null,
+"is-internal": true,
+"target-ref": null,
+"is-inline-image": false
+},
+"contents": [
+"radio target"
+]
+},
+"\n"
+]
+},
+{
+"$$data_type": "org-node",
+"type": "paragraph",
+"ref": "orgce24b33",
+"properties": {
+"post-affiliated": 281,
+"post-blank": 1,
+"secondary": null,
+"mode": null,
+"granularity": null,
+"cached": null,
+"org-element--cache-sync-key": null,
+"true-level": null,
+"deferred": null,
+"structure": null
+},
+"contents": [
+"word",
+{
+"$$data_type": "org-node",
+"type": "superscript",
+"ref": "org6334551",
+"properties": {
+"post-affiliated": null,
+"post-blank": 0,
+"secondary": null,
+"mode": null,
+"granularity": null,
+"cached": null,
+"org-element--cache-sync-key": null,
+"true-level": null,
+"deferred": null,
+"structure": null,
+"use-brackets-p": true
+},
+"contents": [
+"superscript"
+]
+},
+"\nword",
+{
+"$$data_type": "org-node",
+"type": "subscript",
+"ref": "orge50cf8d",
+"properties": {
+"post-affiliated": null,
+"post-blank": 0,
+"secondary": null,
+"mode": null,
+"granularity": null,
+"cached": null,
+"org-element--cache-sync-key": null,
+"true-level": null,
+"deferred": null,
+"structure": null,
+"use-brackets-p": true
+},
+"contents": [
+"subscript"
+]
+},
+"\n"
+]
+}
+]
+}
+]
+},
+{
+"$$data_type": "org-node",
+"type": "headline",
+"ref": "orgcc6f18d",
+"drawer": {
+
+},
+"properties": {
+"tags-all": [],
+"post-affiliated": 318,
+"post-blank": 0,
+"secondary": [
+":title"
+],
+"mode": null,
+"granularity": null,
+"cached": null,
+"org-element--cache-sync-key": null,
+"true-level": 1,
+"deferred": null,
+"structure": null,
+"pre-blank": 0,
+"raw-value": "Todos",
+"title": [
+"Todos"
+],
+"level": 1,
+"priority": null,
+"tags": [],
+"todo-keyword": null,
+"todo-type": null,
+"footnote-section-p": true,
+"archivedp": true,
+"commentedp": false
+},
+"contents": [
+{
+"$$data_type": "org-node",
+"type": "headline",
+"ref": "org78ab1f5",
+"drawer": {
+
+},
+"properties": {
+"tags-all": [],
+"post-affiliated": 326,
+"post-blank": 0,
+"secondary": [
+":title"
+],
+"mode": "section",
+"granularity": null,
+"cached": null,
+"org-element--cache-sync-key": null,
+"true-level": 2,
+"deferred": null,
+"structure": null,
+"pre-blank": 0,
+"raw-value": "Task1",
+"title": [
+"Task1"
+],
+"level": 2,
+"priority": null,
+"tags": [],
+"todo-keyword": "TODO",
+"todo-type": "todo",
+"footnote-section-p": true,
+"archivedp": true,
+"commentedp": false
+},
+"contents": []
+},
+{
+"$$data_type": "org-node",
+"type": "headline",
+"ref": "orgcfcd70b",
+"drawer": {
+
+},
+"properties": {
+"tags-all": [],
+"post-affiliated": 340,
+"post-blank": 0,
+"secondary": [
+":title"
+],
+"mode": null,
+"granularity": null,
+"cached": null,
+"org-element--cache-sync-key": null,
+"true-level": 2,
+"deferred": null,
+"structure": null,
+"pre-blank": 0,
+"raw-value": "Task2",
+"title": [
+"Task2"
+],
+"level": 2,
+"priority": null,
+"tags": [],
+"todo-keyword": "DONE",
+"todo-type": "done",
+"footnote-section-p": true,
+"archivedp": true,
+"commentedp": false
+},
+"contents": []
+},
+{
+"$$data_type": "org-node",
+"type": "headline",
+"ref": "org7df37de",
+"drawer": {
+
+},
+"properties": {
+"tags-all": [],
+"post-affiliated": 354,
+"post-blank": 0,
+"secondary": [
+":title"
+],
+"mode": null,
+"granularity": null,
+"cached": null,
+"org-element--cache-sync-key": null,
+"true-level": 2,
+"deferred": null,
+"structure": null,
+"pre-blank": 0,
+"raw-value": "With priority",
+"title": [
+"With priority"
+],
+"level": 2,
+"priority": 65,
+"tags": [],
+"todo-keyword": "TODO",
+"todo-type": "todo",
+"footnote-section-p": true,
+"archivedp": true,
+"commentedp": false
+},
+"contents": []
+},
+{
+"$$data_type": "org-node",
+"type": "headline",
+"ref": "orga00952b",
+"drawer": {
+
+},
+"properties": {
+"tags-all": [],
+"post-affiliated": 381,
+"post-blank": 0,
+"secondary": [
+":title"
+],
+"mode": null,
+"granularity": null,
+"cached": null,
+"org-element--cache-sync-key": null,
+"true-level": 2,
+"deferred": null,
+"structure": null,
+"pre-blank": 0,
+"raw-value": "With deadline",
+"title": [
+"With deadline"
+],
+"level": 2,
+"priority": null,
+"tags": [],
+"todo-keyword": "TODO",
+"todo-type": "todo",
+"footnote-section-p": true,
+"archivedp": true,
+"commentedp": false,
+"deadline": {
+"$$data_type": "timestamp",
+"start": "2019-06-29",
+"end": "2019-06-29",
+"type": "active",
+"raw-value": "<2019-06-29 Sat>",
+"repeater": {
+"type": null,
+"unit": null,
+"value": null
+},
+"warning": {
+"type": null,
+"unit": null,
+"value": null
+}
+}
+},
+"contents": [
+{
+"$$data_type": "org-node",
+"type": "section",
+"ref": "org747affb",
+"properties": {
+"post-affiliated": 403,
+"post-blank": 0,
+"secondary": null,
+"mode": "section",
+"granularity": null,
+"cached": null,
+"org-element--cache-sync-key": null,
+"true-level": null,
+"deferred": null,
+"structure": null
+},
+"contents": []
+}
+]
+},
+{
+"$$data_type": "org-node",
+"type": "headline",
+"ref": "orgb38235a",
+"drawer": {
+
+},
+"properties": {
+"tags-all": [],
+"post-affiliated": 430,
+"post-blank": 0,
+"secondary": [
+":title"
+],
+"mode": null,
+"granularity": null,
+"cached": null,
+"org-element--cache-sync-key": null,
+"true-level": 2,
+"deferred": null,
+"structure": null,
+"pre-blank": 0,
+"raw-value": "With clock",
+"title": [
+"With clock"
+],
+"level": 2,
+"priority": null,
+"tags": [],
+"todo-keyword": "TODO",
+"todo-type": "todo",
+"footnote-section-p": true,
+"archivedp": true,
+"commentedp": false
+},
+"contents": [
+{
+"$$data_type": "org-node",
+"type": "section",
+"ref": "orgd378518",
+"properties": {
+"post-affiliated": 449,
+"post-blank": 0,
+"secondary": null,
+"mode": "section",
+"granularity": null,
+"cached": null,
+"org-element--cache-sync-key": null,
+"true-level": null,
+"deferred": null,
+"structure": null
+},
+"contents": []
+}
+]
+},
+{
+"$$data_type": "org-node",
+"type": "headline",
+"ref": "orgf071ab9",
+"drawer": {
+
+},
+"properties": {
+"tags-all": [],
+"post-affiliated": 528,
+"post-blank": 0,
+"secondary": [
+":title"
+],
+"mode": null,
+"granularity": null,
+"cached": null,
+"org-element--cache-sync-key": null,
+"true-level": 2,
+"deferred": null,
+"structure": null,
+"pre-blank": 0,
+"raw-value": "Subtasks with statistics cookie [0/2]",
+"title": [
+"Subtasks with statistics cookie ",
+{
+"$$data_type": "org-node",
+"type": "statistics-cookie",
+"ref": "org492d70d",
+"properties": {
+"post-affiliated": null,
+"post-blank": 0,
+"secondary": null,
+"mode": null,
+"granularity": null,
+"cached": null,
+"org-element--cache-sync-key": null,
+"true-level": null,
+"deferred": null,
+"structure": null,
+"value": "[0/2]"
+},
+"contents": []
+}
+],
+"level": 2,
+"priority": null,
+"tags": [],
+"todo-keyword": "TODO",
+"todo-type": "todo",
+"footnote-section-p": true,
+"archivedp": true,
+"commentedp": false
+},
+"contents": [
+{
+"$$data_type": "org-node",
+"type": "headline",
+"ref": "orge3e03de",
+"drawer": {
+
+},
+"properties": {
+"tags-all": [],
+"post-affiliated": 574,
+"post-blank": 0,
+"secondary": [
+":title"
+],
+"mode": "section",
+"granularity": null,
+"cached": null,
+"org-element--cache-sync-key": null,
+"true-level": 3,
+"deferred": null,
+"structure": null,
+"pre-blank": 0,
+"raw-value": "Subtask A",
+"title": [
+"Subtask A"
+],
+"level": 3,
+"priority": null,
+"tags": [],
+"todo-keyword": "TODO",
+"todo-type": "todo",
+"footnote-section-p": true,
+"archivedp": true,
+"commentedp": false
+},
+"contents": []
+},
+{
+"$$data_type": "org-node",
+"type": "headline",
+"ref": "org0b2084d",
+"drawer": {
+
+},
+"properties": {
+"tags-all": [],
+"post-affiliated": 593,
+"post-blank": 1,
+"secondary": [
+":title"
+],
+"mode": null,
+"granularity": null,
+"cached": null,
+"org-element--cache-sync-key": null,
+"true-level": 3,
+"deferred": null,
+"structure": null,
+"pre-blank": 0,
+"raw-value": "Subtask B",
+"title": [
+"Subtask B"
+],
+"level": 3,
+"priority": null,
+"tags": [],
+"todo-keyword": "TODO",
+"todo-type": "todo",
+"footnote-section-p": true,
+"archivedp": true,
+"commentedp": false
+},
+"contents": []
+}
+]
+}
+]
+},
+{
+"$$data_type": "org-node",
+"type": "headline",
+"ref": "orgbd4f71e",
+"drawer": {
+
+},
+"properties": {
+"tags-all": [],
+"post-affiliated": 613,
+"post-blank": 0,
+"secondary": [
+":title"
+],
+"mode": null,
+"granularity": null,
+"cached": null,
+"org-element--cache-sync-key": null,
+"true-level": 1,
+"deferred": null,
+"structure": null,
+"pre-blank": 1,
+"raw-value": "Babel",
+"title": [
+"Babel"
+],
+"level": 1,
+"priority": null,
+"tags": [],
+"todo-keyword": null,
+"todo-type": null,
+"footnote-section-p": true,
+"archivedp": true,
+"commentedp": false
+},
+"contents": [
+{
+"$$data_type": "org-node",
+"type": "section",
+"ref": "org48876a3",
+"properties": {
+"post-affiliated": 622,
+"post-blank": 0,
+"secondary": null,
+"mode": "section",
+"granularity": null,
+"cached": null,
+"org-element--cache-sync-key": null,
+"true-level": null,
+"deferred": null,
+"structure": null
+},
+"contents": [
+{
+"$$data_type": "org-node",
+"type": "src-block",
+"ref": "org01d8d93",
+"properties": {
+"post-affiliated": 637,
+"post-blank": 2,
+"secondary": null,
+"mode": "planning",
+"granularity": null,
+"cached": null,
+"org-element--cache-sync-key": null,
+"true-level": null,
+"deferred": null,
+"structure": null,
+"language": "ruby",
+"switches": null,
+"parameters": ":var x=1",
+"number-lines": null,
+"preserve-indent": false,
+"retain-labels": true,
+"use-labels": true,
+"label-fmt": null,
+"value": "x * x\n",
+"name": "square"
+},
+"contents": []
+},
+{
+"$$data_type": "org-node",
+"type": "fixed-width",
+"ref": "org0a4cd82",
+"properties": {
+"post-affiliated": 692,
+"post-blank": 2,
+"secondary": null,
+"mode": null,
+"granularity": null,
+"cached": null,
+"org-element--cache-sync-key": null,
+"true-level": null,
+"deferred": null,
+"structure": null,
+"value": "36",
+"results": [
+""
+]
+},
+"contents": []
+},
+{
+"$$data_type": "org-node",
+"type": "paragraph",
+"ref": "org57d4d31",
+"properties": {
+"post-affiliated": 698,
+"post-blank": 1,
+"secondary": null,
+"mode": null,
+"granularity": null,
+"cached": null,
+"org-element--cache-sync-key": null,
+"true-level": null,
+"deferred": null,
+"structure": null
+},
+"contents": [
+{
+"$$data_type": "org-node",
+"type": "verbatim",
+"ref": "org6cb627a",
+"properties": {
+"post-affiliated": null,
+"post-blank": 0,
+"secondary": null,
+"mode": null,
+"granularity": null,
+"cached": null,
+"org-element--cache-sync-key": null,
+"true-level": null,
+"deferred": null,
+"structure": null,
+"value": "Hello world"
+},
+"contents": []
+},
+"\n"
+]
+}
+]
+}
+]
+},
+{
+"$$data_type": "org-node",
+"type": "headline",
+"ref": "org91eea96",
+"drawer": {
+
+},
+"properties": {
+"tags-all": [],
+"post-affiliated": 713,
+"post-blank": 0,
+"secondary": [
+":title"
+],
+"mode": null,
+"granularity": null,
+"cached": null,
+"org-element--cache-sync-key": null,
+"true-level": 1,
+"deferred": null,
+"structure": null,
+"pre-blank": 1,
+"raw-value": "Blocks",
+"title": [
+"Blocks"
+],
+"level": 1,
+"priority": null,
+"tags": [],
+"todo-keyword": null,
+"todo-type": null,
+"footnote-section-p": true,
+"archivedp": true,
+"commentedp": false
+},
+"contents": [
+{
+"$$data_type": "org-node",
+"type": "section",
+"ref": "orgeec9486",
+"properties": {
+"post-affiliated": 723,
+"post-blank": 0,
+"secondary": null,
+"mode": "section",
+"granularity": null,
+"cached": null,
+"org-element--cache-sync-key": null,
+"true-level": null,
+"deferred": null,
+"structure": null
+},
+"contents": [
+{
+"$$data_type": "org-node",
+"type": "center-block",
+"ref": "orgf4274c1",
+"properties": {
+"post-affiliated": 723,
+"post-blank": 1,
+"secondary": null,
+"mode": "planning",
+"granularity": null,
+"cached": null,
+"org-element--cache-sync-key": null,
+"true-level": null,
+"deferred": null,
+"structure": null
+},
+"contents": [
+{
+"$$data_type": "org-node",
+"type": "paragraph",
+"ref": "org38c0b42",
+"properties": {
+"post-affiliated": 738,
+"post-blank": 0,
+"secondary": null,
+"mode": null,
+"granularity": null,
+"cached": null,
+"org-element--cache-sync-key": null,
+"true-level": null,
+"deferred": null,
+"structure": null
+},
+"contents": [
+"center block\n"
+]
+}
+]
+},
+{
+"$$data_type": "org-node",
+"type": "example-block",
+"ref": "orgd9a98dc",
+"properties": {
+"post-affiliated": 810,
+"post-blank": 1,
+"secondary": null,
+"mode": null,
+"granularity": null,
+"cached": null,
+"org-element--cache-sync-key": null,
+"true-level": null,
+"deferred": null,
+"structure": null,
+"value": "example\n",
+"switches": null,
+"number-lines": null,
+"preserve-indent": false,
+"retain-labels": true,
+"use-labels": true,
+"label-fmt": null
+},
+"contents": []
+},
+{
+"$$data_type": "org-node",
+"type": "verse-block",
+"ref": "org1d01937",
+"properties": {
+"post-affiliated": 985,
+"post-blank": 1,
+"secondary": null,
+"mode": null,
+"granularity": null,
+"cached": null,
+"org-element--cache-sync-key": null,
+"true-level": null,
+"deferred": null,
+"structure": null,
+"attr_latex": [
+":center t :latexcode \\color{red} :lines 5",
+":versewidth Feed’st thy light’s flame with self-substantial fuel,"
+]
+},
+"contents": [
+"From fairest creatures we desire increase,\nThat thereby beauty’s rose might never die,\nBut as the riper should by time decease\nHis tender heir might bear his memory\nBut thou, contracted to thine own bright eyes,\nFeed’st thy light’s flame with self-substantial fuel,\nMaking a famine where abundance lies,\nThyself thy foe, to thy sweet self too cruel.\nThou that art now the world’s fresh ornament,\nAnd only herald to the gaudy spring,\nWithin thine own bud buriest thy content,\nAnd, tender churl, mak’st waste in niggardly.\nPity the world, or else this glutton be,\nTo eat the world’s due, by the grave and thee.\n"
+]
+},
+{
+"$$data_type": "org-node",
+"type": "quote-block",
+"ref": "org87c77b3",
+"properties": {
+"post-affiliated": 1621,
+"post-blank": 1,
+"secondary": null,
+"mode": null,
+"granularity": null,
+"cached": null,
+"org-element--cache-sync-key": null,
+"true-level": null,
+"deferred": null,
+"structure": null
+},
+"contents": [
+{
+"$$data_type": "org-node",
+"type": "paragraph",
+"ref": "org5e0110f",
+"properties": {
+"post-affiliated": 1635,
+"post-blank": 0,
+"secondary": null,
+"mode": null,
+"granularity": null,
+"cached": null,
+"org-element--cache-sync-key": null,
+"true-level": null,
+"deferred": null,
+"structure": null
+},
+"contents": [
+"quote\n"
+]
+}
+]
+}
+]
+}
+]
+},
+{
+"$$data_type": "org-node",
+"type": "headline",
+"ref": "org1cacb95",
+"drawer": {
+
+},
+"properties": {
+"tags-all": [],
+"post-affiliated": 1654,
+"post-blank": 0,
+"secondary": [
+":title"
+],
+"mode": null,
+"granularity": null,
+"cached": null,
+"org-element--cache-sync-key": null,
+"true-level": 1,
+"deferred": null,
+"structure": null,
+"pre-blank": 1,
+"raw-value": "Tables",
+"title": [
+"Tables"
+],
+"level": 1,
+"priority": null,
+"tags": [],
+"todo-keyword": null,
+"todo-type": null,
+"footnote-section-p": true,
+"archivedp": true,
+"commentedp": false
+},
+"contents": [
+{
+"$$data_type": "org-node",
+"type": "section",
+"ref": "org73c7632",
+"properties": {
+"post-affiliated": 1664,
+"post-blank": 0,
+"secondary": null,
+"mode": "section",
+"granularity": null,
+"cached": null,
+"org-element--cache-sync-key": null,
+"true-level": null,
+"deferred": null,
+"structure": null
+},
+"contents": [
+{
+"$$data_type": "org-node",
+"type": "table",
+"ref": "orgae71515",
+"properties": {
+"post-affiliated": 1664,
+"post-blank": 2,
+"secondary": null,
+"mode": "planning",
+"granularity": null,
+"cached": null,
+"org-element--cache-sync-key": null,
+"true-level": null,
+"deferred": null,
+"structure": null,
+"type": "org",
+"tblfm": null,
+"value": null
+},
+"contents": [
+{
+"$$data_type": "org-node",
+"type": "table-row",
+"ref": "org6f87b4d",
+"properties": {
+"post-affiliated": 1664,
+"post-blank": 0,
+"secondary": null,
+"mode": "table-row",
+"granularity": null,
+"cached": null,
+"org-element--cache-sync-key": null,
+"true-level": null,
+"deferred": null,
+"structure": null,
+"type": "standard"
+},
+"contents": [
+{
+"$$data_type": "org-node",
+"type": "table-cell",
+"ref": "org49bc2ec",
+"properties": {
+"post-affiliated": null,
+"post-blank": 0,
+"secondary": null,
+"mode": null,
+"granularity": null,
+"cached": null,
+"org-element--cache-sync-key": null,
+"true-level": null,
+"deferred": null,
+"structure": null
+},
+"contents": [
+"x"
+]
+},
+{
+"$$data_type": "org-node",
+"type": "table-cell",
+"ref": "orge1f9c6c",
+"properties": {
+"post-affiliated": null,
+"post-blank": 0,
+"secondary": null,
+"mode": null,
+"granularity": null,
+"cached": null,
+"org-element--cache-sync-key": null,
+"true-level": null,
+"deferred": null,
+"structure": null
+},
+"contents": [
+"y"
+]
+},
+{
+"$$data_type": "org-node",
+"type": "table-cell",
+"ref": "orgc594044",
+"properties": {
+"post-affiliated": null,
+"post-blank": 0,
+"secondary": null,
+"mode": null,
+"granularity": null,
+"cached": null,
+"org-element--cache-sync-key": null,
+"true-level": null,
+"deferred": null,
+"structure": null
+},
+"contents": [
+"z"
+]
+}
+]
+},
+{
+"$$data_type": "org-node",
+"type": "table-row",
+"ref": "org893a8ef",
+"properties": {
+"post-affiliated": 1678,
+"post-blank": 0,
+"secondary": null,
+"mode": "table-row",
+"granularity": null,
+"cached": null,
+"org-element--cache-sync-key": null,
+"true-level": null,
+"deferred": null,
+"structure": null,
+"type": "rule"
+},
+"contents": []
+},
+{
+"$$data_type": "org-node",
+"type": "table-row",
+"ref": "orgb10f0cf",
+"properties": {
+"post-affiliated": 1692,
+"post-blank": 0,
+"secondary": null,
+"mode": "table-row",
+"granularity": null,
+"cached": null,
+"org-element--cache-sync-key": null,
+"true-level": null,
+"deferred": null,
+"structure": null,
+"type": "standard"
+},
+"contents": [
+{
+"$$data_type": "org-node",
+"type": "table-cell",
+"ref": "org1cf5b2f",
+"properties": {
+"post-affiliated": null,
+"post-blank": 0,
+"secondary": null,
+"mode": null,
+"granularity": null,
+"cached": null,
+"org-element--cache-sync-key": null,
+"true-level": null,
+"deferred": null,
+"structure": null
+},
+"contents": [
+"1"
+]
+},
+{
+"$$data_type": "org-node",
+"type": "table-cell",
+"ref": "org4ff701e",
+"properties": {
+"post-affiliated": null,
+"post-blank": 0,
+"secondary": null,
+"mode": null,
+"granularity": null,
+"cached": null,
+"org-element--cache-sync-key": null,
+"true-level": null,
+"deferred": null,
+"structure": null
+},
+"contents": [
+"2"
+]
+},
+{
+"$$data_type": "org-node",
+"type": "table-cell",
+"ref": "org1ec7337",
+"properties": {
+"post-affiliated": null,
+"post-blank": 0,
+"secondary": null,
+"mode": null,
+"granularity": null,
+"cached": null,
+"org-element--cache-sync-key": null,
+"true-level": null,
+"deferred": null,
+"structure": null
+},
+"contents": [
+"3"
+]
+}
+]
+},
+{
+"$$data_type": "org-node",
+"type": "table-row",
+"ref": "org9d18712",
+"properties": {
+"post-affiliated": 1706,
+"post-blank": 0,
+"secondary": null,
+"mode": "table-row",
+"granularity": null,
+"cached": null,
+"org-element--cache-sync-key": null,
+"true-level": null,
+"deferred": null,
+"structure": null,
+"type": "standard"
+},
+"contents": [
+{
+"$$data_type": "org-node",
+"type": "table-cell",
+"ref": "orgb379ed9",
+"properties": {
+"post-affiliated": null,
+"post-blank": 0,
+"secondary": null,
+"mode": null,
+"granularity": null,
+"cached": null,
+"org-element--cache-sync-key": null,
+"true-level": null,
+"deferred": null,
+"structure": null
+},
+"contents": [
+"4"
+]
+},
+{
+"$$data_type": "org-node",
+"type": "table-cell",
+"ref": "org99a0ba6",
+"properties": {
+"post-affiliated": null,
+"post-blank": 0,
+"secondary": null,
+"mode": null,
+"granularity": null,
+"cached": null,
+"org-element--cache-sync-key": null,
+"true-level": null,
+"deferred": null,
+"structure": null
+},
+"contents": [
+"5"
+]
+},
+{
+"$$data_type": "org-node",
+"type": "table-cell",
+"ref": "orgb1d2de0",
+"properties": {
+"post-affiliated": null,
+"post-blank": 0,
+"secondary": null,
+"mode": null,
+"granularity": null,
+"cached": null,
+"org-element--cache-sync-key": null,
+"true-level": null,
+"deferred": null,
+"structure": null
+},
+"contents": [
+"6"
+]
+}
+]
+},
+{
+"$$data_type": "org-node",
+"type": "table-row",
+"ref": "org9b3a413",
+"properties": {
+"post-affiliated": 1720,
+"post-blank": 0,
+"secondary": null,
+"mode": "table-row",
+"granularity": null,
+"cached": null,
+"org-element--cache-sync-key": null,
+"true-level": null,
+"deferred": null,
+"structure": null,
+"type": "standard"
+},
+"contents": [
+{
+"$$data_type": "org-node",
+"type": "table-cell",
+"ref": "org2e8e073",
+"properties": {
+"post-affiliated": null,
+"post-blank": 0,
+"secondary": null,
+"mode": null,
+"granularity": null,
+"cached": null,
+"org-element--cache-sync-key": null,
+"true-level": null,
+"deferred": null,
+"structure": null
+},
+"contents": [
+"7"
+]
+},
+{
+"$$data_type": "org-node",
+"type": "table-cell",
+"ref": "org6cd0a0e",
+"properties": {
+"post-affiliated": null,
+"post-blank": 0,
+"secondary": null,
+"mode": null,
+"granularity": null,
+"cached": null,
+"org-element--cache-sync-key": null,
+"true-level": null,
+"deferred": null,
+"structure": null
+},
+"contents": [
+"8"
+]
+},
+{
+"$$data_type": "org-node",
+"type": "table-cell",
+"ref": "org3bc69db",
+"properties": {
+"post-affiliated": null,
+"post-blank": 0,
+"secondary": null,
+"mode": null,
+"granularity": null,
+"cached": null,
+"org-element--cache-sync-key": null,
+"true-level": null,
+"deferred": null,
+"structure": null
+},
+"contents": [
+"9"
+]
+}
+]
+}
+]
+}
+]
+}
+]
+},
+{
+"$$data_type": "org-node",
+"type": "headline",
+"ref": "orgc5c8882",
+"drawer": {
+
+},
+"properties": {
+"tags-all": [],
+"post-affiliated": 1736,
+"post-blank": 0,
+"secondary": [
+":title"
+],
+"mode": null,
+"granularity": null,
+"cached": null,
+"org-element--cache-sync-key": null,
+"true-level": 1,
+"deferred": null,
+"structure": null,
+"pre-blank": 1,
+"raw-value": "Macros",
+"title": [
+"Macros"
+],
+"level": 1,
+"priority": null,
+"tags": [],
+"todo-keyword": null,
+"todo-type": null,
+"footnote-section-p": true,
+"archivedp": true,
+"commentedp": false
+},
+"contents": [
+{
+"$$data_type": "org-node",
+"type": "section",
+"ref": "org9bca2cc",
+"properties": {
+"post-affiliated": 1746,
+"post-blank": 0,
+"secondary": null,
+"mode": "section",
+"granularity": null,
+"cached": null,
+"org-element--cache-sync-key": null,
+"true-level": null,
+"deferred": null,
+"structure": null
+},
+"contents": [
+{
+"$$data_type": "org-node",
+"type": "keyword",
+"ref": "org26a63fe",
+"properties": {
+"post-affiliated": 1746,
+"post-blank": 0,
+"secondary": null,
+"mode": "planning",
+"granularity": null,
+"cached": null,
+"org-element--cache-sync-key": null,
+"true-level": null,
+"deferred": null,
+"structure": null,
+"key": "MACRO",
+"value": "split-on-dot (eval (split-string $1 \"\\\\.\"))"
+},
+"contents": []
+},
+{
+"$$data_type": "org-node",
+"type": "paragraph",
+"ref": "org9bd9e34",
+"properties": {
+"post-affiliated": 1799,
+"post-blank": 2,
+"secondary": null,
+"mode": null,
+"granularity": null,
+"cached": null,
+"org-element--cache-sync-key": null,
+"true-level": null,
+"deferred": null,
+"structure": null
+},
+"contents": [
+"(foo bar baz)\n"
+]
+}
+]
+}
+]
+},
+{
+"$$data_type": "org-node",
+"type": "headline",
+"ref": "org32242f6",
+"drawer": {
+
+},
+"properties": {
+"tags-all": [],
+"post-affiliated": 1815,
+"post-blank": 0,
+"secondary": [
+":title"
+],
+"mode": null,
+"granularity": null,
+"cached": null,
+"org-element--cache-sync-key": null,
+"true-level": 1,
+"deferred": null,
+"structure": null,
+"pre-blank": 0,
+"raw-value": "LaTeX",
+"title": [
+"LaTeX"
+],
+"level": 1,
+"priority": null,
+"tags": [],
+"todo-keyword": null,
+"todo-type": null,
+"footnote-section-p": true,
+"archivedp": true,
+"commentedp": false
+},
+"contents": [
+{
+"$$data_type": "org-node",
+"type": "section",
+"ref": "org78a2dce",
+"properties": {
+"post-affiliated": 1823,
+"post-blank": 0,
+"secondary": null,
+"mode": "section",
+"granularity": null,
+"cached": null,
+"org-element--cache-sync-key": null,
+"true-level": null,
+"deferred": null,
+"structure": null
+},
+"contents": [
+{
+"$$data_type": "org-node",
+"type": "paragraph",
+"ref": "org5c55b93",
+"properties": {
+"post-affiliated": 1823,
+"post-blank": 1,
+"secondary": null,
+"mode": "planning",
+"granularity": null,
+"cached": null,
+"org-element--cache-sync-key": null,
+"true-level": null,
+"deferred": null,
+"structure": null
+},
+"contents": [
+"entities: ",
+{
+"$$data_type": "org-node",
+"type": "entity",
+"ref": "org910e058",
+"properties": {
+"post-affiliated": null,
+"post-blank": 0,
+"secondary": null,
+"mode": null,
+"granularity": null,
+"cached": null,
+"org-element--cache-sync-key": null,
+"true-level": null,
+"deferred": null,
+"structure": null,
+"name": "Alpha",
+"latex": "A",
+"latex-math-p": false,
+"html": "&Alpha;",
+"ascii": "Alpha",
+"latin1": "Alpha",
+"utf-8": "Α",
+"use-brackets-p": false
+},
+"contents": []
+},
+"\n"
+]
+},
+{
+"$$data_type": "org-node",
+"type": "latex-environment",
+"ref": "org2c699bf",
+"properties": {
+"post-affiliated": 1841,
+"post-blank": 1,
+"secondary": null,
+"mode": null,
+"granularity": null,
+"cached": null,
+"org-element--cache-sync-key": null,
+"true-level": null,
+"deferred": null,
+"structure": null,
+"value": "\\begin{equation}\nx=\\sqrt{b}\n\\end{equation}\n"
+},
+"contents": []
+},
+{
+"$$data_type": "org-node",
+"type": "paragraph",
+"ref": "org0d9278a",
+"properties": {
+"post-affiliated": 1885,
+"post-blank": 1,
+"secondary": null,
+"mode": null,
+"granularity": null,
+"cached": null,
+"org-element--cache-sync-key": null,
+"true-level": null,
+"deferred": null,
+"structure": null
+},
+"contents": [
+{
+"$$data_type": "org-node",
+"type": "latex-fragment",
+"ref": "orgfc4e499",
+"properties": {
+"post-affiliated": null,
+"post-blank": 0,
+"secondary": null,
+"mode": null,
+"granularity": null,
+"cached": null,
+"org-element--cache-sync-key": null,
+"true-level": null,
+"deferred": null,
+"structure": null,
+"value": "$a^2=b$"
+},
+"contents": []
+},
+"\n"
+]
+}
+]
+}
+]
+},
+{
+"$$data_type": "org-node",
+"type": "headline",
+"ref": "org1c3bff3",
+"drawer": {
+
+},
+"properties": {
+"tags-all": [],
+"post-affiliated": 1894,
+"post-blank": 0,
+"secondary": [
+":title"
+],
+"mode": null,
+"granularity": null,
+"cached": null,
+"org-element--cache-sync-key": null,
+"true-level": 1,
+"deferred": null,
+"structure": null,
+"pre-blank": 0,
+"raw-value": "Footnotes",
+"title": [
+"Footnotes"
+],
+"level": 1,
+"priority": null,
+"tags": [],
+"todo-keyword": null,
+"todo-type": null,
+"footnote-section-p": true,
+"archivedp": true,
+"commentedp": false
+},
+"contents": [
+{
+"$$data_type": "org-node",
+"type": "section",
+"ref": "org420e429",
+"properties": {
+"post-affiliated": 1906,
+"post-blank": 0,
+"secondary": null,
+"mode": "section",
+"granularity": null,
+"cached": null,
+"org-element--cache-sync-key": null,
+"true-level": null,
+"deferred": null,
+"structure": null
+},
+"contents": [
+{
+"$$data_type": "org-node",
+"type": "paragraph",
+"ref": "orge49c928",
+"properties": {
+"post-affiliated": 1906,
+"post-blank": 1,
+"secondary": null,
+"mode": "planning",
+"granularity": null,
+"cached": null,
+"org-element--cache-sync-key": null,
+"true-level": null,
+"deferred": null,
+"structure": null
+},
+"contents": [
+"A footnote reference ",
+{
+"$$data_type": "org-node",
+"type": "footnote-reference",
+"ref": "org05cd94b",
+"properties": {
+"post-affiliated": null,
+"post-blank": 0,
+"secondary": null,
+"mode": null,
+"granularity": null,
+"cached": null,
+"org-element--cache-sync-key": null,
+"true-level": null,
+"deferred": null,
+"structure": null,
+"label": "1",
+"type": "standard"
+},
+"contents": []
+},
+"\n"
+]
+},
+{
+"$$data_type": "org-node",
+"type": "footnote-definition",
+"ref": "org0733ef6",
+"properties": {
+"post-affiliated": 1935,
+"post-blank": 1,
+"secondary": null,
+"mode": null,
+"granularity": null,
+"cached": null,
+"org-element--cache-sync-key": null,
+"true-level": null,
+"deferred": null,
+"structure": null,
+"label": "1",
+"pre-blank": 0
+},
+"contents": [
+{
+"$$data_type": "org-node",
+"type": "paragraph",
+"ref": "org3964af8",
+"properties": {
+"post-affiliated": 1942,
+"post-blank": 0,
+"secondary": null,
+"mode": null,
+"granularity": null,
+"cached": null,
+"org-element--cache-sync-key": null,
+"true-level": null,
+"deferred": null,
+"structure": null
+},
+"contents": [
+"A footnote definition\n"
+]
+}
+]
+}
+]
+}
+]
+}
+]
+}
+
+
+Write a Typescript library containing type definitions that map to the JSON
+objects generated by this library.
